@@ -1,4 +1,4 @@
 Pisicik
 =======
 
-own packages
+Paketleme ve test etmek içi oluşturulmuştur.
