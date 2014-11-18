@@ -12,19 +12,19 @@
         <IsA>data</IsA>
         <Summary>PisiLinux default settings for lxqt</Summary>
         <Description>This package contains the lxqt default settings for Pisilinux.</Description>
-        <Archive sha1sum="cc96e172d7c8a0780debd0c63efb58277830f812" type="targz">https://dl.dropboxusercontent.com/u/71120717/pisilinux-default-settings-lxqt-0.1.tar.gz</Archive>
+        <Archive sha1sum="57149d9be90728d335efc480fdcd0b9ca93e8f84" type="tarxz">http://source.pisilinux.org/1.0/pisilinux-default-settings-xfce-0.1.tar.xz</Archive>
     </Source>
 
     <Package>
         <Name>pisilinux-default-settings-lxqt</Name>
         <RuntimeDependencies>
             <Dependency>lxqt-config</Dependency>
-            <Dependency>lxqt-policykit</Dependency>
+            <Dependency>polkit-qt_1</Dependency>
             <Dependency>network-manager-applet</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share/backgrounds/lxqt</Path>
-            <Path fileType="config">/etc/xdg/lxqt/lxqt-perchannel-xml</Path>
+            <Path fileType="config">/etc/xdg/lxqt/lxqtconf/lxqt-perchannel-xml</Path>
             <Path fileType="config">/etc/xdg/lxqt/terminal</Path>
         </Files>
         <Provides>
@@ -42,4 +42,3 @@
         </Update>
     </History>
 </PISI>
- 
