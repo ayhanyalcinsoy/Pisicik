@@ -12,9 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Simple GTK3 desktop experience</Summary>
         <Description>Simple GTK3 desktop experience</Description>
-<!--              <Archive sha1sum="d6931898fa7d45edde5843a6782a4b7491ea7ae1" type="targz">https://github.com/evolve-os/budgie-desktop/archive/v7.tar.gz</Archive> -->
-<!--              <Archive sha1sum="fbe39a36109e99507ce3fe7bdacd53f3fb6536c4" type="tarbz2">http://81.228.208.166/budgie/budgie-desktop-0.8.tar.bz2</Archive> -->
-	     <Archive sha1sum="dc460f3fbf96889b744de56a316d03ba7a92b3c3" type="targz">https://dl.dropboxusercontent.com/u/71120717/budgie-desktop-0.8.tar.gz</Archive>
+        <Archive sha1sum="bc2e32370e1965295ea400557e3448218bbce59f" type="tarbz2">http://81.228.208.166/budgie/budgie-desktop-0.8.1.tar.bz2</Archive>
 	<BuildDependencies>
              <Dependency>pulseaudio-libs-devel</Dependency>
 	     <Dependency>mutter-devel</Dependency>
