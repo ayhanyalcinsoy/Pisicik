@@ -25,6 +25,12 @@
 	     <Dependency>vala-devel</Dependency>
 	     <Dependency>glib2-devel</Dependency>
 	     <Dependency>desktop-file-utils</Dependency>
+	     <Dependency>atk-devel</Dependency>
+	     <Dependency>cairo-devel</Dependency>
+	     <Dependency>pango-devel</Dependency>
+	     <Dependency>clutter-devel</Dependency>
+	     <Dependency>gdk-pixbuf-devel</Dependency>
+	     <Dependency>gobject-introspection-devel</Dependency>
         </BuildDependencies>
 	<Patches>
 <!--             <Patch level="1">evolveos-fix.patch</Patch> -->
@@ -35,16 +41,20 @@
         <Name>buggie-desktop</Name>
         <RuntimeDependencies>
             <Dependency>gtk3</Dependency>
-            <Dependency>upower</Dependency>
+            <Dependency>pulseaudio-libs</Dependency>
             <Dependency>libwnck3</Dependency>
             <Dependency>gnome-menus</Dependency>
-            <Dependency>gnome-settings-daemon</Dependency>
+            <Dependency>cairo</Dependency>
             <Dependency>libpeas</Dependency>
             <Dependency>mutter</Dependency>
             <Dependency>desktop-file-utils</Dependency>
-            <Dependency>libpulse</Dependency>
+            <Dependency>atk</Dependency>
             <Dependency>vala</Dependency>
-            <Dependency>libgee</Dependency>
+            <Dependency>libgee08</Dependency>
+	    <Dependency>pango</Dependency>
+	    <Dependency>clutter</Dependency>
+	    <Dependency>gdk-pixbuf</Dependency>
+	    <Dependency>gobject-introspection</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
