@@ -18,6 +18,6 @@ def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
     
     #install Pisi Linux default theme
-    pisitools.insinto("/usr/share/lxdm/themes", "qtlxdm-pisilinux-theme")
+    #pisitools.insinto("/usr/share/lxdm/themes", "qtlxdm-pisilinux-theme")
 
     pisitools.dodoc("COPYING", "AUTHORS", "TODO", "README", "ChangeLog", "NEWS")

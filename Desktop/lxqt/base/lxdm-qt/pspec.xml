@@ -23,7 +23,7 @@
             <Dependency>gdk-pixbuf-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">default_config.patch</Patch>
+<!--             <Patch level="1">default_config.patch</Patch> -->
         </Patches>
     </Source>
 
@@ -33,8 +33,9 @@
             <Package>lightdm</Package>
             <Package>kdm</Package>
             <Package>mdm</Package>
-       <!-- <Package>gdm</Package>-->
+            <Package>gdm</Package>
             <Package>slim</Package>
+	    <Package>lxdm</Package>
         </Conflicts>
         <RuntimeDependencies>
             <Dependency>gtk2</Dependency>

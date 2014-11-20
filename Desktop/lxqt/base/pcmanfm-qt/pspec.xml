@@ -32,9 +32,9 @@
             <Dependency>glib2</Dependency>
             <Dependency>lxqt-menu-cache</Dependency>
             <Dependency>gvfs</Dependency>
-            <Dependency>polkit-gnome</Dependency>
             <Dependency>libfm-qt</Dependency>
             <Dependency>icon-theme-oxygen-png</Dependency>
+	    <Dependency>lxqt-policykit</Dependency>
         </RuntimeDependencies>
         <Files>
 	    <Path fileType="library">/usr/lib</Path>
