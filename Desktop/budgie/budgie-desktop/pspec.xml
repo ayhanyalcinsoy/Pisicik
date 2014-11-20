@@ -38,7 +38,7 @@
         </Patches>
     </Source>
 	<Package>
-        <Name>buggie-desktop</Name>
+        <Name>budgie-desktop</Name>
         <RuntimeDependencies>
             <Dependency>gtk3</Dependency>
             <Dependency>pulseaudio-libs</Dependency>
