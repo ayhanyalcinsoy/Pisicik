@@ -12,3 +12,4 @@ Exec=/usr/bin/pcmanfm-qt %U
 StartupNotify=true
 Terminal=false
 MimeType=inode/directory;
+NotShowIn=GNOME;XFCE;KDE;

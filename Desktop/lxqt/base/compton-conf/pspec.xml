@@ -11,23 +11,22 @@
         <IsA>app:gui</IsA>
         <Summary>GUI configuration tool for compton X composite manager.</Summary>
         <Description>GUI configuration tool for compton X composite manager.</Description>
-	<Archive sha1sum="8358b8f1d0f1f89f96dbc2a8b509f3a21425c1e9" type="targz">https://github.com/lxde/compton-conf/archive/0.1.0.tar.gz</Archive>
+        <Archive sha1sum="8358b8f1d0f1f89f96dbc2a8b509f3a21425c1e9" type="targz">https://github.com/lxde/compton-conf/archive/0.1.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
-	    <Dependency>libconfig-devel</Dependency>
-	    <Dependency>pkgconfig</Dependency>
-        </BuildDependencies>      
+           <Dependency>libconfig-devel</Dependency>
+            <Dependency>pkgconfig</Dependency>
+        </BuildDependencies>
     </Source>
-   
     <Package>
         <Name>compton-conf</Name>
         <RuntimeDependencies>
             <Dependency>qt</Dependency>
-	    <Dependency>libconfig</Dependency>
+            <Dependency>libconfig</Dependency>
         </RuntimeDependencies>
         <Files>
-	    <Path fileType="executable">/usr/bin</Path>
-	    <Path fileType="data">/usr/share</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
         </Files>
     </Package>
     <History>

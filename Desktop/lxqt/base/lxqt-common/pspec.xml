@@ -24,7 +24,7 @@
             <Dependency>lxqt-session</Dependency>
             <Dependency>libfm-qt</Dependency>
             <Dependency>pcmanfm-qt</Dependency>
-            <Dependency>openbox3</Dependency>
+<!--             <Dependency>openbox3</Dependency> -->
 	    <Dependency>lxqt-policykit</Dependency>
         </RuntimeDependencies>
         <Files>

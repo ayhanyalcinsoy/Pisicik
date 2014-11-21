@@ -56,8 +56,8 @@
             <Path fileType="data">/usr/share</Path>
             <Path fileType="config">/etc/lxqt</Path>
         </Files>
-	<AdditionalFiles>
-            <AdditionalFile owner="root" permission="0644" target="/etc/lxqt/panel.conf">panel.conf</AdditionalFile>
+        <AdditionalFiles>
+<!--             <AdditionalFile owner="root" permission="0644" target="/etc/lxqt/panel.conf">panel.conf</AdditionalFile> -->
         </AdditionalFiles>
     </Package>
     <Package>

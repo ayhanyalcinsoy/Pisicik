@@ -12,7 +12,8 @@
         <IsA>app:gui</IsA>
         <Summary>Simple GTK3 desktop experience</Summary>
         <Description>Simple GTK3 desktop experience</Description>
-        <Archive sha1sum="bc2e32370e1965295ea400557e3448218bbce59f" type="tarbz2">http://81.228.208.166/budgie/budgie-desktop-0.8.1.tar.bz2</Archive>
+<!--         <Archive sha1sum="bc2e32370e1965295ea400557e3448218bbce59f" type="tarbz2">http://81.228.208.166/budgie/budgie-desktop-0.8.1.tar.bz2</Archive> -->
+	<Archive sha1sum="b84c0319c04a972ebeca849a067c3356a3df6e9c" type="tarbz2">http://81.228.208.166/budgie/budgie-desktop-7.tar.bz2</Archive>
 	<BuildDependencies>
              <Dependency>pulseaudio-libs-devel</Dependency>
 	     <Dependency>mutter-devel</Dependency>
