@@ -15,11 +15,11 @@ def setup():
 def build():
     cmaketools.make()
 
-def install():    
+def install():
     cmaketools.rawInstall("DESTDIR=%s" % get.installDIR())
     pisitools.remove("/etc/lxqt/*.conf")
     pisitools.remove("etc/pcmanfm-qt/lxqt/*.conf")
-    
+
     pisitools.remove("/usr/share/lxqt/themes/a-mego/mainmenu.svg")
     pisitools.remove("/usr/share/lxqt/themes/ambiance/mainmenu.svg")
     pisitools.remove("/usr/share/lxqt/themes/flat/mainmenu.svg")
@@ -37,13 +37,6 @@ def install():
     pisitools.remove("/usr/share/lxqt/themes/green/wallpaper.cfg")
     pisitools.remove("/usr/share/lxqt/themes/light/wallpaper.cfg")
     pisitools.remove("/usr/share/lxqt/themes/plasma-next-alpha/wallpaper.cfg")
-    
-    pisitools.domove("/usr/share/lxqt/themes/a-mego" , "/usr/share/themes/lxqt")
-    pisitools.domove("/usr/share/lxqt/themes/ambiance" , "/usr/share/themes/lxqt")
-    pisitools.domove("/usr/share/lxqt/themes/flat" , "/usr/share/themes/lxqt")
-    pisitools.domove("/usr/share/lxqt/themes/flat-dark-alpha" , "/usr/share/themes/lxqt")
-    pisitools.domove("/usr/share/lxqt/themes/green" , "/usr/share/themes/lxqt")
-    pisitools.domove("/usr/share/lxqt/themes/light" , "/usr/share/themes/lxqt")
-    pisitools.domove("/usr/share/lxqt/themes/plasma-next-alpha" , "/usr/share/themes/lxqt")    
-    pisitools.removeDir("usr/share/lxqt/themes")
+    pisitools.remove("/usr/share/lxqt/themes/flat/*.png")
+
     pisitools.dodoc("README.md")

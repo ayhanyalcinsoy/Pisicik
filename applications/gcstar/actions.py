@@ -18,7 +18,6 @@ WorkDir= "./gcstar"
     Ogg::Vorbis::Header::PurePerl
     DateTime::Format::Strptime
     """
-    
 def fixPermissions():
     import os
     for root, dirs, files in os.walk("%s/opt" % get.installDIR()):
@@ -28,12 +27,10 @@ def fixPermissions():
             shelltools.system("/bin/chmod 0644 %s/%s" % (root, f))
 
 def install():
-    shelltools.system("./install --prefix=%s/usr --noclean --nomenu --verbose" % get.installDIR())    
-    
+    shelltools.system("./install --prefix=%s/usr --noclean --nomenu --verbose" % get.installDIR())
     pisitools.insinto("/usr/", "bin")
-    pisitools.insinto("/usr/", "lib")    
+    pisitools.insinto("/usr/", "lib")
     pisitools.insinto("/usr/share/", "man")
     pisitools.insinto("/usr/share", "share/applications")
     pisitools.insinto("/usr/share", "share/gcstar")
-   
     pisitools.dodoc("CHANGELOG", "LICENSE", "README", "README.fr") 
