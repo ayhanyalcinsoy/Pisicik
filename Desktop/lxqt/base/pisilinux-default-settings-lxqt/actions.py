@@ -10,7 +10,3 @@ from pisi.actionsapi import autotools
 
 def install():
     pythonmodules.install()
-    #flat-dark-alpha
-    pisitools.insinto("/usr/share/lxqt/themes/flat-dark-alpha/" , "/usr/share/lxqt/themes/flat-dark-alpha/amego.png")
-    pisitools.insinto("/usr/share/lxqt/themes/flat-dark-alpha/" , "/usr/share/lxqt/themes/flat-dark-alpha/mainmenu.svg")
-    pisitools.insinto("/usr/share/lxqt/themes/flat-dark-alpha/" , "/usr/share/lxqt/themes/flat-dark-alpha/wallpaper.cfg")
