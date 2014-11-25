@@ -12,8 +12,7 @@
         <IsA>data</IsA>
         <Summary>PisiLinux default settings for lxqt</Summary>
         <Description>This package contains the lxqt default settings for Pisilinux.</Description>
-<!--         <Archive sha1sum="c821b1b4d714e9922ead321d0a5da5c27c8c7b0b" type="targz">https://dl.dropboxusercontent.com/u/71120717/pisilinux-default-settings-lxqt.tar.gz</Archive> -->
-	<Archive sha1sum="53ca25a60e0a964ff17f9518256a4bed5deea0cb" type="targz">/home/PisiLinux/Pisicik/pisilinux-default-settings-lxqt.tar.gz</Archive>
+        <Archive sha1sum="50f8bbd717b8af813a78a727dcd441f3d811b1c3" type="targz">https://dl.dropboxusercontent.com/u/71120717/pisilinux-default-settings-lxqt.tar.gz</Archive>
     </Source>
 
     <Package>
