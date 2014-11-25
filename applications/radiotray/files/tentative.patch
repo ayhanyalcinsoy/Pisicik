@@ -1,0 +1,8 @@
+--- src/SysTray.py	2012-04-02 23:54:38.000000000 +0200
++++ radiotray-0.7.3/src/SysTray2.py	2014-08-31 02:14:28.425893801 +0200
+@@ -182,7 +182,6 @@
+     
+         
+     def run(self):
+-        gtk.gdk.threads_init()
+         gtk.main()
