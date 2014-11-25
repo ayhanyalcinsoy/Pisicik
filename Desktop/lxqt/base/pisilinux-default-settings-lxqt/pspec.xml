@@ -12,7 +12,7 @@
         <IsA>data</IsA>
         <Summary>PisiLinux default settings for lxqt</Summary>
         <Description>This package contains the lxqt default settings for Pisilinux.</Description>
-        <Archive sha1sum="57149d9be90728d335efc480fdcd0b9ca93e8f84" type="tarxz">http://source.pisilinux.org/1.0/pisilinux-default-settings-xfce-0.1.tar.xz</Archive>
+        <Archive sha1sum="c821b1b4d714e9922ead321d0a5da5c27c8c7b0b" type="targz">https://dl.dropboxusercontent.com/u/71120717/pisilinux-default-settings-lxqt.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -20,12 +20,12 @@
         <RuntimeDependencies>
             <Dependency>lxqt-config</Dependency>
             <Dependency>polkit-qt_1</Dependency>
-            <Dependency>network-manager-applet</Dependency>
+<!--             <Dependency>network-manager-applet</Dependency> -->
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/usr/share/backgrounds/lxqt</Path>
-            <Path fileType="config">/etc/xdg/lxqt/lxqtconf/lxqt-perchannel-xml</Path>
-            <Path fileType="config">/etc/xdg/lxqt/terminal</Path>
+            <Path fileType="data">/usr/share/lxqt</Path>
+            <Path fileType="config">/etc/lxqt</Path>
+            <Path fileType="config">/etc/pcmanfm-qt</Path>
         </Files>
         <Provides>
             <COMAR script="package.py">System.Package</COMAR>

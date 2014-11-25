@@ -24,8 +24,9 @@
             <Dependency>lxqt-session</Dependency>
             <Dependency>libfm-qt</Dependency>
             <Dependency>pcmanfm-qt</Dependency>
-<!--             <Dependency>openbox3</Dependency> -->
+            <Dependency>pisilinux-default-settings-lxqt</Dependency>
 	    <Dependency>lxqt-policykit</Dependency>
+	    <Dependency>openbox3</Dependency>
         </RuntimeDependencies>
         <Files>
 	    <Path fileType="config">/etc</Path>
@@ -33,32 +34,8 @@
             <Path fileType="man">/usr/share/man</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="data">/usr/share</Path>
+	    <Path fileType="data">/usr/share/themes/lxqt</Path>
         </Files>
-	<AdditionalFiles>
-            <AdditionalFile owner="root" permission="0644" target="/usr/share/lxqt/themes/a-mego/mainmenu.svg">mainmenu.svg</AdditionalFile>
-	    <AdditionalFile owner="root" permission="0644" target="/usr/share/lxqt/themes/ambiance/mainmenu.svg">mainmenu.svg</AdditionalFile>
-	    <AdditionalFile owner="root" permission="0644" target="/usr/share/lxqt/themes/flat/mainmenu.svg">mainmenu.svg</AdditionalFile>
-	    <AdditionalFile owner="root" permission="0644" target="/usr/share/lxqt/themes/flat-dark-alpha/mainmenu.svg">mainmenu.svg</AdditionalFile>
-	    <AdditionalFile owner="root" permission="0644" target="/usr/share/lxqt/themes/green/mainmenu.svg">mainmenu.svg</AdditionalFile>
-	    <AdditionalFile owner="root" permission="0644" target="/usr/share/lxqt/themes/light/mainmenu.svg">mainmenu.svg</AdditionalFile>
-	    <AdditionalFile owner="root" permission="0644" target="/usr/share/lxqt/themes/plasma-next-alpha/mainmenu.svg">mainmenu.svg</AdditionalFile>
-<!-- 	    Pisi Wallpaper ekleyelim -->
-	    <AdditionalFile owner="root" permission="0644" target="/usr/share/lxqt/themes/a-mego/pisi_lxqt.png">pisi_lxqt.png</AdditionalFile>
-	    <AdditionalFile owner="root" permission="0644" target="/usr/share/lxqt/themes/ambiance/pisi_lxqt.png">pisi_lxqt.png</AdditionalFile>
-	    <AdditionalFile owner="root" permission="0644" target="/usr/share/lxqt/themes/flat/pisi_lxqt.png">pisi_lxqt.png</AdditionalFile>
-	    <AdditionalFile owner="root" permission="0644" target="/usr/share/lxqt/themes/flat-dark-alpha/pisi_lxqt.png">pisi_lxqt.png</AdditionalFile>
-	    <AdditionalFile owner="root" permission="0644" target="/usr/share/lxqt/themes/green/pisi_lxqt.png">pisi_lxqt.png</AdditionalFile>
-	    <AdditionalFile owner="root" permission="0644" target="/usr/share/lxqt/themes/light/pisi_lxqt.png">pisi_lxqt.png</AdditionalFile>
-	    <AdditionalFile owner="root" permission="0644" target="/usr/share/lxqt/themes/plasma-next-alpha/pisi_lxqt.png">pisi_lxqt.png</AdditionalFile>
-	    
-	    <AdditionalFile owner="root" permission="0644" target="/usr/share/lxqt/themes/a-mego/wallpaper.cfg">wallpaper.cfg</AdditionalFile>
-	    <AdditionalFile owner="root" permission="0644" target="/usr/share/lxqt/themes/ambiance/wallpaper.cfg">wallpaper.cfg</AdditionalFile>
-	    <AdditionalFile owner="root" permission="0644" target="/usr/share/lxqt/themes/flat/wallpaper.cfg">wallpaper.cfg</AdditionalFile>
-	    <AdditionalFile owner="root" permission="0644" target="/usr/share/lxqt/themes/flat-dark-alpha/wallpaper.cfg">wallpaper.cfg</AdditionalFile>
-	    <AdditionalFile owner="root" permission="0644" target="/usr/share/lxqt/themes/green/wallpaper.cfg">wallpaper.cfg</AdditionalFile>
-	    <AdditionalFile owner="root" permission="0644" target="/usr/share/lxqt/themes/light/wallpaper.cfg">wallpaper.cfg</AdditionalFile>
-	    <AdditionalFile owner="root" permission="0644" target="/usr/share/lxqt/themes/plasma-next-alpha/wallpaper.cfg">wallpaper.cfg</AdditionalFile>
-        </AdditionalFiles>
     </Package>
     <History>
         <Update release="2">

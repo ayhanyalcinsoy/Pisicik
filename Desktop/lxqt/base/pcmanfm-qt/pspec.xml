@@ -41,6 +41,7 @@
             <Path fileType="executable">/usr/bin</Path>
 	    <Path fileType="data">/usr/share/</Path>
 	    <Path fileType="header">/usr/include</Path>
+	    <Path fileType="config">/etc/pcmanfm-qt</Path>
         </Files>
 	<AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/pcmanfm-qt.desktop">pcmanfm-qt.desktop</AdditionalFile>
