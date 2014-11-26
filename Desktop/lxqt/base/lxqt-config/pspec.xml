@@ -32,6 +32,11 @@
         </Files>
         <RuntimeDependencies>
             <Dependency>libXcursor</Dependency>
+            <Dependency>qt</Dependency>
+            <Dependency>liblxqt</Dependency>
+            <Dependency>libqtxdg</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>qtmimetypes</Dependency>
         </RuntimeDependencies>
     </Package>
     <History>
