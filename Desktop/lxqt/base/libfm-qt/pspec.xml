@@ -38,7 +38,8 @@
 	    <Dependency>pango</Dependency>
             <Dependency>libexif</Dependency>
 	    <Dependency>gdk-pixbuf</Dependency>
-	    <Dependency>lxqt-menu-cache</Dependency>    
+	    <Dependency>lxqt-menu-cache</Dependency> 
+	    <Dependency>libmenu-cache</Dependency>
 	 </RuntimeDependencies>
     </Package>
     <Package>
