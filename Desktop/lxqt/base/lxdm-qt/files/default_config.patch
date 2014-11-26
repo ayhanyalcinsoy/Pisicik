@@ -15,7 +15,7 @@ diff -Nuar lxdm-0.5.0.orig/data/lxdm.conf.in lxdm-0.5.0/data/lxdm.conf.in
  
  ## the theme of greeter
 -theme=Industrial
-+theme=lxdm-pisilinux-theme
++theme=pisilinux
  
  [input]
  
