@@ -21,6 +21,7 @@
         <Name>lxqt-config-randr</Name>
         <RuntimeDependencies>
             <Dependency>libXrandr</Dependency>
+	    <Dependency>qt</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
