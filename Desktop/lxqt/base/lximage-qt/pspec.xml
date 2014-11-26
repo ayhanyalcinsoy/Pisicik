@@ -24,10 +24,13 @@
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share/</Path>
         </Files>
-        <RuntimeDependency>
+        <RuntimeDependencies>
           <Dependency>pcmanfm-qt</Dependency>
           <Dependency>libXfixes</Dependency>
-        </RuntimeDependency>
+          <Dependency>libfm-qt</Dependency>
+	  <Dependency>qt</Dependency>
+	  <Dependency>libexif</Dependency>
+        </RuntimeDependencies>
     </Package>
     <History>
         <Update release="2">
