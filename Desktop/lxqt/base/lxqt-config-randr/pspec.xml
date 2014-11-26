@@ -20,7 +20,6 @@
     <Package>
         <Name>lxqt-config-randr</Name>
         <RuntimeDependencies>
-            <Dependency>libqtxdg</Dependency>
             <Dependency>libXrandr</Dependency>
         </RuntimeDependencies>
         <Files>

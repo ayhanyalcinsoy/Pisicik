@@ -30,9 +30,9 @@
             <Path fileType="data">/usr/share/cmake/qtxdg</Path>
             <Path fileType="data">/usr/share/applications</Path>
         </Files>
-        <RunDependencies>
+        <RuntimeDependencies>
             <Dependency>libXcursor</Dependency>
-        </RunDependencies>
+        </RuntimeDependencies>
     </Package>
     <History>
         <Update release="3">
