@@ -23,8 +23,8 @@
             <Dependency>qtmimetypes</Dependency>
         </RuntimeDependencies>
         <Files>
-	    <Path fileType="library">/usr/lib</Path>
-	    <Path fileType="data">/usr/share/</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/</Path>
         </Files>
     </Package>
     <Package>
@@ -32,7 +32,8 @@
         <Summary>Development headers for libqtxdg</Summary>
         <RuntimeDependencies>
             <Dependency release="current">libqtxdg</Dependency>
-	    <Dependency>qtmimetypes</Dependency>
+            <Dependency>qtmimetypes</Dependency>
+            <Dependency>qt-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
