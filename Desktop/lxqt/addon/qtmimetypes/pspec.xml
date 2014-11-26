@@ -20,11 +20,12 @@
     <Package>
         <Name>qtmimetypes</Name>
         <RuntimeDependencies>
+            <Dependency>qt</Dependency>
             <Dependency>qt-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
-	    <Path fileType="library">/usr/lib</Path>
+            <Path fileType="library">/usr/lib</Path>
         </Files>
     </Package>
     <History>
@@ -38,4 +39,3 @@
     </History>
 </PISI>
 
-<!-- By PiSiDo 2.0.0 -->

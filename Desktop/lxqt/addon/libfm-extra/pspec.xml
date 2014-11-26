@@ -15,6 +15,9 @@
     </Source>
     <Package>
         <Name>libfm-extra</Name>
+        <RuntimeDependencies>
+            <Dependency>glib2-devel</Dependency>
+        </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
             <Path fileType="library">/usr/lib</Path>
@@ -28,6 +31,6 @@
             <Comment>First Release</Comment>
             <Name>Ayhan Yalçınsoy</Name>
             <Email>ayhanyalcinsoy@pisilinux.org</Email>
-        </Update>        
+        </Update>
     </History>
 </PISI>
