@@ -37,15 +37,17 @@
     <Package>
         <Name>lxqt-panel</Name>
         <RuntimeDependencies>
-            <Dependency>liblxqt</Dependency>
-            <Dependency>libqtxdg</Dependency>
+            <Dependency>icu4c</Dependency>
+            <Dependency>libXdamage</Dependency>
             <Dependency>liblxqt-mount</Dependency>
             <Dependency>lxqt-globalkeys</Dependency>
             <Dependency>libsysstat</Dependency>
             <Dependency>alsa-lib</Dependency>
-            <Dependency>pulseaudio</Dependency>
+            <Dependency>pulseaudio-libs</Dependency>
             <Dependency>libXcomposite</Dependency>
-            <Dependency>lxqtmenu-data</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>lm_sensors</Dependency>
+            <Dependency>libstatgrab</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -56,9 +58,6 @@
             <Path fileType="data">/usr/share</Path>
             <Path fileType="config">/etc/lxqt</Path>
         </Files>
-        <AdditionalFiles>
-<!--             <AdditionalFile owner="root" permission="0644" target="/etc/lxqt/panel.conf">panel.conf</AdditionalFile> -->
-        </AdditionalFiles>
     </Package>
     <Package>
         <Name>lxqt-panel-devel</Name>
