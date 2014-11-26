@@ -26,6 +26,7 @@
     <Package>
         <Name>liblxqt</Name>
         <RuntimeDependencies>
+            <Dependency>qt</Dependency>
             <Dependency>libqtxdg</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -40,7 +41,7 @@
         <Name>liblxqt-devel</Name>
         <Summary>Development headers for liblxqt</Summary>
         <RuntimeDependencies>
-            <Dependency release="current">liblxqt</Dependency>
+            <Dependency>qt-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>

@@ -13,15 +13,14 @@
         <Description>Theming Gtk+3 programs with Qt styles</Description>	
         <Archive sha1sum="32915e54ba65c021963f8c5544d85b944a508c58" type="zip">https://content.wuala.com/contents/vedat/sources/qt-gtk-engine-master.zip</Archive>
         <BuildDependencies>
-	     <Dependency>gtk3-devel</Dependency>
+            <Dependency>gtk3-devel</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
         <Name>qt-gtk-engine</Name>
-        <RuntimeDependency>
-          <Dependency>qt</Dependency>
+        <RuntimeDependencies>
           <Dependency>gtk3</Dependency>
-         </RuntimeDependency>
+         </RuntimeDependencies>
          <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="data">/usr/share</Path>
