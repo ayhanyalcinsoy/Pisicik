@@ -48,6 +48,11 @@
             <Dependency>libXrender</Dependency>
             <Dependency>lm_sensors</Dependency>
             <Dependency>libstatgrab</Dependency>
+            <Dependency>qt</Dependency>
+            <Dependency>liblxqt</Dependency>
+            <Dependency>libqtxdg</Dependency>
+            <Dependency>qtmimetypes</Dependency>
+            <Dependency>libmenu-cache</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -62,9 +67,6 @@
     <Package>
         <Name>lxqt-panel-devel</Name>
         <Summary>Development headers for lxqt-panel</Summary>
-        <RuntimeDependencies>
-            <Dependency release="current">lxqt-panel</Dependency>
-        </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
             <Path fileType="library">/usr/lib/pkgconfig</Path>
