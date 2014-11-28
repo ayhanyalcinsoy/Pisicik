@@ -23,6 +23,9 @@
         <Name>lxqt-policykit</Name>
         <RuntimeDependencies>
             <Dependency>polkit-qt_1</Dependency>
+            <Dependency>qt</Dependency>
+            <Dependency>liblxqt</Dependency>
+            <Dependency>libqtxdg</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
