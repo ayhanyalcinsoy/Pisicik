@@ -12,21 +12,25 @@
         <Summary>Daemon used to register global keyboard shortcuts</Summary>
         <Description>LXQt daemon and library for global keyboard shortcuts registration.</Description>
         <Archive sha1sum="c51ed7387f149796ed11a603751c6d3851666de7" type="targz">http://lxqt.org/downloads/0.8.0/lxqt-globalkeys-0.8.0.tar.gz</Archive>
-	<BuildDependencies>
+        <BuildDependencies>
             <Dependency>liblxqt</Dependency>
-	    <Dependency>libX11</Dependency>
+            <Dependency>libX11</Dependency>
             <Dependency>qt-devel</Dependency>
-	    <Dependency>libqtxdg-devel</Dependency>
+            <Dependency>libqtxdg-devel</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
         <Name>lxqt-globalkeys</Name>
-         <Files>
+        <RuntimeDependencies>
+        <Dependency>qt</Dependency>
+            <Dependency>liblxqt</Dependency>
+        </RuntimeDependencies>
+        <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share</Path>
-	    <Path fileType="library">/usr/lib</Path>
+            <Path fileType="library">/usr/lib</Path>
         </Files>
-	<AdditionalFiles>
+        <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/lxqt-config-globalkeyshortcuts.desktop">lxqt-config-globalkeyshortcuts.desktop</AdditionalFile>
         </AdditionalFiles>
     </Package>
