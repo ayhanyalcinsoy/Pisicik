@@ -27,8 +27,8 @@
     <Package>
         <Name>lxqt-powermanagement</Name>
         <RuntimeDependencies>
+            <Dependency>qt</Dependency>
             <Dependency>libqtxdg</Dependency>
-            <Dependency>upower</Dependency>
             <Dependency>liblxqt</Dependency>	    
         </RuntimeDependencies>
         <Files>
