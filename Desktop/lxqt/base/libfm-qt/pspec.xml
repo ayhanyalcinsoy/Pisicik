@@ -37,7 +37,6 @@
             <Dependency>pango</Dependency>
             <Dependency>libexif</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>lxqt-menu-cache</Dependency> 
             <Dependency>libmenu-cache</Dependency>
         </RuntimeDependencies>
     </Package>
@@ -45,7 +44,6 @@
         <Name>libfm-qt-devel</Name>
         <Summary>Development headers for libfm-qt</Summary>
         <RuntimeDependencies>
-            <Dependency>libfm-qt</Dependency>
             <Dependency>gtk2-devel</Dependency>
         </RuntimeDependencies>
         <Files>
