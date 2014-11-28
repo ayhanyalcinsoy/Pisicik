@@ -23,6 +23,7 @@
         <RuntimeDependencies>
             <Dependency>vte</Dependency>
             <Dependency>gtk2</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share/</Path>
