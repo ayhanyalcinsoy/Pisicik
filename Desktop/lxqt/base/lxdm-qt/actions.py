@@ -17,9 +17,9 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
     #install Pisi Linux default theme
-    pisitools.insinto("/usr/share/lxdm/themes", "lxdm-pisilinux-theme")
-    pisitools.domove("/usr/share/lxdm/themes/lxdm-pisilinux-theme/*.*" , "/usr/share/lxdm/themes/pisilinux")
-    pisitools.domove("/usr/share/lxdm/themes/lxdm-pisilinux-theme/gtkrc" , "/usr/share/lxdm/themes/pisilinux")
-    pisitools.removeDir("/usr/share/lxdm/themes/lxdm-pisilinux-theme")
+    pisitools.insinto("/usr/share/lxdm/themes", "lxdm-qt-pisilinux-theme")
+    pisitools.domove("/usr/share/lxdm/themes/lxdm-qt-pisilinux-theme/*.*" , "/usr/share/lxdm/themes/pisilinux")
+    pisitools.domove("/usr/share/lxdm/themes/lxdm-qt-pisilinux-theme/gtkrc" , "/usr/share/lxdm/themes/pisilinux")
+    pisitools.removeDir("/usr/share/lxdm/themes/lxdm-qt-pisilinux-theme")
     pisitools.removeDir("/usr/share/lxdm/themes/Industrial")
     pisitools.dodoc("COPYING", "AUTHORS", "TODO", "README", "ChangeLog", "NEWS")

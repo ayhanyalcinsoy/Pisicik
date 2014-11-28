@@ -14,7 +14,7 @@
         <Summary>LXQT Display Manager</Summary>
         <Description>LXDM is the future display manager of LXQT.</Description>
         <Archive sha1sum="0a91c906b3a0edd181fad74965b22ebaa9891798" type="tarxz">mirrors://sourceforge/project/lxdm/lxdm%200.5.0/lxdm-0.5.0.tar.xz</Archive>  
-        <Archive sha1sum="3732bc001cc98421dd5862bc8cfd076ac4583ba9" target="lxdm-0.5.0" type="targz">https://dl.dropboxusercontent.com/u/71120717/lxdm-qt-pisilinux-theme.tar.gz</Archive>  
+        <Archive sha1sum="5c3122f6aa8342a0ea5be93a27d2b5a65373e1cb" target="lxdm-0.5.0" type="targz">https://dl.dropboxusercontent.com/u/71120717/lxdm-qt-pisilinux-theme.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
