@@ -14,25 +14,25 @@
         <Archive sha1sum="6cdbf660fbe980f73b902586854e7957161d1190" type="targz">http://lxqt.org/downloads/lxqt/0.8.0/liblxqt-mount-0.8.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>liblxqt-devel</Dependency>
-	    <Dependency>libqtxdg-devel</Dependency>
+            <Dependency>libqtxdg-devel</Dependency>
             <Dependency>libXfixes-devel</Dependency>
             <Dependency>glib2-devel</Dependency>
-	    <Dependency>qt-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
         <Name>liblxqt-mount</Name>
+        <RuntimeDependencies>
+            <Dependency>qt</Dependency>
+        </RuntimeDependencies>
         <Files>
-	    <Path fileType="library">/usr/lib</Path>
-	    <Path fileType="data">/usr/share/</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/</Path>
         </Files>
     </Package>
     <Package>
         <Name>liblxqt-mount-devel</Name>
         <Summary>Development headers for liblxqt-mount</Summary>
-        <RuntimeDependencies>
-            <Dependency release="current">liblxqt-mount</Dependency>
-        </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
             <Path fileType="library">/usr/lib/pkgconfig</Path>
