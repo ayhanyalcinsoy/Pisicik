@@ -22,6 +22,7 @@
         <Name>obconf-qt</Name>
         <RuntimeDependencies>
             <Dependency version="3.5.2">openbox3</Dependency>
+            <Dependency>qt</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
