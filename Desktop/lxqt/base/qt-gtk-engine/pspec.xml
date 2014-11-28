@@ -19,8 +19,10 @@
     <Package>
         <Name>qt-gtk-engine</Name>
         <RuntimeDependencies>
-          <Dependency>gtk3</Dependency>
-         </RuntimeDependencies>
+            <Dependency>gtk3</Dependency>
+            <Dependency>qt</Dependency>
+            <Dependency>cairo</Dependency>
+        </RuntimeDependencies>
          <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="data">/usr/share</Path>
