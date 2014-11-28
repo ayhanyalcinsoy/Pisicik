@@ -19,7 +19,7 @@
     <Package>
         <Name>libqtxdg</Name>
         <RuntimeDependencies>
-            <Dependency>xdg-utils</Dependency>
+            <Dependency>qt</Dependency>
             <Dependency>qtmimetypes</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -31,8 +31,7 @@
         <Name>libqtxdg-devel</Name>
         <Summary>Development headers for libqtxdg</Summary>
         <RuntimeDependencies>
-            <Dependency release="current">libqtxdg</Dependency>
-            <Dependency>qtmimetypes</Dependency>
+           <Dependency>qtmimetypes</Dependency>
             <Dependency>qt-devel</Dependency>
         </RuntimeDependencies>
         <Files>
