@@ -14,17 +14,18 @@
         <Archive sha1sum="6c54035cb72b55b74aa66d14c277b9b068a9ad19" type="targz">http://lxqt.org/downloads/0.8.0/lxqt-qtplugin-0.8.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>liblxqt-devel</Dependency>
-	    <Dependency>libqtxdg-devel</Dependency>
+            <Dependency>libqtxdg-devel</Dependency>
         </BuildDependencies>
             </Source>
     <Package>
         <Name>lxqt-qtplugin</Name>
         <RuntimeDependencies>
-            <Dependency>libqtxdg</Dependency>
+            <Dependency>liblxqt</Dependency>
+            <Dependency>qt</Dependency>
         </RuntimeDependencies>
         <Files>
-	    <Path fileType="library">/usr/lib</Path>
-	    <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
         </Files>
     </Package>
     <History>
