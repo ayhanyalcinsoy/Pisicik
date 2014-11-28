@@ -29,12 +29,15 @@
             <Dependency>qterminal</Dependency>
             <Dependency>libqtxdg</Dependency>
             <Dependency>lxqtmenu-data</Dependency>
-            <Dependency>glib2</Dependency>
+            <Dependency>qt</Dependency>
+	    <Dependency>qt-devel</Dependency>
             <Dependency>lxqt-menu-cache</Dependency>
             <Dependency>gvfs</Dependency>
             <Dependency>libfm-qt</Dependency>
             <Dependency>icon-theme-oxygen-png</Dependency>
 	    <Dependency>lxqt-policykit</Dependency>
+	    <Dependency>libmenu-cache</Dependency>
+	    <Dependency>libfm-qt-devel</Dependency>
         </RuntimeDependencies>
         <Files>
 	    <Path fileType="library">/usr/lib</Path>
