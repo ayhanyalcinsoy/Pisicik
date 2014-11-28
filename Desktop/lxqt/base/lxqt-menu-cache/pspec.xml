@@ -20,6 +20,9 @@
     </Source>
     <Package>
         <Name>lxqt-menu-cache</Name>
+        <RuntimeDependencies>
+            <Dependency>libfm-extra</Dependency>
+        </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/libexec</Path>
             <Path fileType="data">/usr/share</Path>
@@ -28,9 +31,6 @@
     <Package>
         <Name>lxqt-menu-cache-devel</Name>
         <Summary>Development headers for lxqt-menu-cache</Summary>
-        <RuntimeDependencies>
-            <Dependency release="current">lxqt-menu-cache</Dependency>
-        </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
         </Files>
