@@ -22,16 +22,13 @@
             <Dependency>qt</Dependency>
         </RuntimeDependencies>
         <Files>
-	    <Path fileType="library">/usr/lib</Path>
-	    <Path fileType="data">/usr/share/</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/</Path>
         </Files>
     </Package>
     <Package>
         <Name>libsysstat-devel</Name>
         <Summary>Development headers for libsysstat</Summary>
-        <RuntimeDependencies>
-            <Dependency release="current">libsysstat</Dependency>
-        </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
             <Path fileType="library">/usr/lib/pkgconfig</Path>
