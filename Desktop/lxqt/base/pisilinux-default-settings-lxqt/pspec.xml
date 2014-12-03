@@ -12,7 +12,7 @@
         <IsA>data</IsA>
         <Summary>PisiLinux default settings for lxqt</Summary>
         <Description>This package contains the lxqt default settings for Pisilinux.</Description>
-        <Archive sha1sum="50f8bbd717b8af813a78a727dcd441f3d811b1c3" type="targz">https://dl.dropboxusercontent.com/u/71120717/pisilinux-default-settings-lxqt.tar.gz</Archive>
+        <Archive sha1sum="ba9d1546640141f4caa5caa84fa3ec0be9181357" type="targz">https://dl.dropboxusercontent.com/u/71120717/pisilinux-default-settings-lxqt.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -20,13 +20,17 @@
         <RuntimeDependencies>
             <Dependency>lxqt-config</Dependency>
             <Dependency>polkit-qt_1</Dependency>
-<!--             <Dependency>network-manager-applet</Dependency> -->
+            <Dependency>network-manager-applet</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share/lxqt</Path>
             <Path fileType="config">/etc/lxqt</Path>
             <Path fileType="config">/etc/pcmanfm-qt</Path>
+            <Path fileType="data">/usr/share/lxdm/themes</Path>
         </Files>
+	<AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/lxdm/themes/lxdm-pisilinux-theme/login.png">login.png</AdditionalFile>
+        </AdditionalFiles>
         <Provides>
             <COMAR script="package.py">System.Package</COMAR>
         </Provides>
