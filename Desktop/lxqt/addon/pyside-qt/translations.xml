@@ -1,0 +1,7 @@
+<PISI>
+    <Source>
+        <Name>lxqt-config</Name>
+        <Summary xml:lang="tr">Provides LGPL Qt bindings for Python</Summary>
+        <Description xml:lang="tr">Provides LGPL Qt bindings for Python and related tools for binding generation.</Description>
+    </Source>
+</PISI>
