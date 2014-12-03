@@ -28,9 +28,6 @@
             <Path fileType="config">/etc/pcmanfm-qt</Path>
             <Path fileType="data">/usr/share/lxdm/themes</Path>
         </Files>
-	<AdditionalFiles>
-            <AdditionalFile owner="root" permission="0644" target="/usr/share/lxdm/themes/lxdm-pisilinux-theme/login.png">login.png</AdditionalFile>
-        </AdditionalFiles>
         <Provides>
             <COMAR script="package.py">System.Package</COMAR>
         </Provides>
