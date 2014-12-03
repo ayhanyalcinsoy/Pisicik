@@ -13,7 +13,7 @@
         <Summary>Simple GTK3 desktop experience</Summary>
         <Description>Simple GTK3 desktop experience</Description>
 <!--         <Archive sha1sum="bc2e32370e1965295ea400557e3448218bbce59f" type="tarbz2">http://81.228.208.166/budgie/budgie-desktop-0.8.1.tar.bz2</Archive> -->
-	<Archive sha1sum="b84c0319c04a972ebeca849a067c3356a3df6e9c" type="tarbz2">http://81.228.208.166/budgie/budgie-desktop-7.tar.bz2</Archive>
+	<Archive sha1sum="393c1c370d0aac91c59f858b91a22fb3d895628a" type="tarxz">https://evolve-os.com/sources/budgie-desktop-8.tar.xz</Archive>
 	<BuildDependencies>
              <Dependency>pulseaudio-libs-devel</Dependency>
 	     <Dependency>mutter-devel</Dependency>
@@ -33,12 +33,8 @@
 	     <Dependency>gdk-pixbuf-devel</Dependency>
 	     <Dependency>gobject-introspection-devel</Dependency>
         </BuildDependencies>
-	<Patches>
-<!--             <Patch level="1">evolveos-fix.patch</Patch> -->
-<!--             <Patch>configure.patch</Patch> -->
-        </Patches>
     </Source>
-	<Package>
+        <Package>
         <Name>budgie-desktop</Name>
         <RuntimeDependencies>
             <Dependency>gtk3</Dependency>
@@ -69,9 +65,6 @@
             <Path fileType="data">/usr/share/xsessions/budgie-desktop.desktop</Path>
             <Path fileType="data">/usr/share/glib-2.0/schemas/com.evolve-os.budgie.panel.gschema.xml</Path>
         </Files>
-	<AdditionalFiles>
-            <AdditionalFile owner="root" target="/usr/bin/budgie-session-launcher" permission="0755">budgie-session-launcher</AdditionalFile>
-        </AdditionalFiles>
     </Package>
     <Package>
         <Name>budgie-desktop-devel</Name>
