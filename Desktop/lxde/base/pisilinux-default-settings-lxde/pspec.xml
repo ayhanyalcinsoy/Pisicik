@@ -12,7 +12,7 @@
         <IsA>data</IsA>
         <Summary>PisiLinux default settings for lxde</Summary>
         <Description>This package contains the lxde default settings for Pisilinux.</Description>
-        <Archive sha1sum="3a2eeda234284bed7032c6c7d03d103280f9ce9d" type="targz">https://dl.dropboxusercontent.com/u/71120717/pisilinux-default-settings-lxde.tar.gz</Archive>
+        <Archive sha1sum="c1a7271aebe6b167dfa3bb6186f20591a95aae90" type="targz">https://dl.dropboxusercontent.com/u/71120717/pisilinux-default-settings-lxde.tar.gz</Archive>
     </Source>
 
     <Package>
