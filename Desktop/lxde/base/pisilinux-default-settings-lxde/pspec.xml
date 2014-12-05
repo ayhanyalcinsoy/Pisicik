@@ -25,6 +25,8 @@
         <Conflicts>
             <Package>pisilinux-default-settings</Package>
             <Package>pisilinux-default-settings-lxqt</Package>
+	    <Package>pisilinux-default-settings-kde</Package>
+	    <Package>pisilinux-default-settings-xfce</Package>
         </Conflicts>
         <Files>
             <Path fileType="data">/usr/share/lxde</Path>
