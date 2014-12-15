@@ -7,13 +7,12 @@
             <Email>ayhanyalcinsoy@pisilinux.org</Email>
         </Packager>
         <License>GPL2</License>
-        <PartOf>desktop.lxqt.base</PartOf>
         <IsA>app</IsA>
         <Summary>This is a Qt port of ObConf, configurator of OpenBox window manager.</Summary>
         <Description>This is a Qt port of ObConf, configurator of OpenBox window manager.</Description>
         <Archive sha1sum="b66819f0eddf77abb9ec1b0dba93185eb64dca25" type="targz">https://github.com/lxde/obconf-qt/archive/0.1.0.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="3.5.2">openbox3-devel</Dependency>
+            <Dependency version="3.5.2">openbox-devel</Dependency>
             <Dependency>pkgconfig</Dependency>
             <Dependency>qt-devel</Dependency>
         </BuildDependencies>
@@ -21,7 +20,7 @@
     <Package>
         <Name>obconf-qt</Name>
         <RuntimeDependencies>
-            <Dependency version="3.5.2">openbox3</Dependency>
+            <Dependency version="3.5.2">openbox</Dependency>
             <Dependency>qt</Dependency>
         </RuntimeDependencies>
         <Files>

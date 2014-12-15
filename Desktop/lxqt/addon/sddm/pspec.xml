@@ -7,7 +7,6 @@
             <Email>ayhanyalcinsoy@pisilinux.org</Email>
         </Packager>
         <License>GPLV2</License>
-        <PartOf>desktop.lxqt.addons</PartOf>
         <IsA>app:gui</IsA>
         <Summary>QML based X11 display manager </Summary>
         <Description>SDDM is a modern display manager for X11 aiming to be fast, simple and beatiful. It uses modern technologies like QtQuick, which in turn gives the designer the ability to create smooth, animated user interfaces.</Description>
@@ -26,12 +25,12 @@
             <Path fileType="library">/usr/include</Path>
             <Path fileType="config">/etc</Path>
             <Path fileType="data">/usr/lib/systemd/system/sddm.service</Path>
-	    <Path fileType="data">/usr/share/display-managers/mdm.desktop"></Path>
+            <Path fileType="data">/usr/share/display-managers/mdm.desktop"></Path>
         </Files>
-	 <AdditionalFiles>
-	<AdditionalFile owner="root" permission="0644" target="/etc/conf.d/xdm">xdm</AdditionalFile>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/etc/conf.d/xdm">xdm</AdditionalFile>
         </AdditionalFiles>
-	<Provides>
+        <Provides>
             <COMAR script="package.py">System.Package</COMAR>
         </Provides>
     </Package>

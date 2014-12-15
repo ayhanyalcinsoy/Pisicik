@@ -7,7 +7,6 @@
             <Email>ayhanyalcinsoy@pisilinux.org</Email>
         </Packager>
         <License>GPLv2</License>
-        <PartOf>desktop.lxqt.base</PartOf>
         <IsA>app</IsA>
         <Summary>LXQt system administration tool</Summary>
         <Description>LXQt system administration tool</Description>

@@ -7,7 +7,6 @@
             <Email>ayhanyalcinsoy@pisilinux.org</Email>
         </Packager>
         <License>GPL2</License>
-        <PartOf>desktop.lxqt.base</PartOf>
         <IsA>app:gui</IsA>
         <Summary>LXQt about dialog.</Summary>
         <Description>About dialog of LXDE-Qt</Description>

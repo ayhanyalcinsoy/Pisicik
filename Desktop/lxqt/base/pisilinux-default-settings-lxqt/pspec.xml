@@ -22,6 +22,12 @@
             <Dependency>polkit-qt_1</Dependency>
             <Dependency>network-manager-applet</Dependency>
         </RuntimeDependencies>
+        <Conflicts>
+            <Package>pisilinux-default-settings</Package>
+            <Package>pisilinux-default-settings-lxde</Package>
+            <Package>pisilinux-default-settings-kde</Package>
+            <Package>pisilinux-default-settings-xfce</Package>
+        </Conflicts>
         <Files>
             <Path fileType="data">/usr/share/lxqt</Path>
             <Path fileType="config">/etc/lxqt</Path>

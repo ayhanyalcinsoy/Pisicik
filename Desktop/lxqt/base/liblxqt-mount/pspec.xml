@@ -7,7 +7,6 @@
             <Email>ayhanyalcinsoy@pisilinux.org</Email>
         </Packager>
         <License>GPL2</License>
-        <PartOf>desktop.lxqt.base</PartOf>
         <IsA>library</IsA>
         <Summary>Common base library for LXQt components.</Summary>
         <Description>Core utility library for all LXDE-Qt components</Description>

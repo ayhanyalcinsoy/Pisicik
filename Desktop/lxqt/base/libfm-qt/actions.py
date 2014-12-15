@@ -4,7 +4,6 @@
 # See the file http://www.gnu.org/copyleft/gpl.txt
 
 
-from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import autotools
@@ -23,7 +22,6 @@ def build():
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-    pisitools.dodoc("AUTHORS", "COPYING")
     pisitools.remove("/usr/lib/libfm-extra.so")
     pisitools.remove("/usr/lib/libfm-extra.so.4.0.3")
     pisitools.remove("/usr/lib/libfm-extra.so.4")
@@ -31,3 +29,4 @@ def install():
     pisitools.remove("/usr/include/libfm-1.0/fm-extra.h")
     pisitools.remove("/usr/lib/pkgconfig/libfm-extra.pc")
     pisitools.remove("/usr/include/libfm-1.0/fm-xml-file.h")
+    pisitools.dodoc("AUTHORS", "COPYING")

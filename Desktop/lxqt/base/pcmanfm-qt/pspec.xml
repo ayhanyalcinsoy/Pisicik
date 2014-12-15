@@ -7,7 +7,6 @@
             <Email>ayhanyalcinsoy@pisilinux.org</Email>
         </Packager>
         <License>GPL2</License>
-        <PartOf>desktop.lxqt.base</PartOf>
         <IsA>app:gui</IsA>
         <Summary>The LXQt file manager, Qt port of PCManFM</Summary>
         <Description>File manager and desktop icon manager (Qt port of PCManFM and libfm)</Description>
@@ -24,32 +23,32 @@
     <Package>
         <Name>pcmanfm-qt</Name>
         <RuntimeDependencies>
-            <Dependency>gksu</Dependency>            
+            <Dependency>gksu</Dependency>
             <Dependency>xarchiver</Dependency>
             <Dependency>qterminal</Dependency>
             <Dependency>libqtxdg</Dependency>
             <Dependency>lxqtmenu-data</Dependency>
             <Dependency>qt</Dependency>
-	    <Dependency>qt-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
             <Dependency>lxqt-menu-cache</Dependency>
             <Dependency>gvfs</Dependency>
             <Dependency>libfm-qt</Dependency>
-            <Dependency>icon-theme-oxygen-png</Dependency>
-	    <Dependency>lxqt-policykit</Dependency>
-	    <Dependency>libmenu-cache</Dependency>
-	    <Dependency>libfm-qt-devel</Dependency>
+            <Dependency>adwaita-icon-theme</Dependency>
+            <Dependency>lxqt-policykit</Dependency>
+            <Dependency>libmenu-cache</Dependency>
+            <Dependency>libfm-qt-devel</Dependency>
         </RuntimeDependencies>
         <Files>
-	    <Path fileType="library">/usr/lib</Path>
+            <Path fileType="library">/usr/lib</Path>
             <Path fileType="executable">/usr/bin</Path>
-	    <Path fileType="data">/usr/share/</Path>
-	    <Path fileType="header">/usr/include</Path>
-	    <Path fileType="config">/etc/pcmanfm-qt</Path>
+            <Path fileType="data">/usr/share/</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="config">/etc/pcmanfm-qt</Path>
         </Files>
-	<AdditionalFiles>
+        <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/pcmanfm-qt.desktop">pcmanfm-qt.desktop</AdditionalFile>
-	    <AdditionalFile owner="root" permission="0644" target="/usr/share/libfm-qt/translations/libfm-qt_tr.qm">libfm-qt_tr.qm</AdditionalFile>
-	    <AdditionalFile owner="root" permission="0644" target="/usr/share/pcmanfm-qt/translations/pcmanfm-qt_tr.qm">pcmanfm-qt_tr.qm</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/libfm-qt/translations/libfm-qt_tr.qm">libfm-qt_tr.qm</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pcmanfm-qt/translations/pcmanfm-qt_tr.qm">pcmanfm-qt_tr.qm</AdditionalFile>
         </AdditionalFiles>
     </Package>
     <History>

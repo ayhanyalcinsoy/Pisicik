@@ -7,7 +7,6 @@
             <Email>ayhanyalcinsoy@pisilinux.org</Email>
         </Packager>
         <License>GPL2</License>
-        <PartOf>desktop.lxqt.base</PartOf>
         <IsA>app:gui</IsA>
         <Summary>LXQt power management daemon.</Summary>
         <Description>Daemon use for power management and auto-suspend.</Description>
@@ -40,19 +39,12 @@
         </AdditionalFiles>
     </Package>
     <History>
-        <Update release="3">
-            <Date>2014-10-21</Date>
-            <Version>0.8.0</Version>
-            <Comment>rebuild</Comment>
-            <Name>Ayhan Yalçınsoy</Name>
-            <Email>ayhanyalcinsoy@pisilinux.org</Email>
-        </Update>
         <Update release="2">
             <Date>2014-10-21</Date>
             <Version>0.8.0</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Vedat Demir</Name>
-            <Email>vedat@pisilinux.org</Email>
+            <Comment>version bump.</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
         </Update>
         <Update release="1">
             <Date>2014-04-25</Date>

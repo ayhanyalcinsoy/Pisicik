@@ -7,7 +7,6 @@
             <Email>ayhanyalcinsoy@pisilinux.org</Email>
         </Packager>
         <License>GPLv2</License>
-        <PartOf>desktop.lxqt.addons</PartOf>
         <IsA>app:gui</IsA>
         <Summary>QT-based multitab terminal emulator.</Summary>
         <Description>QT-based multitab terminal emulator.</Description>
@@ -25,6 +24,9 @@
             <Dependency>gtk2</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
         </RuntimeDependencies>
+        <Conflicts>
+            <Package>lxterminal</Package>
+        </Conflicts>
         <Files>
             <Path fileType="data">/usr/share/</Path>
             <Path fileType="executable">/usr/bin/</Path>

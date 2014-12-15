@@ -7,7 +7,6 @@
             <Email>ayhanyalcinsoy@pisilinux.org</Email>
         </Packager>
         <License>GPL2</License>
-        <PartOf>desktop.lxqt.base</PartOf>
         <IsA>data</IsA>
         <Summary>freedesktop.org application menu definition files</Summary>
         <Description>lxqtmenu-data is freedesktop.org application menu definition files</Description>
@@ -19,9 +18,9 @@
     <Package>
         <Name>lxqtmenu-data</Name>
         <Files>
-	    <Path fileType="config">/etc</Path>
-	    <Path fileType="data">/usr/share/desktop-directories</Path>
-	    <Path fileType="doc">/usr/share/doc/</Path>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="data">/usr/share/desktop-directories</Path>
+            <Path fileType="doc">/usr/share/doc/</Path>
         </Files>
     </Package>
     <History>

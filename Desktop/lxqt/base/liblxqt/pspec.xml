@@ -7,7 +7,6 @@
             <Email>ayhanyalcinsoy@pisilinux.org</Email>
         </Packager>
         <License>GPL2</License>
-        <PartOf>desktop.lxqt.base</PartOf>
         <IsA>library</IsA>
         <Summary>Common base library for LXQt components.</Summary>
         <Description>Core utility library for all LXDE-Qt components</Description>
@@ -49,19 +48,12 @@
         </Files>
     </Package>
     <History>
-      <Update release="3">
+      <Update release="2">
             <Date>2014-10-21</Date>
             <Version>0.8.0</Version>
-            <Comment>add tr support</Comment>
+            <Comment>version bump. and add tr support</Comment>
             <Name>Ayhan Yalçınsoy</Name>
             <Email>ayhanyalcinsoy@pisilinux.org</Email>
-        </Update>
-        <Update release="2">
-            <Date>2014-10-21</Date>
-            <Version>0.8.0</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Vedat Demir</Name>
-            <Email>vedat@pisilinux.org</Email>
         </Update>
         <Update release="1">
             <Date>2014-04-25</Date>

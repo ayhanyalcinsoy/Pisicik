@@ -7,7 +7,6 @@
             <Email>ayhanyalcinsoy@pisilinux.org</Email>
         </Packager>
         <License>GPLv2</License>
-        <PartOf>desktop.lxqt.base</PartOf>
         <IsA>app:gui</IsA>
         <Summary>GUI configuration tool for compton X composite manager.</Summary>
         <Description>GUI configuration tool for compton X composite manager.</Description>

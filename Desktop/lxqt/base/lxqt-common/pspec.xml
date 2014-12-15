@@ -7,34 +7,33 @@
             <Email>ayhanyalcinsoy@pisilinux.org</Email>
         </Packager>
         <License>GPL2</License>
-        <PartOf>desktop.lxqt.base</PartOf>
         <IsA>data</IsA>
         <Summary>Common data to run a LXQt session.</Summary>
         <Description>Common data file required for running an lxde-qt session</Description>	
-	<Archive sha1sum="85065c246e400d7ac37570ac9a84f30fca764f69" type="targz">http://lxqt.org/downloads/0.8.0/lxqt-common-0.8.0.tar.gz</Archive>
-	<BuildDependencies>
+        <Archive sha1sum="85065c246e400d7ac37570ac9a84f30fca764f69" type="targz">http://lxqt.org/downloads/0.8.0/lxqt-common-0.8.0.tar.gz</Archive>
+        <BuildDependencies>
             <Dependency>liblxqt-devel</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
         <Name>lxqt-common</Name>
-	<RuntimeDependencies>
+        <RuntimeDependencies>
             <Dependency>gtk2</Dependency>
             <Dependency>lxqt-panel</Dependency>
             <Dependency>lxqt-session</Dependency>
             <Dependency>libfm-qt</Dependency>
             <Dependency>pcmanfm-qt</Dependency>
             <Dependency>pisilinux-default-settings-lxqt</Dependency>
-	    <Dependency>lxqt-policykit</Dependency>
-	    <Dependency>openbox3</Dependency>
+            <Dependency>lxqt-policykit</Dependency>
+            <Dependency>openbox</Dependency>
         </RuntimeDependencies>
         <Files>
-	    <Path fileType="config">/etc</Path>
+            <Path fileType="config">/etc</Path>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="man">/usr/share/man</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="data">/usr/share</Path>
-	    <Path fileType="data">/usr/share/themes/lxqt</Path>
+            <Path fileType="data">/usr/share/themes/lxqt</Path>
         </Files>
     </Package>
     <History>

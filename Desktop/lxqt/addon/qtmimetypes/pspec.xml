@@ -7,7 +7,6 @@
             <Email>ayhanyalcinsoy@gmail.com</Email>
         </Packager>
         <License>GPLv2+</License>
-	<PartOf>desktop.lxqt.addons</PartOf>
         <IsA>library</IsA>
         <Summary>Mimetype library for Qt4.</Summary>
         <Description>Mimetype library for Qt4.</Description>
