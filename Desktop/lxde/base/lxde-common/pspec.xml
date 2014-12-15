@@ -18,7 +18,7 @@
             <Dependency>gtk2-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">default-config.patch</Patch>
+<!--             <Patch level="1">default-config.patch</Patch> -->
         </Patches>
     </Source>
 

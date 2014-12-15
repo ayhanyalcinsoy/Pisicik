@@ -15,5 +15,9 @@ def build():
 
 def install():
     autotools.install()
+    pisitools.removeDir("/etc/xdg")
+    pisitools.remove("/usr/share/applications/lxde-screenlock.desktop")
+    pisitools.remove("/usr/share/applications/lxde-logout.desktop")
+    pisitools.remove("/usr/share/lxde/images/logout-banner.png")
     pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING", "README")
 
