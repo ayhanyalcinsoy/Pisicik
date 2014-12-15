@@ -18,7 +18,7 @@
     <Package>
         <Name>pisilinux-default-settings-lxde</Name>
         <RuntimeDependencies>
-            <Dependency>lxqt-config</Dependency>
+            <Dependency>lxinput</Dependency>
             <Dependency>polkit-qt_1</Dependency>
             <Dependency>network-manager-applet</Dependency>
         </RuntimeDependencies>
