@@ -12,6 +12,7 @@ datas = [
     ('/usr/share/lxqt/themes/light', glob.glob('light/*')),
     ('/usr/share/lxqt/themes/green', glob.glob('green/*')),
     ('/usr/share/lxqt/themes/plasma-next-alpha', glob.glob('plasma-next-alpha/*')),
+    ('/usr/share/lxdm/themes/lxdm-pisilinux-theme', glob.glob('lxdm/login.png')),
     ('/etc/lxqt/', glob.glob('lxqt/*')),
     ('/etc/pcmanfm-qt/lxqt/', glob.glob('pcmanfm-qt/lxqt/*')),
     ]
