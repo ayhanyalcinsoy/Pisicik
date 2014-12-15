@@ -23,7 +23,7 @@ datas = [
     ('/usr/share/applications/', glob.glob('lxpanel/data/lxde-screenlock.desktop')),
     ('/usr/share/applications/', glob.glob('lxpanel/data/lxde-x-terminal-emulator.desktop')),
     ('/usr/share/lxde/images/', glob.glob('lxpanel/data/pisi_striped_blue.png')),
-    ('/usr/share/lxdm/themes/pisilinux-lxdm-the', glob.glob('lxpanel/data/pisi_striped_blue.png')),
+    ('/usr/share/lxdm/themes/lxdm-pisilinux-theme', glob.glob('lxdm/login.png')),
     ]
 
 setup(
