@@ -21,7 +21,7 @@
         <Name>openbox-menu</Name>
         <RuntimeDependencies>
             <Dependency>gtk2</Dependency>
-            <Dependency>lxde-menu-cache</Dependency>
+            <Dependency>libmenu-cache</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/bin/</Path>
