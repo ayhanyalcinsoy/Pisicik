@@ -1,0 +1,41 @@
+--- liblxqt-mount-0.8.0/CMakeLists.txt.cmake	2014-06-25 11:34:53.000000000 -0300
++++ liblxqt-mount-0.8.0/CMakeLists.txt	2014-12-19 18:01:34.014227918 -0200
+@@ -22,7 +22,7 @@
+     find_package(Qt5Gui REQUIRED QUIET)
+     find_package(Qt5DBus REQUIRED QUIET)
+     find_package(Qt5LinguistTools REQUIRED QUIET)
+-    set(LXQTMOUNT_LIBRARY_NAME "lxqtmount-qt5")
++    set(LXQTMOUNT_LIBRARY_NAME "lxqtmount")
+     message(STATUS "Building with Qt${Qt5Core_VERSION_STRING}")
+ else()
+     find_package(Qt4 REQUIRED)
+@@ -102,6 +102,9 @@
+     FILENAMES ${LXQTMOUNT_PUBLIC_CLASSES}
+ )
+ 
++# Standard directories for installation
++include(GNUInstallDirs)
++
+ install(TARGETS ${LXQTMOUNT_LIBRARY_NAME} DESTINATION ${LIB_INSTALL_DIR})
+ install(FILES ${lxqtmount_HDRS} DESTINATION ${INCLUDE_INSTALL_DIR}/${LXQTMOUNT_LIBRARY_NAME})
+ install(FILES ${LXQTMOUNT_NAMESPACE_HEADERS} DESTINATION ${INCLUDE_INSTALL_DIR}/${LXQTMOUNT_LIBRARY_NAME}/${LXQTMOUNT_HEADER_NAMESPACE})
+@@ -110,14 +113,16 @@
+ create_pkgconfig_file(${LXQTMOUNT_LIBRARY_NAME} "LXQt library for removable media/devices")
+ 
+ # cmake config file
+-set(LXQTMOUNT_INCLUDE_DIR ${CMAKE_INSTALL_PREFIX}/${INCLUDE_INSTALL_DIR}/${LXQTMOUNT_LIBRARY_NAME})
++set(LXQTMOUNT_INCLUDE_DIR ${INCLUDE_INSTALL_DIR}/${LXQTMOUNT_LIBRARY_NAME})
++set(LXQT_INSTALL_CMAKE_DIR     ${CMAKE_INSTALL_FULL_LIBDIR}/cmake)
++
+ configure_file(
+     ${CMAKE_CURRENT_SOURCE_DIR}/cmake/lxqtmount-config.cmake.in
+     ${CMAKE_CURRENT_BINARY_DIR}/${LXQTMOUNT_LIBRARY_NAME}-config.cmake
+     @ONLY
+ )
+-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/${LXQTMOUNT_LIBRARY_NAME}-config.cmake DESTINATION share/cmake/${LXQTMOUNT_LIBRARY_NAME})
+-install(FILES cmake/lxqtmount_use.cmake DESTINATION share/cmake/${LXQTMOUNT_LIBRARY_NAME})
++install(FILES ${CMAKE_CURRENT_BINARY_DIR}/${LXQTMOUNT_LIBRARY_NAME}-config.cmake DESTINATION ${LXQT_INSTALL_CMAKE_DIR}/${LXQTMOUNT_LIBRARY_NAME})
++install(FILES cmake/lxqtmount_use.cmake DESTINATION ${LXQT_INSTALL_CMAKE_DIR}/${LXQTMOUNT_LIBRARY_NAME})
+ 
+ # building tarball with CPack -------------------------------------------------
+ include (InstallRequiredSystemLibraries)
