@@ -22,28 +22,27 @@
     </Source>
 
     <Package>
-        <Name>sofastats</Name>        
+        <Name>sofastats</Name>
         <RuntimeDependencies>
             <Dependency>python</Dependency>
             <Dependency>wxPython</Dependency>
             <Dependency>mysql-python</Dependency>
-	    <Dependency>python-numpy</Dependency>
-	    <Dependency>postgresql-python</Dependency>
-	    <Dependency>python-matplotlib</Dependency>
-	    <Dependency>python-webkit-gtk</Dependency>
+            <Dependency>python-numpy</Dependency>
+            <Dependency>postgresql-python</Dependency>
+            <Dependency>python-matplotlib</Dependency>
+            <Dependency>python-webkit-gtk</Dependency>
         </RuntimeDependencies>
         <Files>
            <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share/sofastats/</Path>
             <Path fileType="data">/usr/share/applications</Path>
             <Path fileType="data">/usr/share/pixmaps</Path>
-	    <Path fileType="localedata">/usr/share/sofastats/locale/tr_TR/LC_MESSAGES/</Path>
-	   </Files>
-	<AdditionalFiles>
-<!--             <AdditionalFile owner="root" permission="0644" target="/usr/share/icons/sofa.ico">sofa.ico</AdditionalFile> -->
-	    <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/sofa.png">sofa.png</AdditionalFile>
-	    <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/sofa.desktop">sofa.desktop</AdditionalFile>
-	    <AdditionalFile owner="root" permission="0644" target="/usr/share/sofastats/locale/tr_TR/LC_MESSAGES/sofastats.mo">sofastats.mo</AdditionalFile>
+            <Path fileType="localedata">/usr/share/sofastats/locale/tr_TR/LC_MESSAGES/</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/sofa.png">sofa.png</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/sofa.desktop">sofa.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/sofastats/locale/tr_TR/LC_MESSAGES/sofastats.mo">sofastats.mo</AdditionalFile>
         </AdditionalFiles>
     </Package>
 

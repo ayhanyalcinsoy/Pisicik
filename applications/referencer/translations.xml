@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>referencer</Name>
+        <Summary xml:lang="tr">Referencer belge ve kaynakçaları düzenleyen ve BibTeX kaynakça dosyaları oluşturan bir GNOME uygulamasıdır.</Summary>
+        <Description xml:lang="tr">Referencer belge ve kaynakçaları düzenleyen ve BibTeX kaynakça dosyaları oluşturan bir GNOME uygulamasıdır.</Description>
+    </Source>
+</PISI>

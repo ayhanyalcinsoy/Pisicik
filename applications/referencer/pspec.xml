@@ -7,7 +7,6 @@
             <Email>ayhanyalcinsoy@gmail.com</Email>
         </Packager>
         <License>GPLv2</License>
-        <PartOf>office.misc</PartOf>
         <IsA>app:gui</IsA>
         <Summary>Referencer is a GNOME application to organize documents or references, and ultimately generate a BibTeX bibliography file.</Summary>
         <Description>Referencer is a GNOME application to organize documents or references, and ultimately generate a BibTeX bibliography file.</Description>
@@ -17,10 +16,11 @@
             <Dependency>libxml2-devel</Dependency>
             <Dependency>poppler-glib-devel</Dependency>
             <Dependency>python-devel</Dependency>
-	    <Dependency>pkgconfig</Dependency>
-	    <Dependency>glib2-devel</Dependency>
-	    <Dependency>gnome-common</Dependency>
-	    <Dependency>boost-devel</Dependency>
+            <Dependency>pkgconfig</Dependency>
+            <Dependency>glib2-devel</Dependency>
+            <Dependency>gnome-common</Dependency>
+            <Dependency>boost-devel</Dependency>
+            <Dependency>gnome-doc-utils</Dependency>
         </BuildDependencies>
         <Archive sha1sum="c6883910b1080a8b39dc2b86b2bd70a411274834" type="targz">https://launchpad.net/referencer/1./1.2.2/+download/referencer-1.2.2.tar.gz</Archive>
     </Source>
@@ -30,16 +30,19 @@
             <Dependency>gconfmm</Dependency>
             <Dependency>gtkmm</Dependency>
             <Dependency>poppler-glib</Dependency>
-	    <Dependency>boost</Dependency>
-	    <Dependency>gtk2</Dependency>
-	    <Dependency>atkmm</Dependency>
-	    <Dependency>glibmm</Dependency>
-	    <Dependency>pangomm</Dependency>
-	    <Dependency>libsigc++</Dependency>
-	    <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>atkmm</Dependency>
+            <Dependency>glibmm</Dependency>
+            <Dependency>pangomm</Dependency>
+            <Dependency>libsigc++</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>boost</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="all">/</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="localdata">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share</Path>
         </Files>
     </Package>
     <History>

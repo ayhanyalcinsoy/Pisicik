@@ -9,7 +9,6 @@
             <Email>admins@pisilinux.org</Email>
         </Packager>
         <License>GPLv2</License>
-	<PartOf>science</PartOf>
         <IsA>app:gui</IsA>
         <Summary>Veri analiz aracı</Summary>
         <Description>RKWard aims to provide an easily extensible, easy to use IDE/GUI for the R-project. RKWard tries to combine the power of the R-language with the (relative) ease of use of commercial statistics tools.</Description>
@@ -19,10 +18,6 @@
             <Dependency>qt-devel</Dependency>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
-        <!--<Patches>
-            <Patch level="1">turkish.patch</Patch>
-            <Patch level="0">compile_po.patch</Patch>
-        </Patches>-->
     </Source>
 
     <Package>

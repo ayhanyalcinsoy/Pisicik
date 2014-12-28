@@ -9,15 +9,6 @@ from pisi.actionsapi import shelltools
 
 WorkDir= "./gcstar"
 
-""""Missing perl-Modules:
-    Gtk2::Spell
-    MIME::Base64
-    MP3::Info
-    MP3::Tag
-    Net::FreeDB
-    Ogg::Vorbis::Header::PurePerl
-    DateTime::Format::Strptime
-    """
 def fixPermissions():
     import os
     for root, dirs, files in os.walk("%s/opt" % get.installDIR()):
