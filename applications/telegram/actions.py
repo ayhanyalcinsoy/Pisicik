@@ -6,11 +6,11 @@
 from pisi.actionsapi import autotools
 from pisi.actionsapi import get
 from pisi.actionsapi import pisitools
+from pisi.actionsapi import shelltools
 
 def setup():
-    #autotools.autoreconf("-vfi")
-    autotools.configure("--disable-libconfig \
-                         --disable-liblua")
+    autotools.autoreconf("-vfi")
+    autotools.configure()
 
 def build():
     autotools.make()
@@ -18,4 +18,4 @@ def build():
 def install():
      autotools.rawInstall("DESTDIR=%s" % get.installDIR())
      pisitools.insinto("/etc/telegram-cli/" , "/etc/telegram-cli/server.pub")
-    #pisitools.insinto("/etc/telegram-cli/" , "/etc/telegram-cli/server.pub")
+     pisitools.insinto("/usr/bin/" , "/bin/telegram-cli")

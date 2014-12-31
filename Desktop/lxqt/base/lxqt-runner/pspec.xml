@@ -21,7 +21,7 @@
         <Name>lxqt-runner</Name>
         <RuntimeDependencies>
             <Dependency>libqtxdg</Dependency>
-            <Dependency>libmenu-cache</Dependency>
+            <Dependency>lxqt-libmenu-cache</Dependency>
             <Dependency>qt</Dependency>
             <Dependency>liblxqt</Dependency>
             <Dependency>lxqt-globalkeys</Dependency>

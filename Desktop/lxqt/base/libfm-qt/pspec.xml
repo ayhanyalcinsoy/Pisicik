@@ -16,7 +16,7 @@
             <Dependency>libexif-devel</Dependency>
             <Dependency>gst-plugins-base-devel</Dependency>
             <Dependency>gtk-doc</Dependency>
-            <Dependency>libmenu-cache</Dependency>
+            <Dependency>lxqt-libmenu-cache</Dependency>
             <Dependency>lxqt-menu-cache-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -24,7 +24,7 @@
         <Name>libfm-qt</Name>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="sysdir">/etc</Path> 
+            <Path fileType="sysdir">/etc</Path>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share</Path>
         </Files>
@@ -36,7 +36,7 @@
             <Dependency>pango</Dependency>
             <Dependency>libexif</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>libmenu-cache</Dependency>
+            <Dependency>lxqt-menu-cache</Dependency>
         </RuntimeDependencies>
     </Package>
     <Package>

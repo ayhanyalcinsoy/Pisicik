@@ -14,7 +14,7 @@
         <BuildDependencies>
             <Dependency>libqtxdg-devel</Dependency>
         </BuildDependencies>
-        </Source>
+    </Source>
     <Package>
         <Name>lxqt-openssh-askpass</Name>
         <RuntimeDependencies>

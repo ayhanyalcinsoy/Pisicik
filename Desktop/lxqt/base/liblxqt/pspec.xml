@@ -21,6 +21,9 @@
             <Dependency>libX11-devel</Dependency>
             <Dependency>pkgconfig</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch>liblxqt-0.8.0-cmake_libdir.patch</Patch>
+        </Patches>
     </Source>
     <Package>
         <Name>liblxqt</Name>

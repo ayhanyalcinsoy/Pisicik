@@ -32,6 +32,11 @@
             <Dependency>libstatgrab</Dependency>
             <Dependency>libX11-devel</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch>lxqt-panel-0.8.0-desktop-files.patch</Patch>
+            <Patch>lxqt-panel-0.8.0-lxqtmount-includes.patch</Patch>
+            <Patch>lxqt-panel-0.8.0-undefined-references.patch</Patch>
+        </Patches>
         </Source>
     <Package>
         <Name>lxqt-panel</Name>
@@ -51,7 +56,7 @@
             <Dependency>liblxqt</Dependency>
             <Dependency>libqtxdg</Dependency>
             <Dependency>qtmimetypes</Dependency>
-            <Dependency>libmenu-cache</Dependency>
+            <Dependency>lxqt-libmenu-cache</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

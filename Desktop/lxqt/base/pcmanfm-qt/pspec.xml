@@ -35,7 +35,7 @@
             <Dependency>libfm-qt</Dependency>
             <Dependency>adwaita-icon-theme</Dependency>
             <Dependency>lxqt-policykit</Dependency>
-            <Dependency>libmenu-cache</Dependency>
+            <Dependency>lxqt-libmenu-cache</Dependency>
             <Dependency>libfm-qt-devel</Dependency>
         </RuntimeDependencies>
         <Files>

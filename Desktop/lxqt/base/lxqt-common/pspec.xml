@@ -9,11 +9,16 @@
         <License>GPL2</License>
         <IsA>data</IsA>
         <Summary>Common data to run a LXQt session.</Summary>
-        <Description>Common data file required for running an lxde-qt session</Description>	
+        <Description>Common data file required for running an lxde-qt session</Description>
         <Archive sha1sum="85065c246e400d7ac37570ac9a84f30fca764f69" type="targz">http://lxqt.org/downloads/0.8.0/lxqt-common-0.8.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>liblxqt-devel</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch>lxqt-common-0.8.0-desktop-launch.patch</Patch>
+            <Patch>lxqt-common-0.8.0-polkit_libexec.patch</Patch>
+            <Patch>lxqt-common-xdg_data_dir.patch</Patch>
+        </Patches>
     </Source>
     <Package>
         <Name>lxqt-common</Name>

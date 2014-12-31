@@ -18,6 +18,9 @@
             <Dependency>glib2-devel</Dependency>
             <Dependency>qt-devel</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch>liblxqt-mount-0.8.0-cmake.patch</Patch>
+        </Patches>
     </Source>
     <Package>
         <Name>liblxqt-mount</Name>

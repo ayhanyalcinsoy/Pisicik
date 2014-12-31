@@ -15,7 +15,10 @@
             <Dependency>liblxqt-devel</Dependency>
             <Dependency>libqtxdg-devel</Dependency>
         </BuildDependencies>
-            </Source>
+        <Patches>
+            <Patch>lxqt-qtplugin-xdg_data_dir.patch</Patch>
+        </Patches>
+    </Source>
     <Package>
         <Name>lxqt-qtplugin</Name>
         <RuntimeDependencies>

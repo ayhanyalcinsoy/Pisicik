@@ -17,6 +17,9 @@
             <Dependency>qt-devel</Dependency>
             <Dependency>libqtxdg-devel</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch>lxqt-globalkeys-0.8.0-cmake_libdir.patch</Patch>
+        </Patches>
     </Source>
     <Package>
         <Name>lxqt-globalkeys</Name>
@@ -61,4 +64,4 @@
         </Update>
     </History>
 </PISI>
- 
+

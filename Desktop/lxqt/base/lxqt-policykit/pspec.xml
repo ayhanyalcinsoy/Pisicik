@@ -17,6 +17,9 @@
             <Dependency>polkit-qt_1-devel</Dependency>
             <Dependency>glib2-devel</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch>lxqt-policykit-0.8.0-cmake-libexec.patch</Patch>
+        </Patches>
     </Source>
     <Package>
         <Name>lxqt-policykit</Name>
@@ -28,6 +31,7 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/libexec</Path>
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>
     </Package>

@@ -12,7 +12,8 @@
         <IsA>app:gui</IsA>
         <Summary>Private fast and open platform for instant messaging</Summary>
         <Description>Private fast and open platform for instant messaging</Description>
-        <Archive sha1sum="72f6a9f89ee9db90b573bad25e567a2015115848" type="targz">https://codeload.github.com/vysheng/tg/tar.gz/1.0.5.1</Archive>
+        <Archive sha1sum="72f6a9f89ee9db90b573bad25e567a2015115848" type="targz">https://github.com/vysheng/tg/archive/1.0.5.1.tar.gz</Archive>
+        <!--<Archive sha1sum="a4524166fbbab7f8c394f39e8d53edc95d0b05bf" type="targz">https://github.com/vysheng/tg/archive/1.0.5.tar.gz</Archive>-->
         <BuildDependencies>
             <Dependency>openssl-devel</Dependency>
             <Dependency>lua-devel</Dependency>
@@ -29,21 +30,11 @@
             <Dependency>lua</Dependency>
             <Dependency>libconfig</Dependency>
             <Dependency>readline</Dependency>
-            </RuntimeDependencies>
+        </RuntimeDependencies>
         <Files>
-            <Path fileType="config">/etc/pspp</Path>
-            <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="library">/usr/lib</Path>
-            <Path fileType="data">/usr/share/pspp</Path>
-            <Path fileType="data">/usr/share/icons</Path>
-            <Path fileType="data">/usr/share/man</Path>
-            <Path fileType="data">/usr/share/applications</Path>
-            <Path fileType="localedata">/usr/share/locale</Path>
-            <Path fileType="data">/usr/share/appdata</Path>
+            <Path fileType="config">/etc/telegram/server.pub</Path>
+            <Path fileType="executable">/usr/bin/telegram</Path>
         </Files>
-        <AdditionalFiles>
-<!--             <AdditionalFile owner="root" permission="0644" target="/usr/share/pspp/splash.png">splash.png</AdditionalFile> -->
-        </AdditionalFiles>
     </Package>
 
     <History>

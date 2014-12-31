@@ -35,11 +35,11 @@
         </Files>
     </Package>
     <Package>
-        <Name>libmenu-cache</Name>
+        <Name>lxqt-libmenu-cache</Name>
         <Summary>Library for lxqt-menu-cache</Summary>
         <RuntimeDependencies>
             <Dependency release="current">lxqt-menu-cache</Dependency>
-	    <Dependency>glib2-devel</Dependency>
+            <Dependency>glib2-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/</Path>
