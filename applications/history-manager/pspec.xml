@@ -5,22 +5,18 @@
         <Name>history-manager</Name>
         <Homepage>https://github.com/ayhanyalcinsoy/history_manager</Homepage>
         <Packager>
-            <Name>İşbaran Akçayır</Name>
-            <Email>isbaran@gmail.com</Email>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:gui</IsA>
         <Summary>KDE4 port of History Manager Tool</Summary>
         <Description>History manager is a graphical interface to pisi snapshot facilities.</Description>
-        <Archive sha1sum="47ed38c6bdcb2bdbc6ae914da736c34b42b78fd0" type="tarbz2">http://ish.kodzilla.org/pardus/history-manager/history-manager-0.2.7.4.tar.bz2</Archive>
-        <!--<Archive sha1sum="9679196c5640426b5deaac350a9deefd2ee6f545" type="targz">https://github.com/ayhanyalcinsoy/history_manager/archive/history_manager-0.2.7.5.tar.gz</Archive>-->
+        <Archive sha1sum="54a88d0606a842a99dbd26c67163d40fc3159d9a" type="targz">https://github.com/ayhanyalcinsoy/history_manager/archive/history-manager-0.2.7.5.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python-kde-devel</Dependency>
             <Dependency>pypolkit</Dependency>
         </BuildDependencies>
-        <Patches>
-            <Patch>kde-dirs.patch</Patch>
-        </Patches>
     </Source>
 
     <Package>
@@ -41,11 +37,11 @@
 
     <History>
         <Update release="2">
-            <Date>2011-01-31</Date>
-            <Version>0.2.7.4</Version>
-            <Comment>Version Bump for translations</Comment>
-            <Name>İşbaran Akçayır</Name>
-            <Email>isbaran@gmail.com</Email>
+            <Date>2015-01-01</Date>
+            <Version>0.2.7.5</Version>
+            <Comment>Version bump for PisiLinux</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
         </Update>
         <Update release="1">
             <Date>2008-06-26</Date>
