@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>copyq</Name>
+        <Homepage>https://github.com/hluk/CopyQ</Homepage>
+        <Packager>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@gmail.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>app.gui</IsA>
+        <Summary>Clipboard manager with searchable and editable history.</Summary>
+        <Description>Clipboard manager with searchable and editable history.</Description>
+        <Archive sha1sum="5293feacfd52f38d9684398a277fc0ccf32969f2" type="targz">https://github.com/hluk/CopyQ/archive/v2.4.2.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>qt-devel</Dependency>
+            <Dependency>libXtst-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>copyq</Name>
+        <RuntimeDependencies>
+            <Dependency>qt</Dependency>
+            <Dependency>libXtst</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/PySide</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+    </Package>
+        <Package>
+        <Name>copyq-devel</Name>
+        <RuntimeDependencies>
+            <Dependency>copyq</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2015-01-07</Date>
+            <Version>2.4.2</Version>
+            <Comment>First release.</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
