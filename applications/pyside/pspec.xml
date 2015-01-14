@@ -2,7 +2,7 @@
 <!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
-        <Name>pyside</Name>
+        <Name>python-pyside</Name>
         <Homepage>http://qt-project.org/wiki/PySide</Homepage>
         <Packager>
             <Name>Ertuğrul Erata</Name>
@@ -17,33 +17,52 @@
             <Dependency>qt-devel</Dependency>
             <Dependency>phonon-devel</Dependency>
             <Dependency>qt-webkit-devel</Dependency>
-            <Dependency>python-shiboken-devel</Dependency>
+            <Dependency>python-shiboken</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
-        <Name>pyside</Name>
+        <Name>python-pyside-common</Name>
+        <RuntimeDependencies>
+            <Dependency>qt</Dependency>
+            <Dependency>phonon</Dependency>
+            <Dependency>qt-webkit</Dependency>
+            <Dependency>python</Dependency>
+            <Dependency>python-shiboken</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="header">/usr/include/</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>python-pyside</Name>
         <RuntimeDependencies>
             <Dependency>qt</Dependency>
             <Dependency>phonon</Dependency>
             <Dependency>qt-webkit</Dependency>
             <Dependency>python-shiboken</Dependency>
+            <Dependency>python-pyside-common</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="library">/usr/lib</Path>
-            <Path fileType="data">/usr/share/PySide</Path>
-            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="library">/usr/lib/python2.7</Path>
+            <Path fileType="config">/usr/lib/pkgconfig/pyside-py2.pc</Path>
         </Files>
     </Package>
-        <Package>
-        <Name>pyside-devel</Name>
+    <Package>
+        <Name>python3-pyside</Name>
         <RuntimeDependencies>
-            <Dependency>pyside</Dependency>
+            <Dependency>qt</Dependency>
+            <Dependency>phonon</Dependency>
+            <Dependency>python-shiboken</Dependency>
+            <Dependency>python3</Dependency>
+            <Dependency>qt-webkit</Dependency>
+            <Dependency>python-pyside-common</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="header">/usr/include</Path>
-            <Path fileType="library">/usr/lib/pkgconfig</Path>
+            <Path fileType="library">/usr/lib/python3.4/</Path>
+            <Path fileType="config">/usr/lib/pkgconfig/pyside-py3.pc</Path>
         </Files>
     </Package>
 

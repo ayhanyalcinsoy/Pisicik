@@ -10,23 +10,38 @@ from pisi.actionsapi import get
 from pisi.actionsapi import cmaketools
 from pisi.actionsapi import shelltools
 
+WorkDir = "."
 def setup():
-    shelltools.makedirs("build")
-    shelltools.cd("build")
-
-    cmaketools.configure("-DCMAKE_INSTALL_PREFIX=/usr  \
+    shelltools.cd("./pyside-qt4.8+1.2.2")
+    shelltools.makedirs("build2")
+    shelltools.makedirs("build3")
+    shelltools.cd("build2")
+    cmaketools.configure("-DCMAKE_INSTALL_PREFIX=/usr \
                           -DCMAKE_BUILD_TYPE=Release \
-                          -DQT_PHONON_INCLUDE_DIR=/usr/include/phonon \
-                          -DQT_QMAKE_EXECUTABLE=/usr/bin/qmake \
-                          -DCMAKE_INSTALL_SYSCONFDIR=/etc \
-                          -DPYTHON_SUFFIX=-python2.7 \
-                          -DQT_SRC_DIR=/usr/lib \
-                          -DCMAKE_INSTALL_LIBDIR=/usr/lib", sourceDir="..")
+                          -DBUILD_TESTS=OFF \
+                          -DPYTHON_SUFFIX=-python2.7", sourceDir="..")
 
+                          #-DQT_PHONON_INCLUDE_DIR=/usr/include/qt4/phonon \
+    #python3
+    shelltools.cd("../build3")
+    cmaketools.configure("-DCMAKE_INSTALL_PREFIX=/usr \
+                          -DCMAKE_BUILD_TYPE=Release \
+                          -DBUILD_TESTS=OFF", sourceDir="..")
 def build():
-    shelltools.cd("build")
+    #python2
+    shelltools.cd("pyside-qt4.8+1.2.2/build2")
+    autotools.make()
+    #python3
+    shelltools.cd("../build3")
     autotools.make()
 
 def install():
-    shelltools.cd("build")
+    #Python2
+    shelltools.cd("pyside-qt4.8+1.2.2/build2")
     cmaketools.rawInstall("DESTDIR=%s" % get.installDIR())
+    pisitools.rename("/usr/lib/pkgconfig/pyside.pc", "pyside-py2.pc")
+
+    #Python3
+    shelltools.cd("../build3")
+    cmaketools.rawInstall("DESTDIR=%s" % get.installDIR())
+    pisitools.rename("/usr/lib/pkgconfig/pyside.pc", "pyside-py3.pc")
