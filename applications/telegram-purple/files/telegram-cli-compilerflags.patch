@@ -1,0 +1,15 @@
+--- configure.orig	2014-03-06 23:43:15.000000000 +0100
++++ configure	2014-03-07 18:59:47.795084987 +0100
+@@ -3422,8 +3422,8 @@
+ 
+ 
+ # BSD locations for headers and libraries from packages, Linux locations for self-compiled stuff.
+-CPPFLAGS="$CPPFLAGS -I/usr/local/include"
+-LDFLAGS="$LDFLAGS -L/usr/local/lib"
++CPPFLAGS=$CPPFLAGS
++LDFLAGS=$LDFLAGS
+ 
+ # Checks for libraries.
+ 
+
+ 
