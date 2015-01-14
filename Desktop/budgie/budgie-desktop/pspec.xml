@@ -13,25 +13,25 @@
         <Summary>Simple GTK3 desktop experience</Summary>
         <Description>Simple GTK3 desktop experience</Description>
 <!--         <Archive sha1sum="bc2e32370e1965295ea400557e3448218bbce59f" type="tarbz2">http://81.228.208.166/budgie/budgie-desktop-0.8.1.tar.bz2</Archive> -->
-	<Archive sha1sum="393c1c370d0aac91c59f858b91a22fb3d895628a" type="tarxz">https://evolve-os.com/sources/budgie-desktop-8.tar.xz</Archive>
-	<BuildDependencies>
+        <Archive sha1sum="7c371adc4a6e554ac8355a6cd495b0f1454d40fa" type="tarxz">https://evolve-os.com/sources/budgie-desktop-8.tar.xz</Archive>
+        <BuildDependencies>
              <Dependency>pulseaudio-libs-devel</Dependency>
-	     <Dependency>mutter-devel</Dependency>
-	     <Dependency>libwnck3-devel</Dependency>
-	     <Dependency>upower-devel</Dependency>
-	     <Dependency>gnome-menus-devel</Dependency>
-	     <Dependency>libpeas-devel</Dependency>
-	     <Dependency>libgee08-devel</Dependency>
-	     <Dependency>gtk3-devel</Dependency>
-	     <Dependency>vala-devel</Dependency>
-	     <Dependency>glib2-devel</Dependency>
-	     <Dependency>desktop-file-utils</Dependency>
-	     <Dependency>atk-devel</Dependency>
-	     <Dependency>cairo-devel</Dependency>
-	     <Dependency>pango-devel</Dependency>
-	     <Dependency>clutter-devel</Dependency>
-	     <Dependency>gdk-pixbuf-devel</Dependency>
-	     <Dependency>gobject-introspection-devel</Dependency>
+             <Dependency>mutter-devel</Dependency>
+             <Dependency>libwnck3-devel</Dependency>
+             <Dependency>upower-devel</Dependency>
+             <Dependency>gnome-menus-devel</Dependency>
+             <Dependency>libpeas-devel</Dependency>
+             <Dependency>libgee08-devel</Dependency>
+             <Dependency>gtk3-devel</Dependency>
+             <Dependency>vala-devel</Dependency>
+             <Dependency>glib2-devel</Dependency>
+             <Dependency>desktop-file-utils</Dependency>
+             <Dependency>atk-devel</Dependency>
+             <Dependency>cairo-devel</Dependency>
+             <Dependency>pango-devel</Dependency>
+             <Dependency>clutter-devel</Dependency>
+             <Dependency>gdk-pixbuf-devel</Dependency>
+             <Dependency>gobject-introspection-devel</Dependency>
         </BuildDependencies>
     </Source>
         <Package>
@@ -48,10 +48,10 @@
             <Dependency>atk</Dependency>
             <Dependency>vala</Dependency>
             <Dependency>libgee08</Dependency>
-	    <Dependency>pango</Dependency>
-	    <Dependency>clutter</Dependency>
-	    <Dependency>gdk-pixbuf</Dependency>
-	    <Dependency>gobject-introspection</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>clutter</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>gobject-introspection</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
