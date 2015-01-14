@@ -12,4 +12,4 @@ def install():
     pythonmodules.install()
 
     #Remove history-manager from systemsettings, we have a painful crash because of the thread problem of pykde/python
-    pisitools.remove("usr/share/kde4/services/kcm_historymanager.desktop")
+    #pisitools.remove("usr/share/kde4/services/kcm_historymanager.desktop")
