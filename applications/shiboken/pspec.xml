@@ -20,7 +20,7 @@
     </Source>
 
     <Package>
-        <Name>python2-shiboken</Name>
+        <Name>python-shiboken</Name>
         <RuntimeDependencies>
             <Dependency>qt</Dependency>
             <Dependency>libxslt</Dependency>
@@ -31,14 +31,25 @@
             <Path fileType="man">/usr/share/man</Path>
         </Files>
     </Package>
+
     <Package>
-        <Name>python2-shiboken-devel</Name>
+        <Name>python-shiboken-devel</Name>
         <RuntimeDependencies>
             <Dependency>python-shiboken</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
             <Path fileType="library">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>python3-shiboken</Name>
+        <RuntimeDependencies>
+            <Dependency>python-shiboken</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/python3.4/</Path>
         </Files>
     </Package>
 
