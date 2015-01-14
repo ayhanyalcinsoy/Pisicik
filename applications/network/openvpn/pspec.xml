@@ -21,12 +21,6 @@
             <Dependency>lzo-devel</Dependency>
             <Dependency>iproute2</Dependency>
         </BuildDependencies>
-        <Patches>
-            <!--<Patch>openvpn-2.1.1-init.patch</Patch>-->
-            <!--<Patch>openvpn-2.1.1-initinfo.patch</Patch>-->
-            <!--<Patch>openvpn-init.patch</Patch>-->
-            <!--<Patch>openvpn-script-security.patch</Patch>-->
-        </Patches>
     </Source>
 
     <Package>

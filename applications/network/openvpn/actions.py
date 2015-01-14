@@ -11,7 +11,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 # this package needs a lot of work for init scripts etc.
-pisitools.cflags.add("-DPLUGIN_LIBDIR=\\\"/usr/lib/openvpn\\\"")
+#pisitools.cflags.add("-DPLUGIN_LIBDIR=\\\"/usr/lib/openvpn\\\"")
 #shelltools.export("CFLAGS", "%s -DPLUGIN_LIBDIR=\\\"/usr/lib/openvpn\\\"" % get.CFLAGS())
 def setup():
     autotools.configure("--prefix=/usr \
