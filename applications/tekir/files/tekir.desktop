@@ -1,0 +1,16 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Comment=Özgür ticari otomasyon programı
+Comment[tr]=Özgür ticari otomasyon programı
+Encoding=UTF-8
+Type=Application
+Exec[$e]=xdg-open 'http://localhost:8080/tekir'
+GenericName=Tekir Ticari Otomasyon
+GenericName[tr]=Tekir Ticari Otomasyon
+Icon=tekir
+Name=Tekir
+Name[tr]=Tekir
+StartupNotify=false
+Terminal=false
+Categories=Application;Office;Java;
+ 

@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>tekir</Name>
+        <Homepage>http://www.tekir.com.tr</Homepage>
+        <Packager>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Packager>
+        <License>LGPLv3</License>
+        <Icon>tekir</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Tekir Ticari Otomasyon yazılımı</Summary>
+        <Description>Tekir Ticari Otomasyon yazılımı</Description>
+        <Archive sha1sum="63de9f2bce5edca039f86fc7d383dfa8b2c7d01f" type="targz">mirrors://sourceforge/tekir/tekir-2.1-linux-install.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>ant</Dependency>
+            <Dependency>jdk7-openjdk</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>tekir</Name>
+        <RuntimeDependencies>
+            <Dependency>jre7-openjdk</Dependency>
+            <Dependency>jboss6</Dependency>
+            <Dependency>tomcat7</Dependency>
+            <Dependency>apache</Dependency>
+            <Dependency>xdg-utils</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/opt/jboss6/server/default/</Path>
+            <Path fileType="data">/var/tekir</Path>
+            <Path fileType="data">/usr/share</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/tekir.desktop">tekir.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/tekir.png">tekir.png</AdditionalFile>
+        </AdditionalFiles>
+        <Provides>
+            <COMAR script="package.py">System.Package</COMAR>
+        </Provides>
+    </Package>
+
+    <History>
+        <Update release="3">
+            <Date>2015-01-19</Date>
+            <Version>2.1.0</Version>
+            <Comment>Version bump</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
+        <Update release="2">
+            <Date>2008-06-23</Date>
+            <Version>1.2.2</Version>
+            <Comment>Bug fix version bump</Comment>
+            <Name>Ekrem SEREN</Name>
+            <Email>ekrem.seren@gmai.com</Email>
+        </Update>
+        <Update release="1">
+            <Date>2008-05-09</Date>
+            <Version>1.2.1</Version>
+            <Comment>First release.</Comment>
+            <Name>Ekrem SEREN</Name>
+            <Email>ekrem.seren@gmai.com</Email>
+        </Update>
+    </History>
+</PISI>
+
