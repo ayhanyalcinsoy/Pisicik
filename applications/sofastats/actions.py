@@ -7,9 +7,6 @@
 from pisi.actionsapi import pisitools
 
 def install():
-    #pisitools.insinto("/usr/share/applications/", "sofa.desktop")
     pisitools.insinto("/usr/share/sofastats/", "./sofa_main/*")
-    #pisitools.insinto("/usr/share/sofastats/", "usr/share/java/e-takip/etakip.sh")
     pisitools.insinto("/usr/bin/", "./sofa_main/start.py")
     pisitools.dosym("/usr/share/sofastats/start.py", "/usr/bin/sofastats")
-    #pisitools.insinto("/usr/share/pixmaps/", "sofa.png")
