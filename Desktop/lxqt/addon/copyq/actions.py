@@ -17,7 +17,7 @@ def setup():
     cmaketools.configure("-DWITH_WEBKIT=0 \
                           -DCMAKE_INSTALL_PREFIX=/usr \
                           -DUSE_QT5=OFF \
-                          -DQT_QMAKE_EXECUTABLE=qmake-qt4", sourceDir="..")
+                          -DQT_QMAKE_EXECUTABLE=/usr/bin/qmake", sourceDir="..")
 
 def build():
     shelltools.cd("build")

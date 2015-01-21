@@ -12,7 +12,7 @@
         <IsA>app.gui</IsA>
         <Summary>Clipboard manager with searchable and editable history.</Summary>
         <Description>Clipboard manager with searchable and editable history.</Description>
-        <Archive sha1sum="5293feacfd52f38d9684398a277fc0ccf32969f2" type="targz">https://github.com/hluk/CopyQ/archive/v2.4.2.tar.gz</Archive>
+        <Archive sha1sum="4e756a4358ab3dad1a461204bc6c3ce120ab1329" type="targz">https://github.com/hluk/CopyQ/archive/v2.4.3.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
             <Dependency>libXtst-devel</Dependency>
@@ -28,8 +28,9 @@
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
-            <Path fileType="data">/usr/share/PySide</Path>
+            <Path fileType="data">/usr/share</Path>
             <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="localedata">/usr/share/copyq/translations</Path>
         </Files>
     </Package>
         <Package>
@@ -46,7 +47,7 @@
     <History>
         <Update release="1">
             <Date>2015-01-07</Date>
-            <Version>2.4.2</Version>
+            <Version>2.4.1</Version>
             <Comment>First release.</Comment>
             <Name>Ayhan Yalçınsoy</Name>
             <Email>ayhanyalcinsoy@gmail.com</Email>
