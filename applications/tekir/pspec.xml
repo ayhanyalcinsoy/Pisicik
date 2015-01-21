@@ -14,10 +14,6 @@
         <Summary>Tekir Ticari Otomasyon yazılımı</Summary>
         <Description>Tekir Ticari Otomasyon yazılımı</Description>
         <Archive sha1sum="63de9f2bce5edca039f86fc7d383dfa8b2c7d01f" type="targz">mirrors://sourceforge/tekir/tekir-2.1-linux-install.tar.gz</Archive>
-        <BuildDependencies>
-            <Dependency>ant</Dependency>
-            <Dependency>jdk7-openjdk</Dependency>
-        </BuildDependencies>
     </Source>
 
     <Package>
