@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>qt5-webengine</Name>
+        <Homepage>http://qt.digia.com/</Homepage>
+        <Packager>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@pisilinux.org</Email>
+        </Packager>
+        <Summary>Provides support for web applications using the Chromium browser project</Summary>
+        <Description>Provides support for web applications using the Chromium browser project</Description>
+        <License>LGPLv2.1-linking-exception</License>
+        <Archive sha1sum="e6d08bca4186b8c10e669836e5f6133ad59c9cce" type="tarxz">http://download.qt.io/official_releases/qt/5.4/5.4.0/submodules/qtxmlpatterns-opensource-src-5.4.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>qt5-base-devel</Dependency>
+            <Dependency>qt5-declarative-devel</Dependency>
+            <Dependency>nss-devel</Dependency>
+            <Dependency>libXtst-devel</Dependency>
+            <Dependency>libXcursor-devel</Dependency>
+            <Dependency>libXrandr-devel</Dependency>
+            <Dependency>alsa-lib-devel</Dependency>
+            <Dependency>libXcomposite-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <!-- Fedora Patches -->
+            <!--<Patch level="0">qtbase-opensource-src-5.2.0-enable_ft_lcdfilter.patch</Patch>-->
+            <!--<Patch level="0">qt-everywhere-opensource-src-4.8.5-QTBUG-35459.patch</Patch>-->
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>qt5-webengine</Name>
+        <Files>
+            <Path fileType="library">/usr/lib</Path></Path>
+            <Path fileType="library">/usr/lib/qt5/imports</Path>
+            <Path fileType="library">/usr/lib/qt5/qml</Path>
+            <Path fileType="library">/usr/lib/qt5/plugins</Path>
+            <Path fileType="executable">/usr/lib/qt5/bin/</Path>
+            <Path fileType="executable">/usr/lib/qt5/libexec</Path>
+        </Files>
+        <RuntimeDependencies>
+            <Dependency>qt5-base</Dependency>
+        </RuntimeDependencies>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2015-01-22</Date>
+            <Version>5.4.0</Version>
+            <Comment>First release</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
