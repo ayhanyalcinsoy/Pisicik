@@ -115,7 +115,7 @@ def setup():
                    -no-openvg \
                    -confirm-license \
                    -reduce-relocations  \
-                   -opensource "
+                   -opensource"
 
     autotools.rawConfigure(options)
 
@@ -124,10 +124,10 @@ def build():
     autotools.make()
 
 def install():
-    if get.buildTYPE() == "emul32":
-        qt5.install("INSTALL_ROOT=%s32" % get.installDIR())
-        shelltools.move("%s32/usr/lib32" % get.installDIR(), "%s/usr" % get.installDIR())
-        return
+    #if get.buildTYPE() == "emul32":
+     #   qt5.install("INSTALL_ROOT=%s32" % get.installDIR())
+     #   shelltools.move("%s32/usr/lib32" % get.installDIR(), "%s/usr" % get.installDIR())
+     #   return
 
     pisitools.dodir(qt5.libdir)
     qt5.install("INSTALL_ROOT=%s" % get.installDIR())
@@ -137,10 +137,10 @@ def install():
         #pisitools.dosym("/usr/lib/qt5/bin/%s" % bin, "/usr/bin/%s-qt5" % bin)
 
     # We should work on Turkish translations :)
-    pisitools.dodir("/usr/lib/qt5/bin/lrelease")
+    #pisitools.dodir("/usr/lib/qt5/bin/lrelease")
     shelltools.export("LD_LIBRARY_PATH", "%s%s" % (get.installDIR(), qt5.libdir))
-    shelltools.system("%s%s/lrelease qtbase-opensource-src-5.4.0/l10n-tr/*.ts" % (get.installDIR(), bindirQt5))
-    pisitools.insinto(qt5.translationdir, "l10n-tr/*.qm")
+    #shelltools.system("%s%s/lrelease l10n-tr/*.ts" % (get.installDIR(), bindirQt5))
+    #pisitools.insinto(qt5.translationdir, "l10n-tr/*.qm")
 
     # Fix all occurances of WorkDir in pc files
     #pisitools.dosed("%s%s/pkgconfig/*.pc" % (get.installDIR(), qt5.libdir), "%s/qt-x11-opensource-src-%s" % (get.workDIR(), get.srcVERSION()), qt5.prefix)
@@ -157,4 +157,5 @@ def install():
             if name.endswith(".prl"):
                 pisitools.dosed(os.path.join(root, name), "^QMAKE_PRL_BUILD_DIR.*", "")
 
+    #pisitools.domove("usr/lib/qt5/examples/", "/usr/share/doc/qt5/examples")
     pisitools.dodoc("LGPL_EXCEPTION.txt", "LICENSE.*")
