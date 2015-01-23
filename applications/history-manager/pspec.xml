@@ -12,8 +12,8 @@
         <IsA>app:gui</IsA>
         <Summary>KDE4 port of History Manager Tool</Summary>
         <Description>History manager is a graphical interface to pisi snapshot facilities.</Description>
-        <!--<Archive sha1sum="54a88d0606a842a99dbd26c67163d40fc3159d9a" type="targz">https://github.com/ayhanyalcinsoy/history_manager/archive/history-manager-0.2.7.5.tar.gz</Archive>-->
-        <Archive sha1sum="5f7336a5f130e91fbcc6fff4166d3cedc73b0be1" type="targz">/home/PisiLinux/İndirilenler/history_manager-0.2.7.6.tar.gz</Archive>
+        <Archive sha1sum="54a88d0606a842a99dbd26c67163d40fc3159d9a" type="targz">https://github.com/ayhanyalcinsoy/history_manager/archive/history-manager-0.2.7.5.tar.gz</Archive>
+        <!--<Archive sha1sum="32ca8bf0a1f72e0849174375f99367b649cdf089" type="targz">/home/PisiLinux/Pisicik/history_manager-0.2.7.tar.gz</Archive>-->
         <BuildDependencies>
             <!--<Dependency>python-kde-devel</Dependency>-->
             <Dependency>pypolkit</Dependency>
@@ -29,9 +29,11 @@
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share/apps/history-manager/</Path>
             <Path fileType="data">/usr/share/history-manager/</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/kde4/services/kcm_historymanager.desktop</Path>
         </Files>
     </Package>
 
