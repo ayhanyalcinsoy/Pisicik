@@ -181,6 +181,12 @@
             <Path fileType="doc">/usr/share/doc/qt5/qch</Path>
         </Files>
         <AdditionalFiles>
+        <!--Translations files-->
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/qt5/translations/assistant_tr.qm">assistant_tr.qm</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/qt5/translations/designer_tr.qm">designer_tr.qm</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/qt5/translations/linguist_tr.qm">linguist_tr.qm</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/qt5/translations/qt_tr.qm">qt_tr.qm</AdditionalFile>
+        <!--Desktop files-->
             <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/assistant5.desktop">assistant.desktop</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/assistant5.desktop">qdbusviewer.desktop</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/assistant5.png">data/assistant.png</AdditionalFile>
