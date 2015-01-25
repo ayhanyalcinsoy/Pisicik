@@ -11,7 +11,7 @@
         <Summary>Provides support for web applications using the Chromium browser project</Summary>
         <Description>Provides support for web applications using the Chromium browser project</Description>
         <License>LGPLv2.1-linking-exception</License>
-        <Archive sha1sum="e6d08bca4186b8c10e669836e5f6133ad59c9cce" type="tarxz">http://download.qt.io/official_releases/qt/5.4/5.4.0/submodules/qtxmlpatterns-opensource-src-5.4.0.tar.xz</Archive>
+        <Archive sha1sum="a98b0223ec941ac278b3a6b622d6877929c05185" type="tarxz">http://download.qt.io/official_releases/qt/5.4/5.4.0/submodules/qtwebengine-opensource-src-5.4.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5-base-devel</Dependency>
             <Dependency>qt5-declarative-devel</Dependency>
