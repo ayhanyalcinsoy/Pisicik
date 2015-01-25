@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>jockey</Name>
+        <Homepage>http://launchpad.net/jockey</Homepage>
+        <Packager>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:gui</IsA>
+        <Summary>Jockey provides an user interface and desktop integration for installation and upgrade of third-party drivers.</Summary>
+        <Description>Jockey provides an user interface and desktop integration for installation and upgrade of third-party drivers.</Description>
+        <Archive sha1sum="8f8079b661f665ae2a4d99e24cb60c5cf096bbf5" type="targz">https://launchpadlibrarian.net/95181847/jockey-0.9.7.tar.gz</Archive>
+        <!--<Archive sha1sum="32ca8bf0a1f72e0849174375f99367b649cdf089" type="targz">/home/PisiLinux/Pisicik/history_manager-0.2.7.tar.gz</Archive>-->
+        <BuildDependencies>
+            <!--<Dependency>python-kde-devel</Dependency>-->
+            <Dependency>pypolkit</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>jockey</Name>
+        <RuntimeDependencies>
+            <!--<Dependency>python-kde</Dependency>-->
+            <Dependency>pypolkit</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/autostart</Path>
+            <Path fileType="data">/usr/share/jockey</Path>
+            <Path fileType="data">/usr/share/polkit-1</Path>
+            <Path fileType="data">/usr/share/kde4</Path>
+            <Path fileType="config">/usr/share/dbus-1/services/com.ubuntu.DeviceDriver.service</Path>
+            <Path fileType="config">/usr/share/dbus-1/system-services/com.ubuntu.DeviceDriver.service</Path>
+            <Path fileType="config">/etc/dbus-1</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2015-01-01</Date>
+            <Version>0.9.7</Version>
+            <Comment>First Release</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
