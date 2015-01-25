@@ -2,19 +2,19 @@
 <!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
-        <Name>qt5-xmlpatterns</Name>
+        <Name>qt5-websockets</Name>
         <Homepage>http://qt.digia.com/</Homepage>
         <Packager>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@pisilinux.org</Email>
         </Packager>
-        <Summary>Support for XPath, XQuery, XSLT and XML schema validation</Summary>
-        <Description>Support for XPath, XQuery, XSLT and XML schema validation</Description>
+        <Summary>Provides WebSocket communication compliant with RFC 6455</Summary>
+        <Description>Provides WebSocket communication compliant with RFC 6455</Description>
         <License>LGPLv2.1-linking-exception</License>
-        <Archive sha1sum="e6d08bca4186b8c10e669836e5f6133ad59c9cce" type="tarxz">http://download.qt.io/official_releases/qt/5.4/5.4.0/submodules/qtxmlpatterns-opensource-src-5.4.0.tar.xz</Archive>
+        <Archive sha1sum="d0b7e62bbdd634de01d5321f94a4bdff8b228cf5" type="tarxz">http://download.qt.io/official_releases/qt/5.4/5.4.0/submodules/qtwebsockets-opensource-src-5.4.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5-base-devel</Dependency>
-            <Dependency>qt5-qttools-devel</Dependency>
+            <Dependency>qt5-declarative-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!-- Fedora Patches -->
@@ -24,7 +24,7 @@
     </Source>
 
     <Package>
-        <Name>qt5-xmlpatterns</Name>
+        <Name>qt5-websockets</Name>
         <Files>
             <Path fileType="library">/usr/lib</Path></Path>
             <Path fileType="library">/usr/lib/qt5/imports</Path>
