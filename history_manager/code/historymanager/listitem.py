@@ -6,7 +6,7 @@ from PyQt4.QtCore import *
 
 #from PyKDE4.kdecore import *
 
-from uiitem import Ui_HistoryItemWidget
+from ui.uiitem import Ui_HistoryItemWidget
 
 # Keep this for translation generation
 opttrans = {"upgrade":i18n("Upgrade"), "remove":i18n("Removal"), "emerge":i18n("Emerge"), \

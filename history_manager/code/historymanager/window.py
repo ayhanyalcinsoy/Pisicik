@@ -9,11 +9,12 @@ from PyQt4 import QtGui
 from PyQt4 import QtCore
 #from PyQt4.QtGui import QMessageBox
 #from PyQt4.QtCore import *
-
+# Add the ptdraft folder path to the sys.path list
+#sys.path.append('/path/to/history_manager/ui/')
 # Application Stuff
-from uiitem import Ui_HistoryItemWidget
-from configure import Ui_Configure
-from mainwindow import Ui_MainManager
+from ui.uiitem import Ui_HistoryItemWidget
+from ui.configure import Ui_Configure
+from ui.mainwindow import Ui_MainManager
 
 from interface import *
 
