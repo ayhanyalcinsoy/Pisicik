@@ -8,7 +8,7 @@ from pisi.actionsapi import pythonmodules
 from pisi.actionsapi import pisitools
 
 def install():
-    #pythonmodules.compile()
+    pythonmodules.compile()
     pythonmodules.install()
 
     #Remove history-manager from systemsettings, we have a painful crash because of the thread problem of pykde/python
