@@ -21,7 +21,7 @@ Date:   Fri Sep 14 17:27:35 2012 +0200
 diff --git a/src/corelib/io/qprocess_unix.cpp b/src/corelib/io/qprocess_unix.cpp
 index e159bf8..bb8a3ae 100644
 --- a/src/corelib/io/qprocess_unix.cpp
-+++ qtbase/src/corelib/io/qprocess_unix.cpp
++++ src/corelib/io/qprocess_unix.cpp
 @@ -134,13 +134,6 @@ static void qt_sa_sigchld_handler(int signum)
          oldAction(signum);
  }
@@ -352,7 +352,7 @@ index e159bf8..bb8a3ae 100644
 diff --git a/src/corelib/kernel/qcore_unix.cpp b/src/corelib/kernel/qcore_unix.cpp
 index cc54798..ca178bb 100644
 --- a/src/corelib/kernel/qcore_unix.cpp
-+++ qtbase/src/corelib/kernel/qcore_unix.cpp
++++ src/corelib/kernel/qcore_unix.cpp
 @@ -103,4 +103,165 @@ int qt_safe_select(int nfds, fd_set *fdread, fd_set *fdwrite, fd_set *fdexcept,
      }
  }
@@ -657,7 +657,7 @@ index 49eb71a..c598c2b 100644
 diff --git a/src/network/socket/qnativesocketengine_unix.cpp b/src/network/socket/qnativesocketengine_unix.cpp
 index 4f3408b..a1bb298 100644
 --- a/src/network/socket/qnativesocketengine_unix.cpp
-+++ qtbase/src/network/socket/qnativesocketengine_unix.cpp
++++ src/network/socket/qnativesocketengine_unix.cpp
 @@ -1122,48 +1122,40 @@ qint64 QNativeSocketEnginePrivate::nativeRead(char *data, qint64 maxSize)
  
  int QNativeSocketEnginePrivate::nativeSelect(int timeout, bool selectForRead) const

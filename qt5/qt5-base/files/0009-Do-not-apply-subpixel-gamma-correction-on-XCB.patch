@@ -23,7 +23,7 @@ Reviewed-by: Eskil Abrahamsen Blomfeldt <eskil.abrahamsen-blomfeldt@theqtcompany
 diff --git a/src/plugins/platforms/xcb/qxcbintegration.cpp b/src/plugins/platforms/xcb/qxcbintegration.cpp
 index cace087..3818494 100644
 --- a/src/plugins/platforms/xcb/qxcbintegration.cpp
-+++ qtbase/src/plugins/platforms/xcb/qxcbintegration.cpp
++++ src/plugins/platforms/xcb/qxcbintegration.cpp
 @@ -427,12 +427,14 @@ QVariant QXcbIntegration::styleHint(QPlatformIntegration::StyleHint hint) const
      case QPlatformIntegration::StartDragTime:
      case QPlatformIntegration::KeyboardAutoRepeatRate:

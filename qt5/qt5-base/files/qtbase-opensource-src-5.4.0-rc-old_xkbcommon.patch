@@ -1,6 +1,6 @@
 diff -ur qtbase-opensource-src-5.4.0-rc-old_xcb/configure qtbase-opensource-src-5.4.0-rc-old_xkbcommon/configure
 --- qtbase-opensource-src-5.4.0-rc-old_xcb/configure	2014-11-29 03:07:40.000000000 +0100
-+++ qtbase/configure	2014-11-29 03:32:16.000000000 +0100
++++ configure	2014-11-29 03:32:16.000000000 +0100
 @@ -5144,7 +5144,7 @@
  fi
  

@@ -5,8 +5,8 @@
         <Name>qt5-declarative</Name>
         <Homepage>http://qt.digia.com/</Homepage>
         <Packager>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@pisilinux.org</Email>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
         </Packager>
         <Summary>Classes for QML and JavaScript languages</Summary>
         <Description>Classes for QML and JavaScript languages</Description>
@@ -18,16 +18,12 @@
             <Dependency>libxkbcommon-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <!-- Fedora Patches -->
-            <!--<Patch level="0">qtbase-opensource-src-5.2.0-enable_ft_lcdfilter.patch</Patch>-->
-            <!--<Patch level="0">qt-everywhere-opensource-src-4.8.5-QTBUG-35459.patch</Patch>-->
-        </Patches>
     </Source>
 
     <Package>
         <Name>qt5-declarative</Name>
         <Files>
-            <Path fileType="library">/usr/lib</Path></Path>
+            <Path fileType="library">/usr/lib</Path><
             <Path fileType="library">/usr/lib/qt5/imports</Path>
             <Path fileType="library">/usr/lib/qt5/qml</Path>
             <Path fileType="library">/usr/lib/qt5/plugins</Path>

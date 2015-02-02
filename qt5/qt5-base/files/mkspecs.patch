@@ -1,6 +1,6 @@
 diff -Nuar qt-everywhere-opensource-src-5.3.0.orig/qtbase/mkspecs/common/g++-base.conf qt-everywhere-opensource-src-5.3.0/qtbase/mkspecs/common/g++-base.conf
 --- qt-everywhere-opensource-src-5.3.0.orig/qtbase/mkspecs/common/g++-base.conf	2014-05-15 20:12:18.000000000 +0300
-+++ qt-everywhere-opensource-src-5.3.0/qtbase/mkspecs/common/g++-base.conf	2014-05-23 00:06:08.726631340 +0300
++++ mkspecs/common/g++-base.conf	2014-05-23 00:06:08.726631340 +0300
 @@ -10,17 +10,23 @@
  
  QMAKE_COMPILER          = gcc
@@ -32,7 +32,7 @@ diff -Nuar qt-everywhere-opensource-src-5.3.0.orig/qtbase/mkspecs/common/g++-bas
  
 diff -Nuar qt-everywhere-opensource-src-5.3.0.orig/qtbase/mkspecs/common/g++-unix.conf qt-everywhere-opensource-src-5.3.0/qtbase/mkspecs/common/g++-unix.conf
 --- qt-everywhere-opensource-src-5.3.0.orig/qtbase/mkspecs/common/g++-unix.conf	2014-05-15 20:12:18.000000000 +0300
-+++ qt-everywhere-opensource-src-5.3.0/qtbase/mkspecs/common/g++-unix.conf	2014-05-23 00:06:52.586630942 +0300
++++ mkspecs/common/g++-unix.conf	2014-05-23 00:06:52.586630942 +0300
 @@ -10,5 +10,5 @@
  
  include(g++-base.conf)
@@ -42,7 +42,7 @@ diff -Nuar qt-everywhere-opensource-src-5.3.0.orig/qtbase/mkspecs/common/g++-uni
  QMAKE_LFLAGS_NOUNDEF   += -Wl,--no-undefined
 diff -Nuar qt-everywhere-opensource-src-5.3.0.orig/qtbase/mkspecs/common/linux.conf qt-everywhere-opensource-src-5.3.0/qtbase/mkspecs/common/linux.conf
 --- qt-everywhere-opensource-src-5.3.0.orig/qtbase/mkspecs/common/linux.conf	2014-05-15 20:12:18.000000000 +0300
-+++ qt-everywhere-opensource-src-5.3.0/qtbase/mkspecs/common/linux.conf	2014-05-23 00:07:32.366630581 +0300
++++ qtbase/mkspecs/common/linux.conf	2014-05-23 00:07:32.366630581 +0300
 @@ -48,7 +48,7 @@
  QMAKE_NM                = nm -P
  QMAKE_RANLIB            =

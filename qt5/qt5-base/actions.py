@@ -12,115 +12,124 @@ from pisi.actionsapi import get
 
 import os
 
-WorkDir = "qtbase-opensource-src-5.4.0"
-#% get.srcVERSION().replace('_','-').replace('pre1', 'tp')
+WorkDir = "qtbase-opensource-src-%s" % get.srcVERSION().replace('_','-').replace('pre1', 'tp')
 
 qtbase = qt5.prefix
-#absoluteWorkDir = "%s/%s" % (get.workDIR(), WorkDir)
+absoluteWorkDir = "%s/%s" % (get.workDIR(), WorkDir)
 
 #Temporary bindir to avoid qt4 conflicts
 bindirQt5="/usr/lib/qt5/bin"
 
-
-#shelltools.export("CFLAGS", filteredCFLAGS)
-#shelltools.export("CXXFLAGS", filteredCXXFLAGS)
-#check that dosed commands without releated patches
-#pisitools.dosed("mkspecs/common/gcc-base-unix.conf", "\-Wl,\-rpath,")
-#pisitools.dosed("mkspecs/common/gcc-base.conf", "\-O2", filteredCFLAGS)
-#pisitools.dosed("mkspecs/common/gcc-base.conf", "^(QMAKE_LFLAGS\s+\+=)", r"\1 %s" % get.LDFLAGS())
-
 def setup():
-    #shelltools.system('sed -i -e "s|^\(QMAKE_CFLAGS_RELEASE.*\)|\1 ${CFLAGS}|" ./mkspecs/common/gcc-base.conf')
-    #shelltools.system('sed -i -e "s|^\(QMAKE_LFLAGS_RELEASE.*\)|\1 ${LDFLAGS}|" ./mkspecs/common/g++-unix.conf')
-    #make sure we don't use them
-    for d in ('libjpeg', 'freetype', 'libpng', 'zlib'):
-        shelltools.unlinkDir("src/3rdparty/%s" % d)
+    checkdeletepath="%s/qtbase/src/3rdparty"  % absoluteWorkDir
+    for dir in ('libjpeg', 'freetype', 'libpng', 'zlib', "xcb", "sqlite"):
+        if os.path.exists(checkdeletepath+dir):
+            shelltools.unlinkDir(checkdeletepath+dir)
 
-    """filteredCFLAGS = get.CFLAGS().replace("-g3", "-g")
+    filteredCFLAGS = get.CFLAGS().replace("-g3", "-g")
     filteredCXXFLAGS = get.CXXFLAGS().replace("-g3", "-g")
 
-    vars = {"PISILINUX_CC" :       get.CC(),
-            "PISILINUX_CXX":       get.CXX(),
-            "PISILINUX_CFLAGS":    filteredCFLAGS,
-            "PISILINUX_LDFLAGS":   get.LDFLAGS()}
-
-    for k, v in vars.items():
-        pisitools.dosed("mkspecs/common/g++-base.conf", k, v)
-        pisitools.dosed("mkspecs/common/g++-unix.conf", k, v)
+    vars = {"PISILINUX_CC" :       get.CC() + (" -m32" if get.buildTYPE() == "emul32" else ""),
+            "PISILINUX_CXX":       get.CXX() + (" -m32" if get.buildTYPE() == "emul32" else ""),
+            "PISILINUX_CFLAGS":    filteredCFLAGS + (" -m32" if get.buildTYPE() == "emul32" else ""),
+            "PISILINUX_LDFLAGS":   get.LDFLAGS() + (" -m32" if get.buildTYPE() == "emul32" else "")}
 
     shelltools.export("CFLAGS", filteredCFLAGS)
-    shelltools.export("CXXFLAGS", filteredCXXFLAGS)"""
+    shelltools.export("CXXFLAGS", filteredCXXFLAGS)
+    #check that dosed commands without releated patches
+    pisitools.dosed("mkspecs/common/gcc-base-unix.conf", "\-Wl,\-rpath,")
+    pisitools.dosed("mkspecs/common/gcc-base.conf", "\-O2", filteredCFLAGS)
+    pisitools.dosed("mkspecs/common/gcc-base.conf", "^(QMAKE_LFLAGS\s+\+=)", r"\1 %s" % get.LDFLAGS())
 
-    #-no-pch makes build ccache-friendly
-    autotools.rawConfigure("-v \
+    if not get.buildTYPE() == "emul32":
+        #-no-pch makes build ccache-friendly
+        options = "-v \
                    -no-pch \
-                   -confirm-license \
                    -opensource \
-                   -optimized-qmake \
-                   -nomake tests \
-                   -no-rpath \
-                   -release \
-                   -shared \
-                   -accessibility \
+                   -eglfs \
+                   -opengl es2 \
+                   -xcb \
+                   -no-pch \
                    -dbus-linked \
-                   -fontconfig \
-                   -glib \
-                   -gtkstyle \
                    -icu \
-                   -c++11 \
-                   -system-harfbuzz \
+                   -cups \
+                   -nis \
+                   -widgets \
+                   -gui \
+                   -qt-xcb \
                    -openssl-linked \
                    -system-libjpeg \
                    -system-libpng \
-                   -system-sqlite \
                    -system-zlib \
-                   -plugin-sql-sqlite \
-                   -plugin-sql-odbc \
-                   -plugin-sql-psql \
-                   -plugin-sql-ibase \
-                   -no-sql-tds \
-                   -I/usr/include/firebird/ \
-                   -I/usr/include/postgresql/server/ \
-                   -no-separate-debug-info \
+                   -largefile \
+                   -c++11 \
+                   -shared \
+                   -no-static \
+                   -confirm-license \
+                   -release \
+                   -prefix /usr \
+                   -archdatadir /usr/lib/qt5 \
+                   -datadir /usr/share/qt5 \
+                   -docdir /usr/share/doc/qt5 \
+                   -sysconfdir /etc/xdg \
+                   -nomake tests \
+                   -examplesdir /usr/lib/qt5/examples"
+    else:
+        pisitools.dosed("mkspecs/linux-g++-64/qmake.conf", "-m64", "-m32")
+        shelltools.export("LDFLAGS", "-m32 %s" % get.LDFLAGS())
+        options = "-no-pch \
+                   -no-sse2 \
+                   -v \
+                   -prefix /usr \
+                   -libdir /usr/lib32 \
+                   -plugindir /usr/lib32/qt5/plugins \
+                   -importdir /usr/lib32/qt5/imports \
+                   -datadir /usr/share/qt5 \
+                   -translationdir /usr/share/qt5/translations \
+                   -sysconfdir /etc \
+                   -system-sqlite \
+                   -system-harfbuzz \
+                   -system-libjpeg \
+                   -system-libpng \
+                   -system-zlib \
+                   -nomake tests \
+                   -openssl-linked \
+                   -nomake examples \
+                   -nomake tools \
+                   -optimized-qmake \
+                   -no-rpath \
                    -no-strip \
-                   -prefix %s \
-                   -bindir %s \
-                   -archdatadir %s\
-                   -libdir %s \
-                   -docdir %s \
-                   -examplesdir %s \
-                   -plugindir %s \
-                   -translationdir %s \
-                   -sysconfdir %s \
-                   -datadir %s \
-                   -importdir %s \
-                   -headerdir %s \
-                   -reduce-relocations" % (qt5.prefix, bindirQt5, qt5.archdatadir, qt5.libdir, qt5.docdir, qt5.examplesdir, qt5.plugindir, qt5.translationdir, qt5.sysconfdir, qt5.datadir, qt5.importdir, qt5.headerdir))
+                   -dbus-linked \
+                   -no-openvg \
+                   -confirm-license \
+                   -reduce-relocations  \
+                   -opensource"
+
+    autotools.rawConfigure(options)
 
 def build():
-    #shelltools.export("LD_LIBRARY_PATH", "%s/lib:%s" % (get.curDIR(), get.ENV("LD_LIBRARY_PATH")))
+    shelltools.export("LD_LIBRARY_PATH", "%s/lib:%s" % (get.curDIR(), get.ENV("LD_LIBRARY_PATH")))
     autotools.make()
 
 def install():
+    if get.buildTYPE() == "emul32":
+        qt5.install("INSTALL_ROOT=%s32" % get.installDIR())
+        shelltools.move("%s32/usr/lib32" % get.installDIR(), "%s/usr" % get.installDIR())
+        return
+
     pisitools.dodir(qt5.libdir)
     qt5.install("INSTALL_ROOT=%s" % get.installDIR())
 
     #I hope qtchooser will manage this issue
-    #for bin in shelltools.ls("%s/usr/lib/qt5/bin" % get.installDIR()):
-    #    pisitools.dosym("/usr/lib/qt5/bin/%s" % bin, "/usr/bin/%s-qt5" % bin)
+    for bin in shelltools.ls("%s/usr/lib/qt5/bin" % get.installDIR()):
+        pisitools.dosym("/usr/lib/qt5/bin/%s" % bin, "/usr/bin/%s-qt5" % bin)
 
-    # We should work on Turkish translations :)
-    shelltools.export("LD_LIBRARY_PATH", "%s%s" % (get.installDIR(), qt5.libdir))
-    #shelltools.system("%s%s/lrelease l10n-tr/*.ts" % (get.installDIR(), bindirQt5))
-    #pisitools.insinto(qt5.translationdir, "l10n-tr/*.qm")
-
-    #Fix all occurances of WorkDir in pc files
+        #Fix all occurances of WorkDir in pc files
     #pisitools.dosed("%s%s/pkgconfig/*.pc" % (get.installDIR(), qt5.libdir), "%s/qt-x11-opensource-src-%s" % (get.workDIR(), get.srcVERSION()), qt5.prefix)
 
-    #mkspecPath = "%s ./mkspecs" %  qt5.archdatadir
-    mkspecPath = "/usr/share/qt5/mkspecs"
+    mkspecPath = "%s/mkspecs" %  qt5.archdatadir
 
-    for root, dirs, files in os.walk("%s/usr" % get.installDIR()):
+    for root, dirs, files in os.walk("%s%s" % (get.installDIR(),  qt5.archdatadir)):
         # Remove unnecessary spec files..
         if root.endswith(mkspecPath):
             for dir in dirs:
@@ -130,4 +139,5 @@ def install():
             if name.endswith(".prl"):
                 pisitools.dosed(os.path.join(root, name), "^QMAKE_PRL_BUILD_DIR.*", "")
 
+    #pisitools.domove("usr/lib/qt5/examples/", "/usr/share/doc/qt5/examples")
     pisitools.dodoc("LGPL_EXCEPTION.txt", "LICENSE.*")

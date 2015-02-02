@@ -14,7 +14,7 @@ Reviewed-by: Allan Sandfeld Jensen <allan.jensen@theqtcompany.com>
 diff --git a/src/gui/image/qimage_conversions.cpp b/src/gui/image/qimage_conversions.cpp
 index 17563b1..858a0d9 100644
 --- a/src/gui/image/qimage_conversions.cpp
-+++ qtbase/src/gui/image/qimage_conversions.cpp
++++ src/gui/image/qimage_conversions.cpp
 @@ -2252,7 +2252,7 @@ Image_Converter qimage_converter_map[QImage::NImageFormats][QImage::NImageFormat
          convert_ARGB_to_ARGB_PM,
  #else

@@ -1,6 +1,6 @@
 diff -ur qtbase-opensource-src-5.4.0-rc/configure qtbase-opensource-src-5.4.0-rc-old_xcb/configure
 --- qtbase-opensource-src-5.4.0-rc/configure	2014-11-24 15:59:27.000000000 +0100
-+++ qtbase/configure	2014-11-29 03:07:40.000000000 +0100
++++ configure	2014-11-29 03:07:40.000000000 +0100
 @@ -5041,10 +5041,8 @@
                  QMAKE_LIBS_XCB="`$PKG_CONFIG --libs $XCB_PACKAGES 2>/dev/null`"
              fi

@@ -23,7 +23,7 @@ Reviewed-by: Aleix Pol Gonzalez <aleixpol@kde.org>
 diff --git a/src/plugins/platforms/xcb/qxcbclipboard.cpp b/src/plugins/platforms/xcb/qxcbclipboard.cpp
 index 8b3893e..f56a29d 100644
 --- a/src/plugins/platforms/xcb/qxcbclipboard.cpp
-+++ qtbase/src/plugins/platforms/xcb/qxcbclipboard.cpp
++++ src/plugins/platforms/xcb/qxcbclipboard.cpp
 @@ -742,7 +742,8 @@ void QXcbClipboard::handleXFixesSelectionRequest(xcb_xfixes_selection_notify_eve
              m_xClipboard[mode]->reset();
          }

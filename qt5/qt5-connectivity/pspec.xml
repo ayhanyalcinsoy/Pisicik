@@ -5,29 +5,24 @@
         <Name>qt5-connectivity</Name>
         <Homepage>http://qt.digia.com/</Homepage>
         <Packager>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@pisilinux.org</Email>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
         </Packager>
         <Summary>Provides access to Bluetooth hardware</Summary>
         <Description>Provides access to Bluetooth hardware</Description>
         <License>LGPLv2.1-linking-exception</License>
-        <Archive sha1sum="e6d08bca4186b8c10e669836e5f6133ad59c9cce" type="tarxz">http://download.qt.io/official_releases/qt/5.4/5.4.0/submodules/qtxmlpatterns-opensource-src-5.4.0.tar.xz</Archive>
+        <Archive sha1sum="08b1e365195cf0ed2d35d5f7fb3d6bda9a9e1dbe" type="tarxz">http://download.qt.io/official_releases/qt/5.4/5.4.0/submodules/qtconnectivity-opensource-src-5.4.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5-base-devel</Dependency>
             <Dependency>qt5-declarative-devel</Dependency>
             <Dependency>bluez-libs-devel</Dependency>
         </BuildDependencies>
-        <Patches>
-            <!-- Fedora Patches -->
-            <!--<Patch level="0">qtbase-opensource-src-5.2.0-enable_ft_lcdfilter.patch</Patch>-->
-            <!--<Patch level="0">qt-everywhere-opensource-src-4.8.5-QTBUG-35459.patch</Patch>-->
-        </Patches>
     </Source>
 
     <Package>
         <Name>qt5-connectivity</Name>
         <Files>
-            <Path fileType="library">/usr/lib</Path></Path>
+            <Path fileType="library">/usr/lib</Path>
             <Path fileType="library">/usr/lib/qt5/imports</Path>
             <Path fileType="library">/usr/lib/qt5/qml</Path>
             <Path fileType="library">/usr/lib/qt5/plugins</Path>

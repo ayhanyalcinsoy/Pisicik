@@ -1,7 +1,7 @@
 diff --git a/mkspecs/linux-g++-32/qmake.conf b/mkspecs/linux-g++-32/qmake.conf
 index 340aa85..571a559 100644
 --- a/mkspecs/linux-g++-32/qmake.conf
-+++ qtbase/mkspecs/linux-g++-32/qmake.conf
++++ mkspecs/linux-g++-32/qmake.conf
 @@ -9,6 +9,8 @@ QMAKE_INCREMENTAL_STYLE = sublib
  QMAKE_CFLAGS            = -m32
  QMAKE_LFLAGS            = -m32
