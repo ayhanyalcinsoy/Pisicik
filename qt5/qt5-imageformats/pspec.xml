@@ -24,14 +24,12 @@
         <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="library">/usr/lib/qt5</Path>
-            <Path fileType="executable">/usr/lib/qt5/bin/</Path>
-            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/licenses</Path>
         </Files>
         <RuntimeDependencies>
             <Dependency>qt5-base</Dependency>
-            <Dependency>jasper</Dependency>
             <Dependency>libmng</Dependency>
-            <Dependency>webp</Dependency>
+            <Dependency>tiff</Dependency>
         </RuntimeDependencies>
     </Package>
 
