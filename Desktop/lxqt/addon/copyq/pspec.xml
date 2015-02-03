@@ -32,6 +32,10 @@
             <Path fileType="man">/usr/share/man</Path>
             <Path fileType="localedata">/usr/share/copyq/translations</Path>
         </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/copyq.desktop">copyq.desktop</AdditionalFile>
+        </AdditionalFiles>
+
     </Package>
         <Package>
         <Name>copyq-devel</Name>
