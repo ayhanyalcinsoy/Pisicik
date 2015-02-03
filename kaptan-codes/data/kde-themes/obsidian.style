@@ -1,0 +1,12 @@
+[Style]
+name = Obsidian
+
+description = A light colored theme with a dark panel on the bottom.
+
+panelPosition = 4
+widgetStyle = oxygen
+colorScheme = Norway
+desktopTheme = oxygen
+thumbnail = obsidian.png
+iconTheme = oxygen
+windowDecoration = kwin3_oxygen
