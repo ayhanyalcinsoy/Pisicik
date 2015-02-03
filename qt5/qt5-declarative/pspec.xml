@@ -24,11 +24,9 @@
         <Name>qt5-declarative</Name>
         <Files>
             <Path fileType="library">/usr/lib</Path><
-            <Path fileType="library">/usr/lib/qt5/imports</Path>
-            <Path fileType="library">/usr/lib/qt5/qml</Path>
-            <Path fileType="library">/usr/lib/qt5/plugins</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
             <Path fileType="executable">/usr/lib/qt5/bin/</Path>
-            <Path fileType="executable">/usr/lib/qt5/libexec</Path>
+            <Path fileType="executable">/usr/bin/</Path>
         </Files>
         <RuntimeDependencies>
             <Dependency>qt5-base</Dependency>

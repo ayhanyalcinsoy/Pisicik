@@ -11,11 +11,15 @@ from pisi.actionsapi import qt5
 from pisi.actionsapi import get
 
 def setup():
-shelltools.configure ("/usr/lib/qt5/bin/qmake qtconnectivity.pro")
+    shelltools.system ("/usr/lib/qt5/bin/qmake qtdeclarative.pro")
 
 def build():
-autotools.make ()
+    autotools.make ()
 
 def install():
-autotools.rawInstall ("INSTALL_ROOT=%s" % get.installDIR())
-pisitools.insinto("/usr/share/licenses/qt5-connectivity/", "LGPL_EXCEPTION.txt")
+    autotools.rawInstall ("INSTALL_ROOT=%s" % get.installDIR())
+    #I hope qtchooser will manage this issue
+    for bin in shelltools.ls("%s/usr/lib/qt5/bin" % get.installDIR()):
+        pisitools.dosym("/usr/lib/qt5/bin/%s" % bin, "/usr/bin/%s-qt5" % bin)
+
+    pisitools.insinto("/usr/share/licenses/qt5-declarative/", "LGPL_EXCEPTION.txt")
