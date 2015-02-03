@@ -14,24 +14,34 @@
         <Archive sha1sum="12c12d50c71cfb1f18c7fabfabe4ad4b364b09fe" type="tarxz">http://download.qt.io/official_releases/qt/5.4/5.4.0/submodules/qtdeclarative-opensource-src-5.4.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5-base-devel</Dependency>
-            <Dependency>qt5-qttools-devel</Dependency>
+            <Dependency>qt5-tools-devel</Dependency>
             <Dependency>libxkbcommon-devel</Dependency>
         </BuildDependencies>
-        <Patches>
     </Source>
 
     <Package>
         <Name>qt5-declarative</Name>
         <Files>
-            <Path fileType="library">/usr/lib</Path><
+            <Path fileType="library">/usr/lib</Path>
             <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="data">/usr/share/licenses</Path>
             <Path fileType="executable">/usr/lib/qt5/bin/</Path>
             <Path fileType="executable">/usr/bin/</Path>
         </Files>
         <RuntimeDependencies>
             <Dependency>qt5-base</Dependency>
-            <Dependency>qt5-xmlpatterns</Dependency>
-            <Dependency>libxkbcommon</Dependency>
+            <Dependency>mesa</Dependency>
+        </RuntimeDependencies>
+    </Package>
+
+    <Package>
+        <Name>qt5-declarative-devel</Name>
+        <Files>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+            <Path fileType="headers">/usr/include/qt5</Path>
+        </Files>
+        <RuntimeDependencies>
+            <Dependency>qt5-base-devel</Dependency>
         </RuntimeDependencies>
     </Package>
 
