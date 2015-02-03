@@ -22,18 +22,30 @@
     <Package>
         <Name>qt5-connectivity</Name>
         <Files>
+            <Path fileType="library">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
-            <Path fileType="library">/usr/lib/qt5/imports</Path>
-            <Path fileType="library">/usr/lib/qt5/qml</Path>
-            <Path fileType="library">/usr/lib/qt5/plugins</Path>
+            <Path fileType="data">/usr/share/licenses</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
             <Path fileType="executable">/usr/lib/qt5/bin/</Path>
-            <Path fileType="executable">/usr/lib/qt5/libexec</Path>
         </Files>
         <RuntimeDependencies>
             <Dependency>qt5-base</Dependency>
+            <Dependency>qt5-declarative</Dependency>
             <Dependency>bluez-libs</Dependency>
         </RuntimeDependencies>
     </Package>
+
+    <Package>
+        <Name>qt5-connectivity-devel</Name>
+        <Files>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+            <Path fileType="headers">/usr/include/qt5</Path>
+        </Files>
+        <RuntimeDependencies>
+            <Dependency>qt5-base-devel</Dependency>
+        </RuntimeDependencies>
+    </Package>
+
 
     <History>
         <Update release="1">
