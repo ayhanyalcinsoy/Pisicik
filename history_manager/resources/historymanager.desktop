@@ -1,4 +1,3 @@
-#!/usr/bin/env xdg-open
 [Desktop Entry]
 Name=History Manager
 Name[tr]=Geçmiş Yöneticisi
@@ -9,7 +8,7 @@ Name[fr]=Historique de PiSi
 GenericName=History Manager
 GenericName[tr]=Geçmiş Yöneticisi
 GenericName[es]=Administrador de Históricos
-GenericName[de]=History Manager
+GenericName[de]=History Manager 
 GenericName[sv]=Historikhanteraren
 GenericName[fr]=Historique de PiSi
 Comment=An application for managing Pisi history

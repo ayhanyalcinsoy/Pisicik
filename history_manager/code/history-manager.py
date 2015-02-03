@@ -71,11 +71,11 @@ if __name__ == '__main__':
         app = QUniqueApplication(sys.argv, catalog=about.appName)
 
         # Create Main Widget and make some settings
-        mainWindow = MainManager(None)
+        mainWindow = MainManager(None, app= app)
         mainWindow.show()
         mainWindow.resize(640, 480)
         mainWindow.setWindowTitle(i18n(about.PACKAGE))
-        mainWindow.setWindowIcon(KIcon(about.icon))
+        #mainWindow.setWindowIcon(KIcon(about.icon))
 
     # Create connection for lastWindowClosed signal to quit app
     app.connect(app, SIGNAL('lastWindowClosed()'), app.quit)

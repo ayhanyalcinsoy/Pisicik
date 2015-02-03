@@ -12,9 +12,9 @@ from PyQt4 import QtCore
 # Add the ptdraft folder path to the sys.path list
 #sys.path.append('/path/to/history_manager/ui/')
 # Application Stuff
-from ui.uiitem import Ui_HistoryItemWidget
-from ui.configure import Ui_Configure
-from ui.mainwindow import Ui_MainManager
+from ui_uiitem import Ui_HistoryItemWidget
+from ui_configure import Ui_Configure
+from ui_mainwindow import Ui_MainManager
 
 from interface import *
 
@@ -24,7 +24,7 @@ ANIMATION_TIME = 200
 DEFAULT_HEIGHT = 16777215
 
 # Pds vs KDE
-import servicemanager.context as ctx
+import historymanager.context as ctx
 if ctx.Pds.session == ctx.pds.Kde4:
     from PyKDE4.kdecore import i18n
 else:

@@ -116,10 +116,10 @@ class Build(build):
         for filename in glob.glob1("ui", "*.ui"):
             if FOR_KDE_4:
                 os.system("pykde4uic -o build/historymanager/ui_%s.py ui/%s -g %s" % (filename.split(".")[0], filename, PROJECT))
-        # Collect UI for pure-qt        
-        else:
-            for filename in glob.glob1("ui", "*.ui"):
-                os.system("pyuic4 -o build/historymanager/ui_%s.py ui/%s -g %s" % (filename.split(".")[0], filename, PROJECT))
+            # Collect UI for pure-qt        
+            else:
+                #for filename in glob.glob1("ui", "*.ui"):
+                    os.system("pyuic4 -o build/historymanager/ui_%s.py ui/%s -g %s" % (filename.split(".")[0], filename, PROJECT))
 
         print "Generating RCs..."
         for filename in glob.glob1("resources", "*.qrc"):
