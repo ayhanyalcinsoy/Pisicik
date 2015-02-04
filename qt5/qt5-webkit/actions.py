@@ -11,11 +11,21 @@ from pisi.actionsapi import qt5
 from pisi.actionsapi import get
 
 def setup():
-shelltools.configure ("/usr/lib/qt5/bin/qmake qtconnectivity.pro")
+    shelltools.system ("/usr/lib/qt5/bin/qmake WebKit.pro")
+    shelltools.system('sed -i "s|/usr/lib/qt/bin/qhelpgenerator|${QTDIR}/qttools/bin/qhelpgenerator|g" Source/Makefile')
 
 def build():
-autotools.make ()
+    qt5.make()
+    shelltools.system("find -type f -name -print0 | grep -FzZ “/usr/lib/*.prl -exec” sed -i -e '/^QMAKE_PRL_BUILD_DIR/d' {} \;")
 
 def install():
-autotools.rawInstall ("INSTALL_ROOT=%s" % get.installDIR())
-pisitools.insinto("/usr/share/licenses/qt5-connectivity/", "LGPL_EXCEPTION.txt")
+    qt5.install("INSTALL_ROOT=%s" % get.installDIR())
+
+     # Drop QMAKE_PRL_BUILD_DIR because reference the build dir
+    #shelltools.system("find -type f -name '*.prl'-exec sed -i -e '/^QMAKE_PRL_BUILD_DIR/d' {} \;")
+
+    #I hope qtchooser will manage this issue
+    for bin in shelltools.ls("%s/usr/lib/qt5/bin" % get.installDIR()):
+        pisitools.dosym("/usr/lib/qt5/bin/%s" % bin, "/usr/bin/%s-qt5" % bin)
+
+    pisitools.insinto("/usr/share/licenses/qt5-webkit/", "LGPL_EXCEPTION.txt")
