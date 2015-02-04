@@ -5,32 +5,35 @@
         <Name>qt5-script</Name>
         <Homepage>http://qt.digia.com/</Homepage>
         <Packager>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@pisilinux.org</Email>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
         </Packager>
         <Summary>Classes for making Qt applications scriptable. Provided for Qt 4.x compatibility</Summary>
         <Description>Classes for making Qt applications scriptable. Provided for Qt 4.x compatibility</Description>
         <License>LGPLv2.1-linking-exception</License>
-        <Archive sha1sum="1d8dd4a0b1c69e14805c59d4676c8406c65a4114" type="tarxz">http://download.qt.io/official_releases/qt/5.4/5.4.0/submodules/qtscript-opensource-src-5.4.0.tar.xz</Archive>
+        <Archive sha1sum="7ca8d6ccbc97fb24a9e76b69eeaa5e7e9c321955" type="tarxz">http://download.qt.io/official_releases/qt/5.4/5.4.0/submodules/qtscript-opensource-src-5.4.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5-base-devel</Dependency>
         </BuildDependencies>
-        <Patches>
-            <!-- Fedora Patches -->
-            <!--<Patch level="0">qtbase-opensource-src-5.2.0-enable_ft_lcdfilter.patch</Patch>-->
-            <!--<Patch level="0">qt-everywhere-opensource-src-4.8.5-QTBUG-35459.patch</Patch>-->
-        </Patches>
     </Source>
 
     <Package>
         <Name>qt5-script</Name>
         <Files>
-            <Path fileType="library">/usr/lib</Path></Path>
-            <Path fileType="library">/usr/lib/qt5/imports</Path>
-            <Path fileType="library">/usr/lib/qt5/qml</Path>
-            <Path fileType="library">/usr/lib/qt5/plugins</Path>
-            <Path fileType="executable">/usr/lib/qt5/bin/</Path>
-            <Path fileType="executable">/usr/lib/qt5/libexec</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="library">/usr/share/licenses</Path>
+        </Files>
+        <RuntimeDependencies>
+            <Dependency>qt5-base</Dependency>
+        </RuntimeDependencies>
+    </Package>
+
+    <Package>
+        <Name>qt5-script-devel</Name>
+        <Files>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+            <Path fileType="headers">/usr/include/qt5</Path>
         </Files>
         <RuntimeDependencies>
             <Dependency>qt5-base</Dependency>
