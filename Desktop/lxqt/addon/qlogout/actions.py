@@ -18,6 +18,7 @@ def build():
 
 def install():
     qt4.install()
+    mkspecPath = "/usr/share/qt5/mkspecs"
     pisitools.domove("usr/local/bin/qtLogout", "usr/bin/", "qlogout")
     pisitools.removeDir("usr/local")
 
