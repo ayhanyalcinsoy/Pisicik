@@ -11,7 +11,7 @@ from pisi.actionsapi import qt5
 from pisi.actionsapi import get
 
 def setup():
-shelltools.configure ("/usr/lib/qt5/bin/qmake qtenginio.pro")
+    shelltools.system ("/usr/lib/qt5/bin/qmake qtenginio.pro")
 
 def build():
      qt5.make()
@@ -23,4 +23,4 @@ def install():
     for bin in shelltools.ls("%s/usr/lib/qt5/bin" % get.installDIR()):
         pisitools.dosym("/usr/lib/qt5/bin/%s" % bin, "/usr/bin/%s-qt5" % bin)
 
-pisitools.insinto("/usr/share/licenses/qt5-enginio/", "LGPL_EXCEPTION.txt")
+    pisitools.insinto("/usr/share/licenses/qt5-enginio/", "LGPL_EXCEPTION.txt")
