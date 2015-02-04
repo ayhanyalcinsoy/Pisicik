@@ -27,7 +27,6 @@
             <Dependency>libXrender</Dependency>
             <Dependency>libxkbcommon</Dependency>
             <Dependency>libXcomposite</Dependency>
-            <Dependency>qt5-base-devel</Dependency>
             <Dependency>libXcomposite</Dependency>
             <Dependency>wayland-client</Dependency>
             <Dependency>wayland-cursor</Dependency>
@@ -36,11 +35,22 @@
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="library">/usr/lib/qt5</Path>
             <Path fileType="data">/usr/share/licenses</Path>
-            <Path fileType="headers">/usr/include/qt5</Path>
             <Path fileType="executable">/usr/lib/qt5/bin</Path>
             <Path fileType="executable">/usr/bin</Path>
         </Files>
     </Package>
+
+    <Package>
+        <Name>qt5-wayland-devel</Name>
+        <RuntimeDependencies>
+            <Dependency>qt5-base-devel</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+            <Path fileType="headers">/usr/include/qt5</Path>
+        </Files>
+    </Package>
+
 
     <History>
         <Update release="1">
