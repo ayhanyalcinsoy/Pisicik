@@ -35,8 +35,8 @@ def setup():
             "PISILINUX_LDFLAGS":   get.LDFLAGS() + (" -m32" if get.buildTYPE() == "emul32" else "")}
 
     for k, v in vars.items():
-        pisitools.dosed("mkspecs/common/g++-base.conf", k, v)
-        pisitools.dosed("mkspecs/common/g++-unix.conf", k, v)
+        pisitools.dosed("qtbase/mkspecs/common/g++-base.conf", k, v)
+        pisitools.dosed("qtbase/mkspecs/common/g++-unix.conf", k, v)
 
     shelltools.export("CFLAGS", filteredCFLAGS)
     shelltools.export("CXXFLAGS", filteredCXXFLAGS)
@@ -49,48 +49,35 @@ def setup():
         #-no-pch makes build ccache-friendly
         options = "-v \
                    -no-pch \
-                   -confirm-license \
                    -opensource \
-                   -optimized-qmake \
-                   -nomake tests \
-                   -no-rpath \
-                   -release \
-                   -shared \
-                   -accessibility \
+                   -eglfs \
+                   -opengl es2 \
+                   -xcb \
+                   -no-pch \
                    -dbus-linked \
-                   -fontconfig \
-                   -glib \
-                   -gtkstyle \
                    -icu \
-                   -c++11 \
-                   -system-harfbuzz \
+                   -cups \
+                   -nis \
+                   -widgets \
+                   -gui \
+                   -qt-xcb \
                    -openssl-linked \
                    -system-libjpeg \
                    -system-libpng \
-                   -system-sqlite \
                    -system-zlib \
-                   -plugin-sql-sqlite \
-                   -plugin-sql-odbc \
-                   -plugin-sql-psql \
-                   -plugin-sql-ibase \
-                   -no-sql-tds \
-                   -I/usr/include/firebird/ \
-                   -I/usr/include/postgresql/server/ \
-                   -no-separate-debug-info \
-                   -no-strip \
-                   -prefix %s \
-                   -bindir %s \
-                   -archdatadir %s\
-                   -libdir %s \
-                   -docdir %s \
-                   -examplesdir %s \
-                   -plugindir %s \
-                   -translationdir %s \
-                   -sysconfdir %s \
-                   -datadir %s \
-                   -importdir %s \
-                   -headerdir %s \
-                   -reduce-relocations" % (qt5.prefix, bindirQt5, qt5.archdatadir, qt5.libdir, qt5.docdir, qt5.examplesdir, qt5.plugindir, qt5.translationdir, qt5.sysconfdir, qt5.datadir, qt5.importdir, qt5.headerdir)
+                   -largefile \
+                   -c++11 \
+                   -shared \
+                   -no-static \
+                   -confirm-license \
+                   -release \
+                   -prefix /usr \
+                   -archdatadir /usr/lib/qt5 \
+                   -datadir /usr/share/qt5 \
+                   -docdir /usr/share/doc/qt5 \
+                   -sysconfdir /etc/xdg \
+                   -nomake tests \
+                   -examplesdir /usr/lib/qt5/examples"
     else:
         pisitools.dosed("mkspecs/linux-g++-64/qmake.conf", "-m64", "-m32")
         shelltools.export("LDFLAGS", "-m32 %s" % get.LDFLAGS())
@@ -120,7 +107,7 @@ def setup():
                    -no-openvg \
                    -confirm-license \
                    -reduce-relocations  \
-                   -opensource "
+                   -opensource"
 
     autotools.rawConfigure(options)
 
@@ -141,7 +128,7 @@ def install():
     for bin in shelltools.ls("%s/usr/lib/qt5/bin" % get.installDIR()):
         pisitools.dosym("/usr/lib/qt5/bin/%s" % bin, "/usr/bin/%s-qt5" % bin)
 
-    # Fix all occurances of WorkDir in pc files
+        #Fix all occurances of WorkDir in pc files
     #pisitools.dosed("%s%s/pkgconfig/*.pc" % (get.installDIR(), qt5.libdir), "%s/qt-x11-opensource-src-%s" % (get.workDIR(), get.srcVERSION()), qt5.prefix)
 
     mkspecPath = "%s/mkspecs" %  qt5.archdatadir

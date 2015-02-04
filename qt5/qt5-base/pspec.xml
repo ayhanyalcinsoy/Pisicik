@@ -88,12 +88,12 @@
         <Patches>
             <!-- Fedora Patches -->
             <Patch level="0">qtbase-opensource-src-5.2.0-enable_ft_lcdfilter.patch</Patch>
-            <Patch level="0">qt-everywhere-opensource-src-4.8.5-QTBUG-35459.patch</Patch>
+            <!--<Patch level="0">qt-everywhere-opensource-src-4.8.5-QTBUG-35459.patch</Patch>-->
             <Patch>0009-Do-not-apply-subpixel-gamma-correction-on-XCB.patch</Patch>
             <Patch>0173-qimage_conversions.cpp-Fix-build-on-big-endian-syste.patch</Patch>
-            <Patch>0004-Use-gold-linker-if-available.patch</Patch>
+            <!--<Patch>0004-Use-gold-linker-if-available.patch</Patch>-->
             <Patch>qtbase-multilib_optflags.patch</Patch>
-            <Patch>qtbase-opensource-src-5.2.0-enable_ft_lcdfilter.patch</Patch>
+            <!--<Patch>qt5-painting.patch</Patch>-->
             <Patch>qtbase-opensource-src-5.3.2-QTBUG-35459.patch</Patch>
             <Patch>qtbase-opensource-src-5.4.0-QTBUG-43057.patch</Patch>
             <Patch>qtbase-opensource-src-5.4.0-rc-old_xcb.patch</Patch>

@@ -14,7 +14,7 @@ index 340aa85..571a559 100644
 diff --git a/mkspecs/linux-g++-64/qmake.conf b/mkspecs/linux-g++-64/qmake.conf
 index 36fb6a8..9a07595 100644
 --- a/mkspecs/linux-g++-64/qmake.conf
-+++ qtbase/mkspecs/linux-g++-64/qmake.conf
++++ mkspecs/linux-g++-64/qmake.conf
 @@ -12,6 +12,8 @@ QMAKE_INCREMENTAL_STYLE = sublib
  QMAKE_CFLAGS            = -m64
  QMAKE_LFLAGS            = -m64
@@ -27,7 +27,7 @@ index 36fb6a8..9a07595 100644
 diff --git a/mkspecs/linux-g++/qmake.conf b/mkspecs/linux-g++/qmake.conf
 index 35bce8f..5186f98 100644
 --- a/mkspecs/linux-g++/qmake.conf
-+++ qtbase/mkspecs/linux-g++/qmake.conf
++++ mkspecs/linux-g++/qmake.conf
 @@ -6,6 +6,8 @@ MAKEFILE_GENERATOR      = UNIX
  CONFIG                 += incremental
  QMAKE_INCREMENTAL_STYLE = sublib

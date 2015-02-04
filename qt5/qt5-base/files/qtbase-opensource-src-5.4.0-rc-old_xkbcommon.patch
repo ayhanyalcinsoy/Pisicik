@@ -12,7 +12,7 @@ diff -ur qtbase-opensource-src-5.4.0-rc-old_xcb/configure qtbase-opensource-src-
      if [ "$CFG_XKBCOMMON" != "no" ] && [ "$CFG_XKBCOMMON" != "qt" ]; then
 diff -ur qtbase-opensource-src-5.4.0-rc-old_xcb/src/plugins/platforms/xcb/qxcbkeyboard.cpp qtbase-opensource-src-5.4.0-rc-old_xkbcommon/src/plugins/platforms/xcb/qxcbkeyboard.cpp
 --- qtbase-opensource-src-5.4.0-rc-old_xcb/src/plugins/platforms/xcb/qxcbkeyboard.cpp	2014-11-29 03:29:53.000000000 +0100
-+++ qtbase/src/plugins/platforms/xcb/qxcbkeyboard.cpp	2014-11-29 03:35:36.000000000 +0100
++++ src/plugins/platforms/xcb/qxcbkeyboard.cpp	2014-11-29 03:35:36.000000000 +0100
 @@ -971,7 +971,7 @@
      }
  
@@ -65,7 +65,7 @@ diff -ur qtbase-opensource-src-5.4.0-rc-old_xcb/src/plugins/platforms/xcb/qxcbke
  
 diff -ur qtbase-opensource-src-5.4.0-rc-old_xcb/src/plugins/platforms/xcb/qxcbkeyboard.h qtbase-opensource-src-5.4.0-rc-old_xkbcommon/src/plugins/platforms/xcb/qxcbkeyboard.h
 --- qtbase-opensource-src-5.4.0-rc-old_xcb/src/plugins/platforms/xcb/qxcbkeyboard.h	2014-11-29 03:07:40.000000000 +0100
-+++ qtbase/src/plugins/platforms/xcb/qxcbkeyboard.h	2014-11-29 03:32:16.000000000 +0100
++++ src/plugins/platforms/xcb/qxcbkeyboard.h	2014-11-29 03:32:16.000000000 +0100
 @@ -75,7 +75,7 @@
      void handleKeyEvent(xcb_window_t sourceWindow, QEvent::Type type, xcb_keycode_t code, quint16 state, xcb_timestamp_t time);
  

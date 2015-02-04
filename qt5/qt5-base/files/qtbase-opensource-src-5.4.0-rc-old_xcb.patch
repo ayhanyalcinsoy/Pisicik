@@ -37,7 +37,7 @@ diff -ur qtbase-opensource-src-5.4.0-rc/configure qtbase-opensource-src-5.4.0-rc
              echo " switch (-continue) to $0 to continue."
 diff -ur qtbase-opensource-src-5.4.0-rc/src/plugins/platforms/xcb/qxcbconnection.cpp qtbase-opensource-src-5.4.0-rc-old_xcb/src/plugins/platforms/xcb/qxcbconnection.cpp
 --- qtbase-opensource-src-5.4.0-rc/src/plugins/platforms/xcb/qxcbconnection.cpp	2014-11-24 16:00:12.000000000 +0100
-+++ qtbase/src/plugins/platforms/xcb/qxcbconnection.cpp	2014-11-29 03:07:40.000000000 +0100
++++ src/plugins/platforms/xcb/qxcbconnection.cpp	2014-11-29 03:07:40.000000000 +0100
 @@ -1761,7 +1761,7 @@
      xcb_xkb_use_extension_cookie_t xkb_query_cookie;
      xcb_xkb_use_extension_reply_t *xkb_query;
@@ -49,7 +49,7 @@ diff -ur qtbase-opensource-src-5.4.0-rc/src/plugins/platforms/xcb/qxcbconnection
      if (!xkb_query) {
 diff -ur qtbase-opensource-src-5.4.0-rc/src/plugins/platforms/xcb/qxcbkeyboard.cpp qtbase-opensource-src-5.4.0-rc-old_xcb/src/plugins/platforms/xcb/qxcbkeyboard.cpp
 --- qtbase-opensource-src-5.4.0-rc/src/plugins/platforms/xcb/qxcbkeyboard.cpp	2014-11-24 16:00:11.000000000 +0100
-+++ qtbase/src/plugins/platforms/xcb/qxcbkeyboard.cpp	2014-11-29 03:29:53.000000000 +0100
++++ src/plugins/platforms/xcb/qxcbkeyboard.cpp	2014-11-29 03:29:53.000000000 +0100
 @@ -693,50 +693,65 @@
          // log only critical errors, we do our own error logging from printKeymapError()
          xkb_context_set_log_level(xkb_context, (xkb_log_level)XKB_LOG_LEVEL_CRITICAL);
@@ -179,7 +179,7 @@ diff -ur qtbase-opensource-src-5.4.0-rc/src/plugins/platforms/xcb/qxcbkeyboard.c
          m_key_symbols = xcb_key_symbols_alloc(xcb_connection());
 diff -ur qtbase-opensource-src-5.4.0-rc/src/plugins/platforms/xcb/qxcbkeyboard.h qtbase-opensource-src-5.4.0-rc-old_xcb/src/plugins/platforms/xcb/qxcbkeyboard.h
 --- qtbase-opensource-src-5.4.0-rc/src/plugins/platforms/xcb/qxcbkeyboard.h	2014-11-24 16:00:12.000000000 +0100
-+++ qtbase/src/plugins/platforms/xcb/qxcbkeyboard.h	2014-11-29 03:07:40.000000000 +0100
++++ src/plugins/platforms/xcb/qxcbkeyboard.h	2014-11-29 03:07:40.000000000 +0100
 @@ -39,9 +39,6 @@
  #include <xcb/xcb_keysyms.h>
  
