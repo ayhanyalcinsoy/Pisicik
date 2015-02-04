@@ -5,8 +5,8 @@
         <Name>qt5-websockets</Name>
         <Homepage>http://qt.digia.com/</Homepage>
         <Packager>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@pisilinux.org</Email>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
         </Packager>
         <Summary>Provides WebSocket communication compliant with RFC 6455</Summary>
         <Description>Provides WebSocket communication compliant with RFC 6455</Description>
@@ -16,25 +16,28 @@
             <Dependency>qt5-base-devel</Dependency>
             <Dependency>qt5-declarative-devel</Dependency>
         </BuildDependencies>
-        <Patches>
-            <!-- Fedora Patches -->
-            <!--<Patch level="0">qtbase-opensource-src-5.2.0-enable_ft_lcdfilter.patch</Patch>-->
-            <!--<Patch level="0">qt-everywhere-opensource-src-4.8.5-QTBUG-35459.patch</Patch>-->
-        </Patches>
     </Source>
 
     <Package>
         <Name>qt5-websockets</Name>
         <Files>
-            <Path fileType="library">/usr/lib</Path></Path>
-            <Path fileType="library">/usr/lib/qt5/imports</Path>
-            <Path fileType="library">/usr/lib/qt5/qml</Path>
-            <Path fileType="library">/usr/lib/qt5/plugins</Path>
-            <Path fileType="executable">/usr/lib/qt5/bin/</Path>
-            <Path fileType="executable">/usr/lib/qt5/libexec</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
         </Files>
         <RuntimeDependencies>
             <Dependency>qt5-base</Dependency>
+            <Dependency>qt5-declarative</Dependency>
+        </RuntimeDependencies>
+    </Package>
+
+    <Package>
+        <Name>qt5-websockets-devel</Name>
+        <Files>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+            <Path fileType="headers">/usr/include/qt5</Path>
+        </Files>
+        <RuntimeDependencies>
+            <Dependency>qt5-base-devel</Dependency>
         </RuntimeDependencies>
     </Package>
 
