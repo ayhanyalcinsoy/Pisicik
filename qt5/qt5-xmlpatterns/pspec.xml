@@ -5,8 +5,8 @@
         <Name>qt5-xmlpatterns</Name>
         <Homepage>http://qt.digia.com/</Homepage>
         <Packager>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@pisilinux.org</Email>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
         </Packager>
         <Summary>Support for XPath, XQuery, XSLT and XML schema validation</Summary>
         <Description>Support for XPath, XQuery, XSLT and XML schema validation</Description>
@@ -14,24 +14,29 @@
         <Archive sha1sum="e6d08bca4186b8c10e669836e5f6133ad59c9cce" type="tarxz">http://download.qt.io/official_releases/qt/5.4/5.4.0/submodules/qtxmlpatterns-opensource-src-5.4.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5-base-devel</Dependency>
-            <Dependency>qt5-qttools-devel</Dependency>
+            <Dependency>qt5-tools-devel</Dependency>
         </BuildDependencies>
-        <Patches>
-            <!-- Fedora Patches -->
-            <!--<Patch level="0">qtbase-opensource-src-5.2.0-enable_ft_lcdfilter.patch</Patch>-->
-            <!--<Patch level="0">qt-everywhere-opensource-src-4.8.5-QTBUG-35459.patch</Patch>-->
-        </Patches>
     </Source>
 
     <Package>
         <Name>qt5-xmlpatterns</Name>
         <Files>
-            <Path fileType="library">/usr/lib</Path></Path>
-            <Path fileType="library">/usr/lib/qt5/imports</Path>
-            <Path fileType="library">/usr/lib/qt5/qml</Path>
-            <Path fileType="library">/usr/lib/qt5/plugins</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="data">/usr/share/licenses</Path>
             <Path fileType="executable">/usr/lib/qt5/bin/</Path>
-            <Path fileType="executable">/usr/lib/qt5/libexec</Path>
+            <Path fileType="executable">/usr/bin</Path>
+        </Files>
+        <RuntimeDependencies>
+            <Dependency>qt5-base</Dependency>
+        </RuntimeDependencies>
+    </Package>
+
+    <Package>
+        <Name>qt5-xmlpatterns-devel</Name>
+        <Files>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+            <Path fileType="headers">/usr/include/qt5</Path>
         </Files>
         <RuntimeDependencies>
             <Dependency>qt5-base</Dependency>
