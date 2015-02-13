@@ -1,0 +1,39 @@
+5 Build the base libraries
+    5.1 mimetypes (Qt4 Only)
+    5.2 libqtxdg
+    5.3 liblxqt
+    5.4 liblxqt-mount
+    5.5 lxqt-globalkeys
+    5.6 lxqt-notificationd
+    5.7 libsysstat
+    5.8 menu-cache
+    5.9 libfm
+
+6 Build major components
+    6.1 lxqt-panel
+    6.2 pcmanfm-qt
+    6.3 lxqt-session
+    6.4 lxqt-runner
+    6.5 lxqt-qtplugin
+    6.6 lxqt-policykit
+    6.7 lxqt-powermanagement
+    6.8 lximage-qt
+    6.9 lxqt-config
+    6.10 lxqt-config-randr -
+    6.11 obconf-qt
+    6.12 compton-conf
+    6.13 lxqt-about
+
+7 Install data files
+    7.1 lxqt-common
+    7.2 lxmenu-data
+
+    
+    8 Deprecated components
+
+    8.1 lxqt-openssh-askpass
+    8.2 lxinput-qt
+    8.3 lxqt-appswitcher
+    8.4 lxqt-lightdm-greeter
+
+ 
