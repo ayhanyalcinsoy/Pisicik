@@ -11,7 +11,8 @@ def setup():
     cmaketools.configure("-DCMAKE_BUILD_TYPE=release \
                           -DCMAKE_INSTALL_PREFIX=/usr \
                           -DCMAKE_INSTALL_LIBDIR=/usr/lib \
-			  -DLIB_SUFFIX=/usr/lib")
+			  -DLIB_SUFFIX=/usr/lib \
+                          -DUSE_QT5=ON")
 
 def build():
     cmaketools.make()

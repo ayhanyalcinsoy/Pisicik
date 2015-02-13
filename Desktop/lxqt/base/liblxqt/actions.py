@@ -11,7 +11,8 @@ def setup():
     cmaketools.configure("-DCMAKE_BUILD_TYPE=release \
                           -DCMAKE_INSTALL_PREFIX=/usr \
                           -DCMAKE_INSTALL_LIBDIR=/usr/lib \
-                          -DLXQT_ETC_XDG_DIR=/etc")
+                          -DLXQT_ETC_XDG_DIR=/etc\
+                          -DUSE_QT5=ON")
 
 def build():
     cmaketools.make()

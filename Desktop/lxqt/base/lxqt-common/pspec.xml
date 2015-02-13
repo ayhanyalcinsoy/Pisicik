@@ -10,15 +10,10 @@
         <IsA>data</IsA>
         <Summary>Common data to run a LXQt session.</Summary>
         <Description>Common data file required for running an lxde-qt session</Description>
-        <Archive sha1sum="85065c246e400d7ac37570ac9a84f30fca764f69" type="targz">http://lxqt.org/downloads/0.8.0/lxqt-common-0.8.0.tar.gz</Archive>
+        <Archive sha1sum="2036012e4196d493a80f9e443da5c2b60d836672" type="targz">http://downloads.lxqt.org/lxqt/0.9.0/lxqt-common-0.9.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>liblxqt-devel</Dependency>
         </BuildDependencies>
-        <Patches>
-            <Patch>lxqt-common-0.8.0-desktop-launch.patch</Patch>
-            <Patch>lxqt-common-0.8.0-polkit_libexec.patch</Patch>
-            <Patch>lxqt-common-xdg_data_dir.patch</Patch>
-        </Patches>
     </Source>
     <Package>
         <Name>lxqt-common</Name>
@@ -26,11 +21,10 @@
             <Dependency>gtk2</Dependency>
             <Dependency>lxqt-panel</Dependency>
             <Dependency>lxqt-session</Dependency>
-            <Dependency>libfm-qt</Dependency>
+            <Dependency>libfm-qt5</Dependency>
             <Dependency>pcmanfm-qt</Dependency>
             <Dependency>pisilinux-default-settings-lxqt</Dependency>
             <Dependency>lxqt-policykit</Dependency>
-            <Dependency>openbox</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
@@ -42,9 +36,18 @@
         </Files>
     </Package>
     <History>
+        <Update release="3">
+            <Date>2015-02-10</Date>
+            <Version>0.9.0</Version>
+            <Comment>version bump and compiled qt5</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            <Email>vedat@pisilinux.org</Email>
+        </Update>
         <Update release="2">
             <Date>2014-11-07</Date>
             <Version>0.8.0</Version>
+            <Comment>version bump</Comment>
             <Name>Ayhan Yalçınsoy</Name>
             <Email>ayhanyalcinsoy@pisilinux.org</Email>
             <Email>vedat@pisilinux.org</Email>

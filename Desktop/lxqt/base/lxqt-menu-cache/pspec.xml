@@ -12,7 +12,7 @@
         <Description>Library used to read freedesktop.org menus</Description>
         <Archive sha1sum="2c5b8ffbb0eb20ac8235f904a6e503ea08a036cf" type="tarxz">mirrors://sourceforge/lxde/menu-cache/1.0/menu-cache-1.0.0-rc1.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>qt-devel</Dependency>
+            <Dependency>qt5-base-devel</Dependency>
             <Dependency>gtk-doc</Dependency>
             <Dependency>libfm-extra</Dependency>
         </BuildDependencies>
@@ -47,6 +47,13 @@
         </Files>
     </Package>
     <History>
+        <Update release="3">
+            <Date>2015-02-10</Date>
+            <Version>1.0.0</Version>
+            <Comment>rebuild for qt5</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
         <Update release="2">
             <Date>2014-11-07</Date>
             <Version>1.0.0</Version>
