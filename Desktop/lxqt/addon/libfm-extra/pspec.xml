@@ -24,6 +24,13 @@
         </Files>
     </Package>
     <History>
+        <Update release="2">
+            <Date>2015-02-12</Date>
+            <Version>1.2.3</Version>
+            <Comment>rebuild for qt5</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2014-04-25</Date>
             <Version>1.2.3</Version>

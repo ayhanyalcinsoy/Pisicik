@@ -12,7 +12,7 @@
         <Description>QT-based multitab terminal emulator.</Description>
         <Archive sha1sum="0c2269c43aa463e5dbf869d935745226b3c9943a" type="targz">mirrors://sourceforge/lxde/LXTerminal (terminal emulator)/LXTerminal 0.2.0/lxterminal-0.2.0.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency>qt-devel</Dependency>
+            <Dependency>qt5-base-devel</Dependency>
             <Dependency>libqxt-devel</Dependency>
             <Dependency>qtermwidget-devel</Dependency>
         </BuildDependencies>
@@ -33,6 +33,13 @@
         </Files>
     </Package>
     <History>
+        <Update release="3">
+            <Date>2015-02-10</Date>
+            <Version>0.2.0</Version>
+            <Comment>rebuild for qt5</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
         <Update release="2">
             <Date>2014-05-06</Date>
             <Version>0.2.0</Version>

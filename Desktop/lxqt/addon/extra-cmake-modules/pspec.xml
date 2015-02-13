@@ -1,0 +1,35 @@
+<PISI>
+    <Source>
+        <Name>extra-cmake-modules</Name>
+        <Homepage>https://projects.kde.org/projects/frameworks/kwindowsystem</Homepage>
+        <Packager>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Packager>
+        <License>LGPL</License>
+        <IsA>app:console</IsA>
+        <Summary>Extra modules and scripts for CMake</Summary>
+        <Description>Extra modules and scripts for CMake</Description>
+        <Archive sha1sum="1165cd6c9c58b042a08aa8897c55b4f5defac54a" type="tarxz">http://download.kde.org/stable/frameworks/5.6/extra-cmake-modules-1.6.1.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>python-sphinx</Dependency>
+        </BuildDependencies>
+    </Source>
+    <Package>
+        <Name>extra-cmake-modules</Name>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2015-02-11</Date>
+            <Version>1.6.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

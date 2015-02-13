@@ -1,0 +1,57 @@
+<PISI>
+    <Source>
+        <Name>kwindowsystem</Name>
+        <Homepage>https://projects.kde.org/projects/frameworks/kwindowsystem</Homepage>
+        <Packager>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Packager>
+        <License>LGPL</License>
+        <IsA>app:gui</IsA>
+        <Summary>Access to the windowing system</Summary>
+        <Description>Access to the windowing system</Description>
+        <Archive sha1sum="1228d3bb2ac948f99a14ed302e78c407b620b1fd" type="tarxz">http://download.kde.org/stable/frameworks/5.6/kwindowsystem-5.6.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>qt5-tools</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>kdebug-340348.patch</Patch>
+            <Patch>kdebug-337626.patch</Patch>
+        </Patches>
+    </Source>
+    <Package>
+        <Name>kwindowsystem</Name>
+        <RuntimeDependencies>
+            <Dependency>qt5-base</Dependency>
+            <Dependency>qt5-x11extras</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>xcb-util-keysyms</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>kwindowsystem-devel</Name>
+        <RuntimeDependencies>
+            <!--<Dependency>libXfixes</Dependency>-->
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+            <Path fileType="headers">/usr/include/KF5</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="2">
+            <Date>2015-02-11</Date>
+            <Version>5.6.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
