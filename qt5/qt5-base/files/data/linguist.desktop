@@ -1,6 +1,6 @@
 [Desktop Entry]
 Encoding=UTF-8
-Exec=/usr/lib/qt5/bin/linguist
+Exec=linguist-qt5
 Name=Qt5 Linguist
 Name[ar]=لغوي Qt5
 Name[bn]=কিউ-টি লিঙ্গুইস্ট

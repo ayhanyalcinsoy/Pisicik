@@ -1,6 +1,7 @@
+#!/usr/bin/env xdg-open
 [Desktop Entry]
 Encoding=UTF-8
-Exec=/usr/lib/qt5/bin/assistant
+Exec=assistant-qt5
 Name=Qt5 Assistant
 Name[af]=Qt5 Assistent
 Name[ar]=معاون Qt5

@@ -95,7 +95,6 @@ def setup():
         pisitools.dosed("mkspecs/linux-g++-64/qmake.conf", "-m64", "-m32")
         shelltools.export("LDFLAGS", "-m32 %s" % get.LDFLAGS())
         options = "-no-pch \
-                   -no-sse2 \
                    -v \
                    -prefix /usr \
                    -libdir /usr/lib32 \
@@ -142,7 +141,7 @@ def install():
         pisitools.dosym("/usr/lib/qt5/bin/%s" % bin, "/usr/bin/%s-qt5" % bin)
 
     # Fix all occurances of WorkDir in pc files
-    #pisitools.dosed("%s%s/pkgconfig/*.pc" % (get.installDIR(), qt5.libdir), "%s/qt-x11-opensource-src-%s" % (get.workDIR(), get.srcVERSION()), qt5.prefix)
+    pisitools.dosed("%s%s/pkgconfig/*.pc" % (get.installDIR(), qt5.libdir), "%s/qt-x11-opensource-src-%s" % (get.workDIR(), get.srcVERSION()), qt5.prefix)
 
     mkspecPath = "%s/mkspecs" %  qt5.archdatadir
 

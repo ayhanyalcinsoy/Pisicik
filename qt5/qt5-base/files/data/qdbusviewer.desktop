@@ -3,7 +3,7 @@
 Name=Qt5 QDbusViewer 
 GenericName=D-Bus Debugger
 Comment=Debug D-Bus applications
-Exec=/usr/lib/qt5/bin/qdbusviewer
+Exec=qdbusviewer-qt5
 Icon=qdbusviewer5
 Terminal=false
 Type=Application

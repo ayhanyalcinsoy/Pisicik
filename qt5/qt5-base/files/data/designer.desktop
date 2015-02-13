@@ -1,6 +1,6 @@
 [Desktop Entry]
 Encoding=UTF-8
-Exec=/usr/lib/qt5/bin/designer
+Exec=designer-qt5
 Name=Qt5 Designer
 Name[af]=Qt5 Ontwerper
 Name[ar]=مصمم Qt5
