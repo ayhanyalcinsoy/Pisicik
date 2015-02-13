@@ -8,8 +8,8 @@
             <Name>Ayhan Yalçınsoy</Name>
             <Email>ayhanyalcinsoy@pisilinux.org</Email>
         </Packager>
-        <Summary>Support for XPath, XQuery, XSLT and XML schema validation</Summary>
-        <Description>Support for XPath, XQuery, XSLT and XML schema validation</Description>
+        <Summary>Provides access to hardware and virtual serial ports</Summary>
+        <Description>Provides access to hardware and virtual serial ports</Description>
         <License>LGPLv2.1-linking-exception</License>
         <Archive sha1sum="ccfc39045d803405ec36bcfdbf281417dd96663a" type="tarxz">http://download.qt.io/official_releases/qt/5.4/5.4.0/submodules/qtserialport-opensource-src-5.4.0.tar.xz</Archive>
         <BuildDependencies>
