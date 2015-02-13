@@ -9,6 +9,7 @@
             <Email>admins@pisilinux.org</Email>
         </Packager>
         <License>GPLv2</License>
+        <Icon>lshw</Icon>
         <IsA>app:console</IsA>
         <IsA>app:gui</IsA>
         <Summary>A hardware lister</Summary>
