@@ -117,6 +117,7 @@ def setup():
                    -no-strip \
                    -dbus-linked \
                    -no-openvg \
+                   -no-sse2 \
                    -confirm-license \
                    -reduce-relocations  \
                    -opensource "
