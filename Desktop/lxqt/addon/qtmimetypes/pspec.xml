@@ -19,8 +19,8 @@
     <Package>
         <Name>qtmimetypes</Name>
         <RuntimeDependencies>
-            <Dependency>qt5</Dependency>
-            <Dependency>qt5-devel</Dependency>
+            <Dependency>qt5-base</Dependency>
+            <Dependency>qt5-base-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
