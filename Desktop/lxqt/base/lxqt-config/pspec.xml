@@ -37,6 +37,11 @@
             <Dependency>libqtxdg</Dependency>
             <Dependency>libXfixes</Dependency>
         </RuntimeDependencies>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/lxqt-config-file-associations.desktop">lxqt-config-file-associations.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/lxqt-config-input.desktop">lxqt-config-input.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/lxqt-config-monitor.desktop">lxqt-config-monitor.desktop</AdditionalFile>
+        </AdditionalFiles>
     </Package>
     <History>
         <Update release="4">
