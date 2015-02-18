@@ -11,7 +11,7 @@ from pisi.actionsapi import qt5
 from pisi.actionsapi import get
 
 def setup():
-    shelltools.system ("qmake-qt5 qtwebengine.pro -config -no-use-gold-linker")
+    shelltools.system ("qmake-qt5 qtwebengine.pro -config —no-warnings-are-errors")
 
 def build():
     qt5.make()
