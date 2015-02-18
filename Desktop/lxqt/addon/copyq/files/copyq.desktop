@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=CopyQ
+Name[tr]=CopyQ Pano Aracı
 Exec=copyq
 Icon=copyq
 GenericName=Clipboard Manager
