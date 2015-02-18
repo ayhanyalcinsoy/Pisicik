@@ -32,6 +32,9 @@
           <Dependency>qt5-x11extras</Dependency>
           <Dependency>pcmanfm-qt</Dependency>
         </RuntimeDependencies>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/lximage-qt.desktop">lximage-qt.desktop</AdditionalFile>
+        </AdditionalFiles>
     </Package>
 
     <History>
