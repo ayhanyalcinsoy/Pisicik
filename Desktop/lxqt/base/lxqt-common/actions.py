@@ -18,21 +18,21 @@ def build():
 
 def install():
     cmaketools.rawInstall("DESTDIR=%s" % get.installDIR())
+    pisitools.domove("/etc/menus/lxqt-applications.menu", "/etc/xdg/menus")
+    pisitools.removeDir("/etc/menus")
+    pisitools.remove("/usr/share/desktop-directories/*.directory")
     pisitools.remove("/etc/lxqt/*.conf")
     pisitools.remove("etc/pcmanfm-qt/lxqt/*.conf")
 
-    pisitools.remove("/usr/share/lxqt/themes/ambiance/mainmenu.svg")
-    pisitools.remove("/usr/share/lxqt/themes/dark/mainmenu.svg")
-    pisitools.remove("/usr/share/lxqt/themes/frost/mainmenu.svg")
-    pisitools.remove("/usr/share/lxqt/themes/kde-plasma/mainmenu.svg")
-    pisitools.remove("/usr/share/lxqt/themes/light/mainmenu.svg")
+    pisitools.remove("/usr/share/lxqt/themes/Ambiance/mainmenu.svg")
+    pisitools.remove("/usr/share/lxqt/themes/Dark/mainmenu.svg")
+    pisitools.remove("/usr/share/lxqt/themes/Frost/mainmenu.svg")
+    pisitools.remove("/usr/share/lxqt/themes/Kde-plasma/mainmenu.svg")
+    pisitools.remove("/usr/share/lxqt/themes/Light/mainmenu.svg")
 
-    pisitools.remove("/usr/share/lxqt/themes/ambiance/*.jpg")
-
-    pisitools.remove("/usr/share/lxqt/themes/ambiance/wallpaper.cfg")
-    pisitools.remove("/usr/share/lxqt/themes/dark/wallpaper.cfg")
-    pisitools.remove("/usr/share/lxqt/themes/frost/wallpaper.cfg")
-    pisitools.remove("/usr/share/lxqt/themes/kde-plasma/wallpaper.cfg")
-    pisitools.remove("/usr/share/lxqt/themes/light/wallpaper.cfg")
+    pisitools.remove("/usr/share/lxqt/themes/Dark/wallpaper.cfg")
+    pisitools.remove("/usr/share/lxqt/themes/Dark/lxqt-panel.qss")
+    pisitools.remove("/usr/share/lxqt/themes/Frost/wallpaper.cfg")
+    pisitools.remove("/usr/share/lxqt/themes/Kde-plasma/wallpaper.cfg")
 
     pisitools.dodoc("README.md")

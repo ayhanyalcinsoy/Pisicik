@@ -26,6 +26,10 @@
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share</Path>
         </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/lxqt-admin-time.desktop">lxqt-admin-time.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/lxqt-admin-user.desktop">lxqt-admin-user.desktop</AdditionalFile>
+        </AdditionalFiles>
     </Package>
     <History>
         <Update release="3">

@@ -25,6 +25,9 @@
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share/</Path>
         </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/lxqt-about.desktop">lxqt-about.desktop</AdditionalFile>
+        </AdditionalFiles>
     </Package>
     <History>
         <Update release="3">
