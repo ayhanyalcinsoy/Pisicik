@@ -27,6 +27,9 @@
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share</Path>
         </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/compton-conf.desktop">compton-conf.desktop</AdditionalFile>
+        </AdditionalFiles>
     </Package>
     <History>
         <Update release="3">
