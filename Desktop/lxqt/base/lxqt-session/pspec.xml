@@ -32,6 +32,12 @@
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/lxqt-config-session.desktop">lxqt-config-session.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/lxqt-reboot.desktop">lxqt-reboot.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/lxqt-hibernate.desktop">lxqt-hibernate.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/lxqt-logout.desktop">lxqt-logout.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/lxqt-lockscreen.desktop">lxqt-lockscreen.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/lxqt-shutdown.desktop">lxqt-shutdown.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/lxqt-suspend.desktop">lxqt-suspend.desktop</AdditionalFile>
         </AdditionalFiles>
     </Package>
     <History>
