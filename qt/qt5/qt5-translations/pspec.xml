@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>qt5-translations</Name>
+        <Homepage>http://qt.digia.com/</Homepage>
+        <Packager>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Packager>
+        <Summary>A cross-platform application and UI framework (Translations)</Summary>
+        <Description>A cross-platform application and UI framework (Translations)</Description>
+        <License>LGPLv2.1-linking-exception</License>
+        <Archive sha1sum="7649c41015efd4d111b16866aaacb5ee475e0137" type="tarxz">http://download.qt.io/official_releases/qt/5.4/5.4.0/submodules/qttranslations-opensource-src-5.4.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>qt5-base-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>qt5-translations</Name>
+        <Files>
+            <Path fileType="library">/usr/share/qt5</Path>
+            <Path fileType="data">/usr/share/licenses/</Path>
+        </Files>
+        <RuntimeDependencies>
+            <Dependency>qt5-base</Dependency>
+        </RuntimeDependencies>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2015-01-22</Date>
+            <Version>5.4.0</Version>
+            <Comment>First release</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
