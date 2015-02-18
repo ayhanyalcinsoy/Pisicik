@@ -2,7 +2,9 @@
 Type=Application
 Icon=user-desktop
 Name=Desktop Preferences
+Name[tr]= Masaüstü Tercihleri
 Comment=Change desktop wallpapers and behavior of desktop manager
+Comment[tr]=Masaüstü yöneticisinin davranışların ve duvar kağıdını değiştirin
 Categories=Settings;Qt;DesktopSettings;
 Exec=/usr/bin/pcmanfm-qt --desktop-pref=general
 StartupNotify=true

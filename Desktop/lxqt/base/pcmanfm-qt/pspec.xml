@@ -48,6 +48,7 @@
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/pcmanfm-qt.desktop">pcmanfm-qt.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/pcmanfm-qt-desktop-pref.desktop">pcmanfm-qt-desktop-pref.desktop</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/libfm-qt/translations/libfm-qt_tr.qm">libfm-qt_tr.qm</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/pcmanfm-qt/translations/pcmanfm-qt_tr.qm">pcmanfm-qt_tr.qm</AdditionalFile>
         </AdditionalFiles>
