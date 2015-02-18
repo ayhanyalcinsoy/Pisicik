@@ -1,9 +1,0 @@
-<?xml version="1.0" ?>
-<PISI>
-    <Source>
-        <Name>lxdm</Name>
-        <Summary xml:lang="tr">Bir LXDM özelleştirme aracı.</Summary>
-        <Description xml:lang="tr">Bir LXDM özelleştirme aracı.</Description>
-    </Source>
-</PISI>
-
