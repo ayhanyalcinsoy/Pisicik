@@ -22,6 +22,7 @@
             <Dependency>alsa-lib-devel</Dependency>
             <Dependency>libXcomposite-devel</Dependency>
             <Dependency>sqlite-devel</Dependency>
+            <Dependency>re2c</Dependency>
         </BuildDependencies>
     </Source>
 
