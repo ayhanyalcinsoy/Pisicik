@@ -104,6 +104,7 @@
             <Patch>qtbase-multilib_optflags.patch</Patch>
             <Patch>qtbase-opensource-src-5.3.2-QTBUG-35459.patch</Patch>
             <Patch>qtbase-opensource-src-5.4.0-QTBUG-43057.patch</Patch>
+            <Patch>undefined_qt_memfill.patch</Patch>
             <!-- Pisilinux Patches -->
             <Patch level="1">mkspecs1.patch</Patch>
             <Patch level="1">mkspecs2.patch</Patch>
