@@ -21,10 +21,8 @@ absoluteWorkDir = "%s/%s" % (get.workDIR(), WorkDir)
 bindirQt5="/usr/lib/qt5/bin"
 
 def setup():
-    shelltools.system('sed -i -e "s|^\(QMAKE_CFLAGS_RELEASE.*\)|\1 ${CFLAGS}|" mkspecs/common/gcc-base.conf')
-    shelltools.system('sed -i -e "s|^\(QMAKE_LFLAGS_RELEASE.*\)|\1 ${LDFLAGS}|" mkspecs/common/g++-unix.conf')
-
-
+    #shelltools.system('sed -i -e "s|^\(QMAKE_CFLAGS_RELEASE.*\)|\1 ${CFLAGS}|" mkspecs/common/gcc-base.conf')
+    #shelltools.system('sed -i -e "s|^\(QMAKE_LFLAGS_RELEASE.*\)|\1 ${LDFLAGS}|" mkspecs/common/g++-unix.conf')
 
     checkdeletepath="%s/qtbase/src/3rdparty"  % absoluteWorkDir
     for dir in ('libjpeg', 'freetype', 'libpng', 'zlib', "xcb", "sqlite"):
@@ -101,6 +99,7 @@ def setup():
         shelltools.export("LDFLAGS", "-m32 %s" % get.LDFLAGS())
         options = "-no-pch \
                    -v \
+                   -platform linux-g++-32 \
                    -prefix /usr \
                    -libdir /usr/lib32 \
                    -plugindir /usr/lib32/qt5/plugins \
@@ -108,11 +107,14 @@ def setup():
                    -datadir /usr/share/qt5 \
                    -translationdir /usr/share/qt5/translations \
                    -sysconfdir /etc \
-                   -system-sqlite \
-                   -system-harfbuzz \
-                   -system-libjpeg \
-                   -system-libpng \
-                   -system-zlib \
+                   -qt-zlib \
+                   -qt-libjpeg \
+                   -qt-libpng \
+                   -qt-xcb \
+                   -qt-xkbcommon \
+                   -qt-freetype \
+                   -qt-pcre \
+                   -qt-harfbuzz \
                    -nomake tests \
                    -openssl-linked \
                    -nomake examples \
@@ -132,13 +134,12 @@ def setup():
 
 def build():
     shelltools.export("LD_LIBRARY_PATH", "%s/lib:%s" % (get.curDIR(), get.ENV("LD_LIBRARY_PATH")))
+    autotools.make()
     # Fix docs build when qt is not installed
     shelltools.system('sed -i "s|/usr/lib/qt/bin/qdoc|${QTDIR}/qtbase/bin/qdoc|g" qmake/Makefile.qmake-docs')
-    shelltools.system("find -name Makefile -exec sed -i "s|/usr/lib/qt/bin/qdoc|${QTDIR}/qtbase/bin/qdoc|g" {} +")
+    #shelltools.system("find -name Makefile -exec sed -i "s|/usr/lib/qt/bin/qdoc|${QTDIR}/qtbase/bin/qdoc|g" {} +")
     shelltools.system('sed -i "s|/usr/lib/qt/bin/qhelpgenerator|${QTDIR}/qttools/bin/qhelpgenerator|g" qmake/Makefile.qmake-docs')
-    shelltools.system("find -name Makefile -exec sed -i "s|/usr/lib/qt/bin/qhelpgenerator|${QTDIR}/qttools/bin/qhelpgenerator|g" {} +")
-
-    autotools.make()
+    #shelltools.system("find -name Makefile -exec sed -i "s|/usr/lib/qt/bin/qhelpgenerator|${QTDIR}/qttools/bin/qhelpgenerator|g" {} +")
 
 def install():
     if get.buildTYPE() == "emul32":
@@ -150,10 +151,10 @@ def install():
     qt5.install("INSTALL_ROOT=%s" % get.installDIR())
 
     # Drop QMAKE_PRL_BUILD_DIR because reference the build dir
-    shelltools.system("find /usr/lib -type f -name '*.prl -exec sed -i -e '/^QMAKE_PRL_BUILD_DIR/d' {}")
+    #shelltools.system("find /usr/lib -type f -name '*.prl -exec sed -i -e '/^QMAKE_PRL_BUILD_DIR/d' {}")
 
     # Fix wrong qmake path in pri file
-    shelltools.system('sed -i "s|${srcdir}/${_pkgfqn}/qtbase|/usr|" /usr/lib/qt/mkspecs/modules/qt_lib_bootstrap_private.pri')
+    #shelltools.system('sed -i "s|${srcdir}/${_pkgfqn}/qtbase|/usr|" /usr/lib/qt5/mkspecs/modules/qt_lib_bootstrap_private.pri')
 
     #I hope qtchooser will manage this issue
     for bin in shelltools.ls("%s/usr/lib/qt5/bin" % get.installDIR()):
