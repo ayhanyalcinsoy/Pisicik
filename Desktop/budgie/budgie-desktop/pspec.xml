@@ -12,8 +12,8 @@
         <IsA>app:gui</IsA>
         <Summary>Simple GTK3 desktop experience</Summary>
         <Description>Simple GTK3 desktop experience</Description>
-<!--         <Archive sha1sum="bc2e32370e1965295ea400557e3448218bbce59f" type="tarbz2">http://81.228.208.166/budgie/budgie-desktop-0.8.1.tar.bz2</Archive> -->
-        <Archive sha1sum="7c371adc4a6e554ac8355a6cd495b0f1454d40fa" type="tarxz">https://evolve-os.com/sources/budgie-desktop-8.tar.xz</Archive>
+        <Archive sha1sum="c0edc13d7abcc745f74cbf14050d510fc846d542" type="tarxz">https://github.com/evolve-os/budgie-desktop/releases/download/v8.1/budgie-desktop-8.1.tar.xz</Archive>
+        <!--<Archive sha1sum="7c371adc4a6e554ac8355a6cd495b0f1454d40fa" type="tarxz">https://evolve-os.com/sources/budgie-desktop-8.tar.xz</Archive>-->
         <BuildDependencies>
              <Dependency>pulseaudio-libs-devel</Dependency>
              <Dependency>mutter-devel</Dependency>
@@ -82,7 +82,7 @@
     <History>
         <Update release="1">
             <Date>2014-11-18</Date>
-            <Version>8.0</Version>
+            <Version>8.1</Version>
             <Comment>first package</Comment>
             <Name>Ayhan Yalçınsoy</Name>
             <Email>ayhanyalcinsoy@pisilinux.org</Email>
