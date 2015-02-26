@@ -12,7 +12,7 @@
         <Summary>A cross-platform application and UI framework (Documentation)</Summary>
         <Description>A cross-platform application and UI framework (Documentation)</Description>
         <License>LGPLv2.1-linking-exception</License>
-        <Archive sha1sum="38dccc28e50525301634eaeaa2c20d71c3938f7a" type="tarxz">http://download.qt.io/official_releases/qt/5.4/5.4.0/submodules/qtdoc-opensource-src-5.4.0.tar.xz</Archive>
+        <Archive sha1sum="b073cc49b4fe979901e45da1534bac1fe06736f5" type="tarxz">http://download.qt.io/official_releases/qt/5.4/5.4.1/submodules/qtdoc-opensource-src-5.4.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5-base-devel</Dependency>
         </BuildDependencies>
