@@ -206,6 +206,9 @@
                 <Path fileType="executable">/usr/bin</Path>
                 <Path fileType="data">/usr/share</Path>
             </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/compton-conf.desktop" permission="0644" owner="root">compton-conf.desktop</AdditionalFile>
+            </AdditionalFiles>
         </Package>
         <History>
             <Update release="3">
@@ -285,6 +288,7 @@
             </Files>
             <AdditionalFiles>
                 <AdditionalFile target="/usr/share/applications/pcmanfm-qt.desktop" permission="0644" owner="root">pcmanfm-qt.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/applications/pcmanfm-qt-desktop-pref.desktop" permission="0644" owner="root">pcmanfm-qt-desktop-pref.desktop</AdditionalFile>
                 <AdditionalFile target="/usr/share/libfm-qt/translations/libfm-qt_tr.qm" permission="0644" owner="root">libfm-qt_tr.qm</AdditionalFile>
                 <AdditionalFile target="/usr/share/pcmanfm-qt/translations/pcmanfm-qt_tr.qm" permission="0644" owner="root">pcmanfm-qt_tr.qm</AdditionalFile>
             </AdditionalFiles>
@@ -477,6 +481,11 @@
                 <Path fileType="data">/usr/share/cmake/qtxdg</Path>
                 <Path fileType="data">/usr/share/applications</Path>
             </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/lxqt-config-file-associations.desktop" permission="0644" owner="root">lxqt-config-file-associations.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/applications/lxqt-config-input.desktop" permission="0644" owner="root">lxqt-config-input.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/applications/lxqt-config-monitor.desktop" permission="0644" owner="root">lxqt-config-monitor.desktop</AdditionalFile>
+            </AdditionalFiles>
         </Package>
         <History>
             <Update release="4">
@@ -551,6 +560,7 @@
             <Summary xml:lang="en">Development headers for liblxqt</Summary>
             <RuntimeDependencies>
                 <Dependency>qt5-base-devel</Dependency>
+                <Dependency>qt5-x11extras-devel</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="header">/usr/include</Path>
@@ -596,7 +606,7 @@
             <Summary xml:lang="tr">Pisilinux lxqt öntanımlı ayarları</Summary>
             <Description xml:lang="en">This package contains the lxqt default settings for Pisilinux.</Description>
             <Description xml:lang="tr">Bu paket, PisiLinux lxqt için öntanımlı ayarları içerir.</Description>
-            <Archive type="targz" sha1sum="c2679b4111742dfc01f1907030a4e14808220a59">https://dl.dropboxusercontent.com/u/71120717/pisilinux-default-settings-lxqt-0.2.tar.gz</Archive>
+            <Archive type="targz" sha1sum="3a13b802d8cac527c867cb5e2284b0efc4dab34b">https://dl.dropboxusercontent.com/u/71120717/pisilinux-default-settings-lxqt-0.2.tar.gz</Archive>
             <SourceURI>base/pisilinux-default-settings-lxqt/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -971,7 +981,7 @@
             <Summary xml:lang="tr">Resim görüntüleyici ve ekran görüntüsü aracı.</Summary>
             <Description xml:lang="en">Image viewer and screenshot tool.</Description>
             <Description xml:lang="tr">lximage-qt, Resim görüntüleyici ve ekran görüntüsü aracıdır.</Description>
-            <Archive type="targz" sha1sum="26d62d197d5d73acfa7fdbbbdd1c88d00e5f0a54">http://lxqt.org/downloads/lximage-qt/0.3.0/lximage-qt-0.3.0.tar.gz</Archive>
+            <Archive type="targz" sha1sum="208c8ad4d4580ea388fb18dbb02090d470b32250">http://downloads.lxqt.org/lximage-qt/0.4.0/lximage-qt-0.4.0.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>qt5-base-devel</Dependency>
                 <Dependency>pcmanfm-qt</Dependency>
@@ -994,12 +1004,15 @@
                 <Path fileType="data">/usr/share/</Path>
                 <Path fileType="executable">/usr/bin</Path>
             </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/lximage-qt.desktop" permission="0644" owner="root">lximage-qt.desktop</AdditionalFile>
+            </AdditionalFiles>
         </Package>
         <History>
             <Update release="3">
                 <Date>2015-02-10</Date>
-                <Version>0.3.0</Version>
-                <Comment>rebuild qt5</Comment>
+                <Version>0.4.0</Version>
+                <Comment>version bump for qt5</Comment>
                 <Name>Ayhan Yalçınsoy</Name>
                 <Email>ayhanyalcinsoy@pisilinux.org</Email>
             </Update>
@@ -1059,6 +1072,10 @@
                 <Path fileType="data">/usr/share</Path>
                 <Path fileType="data">/usr/share/themes/lxqt</Path>
             </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/desktop-directories/lxqt-leave.directory" permission="0644" owner="root">lxqt-leave.directory</AdditionalFile>
+                <AdditionalFile target="/usr/share/desktop-directories/lxqt-settings.directory" permission="0644" owner="root">lxqt-settings.directory</AdditionalFile>
+            </AdditionalFiles>
         </Package>
         <History>
             <Update release="4">
@@ -1260,6 +1277,10 @@
                 <Path fileType="executable">/usr/bin</Path>
                 <Path fileType="data">/usr/share</Path>
             </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/lxqt-admin-time.desktop" permission="0644" owner="root">lxqt-admin-time.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/applications/lxqt-admin-user.desktop" permission="0644" owner="root">lxqt-admin-user.desktop</AdditionalFile>
+            </AdditionalFiles>
         </Package>
         <History>
             <Update release="3">
@@ -1323,6 +1344,12 @@
             </Files>
             <AdditionalFiles>
                 <AdditionalFile target="/usr/share/applications/lxqt-config-session.desktop" permission="0644" owner="root">lxqt-config-session.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/applications/lxqt-reboot.desktop" permission="0644" owner="root">lxqt-reboot.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/applications/lxqt-hibernate.desktop" permission="0644" owner="root">lxqt-hibernate.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/applications/lxqt-logout.desktop" permission="0644" owner="root">lxqt-logout.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/applications/lxqt-lockscreen.desktop" permission="0644" owner="root">lxqt-lockscreen.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/applications/lxqt-shutdown.desktop" permission="0644" owner="root">lxqt-shutdown.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/applications/lxqt-suspend.desktop" permission="0644" owner="root">lxqt-suspend.desktop</AdditionalFile>
             </AdditionalFiles>
         </Package>
         <History>
@@ -1570,7 +1597,6 @@
             <Name>lxqt-libmenu-cache</Name>
             <Summary xml:lang="en">Library for lxqt-menu-cache</Summary>
             <RuntimeDependencies>
-                <Dependency release="3">lxqt-menu-cache</Dependency>
                 <Dependency>glib2-devel</Dependency>
             </RuntimeDependencies>
             <Files>
@@ -1633,6 +1659,9 @@
                 <Path fileType="executable">/usr/bin</Path>
                 <Path fileType="data">/usr/share/</Path>
             </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/lxqt-about.desktop" permission="0644" owner="root">lxqt-about.desktop</AdditionalFile>
+            </AdditionalFiles>
         </Package>
         <History>
             <Update release="3">
@@ -1809,6 +1838,273 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>openbox-menu</Name>
+            <Homepage>https://bitbucket.org/fabriceT/openbox-menu</Homepage>
+            <Packager>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">Openbox-menu is a pipemenu for Openbox window manager.</Summary>
+            <Description xml:lang="en">Openbox-menu is a pipemenu for Openbox window manager. It provides a dynamic menu listing installed applications. Most of the work is done by the LXDE library menu-cache.</Description>
+            <Archive type="tarbz2" sha1sum="2c391c7741d7e1eea080eaf6f38d46db90ce1a5f">https://bitbucket.org/fabriceT/openbox-menu/downloads/openbox-menu-0.7.0.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>gtk2-devel</Dependency>
+                <Dependency>lxqt-menu-cache-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>addon/eski/openbox-menu/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>openbox-menu</Name>
+            <RuntimeDependencies>
+                <Dependency>gtk2</Dependency>
+                <Dependency>lxqt-menu-cache</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/bin/</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2014-12-12</Date>
+                <Version>0.7.0</Version>
+                <Comment>First release</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>lxdm-customizer</Name>
+            <Homepage>https://github.com/elleryq/lxdm-customizer/</Homepage>
+            <Packager>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <License>LGPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">lxdm-customizer is a tool for customizing LXDM.</Summary>
+            <Description xml:lang="en">lxdm-customizer is a tool for customizing LXDM.</Description>
+            <Archive type="targz" sha1sum="cb8e3383a76c36d32f6bd0525ed141b1b9f90b13">https://github.com/elleryq/lxdm-customizer/archive/v1_1.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>qt-webkit-devel</Dependency>
+                <Dependency>phonon-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>addon/eski/lxdm-qt-customizer/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>lxdm-customizer</Name>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2012-06-17</Date>
+                <Version>1.1</Version>
+                <Comment>First release</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>libstatgrab</Name>
+            <Homepage>http://www.i-scream.org/libstatgrab</Homepage>
+            <Packager>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Packager>
+            <License>LGPL</License>
+            <IsA>library</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">libstatgrab is a library that provides cross platform access to statistics about the system on which it&apos;s run.</Summary>
+            <Summary xml:lang="tr">Çalışan sistem hakkında istatistiklere erişimi sağlayan bir kütüphanedir.</Summary>
+            <Description xml:lang="en">libstatgrab is a library for accessing information from the system for statistical purposes.</Description>
+            <Description xml:lang="tr">libstatgrab, çalışan sistem hakkında istatistiklere erişimi sağlayan kitaplıkları içerir.</Description>
+            <Archive type="targz" sha1sum="dd443de8556ca4760c7e33f384208167b266b9cd">ftp://ftp.i-scream.org/pub/i-scream/libstatgrab/libstatgrab-0.91.tar.gz</Archive>
+            <SourceURI>addon/eski/libstatgrab/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libstatgrab</Name>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="header">/usr/include</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="2">
+                <Date>2014-11-07</Date>
+                <Version>0.91</Version>
+                <Comment>version bump</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2014-05-02</Date>
+                <Version>0.90</Version>
+                <Comment>First Release</Comment>
+                <Name>Vedat Demir</Name>
+                <Email>vedat@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>qlogout</Name>
+            <Homepage>https://forum.manjaro.org/index.php?topic=15538.msg144265#msg144265‎</Homepage>
+            <Packager>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">Logout application intended for lxqt.</Summary>
+            <Description xml:lang="en">Logout application intended for lxqt.</Description>
+            <Archive type="targz" sha1sum="449d5eab2ae999826d370b880a1831a9332aa4ef">http://esclapion.free.fr/AUR/qlogout-1.0.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>qt5-base-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>addon/eski/qlogout/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>qlogout</Name>
+            <RuntimeDependencies>
+                <Dependency>qt5-base</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/share/</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/qlogout.desktop" permission="0644" owner="root">qlogout.desktop</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="2">
+                <Date>2015-02-12</Date>
+                <Version>1.0</Version>
+                <Comment>rebuild for qt5</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2014-05-06</Date>
+                <Version>1.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>sddm</Name>
+            <Homepage>https://github.com/sddm</Homepage>
+            <Packager>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Packager>
+            <License>GPLV2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">QML based X11 display manager</Summary>
+            <Description xml:lang="en">SDDM is a modern display manager for X11 aiming to be fast, simple and beatiful. It uses modern technologies like QtQuick, which in turn gives the designer the ability to create smooth, animated user interfaces.</Description>
+            <Archive type="targz" sha1sum="7a4a1c831e2ba7db953391f64af46b297febea0d">https://github.com/sddm/sddm/archive/v0.9.0.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>python-docs</Dependency>
+                <Dependency>qt-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>addon/eski/sddm/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>sddm</Name>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="library">/usr/include</Path>
+                <Path fileType="config">/etc</Path>
+                <Path fileType="data">/usr/lib/systemd/system/sddm.service</Path>
+                <Path fileType="data">/usr/share/display-managers/mdm.desktop&quot;&gt;</Path>
+            </Files>
+            <Provides>
+                <COMAR script="package.py">System.Package</COMAR>
+            </Provides>
+            <AdditionalFiles>
+                <AdditionalFile target="/etc/conf.d/xdm" permission="0644" owner="root">xdm</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2014-11-15</Date>
+                <Version>0.10.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>openbox-obsession</Name>
+            <Homepage>https://bitbucket.org/fabriceT/obsession</Homepage>
+            <Packager>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">Openbox session tools</Summary>
+            <Description xml:lang="en">Openbox session tools</Description>
+            <Archive type="tarbz2" sha1sum="9d6588fb40db7a9603a5f2fd985600372321c146">https://bitbucket.org/fabriceT/obsession/downloads/obsession-20140608.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>vala-devel</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>gtk2-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>addon/eski/openbox-obsession/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>openbox-obsession</Name>
+            <RuntimeDependencies>
+                <Dependency>cairo</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/share/</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="man">/usr/share/man</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2014-12-12</Date>
+                <Version>20140608</Version>
+                <Comment>First release</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>extra-cmake-modules</Name>
             <Homepage>https://projects.kde.org/projects/frameworks/kwindowsystem</Homepage>
             <Packager>
@@ -1820,7 +2116,7 @@
             <PartOf>desktop.lxqt.addon</PartOf>
             <Summary xml:lang="en">Extra modules and scripts for CMake</Summary>
             <Description xml:lang="en">Extra modules and scripts for CMake</Description>
-            <Archive type="tarxz" sha1sum="1165cd6c9c58b042a08aa8897c55b4f5defac54a">http://download.kde.org/stable/frameworks/5.6/extra-cmake-modules-1.6.1.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="1a7e6085719e80202fe8077539457152d1f85d0e">http://download.kde.org/stable/frameworks/5.7/extra-cmake-modules-1.7.0.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>python-sphinx</Dependency>
             </BuildDependencies>
@@ -1834,6 +2130,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2015-02-11</Date>
+                <Version>1.7.0</Version>
+                <Comment>Version bump</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
             <Update release="1">
                 <Date>2015-02-11</Date>
                 <Version>1.6.1</Version>
@@ -1896,6 +2199,52 @@
                 <Comment>First Release</Comment>
                 <Name>Vedat Demir</Name>
                 <Email>v.demir@mail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>qlipper</Name>
+            <Homepage>http://qlipper.googlecode.com</Homepage>
+            <Packager>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@gmail.com</Email>
+            </Packager>
+            <License>LGPLv2</License>
+            <IsA>app.gui</IsA>
+            <PartOf>desktop.lxqt.addon</PartOf>
+            <Summary xml:lang="en">Lightweight and cross-platform clipboard history applet based on qt</Summary>
+            <Description xml:lang="en">Lightweight and cross-platform clipboard history applet based on qt.</Description>
+            <Archive type="tarbz2" sha1sum="1a73a6dc50319a8c0cb2ab35d9dfbfca9e9d2003">http://qlipper.googlecode.com/files/qlipper-2.0.2.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>qt-devel</Dependency>
+                <Dependency>libqxt-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>qlipper-2.0.2-system-includes.patch</Patch>
+            </Patches>
+            <SourceURI>addon/qlipper/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>qlipper</Name>
+            <RuntimeDependencies>
+                <Dependency>qt</Dependency>
+                <Dependency>libqxt</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="man">/usr/share/man</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2015-02-17</Date>
+                <Version>2.0.2</Version>
+                <Comment>First release.</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@gmail.com</Email>
             </Update>
         </History>
     </SpecFile>
@@ -2226,273 +2575,6 @@
                 <Comment>First Release</Comment>
                 <Name>Vedat Demir</Name>
                 <Email>vedat@pisilinux.org</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>openbox-menu</Name>
-            <Homepage>https://bitbucket.org/fabriceT/openbox-menu</Homepage>
-            <Packager>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Packager>
-            <License>GPLv2</License>
-            <IsA>app:gui</IsA>
-            <PartOf>unknown</PartOf>
-            <Summary xml:lang="en">Openbox-menu is a pipemenu for Openbox window manager.</Summary>
-            <Description xml:lang="en">Openbox-menu is a pipemenu for Openbox window manager. It provides a dynamic menu listing installed applications. Most of the work is done by the LXDE library menu-cache.</Description>
-            <Archive type="tarbz2" sha1sum="2c391c7741d7e1eea080eaf6f38d46db90ce1a5f">https://bitbucket.org/fabriceT/openbox-menu/downloads/openbox-menu-0.7.0.tar.bz2</Archive>
-            <BuildDependencies>
-                <Dependency>gtk2-devel</Dependency>
-                <Dependency>lxqt-menu-cache-devel</Dependency>
-            </BuildDependencies>
-            <SourceURI>addon/gereksiz/openbox-menu/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>openbox-menu</Name>
-            <RuntimeDependencies>
-                <Dependency>gtk2</Dependency>
-                <Dependency>lxqt-menu-cache</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="executable">/bin/</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2014-12-12</Date>
-                <Version>0.7.0</Version>
-                <Comment>First release</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>lxdm-customizer</Name>
-            <Homepage>https://github.com/elleryq/lxdm-customizer/</Homepage>
-            <Packager>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Packager>
-            <License>GPLv2</License>
-            <License>LGPLv2</License>
-            <IsA>app:gui</IsA>
-            <PartOf>unknown</PartOf>
-            <Summary xml:lang="en">lxdm-customizer is a tool for customizing LXDM.</Summary>
-            <Description xml:lang="en">lxdm-customizer is a tool for customizing LXDM.</Description>
-            <Archive type="targz" sha1sum="cb8e3383a76c36d32f6bd0525ed141b1b9f90b13">https://github.com/elleryq/lxdm-customizer/archive/v1_1.tar.gz</Archive>
-            <BuildDependencies>
-                <Dependency>qt-webkit-devel</Dependency>
-                <Dependency>phonon-devel</Dependency>
-            </BuildDependencies>
-            <SourceURI>addon/gereksiz/lxdm-qt-customizer/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>lxdm-customizer</Name>
-            <Files>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="data">/usr</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2012-06-17</Date>
-                <Version>1.1</Version>
-                <Comment>First release</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>libstatgrab</Name>
-            <Homepage>http://www.i-scream.org/libstatgrab</Homepage>
-            <Packager>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Packager>
-            <License>LGPL</License>
-            <IsA>library</IsA>
-            <PartOf>unknown</PartOf>
-            <Summary xml:lang="en">libstatgrab is a library that provides cross platform access to statistics about the system on which it&apos;s run.</Summary>
-            <Summary xml:lang="tr">Çalışan sistem hakkında istatistiklere erişimi sağlayan bir kütüphanedir.</Summary>
-            <Description xml:lang="en">libstatgrab is a library for accessing information from the system for statistical purposes.</Description>
-            <Description xml:lang="tr">libstatgrab, çalışan sistem hakkında istatistiklere erişimi sağlayan kitaplıkları içerir.</Description>
-            <Archive type="targz" sha1sum="dd443de8556ca4760c7e33f384208167b266b9cd">ftp://ftp.i-scream.org/pub/i-scream/libstatgrab/libstatgrab-0.91.tar.gz</Archive>
-            <SourceURI>addon/gereksiz/libstatgrab/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>libstatgrab</Name>
-            <Files>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="data">/usr/share/</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="header">/usr/include</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="2">
-                <Date>2014-11-07</Date>
-                <Version>0.91</Version>
-                <Comment>version bump</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-            <Update release="1">
-                <Date>2014-05-02</Date>
-                <Version>0.90</Version>
-                <Comment>First Release</Comment>
-                <Name>Vedat Demir</Name>
-                <Email>vedat@pisilinux.org</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>qlogout</Name>
-            <Homepage>https://forum.manjaro.org/index.php?topic=15538.msg144265#msg144265‎</Homepage>
-            <Packager>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Packager>
-            <License>GPLv2</License>
-            <IsA>app:gui</IsA>
-            <PartOf>unknown</PartOf>
-            <Summary xml:lang="en">Logout application intended for lxqt.</Summary>
-            <Description xml:lang="en">Logout application intended for lxqt.</Description>
-            <Archive type="targz" sha1sum="449d5eab2ae999826d370b880a1831a9332aa4ef">http://esclapion.free.fr/AUR/qlogout-1.0.tar.gz</Archive>
-            <BuildDependencies>
-                <Dependency>qt5-base-devel</Dependency>
-            </BuildDependencies>
-            <SourceURI>addon/gereksiz/qlogout/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>qlogout</Name>
-            <RuntimeDependencies>
-                <Dependency>qt5-base</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="data">/usr/share/</Path>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="data">/usr/share/applications</Path>
-            </Files>
-            <AdditionalFiles>
-                <AdditionalFile target="/usr/share/applications/qlogout.desktop" permission="0644" owner="root">qlogout.desktop</AdditionalFile>
-            </AdditionalFiles>
-        </Package>
-        <History>
-            <Update release="2">
-                <Date>2015-02-12</Date>
-                <Version>1.0</Version>
-                <Comment>rebuild for qt5</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-            <Update release="1">
-                <Date>2014-05-06</Date>
-                <Version>1.0</Version>
-                <Comment>First Release</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>sddm</Name>
-            <Homepage>https://github.com/sddm</Homepage>
-            <Packager>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Packager>
-            <License>GPLV2</License>
-            <IsA>app:gui</IsA>
-            <PartOf>unknown</PartOf>
-            <Summary xml:lang="en">QML based X11 display manager</Summary>
-            <Description xml:lang="en">SDDM is a modern display manager for X11 aiming to be fast, simple and beatiful. It uses modern technologies like QtQuick, which in turn gives the designer the ability to create smooth, animated user interfaces.</Description>
-            <Archive type="targz" sha1sum="7a4a1c831e2ba7db953391f64af46b297febea0d">https://github.com/sddm/sddm/archive/v0.9.0.tar.gz</Archive>
-            <BuildDependencies>
-                <Dependency>python-docs</Dependency>
-                <Dependency>qt-devel</Dependency>
-            </BuildDependencies>
-            <SourceURI>addon/gereksiz/sddm/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>sddm</Name>
-            <Files>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="library">/usr/include</Path>
-                <Path fileType="config">/etc</Path>
-                <Path fileType="data">/usr/lib/systemd/system/sddm.service</Path>
-                <Path fileType="data">/usr/share/display-managers/mdm.desktop&quot;&gt;</Path>
-            </Files>
-            <Provides>
-                <COMAR script="package.py">System.Package</COMAR>
-            </Provides>
-            <AdditionalFiles>
-                <AdditionalFile target="/etc/conf.d/xdm" permission="0644" owner="root">xdm</AdditionalFile>
-            </AdditionalFiles>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2014-11-15</Date>
-                <Version>0.10.0</Version>
-                <Comment>First Release</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>openbox-obsession</Name>
-            <Homepage>https://bitbucket.org/fabriceT/obsession</Homepage>
-            <Packager>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Packager>
-            <License>GPLv2</License>
-            <IsA>app:gui</IsA>
-            <PartOf>unknown</PartOf>
-            <Summary xml:lang="en">Openbox session tools</Summary>
-            <Description xml:lang="en">Openbox session tools</Description>
-            <Archive type="tarbz2" sha1sum="9d6588fb40db7a9603a5f2fd985600372321c146">https://bitbucket.org/fabriceT/obsession/downloads/obsession-20140608.tar.bz2</Archive>
-            <BuildDependencies>
-                <Dependency>vala-devel</Dependency>
-                <Dependency>cairo-devel</Dependency>
-                <Dependency>gtk2-devel</Dependency>
-                <Dependency>gdk-pixbuf-devel</Dependency>
-            </BuildDependencies>
-            <SourceURI>addon/gereksiz/openbox-obsession/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>openbox-obsession</Name>
-            <RuntimeDependencies>
-                <Dependency>cairo</Dependency>
-                <Dependency>gtk2</Dependency>
-                <Dependency>gdk-pixbuf</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="library">/usr/share/</Path>
-                <Path fileType="localedata">/usr/share/locale</Path>
-                <Path fileType="man">/usr/share/man</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2014-12-12</Date>
-                <Version>20140608</Version>
-                <Comment>First release</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
             </Update>
         </History>
     </SpecFile>
