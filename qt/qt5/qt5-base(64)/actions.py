@@ -12,7 +12,7 @@ from pisi.actionsapi import get
 
 import os
 
-WorkDir = "qtbase-opensource-src-5.4.0"
+WorkDir = "qtbase-opensource-src-5.4.1"
 
 qtbase = qt5.prefix
 
@@ -87,6 +87,8 @@ def setup():
 def build():
     shelltools.export("LD_LIBRARY_PATH", "%s/lib:%s" % (get.curDIR(), get.ENV("LD_LIBRARY_PATH")))
     autotools.make()
+    shelltools.system('sed -i "s|/usr/lib/qt/bin/qdoc|${QTDIR}/qtbase/bin/qdoc|g" qmake/Makefile.qmake-docs')
+    shelltools.system('sed -i "s|/usr/lib/qt/bin/qhelpgenerator|${QTDIR}/qttools/bin/qhelpgenerator|g" qmake/Makefile.qmake-docs')
 
 def install():
     pisitools.dodir(qt5.libdir)

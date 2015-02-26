@@ -11,7 +11,7 @@
         <Summary>Plugins for additional image formats: TIFF, MNG, TGA, WBMP</Summary>
         <Description>Plugins for additional image formats: TIFF, MNG, TGA, WBMP</Description>
         <License>LGPLv2.1-linking-exception</License>
-        <Archive sha1sum="6590b61c51a186837c3d2058d8192886d970f92a" type="tarxz">http://download.qt.io/official_releases/qt/5.4/5.4.0/submodules/qtimageformats-opensource-src-5.4.0.tar.xz</Archive>
+        <Archive sha1sum="6fb124e2f8c644c97b56d023fcd90cf70dd5b1ba" type="tarxz">http://download.qt.io/official_releases/qt/5.4/5.4.1/submodules/qtimageformats-opensource-src-5.4.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5-base-devel</Dependency>
             <Dependency>jasper-32bit</Dependency>
@@ -35,8 +35,8 @@
 
     <History>
         <Update release="1">
-            <Date>2015-01-22</Date>
-            <Version>5.4.0</Version>
+            <Date>2015-02-25</Date>
+            <Version>5.4.1</Version>
             <Comment>First release</Comment>
             <Name>Ayhan Yalçınsoy</Name>
             <Email>ayhanyalcinsoy@pisilinux.org</Email>

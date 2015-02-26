@@ -11,7 +11,7 @@
         <Summary>Classes for making Qt applications scriptable. Provided for Qt 4.x compatibility</Summary>
         <Description>Classes for making Qt applications scriptable. Provided for Qt 4.x compatibility</Description>
         <License>LGPLv2.1-linking-exception</License>
-        <Archive sha1sum="7ca8d6ccbc97fb24a9e76b69eeaa5e7e9c321955" type="tarxz">http://download.qt.io/official_releases/qt/5.4/5.4.0/submodules/qtscript-opensource-src-5.4.0.tar.xz</Archive>
+        <Archive sha1sum="1b9ede97f3120c95c2dce322b6140eeb20416044" type="tarxz">http://download.qt.io/official_releases/qt/5.4/5.4.1/submodules/qtscript-opensource-src-5.4.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5-base-devel</Dependency>
         </BuildDependencies>
@@ -42,8 +42,8 @@
 
     <History>
         <Update release="1">
-            <Date>2015-01-22</Date>
-            <Version>5.4.0</Version>
+            <Date>2015-02-25</Date>
+            <Version>5.4.1</Version>
             <Comment>First release</Comment>
             <Name>Ayhan Yalçınsoy</Name>
             <Email>ayhanyalcinsoy@pisilinux.org</Email>

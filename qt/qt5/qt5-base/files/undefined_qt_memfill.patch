@@ -1,5 +1,5 @@
 --- a/src/gui/painting/qdrawhelper.cpp
-+++ b/src/gui/painting/qdrawhelper.cpp
++++ qtbase-opensource-src-5.4.0/src/gui/painting/qdrawhelper.cpp
 @@ -6149,33 +6149,32 @@
  }
  #endif
@@ -85,7 +85,7 @@
  
  QT_END_NAMESPACE
 --- a/src/gui/painting/qdrawhelper_neon.cpp
-+++ b/src/gui/painting/qdrawhelper_neon.cpp
++++ qtbase-opensource-src-5.4.0/src/gui/painting/qdrawhelper_neon.cpp
 @@ -51,7 +51,7 @@
  
  QT_BEGIN_NAMESPACE
@@ -96,7 +96,7 @@
      const int epilogueSize = count % 16;
      if (count >= 16) {
 --- a/src/gui/painting/qdrawhelper_p.h
-+++ b/src/gui/painting/qdrawhelper_p.h
++++ qtbase-opensource-src-5.4.0/src/gui/painting/qdrawhelper_p.h
 @@ -171,6 +171,8 @@
  extern DrawHelper qDrawHelper[QImage::NImageFormats];
  
@@ -124,7 +124,7 @@
  }
  
 --- a/src/gui/painting/qdrawhelper_sse2.cpp
-+++ b/src/gui/painting/qdrawhelper_sse2.cpp
++++ qtbase-opensource-src-5.4.0/src/gui/painting/qdrawhelper_sse2.cpp
 @@ -238,7 +238,7 @@
      }
  }
@@ -162,7 +162,7 @@
      if (count & 0x1)
          dest[count - 1] = value;
 --- a/src/gui/painting/qdrawhelper_x86_p.h
-+++ b/src/gui/painting/qdrawhelper_x86_p.h
++++ qtbase-opensource-src-5.4.0/src/gui/painting/qdrawhelper_x86_p.h
 @@ -58,8 +58,8 @@
  QT_BEGIN_NAMESPACE
  

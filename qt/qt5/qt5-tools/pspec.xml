@@ -11,7 +11,7 @@
         <Summary>A cross-platform application and UI framework (Development Tools, QtHelp)</Summary>
         <Description>A cross-platform application and UI framework (Development Tools, QtHelp)</Description>
         <License>LGPLv2.1-linking-exception</License>
-        <Archive sha1sum="e923f9f7b2696bc7f451325599d55739dd5aa88a" type="tarxz">http://download.qt.io/official_releases/qt/5.4/5.4.0/submodules/qttools-opensource-src-5.4.0.tar.xz</Archive>
+        <Archive sha1sum="442820e4f2b9770595c7b8af402c497eaea72d51" type="tarxz">http://download.qt.io/official_releases/qt/5.4/5.4.1/submodules/qttools-opensource-src-5.4.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5-base-devel</Dependency>
             <Dependency>qt5-declarative-devel</Dependency>
@@ -26,10 +26,11 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
-            <Path fileType="library">/usr/share/licenses/</Path>
+            <Path fileType="data">/usr/share/licenses/</Path>
             <Path fileType="library">/usr/share/qt5/</Path>
-            <Path fileType="library">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/applications</Path>
             <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="data">/usr/share/pixmaps/</Path>
             <Path fileType="executable">/usr/lib/qt5/bin/</Path>
             <Path fileType="executable">/usr/bin</Path>
         </Files>
@@ -40,6 +41,8 @@
             <AdditionalFile owner="root" permission="0644" target="/usr/share/qt5/translations/assistant_tr.qm">assistant_tr.qm</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/qt5/translations/designer_tr.qm">designer_tr.qm</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/qt5/translations/linguist_tr.qm">linguist_tr.qm</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/assistant5.desktop">assistant.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/assistant5.png">assistant.png</AdditionalFile>
         </AdditionalFiles>
     </Package>
 
@@ -56,8 +59,8 @@
 
     <History>
         <Update release="1">
-            <Date>2015-01-22</Date>
-            <Version>5.4.0</Version>
+            <Date>2015-02-25</Date>
+            <Version>5.4.1</Version>
             <Comment>First release</Comment>
             <Name>Ayhan Yalçınsoy</Name>
             <Email>ayhanyalcinsoy@pisilinux.org</Email>

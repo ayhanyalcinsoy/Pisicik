@@ -11,7 +11,7 @@
         <Summary>Classes for a WebKit2 based implementation and a new QML API</Summary>
         <Description>Classes for a WebKit2 based implementation and a new QML API</Description>
         <License>LGPLv2.1-linking-exception</License>
-        <Archive sha1sum="e5e92e126bb673dadc329bc726c21bf4f994d829" type="tarxz">http://download.qt.io/official_releases/qt/5.4/5.4.0/submodules/qtwebkit-opensource-src-5.4.0.tar.xz</Archive>
+        <Archive sha1sum="6cfebb74d334e77e26ecbe7d6609578eb46ab276" type="tarxz">http://download.qt.io/official_releases/qt/5.4/5.4.1/submodules/qtwebkit-opensource-src-5.4.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5-base-devel</Dependency>
             <Dependency>qt5-sensors-devel</Dependency>
@@ -24,6 +24,8 @@
             <Dependency>libjpeg-turbo-devel</Dependency>
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>glib2-devel</Dependency>
+            <Dependency>dbus-devel</Dependency>
+            <Dependency>ruby-devel</Dependency>
             <Dependency>gstreamer-devel</Dependency>
             <Dependency>libpng-devel</Dependency>
             <Dependency>libpcre-devel</Dependency>
@@ -39,7 +41,7 @@
         </BuildDependencies>
         <Patches>
             <Patch>1.patch</Patch>
-            <!--<Patch>qtwebkit-opensource-src-5.0.2-system_angle.patch</Patch>-->
+            <Patch>qtwebkit-opensource-src-5.4.0-mutexlocker.patch</Patch>
             <Patch>qtwebkit-opensource-src-5.2.0-pluginpath.patch</Patch>
             <Patch>qtwebkit-opensource-src-5.2.0-save_memory.patch</Patch>
             <Patch>qtwebkit-opensource-src-5.2.1-no_rpath.patch</Patch>
@@ -74,8 +76,8 @@
 
     <History>
         <Update release="1">
-            <Date>2015-01-22</Date>
-            <Version>5.4.0</Version>
+            <Date>2015-02-25</Date>
+            <Version>5.4.1</Version>
             <Comment>First release</Comment>
             <Name>Ayhan Yalçınsoy</Name>
             <Email>ayhanyalcinsoy@pisilinux.org</Email>

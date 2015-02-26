@@ -11,7 +11,7 @@
         <Summary>Classes for audio, video, radio and camera functionality</Summary>
         <Description>Classes for audio, video, radio and camera functionality</Description>
         <License>LGPLv2.1-linking-exception</License>
-        <Archive sha1sum="a66fe5538f554957f60fc160121a3b0e7e72753b" type="tarxz">http://download.qt.io/official_releases/qt/5.4/5.4.0/submodules/qtmultimedia-opensource-src-5.4.0.tar.xz</Archive>
+        <Archive sha1sum="5e9f06cccc86608ab185fc31a338b7b215342288" type="tarxz">http://download.qt.io/official_releases/qt/5.4/5.4.1/submodules/qtmultimedia-opensource-src-5.4.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5-base-devel</Dependency>
             <Dependency>qt5-declarative-devel</Dependency>
@@ -55,8 +55,8 @@
 
     <History>
         <Update release="1">
-            <Date>2015-01-22</Date>
-            <Version>5.4.0</Version>
+            <Date>2015-02-25</Date>
+            <Version>5.4.1</Version>
             <Comment>First release</Comment>
             <Name>Ayhan Yalçınsoy</Name>
             <Email>ayhanyalcinsoy@pisilinux.org</Email>

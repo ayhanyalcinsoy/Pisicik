@@ -98,12 +98,11 @@
         <Patches>
             <!-- Fedora Patches -->
             <Patch level="0">qtbase-opensource-src-5.2.0-enable_ft_lcdfilter.patch</Patch>
-            <Patch>0009-Do-not-apply-subpixel-gamma-correction-on-XCB.patch</Patch>
-            <Patch>0173-qimage_conversions.cpp-Fix-build-on-big-endian-syste.patch</Patch>
-            <Patch>qtbase-opensource-src-5.4.0-QTBUG-42985.patch</Patch>
             <Patch>qtbase-multilib_optflags.patch</Patch>
             <Patch>qtbase-opensource-src-5.3.2-QTBUG-35459.patch</Patch>
             <Patch>qtbase-opensource-src-5.4.0-QTBUG-43057.patch</Patch>
+             <!--For LibreOffice -->
+            <Patch level="1">qt-everywhere-opensource-src-4.8.6-QTBUG-37380.patch</Patch>
             <!-- Pisilinux Patches -->
             <Patch level="1">mkspecs1.patch</Patch>
             <Patch level="1">mkspecs2.patch</Patch>
@@ -143,6 +142,7 @@
             <Path fileType="localdata">/usr/share/qt5/translations</Path>
             <Path fileType="executable">/usr/lib/qt5/bin</Path>
             <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
         </Files>
     </Package>
 
@@ -160,25 +160,6 @@
         <RuntimeDependencies>
             <Dependency release="current">qt5-base</Dependency>
         </RuntimeDependencies>
-    </Package>
-
-    <Package>
-        <Name>qt5-docs</Name>
-        <Icon>assistant5</Icon>
-        <Summary>Development documents of Qt5 and Qt5 Assistant tool</Summary>
-        <RuntimeDependencies>
-            <Dependency version="current">qt5-base</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="executable">/usr/lib/qt5/bin/assistant</Path>
-            <Path fileType="data">/usr/share/icons</Path>
-            <Path fileType="doc">/usr/share/doc</Path>
-            <Path fileType="doc">/usr/share/doc/qt5/qch</Path>
-        </Files>
-        <AdditionalFiles>
-        <!--Translations files-->
-            <AdditionalFile owner="root" permission="0644" target="/usr/share/qt5/translations/qt_tr.qm">qt_tr.qm</AdditionalFile>
-        </AdditionalFiles>
     </Package>
 
     <Package>
@@ -237,8 +218,8 @@
 
     <History>
         <Update release="2">
-            <Date>2015-01-22</Date>
-            <Version>5.4.0</Version>
+            <Date>2015-02-25</Date>
+            <Version>5.4.1</Version>
             <Comment>Version bump</Comment>
             <Name>Ayhan Yalçınsoy</Name>
             <Email>ayhanyalcinsoy@pisilinux.org</Email>

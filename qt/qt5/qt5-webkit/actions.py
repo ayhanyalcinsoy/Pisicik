@@ -11,7 +11,7 @@ from pisi.actionsapi import qt5
 from pisi.actionsapi import get
 
 def setup():
-    shelltools.system ("qmake-qt5 WebKit.pro")
+    shelltools.system("/usr/lib/qt5/bin/qmake WebKit.pro")
 
 def build():
     qt5.make()

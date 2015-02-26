@@ -21,9 +21,6 @@ absoluteWorkDir = "%s/%s" % (get.workDIR(), WorkDir)
 bindirQt5="/usr/lib/qt5/bin"
 
 def setup():
-    #shelltools.system('sed -i -e "s|^\(QMAKE_CFLAGS_RELEASE.*\)|\1 ${CFLAGS}|" mkspecs/common/gcc-base.conf')
-    #shelltools.system('sed -i -e "s|^\(QMAKE_LFLAGS_RELEASE.*\)|\1 ${LDFLAGS}|" mkspecs/common/g++-unix.conf')
-
     checkdeletepath="%s/qtbase/src/3rdparty"  % absoluteWorkDir
     for dir in ('libjpeg', 'freetype', 'libpng', 'zlib', "xcb", "sqlite"):
         if os.path.exists(checkdeletepath+dir):
@@ -137,9 +134,9 @@ def build():
     autotools.make()
     # Fix docs build when qt is not installed
     shelltools.system('sed -i "s|/usr/lib/qt/bin/qdoc|${QTDIR}/qtbase/bin/qdoc|g" qmake/Makefile.qmake-docs')
-    #shelltools.system("find -name Makefile -exec sed -i "s|/usr/lib/qt/bin/qdoc|${QTDIR}/qtbase/bin/qdoc|g" {} +")
+    #shelltools.system('sed -i "s|/usr/lib/qt5/bin/qdoc|bin/qdoc|g" {} + Makefile')
     shelltools.system('sed -i "s|/usr/lib/qt/bin/qhelpgenerator|${QTDIR}/qttools/bin/qhelpgenerator|g" qmake/Makefile.qmake-docs')
-    #shelltools.system("find -name Makefile -exec sed -i "s|/usr/lib/qt/bin/qhelpgenerator|${QTDIR}/qttools/bin/qhelpgenerator|g" {} +")
+    #shelltools.system('sed -i "s|/usr/lib/qt5/bin/qhelpgenerator|bin/qhelpgenerator|g" {} + Makefile')
 
 def install():
     if get.buildTYPE() == "emul32":
@@ -150,17 +147,20 @@ def install():
     pisitools.dodir(qt5.libdir)
     qt5.install("INSTALL_ROOT=%s" % get.installDIR())
 
-    # Drop QMAKE_PRL_BUILD_DIR because reference the build dir
-    #shelltools.system("find /usr/lib -type f -name '*.prl -exec sed -i -e '/^QMAKE_PRL_BUILD_DIR/d' {}")
+
 
     # Fix wrong qmake path in pri file
-    #shelltools.system('sed -i "s|${srcdir}/${_pkgfqn}/qtbase|/usr|" /usr/lib/qt5/mkspecs/modules/qt_lib_bootstrap_private.pri')
+     #shelltools.system('sed -i "s|${srcdir}/${_pkgfqn}/qtbase|/usr|" /usr/lib/qt5/mkspecs/modules/qt_lib_bootstrap_private.pri')
+    #shelltools.system('sed -e "s:$PWD/qtbase:/usr/lib/qt5:g" -i /usr/lib/qt5/mkspecs/modules/qt_lib_bootstrap_private.pri &&')
 
     #I hope qtchooser will manage this issue
     for bin in shelltools.ls("%s/usr/lib/qt5/bin" % get.installDIR()):
         pisitools.dosym("/usr/lib/qt5/bin/%s" % bin, "/usr/bin/%s-qt5" % bin)
 
     mkspecPath = "%s/mkspecs" %  qt5.archdatadir
+
+    # Drop QMAKE_PRL_BUILD_DIR because reference the build dir
+    #pisitools.remove("/usr/lib/qt5/lib/*.prl")
 
     for root, dirs, files in os.walk("%s%s" % (get.installDIR(),  qt5.archdatadir)):
         # Remove unnecessary spec files..

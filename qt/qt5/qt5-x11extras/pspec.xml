@@ -11,7 +11,7 @@
         <Summary>Provides platform-specific APIs for X11</Summary>
         <Description>Provides platform-specific APIs for X11</Description>
         <License>LGPLv2.1-linking-exception</License>
-        <Archive sha1sum="999026cf8389c66af22ffb29767b87b1a793595b" type="tarxz">http://download.qt.io/official_releases/qt/5.4/5.4.0/submodules/qtx11extras-opensource-src-5.4.0.tar.xz</Archive>
+        <Archive sha1sum="7a75f936df70ac551cfc7b08914365cbb25b122d" type="tarxz">http://download.qt.io/official_releases/qt/5.4/5.4.1/submodules/qtx11extras-opensource-src-5.4.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5-base-devel</Dependency>
         </BuildDependencies>
@@ -42,8 +42,8 @@
 
     <History>
         <Update release="1">
-            <Date>2015-01-22</Date>
-            <Version>5.4.0</Version>
+            <Date>2015-02-25</Date>
+            <Version>5.4.1</Version>
             <Comment>First release</Comment>
             <Name>Ayhan Yalçınsoy</Name>
             <Email>ayhanyalcinsoy@pisilinux.org</Email>

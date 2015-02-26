@@ -11,7 +11,7 @@
         <Summary>Provides APIs for Wayland</Summary>
         <Description>Provides APIs for Wayland</Description>
         <License>LGPLv2.1-linking-exception</License>
-        <Archive sha1sum="c3d0cb8c0145e49ab1f65828b3c93efee9dbe2f5" type="tarxz">http://download.qt.io/official_releases/qt/5.4/5.4.0/submodules/qtwayland-opensource-src-5.4.0.tar.xz</Archive>
+        <Archive sha1sum="029fd5f7dcfc6932b0d9793c71b24beda0a136ea" type="tarxz">http://download.qt.io/official_releases/qt/5.4/5.4.1/submodules/qtwayland-opensource-src-5.4.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5-base-devel</Dependency>
             <Dependency>libxkbcommon-devel</Dependency>
@@ -54,8 +54,8 @@
 
     <History>
         <Update release="1">
-            <Date>2015-01-22</Date>
-            <Version>5.4.0</Version>
+            <Date>2015-02-25</Date>
+            <Version>5.4.1</Version>
             <Comment>First release</Comment>
             <Name>Ayhan Yalçınsoy</Name>
             <Email>ayhanyalcinsoy@pisilinux.org</Email>
