@@ -30,4 +30,4 @@ def install():
 
     shelltools.system("chmod a+r -R %s/etc/dbus-1" % get.installDIR())
     shelltools.system("chmod a+r -R %s/usr/share" % get.installDIR())
- 
+

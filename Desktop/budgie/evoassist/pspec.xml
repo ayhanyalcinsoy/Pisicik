@@ -11,11 +11,11 @@
         <Summary>Evo Assist Tool</Summary>
         <Description>Early Testing of Evo Assist Tool</Description>
         <License>GPLv2+</License>
-        <Archive sha1sum="1ac23c8d03bcbe9b792877d18a3a422afad516b7" type="zip">https://github.com/evolve-os/evoassist/archive/v1.zip</Archive>
-
-        <Patches>
-            <Patch level="1">fix.patch</Patch>
-        </Patches>
+        <Archive sha1sum="f38bb49ba7f7a92c930cc3f3bc289bec220b4d62" type="zip">https://github.com/evolve-os/evoassist/archive/v2.zip</Archive>
+        <!--<Patches>
+            <Patch level="1">0001-You-print-you-die.patch</Patch>
+            <Patch level="1">0002-Fix-up-UI-a-bit.patch</Patch>
+        </Patches>-->
     </Source>
 
     <Package>
@@ -26,21 +26,18 @@
         <RuntimeDependencies>
             <Dependency>gnome-app-templates</Dependency>
             <Dependency>gtk3</Dependency>
-            <Dependency>python-gobject</Dependency>
+            <Dependency>python-pygobject</Dependency>
         </RuntimeDependencies>
-        <AdditionalFiles>
-            <AdditionalFile owner="root" target="/usr/bin/evo-assist-ui-wrap" permission="0755">evoassist-ui-wrap.sh</AdditionalFile>
-        </AdditionalFiles>
     </Package>
 
     <History>
         <Update release="1">
-            <Date>2014-10-21</Date>
-            <Version>1</Version>
+            <Date>2015-02-28</Date>
+            <Version>2</Version>
             <Comment>Add  evoassist to repositories</Comment>
             <Name>Ayhan Yalçınsoy</Name>
             <Email>ayhanyalcinsoy@pisilinux.org</Email>
         </Update>
     </History>
 </PISI>
- 
+
