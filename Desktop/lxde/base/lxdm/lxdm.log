@@ -1,17 +1,37 @@
 [01;32mKaynak paket inşa ediliyor: lxdm
-[0mDEBUG: ComponentDB initialized in 0.0147428512573.
-DEBUG: RepoDB initialized in 0.00974011421204.
-DEBUG: InstallDB initialized in 0.0191810131073.
-lxdm-0.5.0.tar.xz [önbellekte]
+[0mDEBUG: ComponentDB initialized in 0.00368905067444.
+DEBUG: RepoDB initialized in 0.000199794769287.
+DEBUG: InstallDB initialized in 0.00681805610657.
+lxdm-0.5.1.tar.xz [önbellekte]
 lxdm-pisilinux-theme.tar.xz [önbellekte]
 [32mArşiv(ler) açılıyor...
 [0m[32mYama uygulanıyor: default_config.patch
-[0mÇalışıyor patch --remove-empty-files --no-backup-if-mismatch  -p1 -i "/home/PisiLinux/Pisicik/Desktop/lxde/base/lxdm/files/default_config.patch"
-DEBUG: "patch --remove-empty-files --no-backup-if-mismatch  -p1 -i "/home/PisiLinux/Pisicik/Desktop/lxde/base/lxdm/files/default_config.patch"" dönüş değeri 0
- açıldı (/var/pisi/lxdm-0.5.0-9/work)
+[0mDEBUG: Detected patch level=0 for default_config.patch
+Çalışıyor patch --remove-empty-files --no-backup-if-mismatch  -p0 -i "/home/PisiLinux/Pisicik/Desktop/lxde/base/lxdm/files/default_config.patch"
+DEBUG: "patch --remove-empty-files --no-backup-if-mismatch  -p0 -i "/home/PisiLinux/Pisicik/Desktop/lxde/base/lxdm/files/default_config.patch"" dönüş değeri 0
+[32mYama uygulanıyor: lxdm.login_pane.patch
+[0mDEBUG: Detected patch level=0 for lxdm.login_pane.patch
+Çalışıyor patch --remove-empty-files --no-backup-if-mismatch  -p0 -i "/home/PisiLinux/Pisicik/Desktop/lxde/base/lxdm/files/lxdm.login_pane.patch"
+DEBUG: "patch --remove-empty-files --no-backup-if-mismatch  -p0 -i "/home/PisiLinux/Pisicik/Desktop/lxde/base/lxdm/files/lxdm.login_pane.patch"" dönüş değeri 0
+[32mYama uygulanıyor: xconn.patch
+[0mDEBUG: Detected patch level=1 for xconn.patch
+Çalışıyor patch --remove-empty-files --no-backup-if-mismatch  -p1 -i "/home/PisiLinux/Pisicik/Desktop/lxde/base/lxdm/files/xconn.patch"
+DEBUG: "patch --remove-empty-files --no-backup-if-mismatch  -p1 -i "/home/PisiLinux/Pisicik/Desktop/lxde/base/lxdm/files/xconn.patch"" dönüş değeri 0
+[32mYama uygulanıyor: lxdm.patch
+[0mDEBUG: Detected patch level=0 for lxdm.patch
+Çalışıyor patch --remove-empty-files --no-backup-if-mismatch  -p0 -i "/home/PisiLinux/Pisicik/Desktop/lxde/base/lxdm/files/lxdm.patch"
+DEBUG: "patch --remove-empty-files --no-backup-if-mismatch  -p0 -i "/home/PisiLinux/Pisicik/Desktop/lxde/base/lxdm/files/lxdm.patch"" dönüş değeri 0
+[32mYama uygulanıyor: Xsession.patch
+[0mDEBUG: Detected patch level=0 for Xsession.patch
+Çalışıyor patch --remove-empty-files --no-backup-if-mismatch  -p0 -i "/home/PisiLinux/Pisicik/Desktop/lxde/base/lxdm/files/Xsession.patch"
+DEBUG: "patch --remove-empty-files --no-backup-if-mismatch  -p0 -i "/home/PisiLinux/Pisicik/Desktop/lxde/base/lxdm/files/Xsession.patch"" dönüş değeri 0
+ açıldı (/var/pisi/lxdm-0.5.1-10/work)
 [32mKaynak yapılandırılıyor...
-[0mSandbox açık inşa...
-Çalışıyor ./configure --prefix=/usr --build=x86_64-pc-linux-gnu --mandir=/usr/share/man --infodir=/usr/share/info --datadir=/usr/share --sysconfdir=/etc --localstatedir=/var --libexecdir=/usr/libexec --prefix=/usr --sysconfdir=/etc
+[0mDEBUG: Using /var/pisi/lxdm-0.5.1-10/work/lxdm-a404b4d as  WorkDir
+Sandbox açık inşa...
+Çalışıyor ./autogen.sh
+DEBUG: "./autogen.sh" dönüş değeri 0
+Çalışıyor ./configure --prefix=/usr --build=x86_64-pc-linux-gnu --mandir=/usr/share/man --infodir=/usr/share/info --datadir=/usr/share --sysconfdir=/etc --localstatedir=/var --libexecdir=/usr/libexec --prefix=/usr --sysconfdir=/etc --enable-gtk3
 checking for a BSD-compatible install... /usr/bin/install -c
 checking whether build environment is sane... yes
 checking for a thread-safe mkdir -p... /bin/mkdir -p
@@ -27,9 +47,9 @@ checking for suffix of object files... o
 checking whether we are using the GNU C compiler... yes
 checking whether x86_64-pc-linux-gnu-gcc accepts -g... yes
 checking for x86_64-pc-linux-gnu-gcc option to accept ISO C89... none needed
+checking whether x86_64-pc-linux-gnu-gcc understands -c and -o together... yes
 checking for style of include used by make... GNU
 checking dependency style of x86_64-pc-linux-gnu-gcc... gcc3
-checking whether x86_64-pc-linux-gnu-gcc and cc understand -c and -o together... yes
 checking for crypt in -lcrypt... yes
 checking for library containing pam_open_session... -lpam
 checking for pam_open_session... yes
@@ -108,57 +128,58 @@ config.status: creating data/PreLogin
 config.status: creating data/PreReboot
 config.status: creating data/PreShutdown
 config.status: creating data/LoginReady
+config.status: creating data/lxdm.conf
 config.status: creating data/lxdm
 config.status: creating config.h
 config.status: executing depfiles commands
 config.status: executing po/stamp-it commands
-DEBUG: "./configure --prefix=/usr --build=x86_64-pc-linux-gnu --mandir=/usr/share/man --infodir=/usr/share/info --datadir=/usr/share --sysconfdir=/etc --localstatedir=/var --libexecdir=/usr/libexec --prefix=/usr --sysconfdir=/etc" dönüş değeri 0
+DEBUG: "./configure --prefix=/usr --build=x86_64-pc-linux-gnu --mandir=/usr/share/man --infodir=/usr/share/info --datadir=/usr/share --sysconfdir=/etc --localstatedir=/var --libexecdir=/usr/libexec --prefix=/usr --sysconfdir=/etc --enable-gtk3" dönüş değeri 0
 [32mKaynak inşa ediliyor...
 [0mSandbox açık inşa...
 Çalışıyor make -j5
 make  all-recursive
-make[1]: Entering directory '/var/pisi/lxdm-0.5.0-9/work/lxdm-0.5.0'
+make[1]: Entering directory '/var/pisi/lxdm-0.5.1-10/work/lxdm-a404b4d'
 Making all in src
-make[2]: Entering directory '/var/pisi/lxdm-0.5.0-9/work/lxdm-0.5.0/src'
-x86_64-pc-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..    -pthread -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/libdrm -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz  -DCONFIG_FILE=\"/etc/lxdm/lxdm.conf\" -DLXDM_DATA_DIR=\"/usr/share/lxdm\"  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DLXDM_XCONN_XCB -MT lxdm_config-config.o -MD -MP -MF .deps/lxdm_config-config.Tpo -c -o lxdm_config-config.o `test -f 'config.c' || echo './'`config.c
-x86_64-pc-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..    -pthread -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/libdrm -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz  -DCONFIG_FILE=\"/etc/lxdm/lxdm.conf\" -DXSESSIONS_DIR=\"/usr/share/xsessions\" -DLXDM_DATA_DIR=\"/usr/share/lxdm\" -DPACKAGE_LOCALE_DIR=\"/usr/share/locale\" -DGNOMELOCALEDIR=\"/usr/share/locale\" -DLIBLOCALEDIR=\"/usr/lib/locale\" -Werror-implicit-function-declaration -Wall  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DLXDM_XCONN_XCB -MT lxdm_greeter_gdk-greeter-gdk.o -MD -MP -MF .deps/lxdm_greeter_gdk-greeter-gdk.Tpo -c -o lxdm_greeter_gdk-greeter-gdk.o `test -f 'greeter-gdk.c' || echo './'`greeter-gdk.c
-x86_64-pc-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..    -pthread -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/libdrm -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz  -DCONFIG_FILE=\"/etc/lxdm/lxdm.conf\" -DXSESSIONS_DIR=\"/usr/share/xsessions\" -DLXDM_DATA_DIR=\"/usr/share/lxdm\" -DPACKAGE_LOCALE_DIR=\"/usr/share/locale\" -DGNOMELOCALEDIR=\"/usr/share/locale\" -DLIBLOCALEDIR=\"/usr/lib/locale\" -Werror-implicit-function-declaration -Wall  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DLXDM_XCONN_XCB -MT lxdm_greeter_gdk-greeter-utils.o -MD -MP -MF .deps/lxdm_greeter_gdk-greeter-utils.Tpo -c -o lxdm_greeter_gdk-greeter-utils.o `test -f 'greeter-utils.c' || echo './'`greeter-utils.c
-x86_64-pc-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..     -DLXDM_NUMLOCK_PATH=\"/usr/libexec/lxdm-numlock\"  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DLXDM_XCONN_XCB -MT lxdm_numlock-numlock.o -MD -MP -MF .deps/lxdm_numlock-numlock.Tpo -c -o lxdm_numlock-numlock.o `test -f 'numlock.c' || echo './'`numlock.c
-x86_64-pc-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..    -pthread -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/libdrm -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz  -DCONFIG_FILE=\"/etc/lxdm/lxdm.conf\" -DXSESSIONS_DIR=\"/usr/share/xsessions\" -DLXDM_DATA_DIR=\"/usr/share/lxdm\" -DPACKAGE_LOCALE_DIR=\"/usr/share/locale\" -DGNOMELOCALEDIR=\"/usr/share/locale\" -DLIBLOCALEDIR=\"/usr/lib/locale\" -Werror-implicit-function-declaration -Wall  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DLXDM_XCONN_XCB -MT lxdm_greeter_gtk-greeter.o -MD -MP -MF .deps/lxdm_greeter_gtk-greeter.Tpo -c -o lxdm_greeter_gtk-greeter.o `test -f 'greeter.c' || echo './'`greeter.c
+make[2]: Entering directory '/var/pisi/lxdm-0.5.1-10/work/lxdm-a404b4d/src'
+x86_64-pc-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..    -pthread -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/harfbuzz -I/usr/include/libdrm -I/usr/include/libpng16 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include  -DCONFIG_FILE=\"/etc/lxdm/lxdm.conf\" -DLXDM_DATA_DIR=\"/usr/share/lxdm\"  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DENABLE_GTK3 -DLXDM_XCONN_XCB -MT lxdm_config-config.o -MD -MP -MF .deps/lxdm_config-config.Tpo -c -o lxdm_config-config.o `test -f 'config.c' || echo './'`config.c
+x86_64-pc-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..    -pthread -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/harfbuzz -I/usr/include/libdrm -I/usr/include/libpng16 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include  -DCONFIG_FILE=\"/etc/lxdm/lxdm.conf\" -DXSESSIONS_DIR=\"/usr/share/xsessions\" -DLXDM_DATA_DIR=\"/usr/share/lxdm\" -DPACKAGE_LOCALE_DIR=\"/usr/share/locale\" -DGNOMELOCALEDIR=\"/usr/share/locale\" -DLIBLOCALEDIR=\"/usr/lib/locale\" -Werror-implicit-function-declaration -Wall  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DENABLE_GTK3 -DLXDM_XCONN_XCB -MT lxdm_greeter_gdk-greeter-gdk.o -MD -MP -MF .deps/lxdm_greeter_gdk-greeter-gdk.Tpo -c -o lxdm_greeter_gdk-greeter-gdk.o `test -f 'greeter-gdk.c' || echo './'`greeter-gdk.c
+x86_64-pc-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..    -pthread -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/harfbuzz -I/usr/include/libdrm -I/usr/include/libpng16 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include  -DCONFIG_FILE=\"/etc/lxdm/lxdm.conf\" -DXSESSIONS_DIR=\"/usr/share/xsessions\" -DLXDM_DATA_DIR=\"/usr/share/lxdm\" -DPACKAGE_LOCALE_DIR=\"/usr/share/locale\" -DGNOMELOCALEDIR=\"/usr/share/locale\" -DLIBLOCALEDIR=\"/usr/lib/locale\" -Werror-implicit-function-declaration -Wall  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DENABLE_GTK3 -DLXDM_XCONN_XCB -MT lxdm_greeter_gdk-greeter-utils.o -MD -MP -MF .deps/lxdm_greeter_gdk-greeter-utils.Tpo -c -o lxdm_greeter_gdk-greeter-utils.o `test -f 'greeter-utils.c' || echo './'`greeter-utils.c
+x86_64-pc-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..     -DLXDM_NUMLOCK_PATH=\"/usr/libexec/lxdm-numlock\"  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DENABLE_GTK3 -DLXDM_XCONN_XCB -MT lxdm_numlock-numlock.o -MD -MP -MF .deps/lxdm_numlock-numlock.Tpo -c -o lxdm_numlock-numlock.o `test -f 'numlock.c' || echo './'`numlock.c
+x86_64-pc-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..    -pthread -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/harfbuzz -I/usr/include/libdrm -I/usr/include/libpng16 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include  -DCONFIG_FILE=\"/etc/lxdm/lxdm.conf\" -DXSESSIONS_DIR=\"/usr/share/xsessions\" -DLXDM_DATA_DIR=\"/usr/share/lxdm\" -DPACKAGE_LOCALE_DIR=\"/usr/share/locale\" -DGNOMELOCALEDIR=\"/usr/share/locale\" -DLIBLOCALEDIR=\"/usr/lib/locale\" -Werror-implicit-function-declaration -Wall  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DENABLE_GTK3 -DLXDM_XCONN_XCB -MT lxdm_greeter_gtk-greeter.o -MD -MP -MF .deps/lxdm_greeter_gtk-greeter.Tpo -c -o lxdm_greeter_gtk-greeter.o `test -f 'greeter.c' || echo './'`greeter.c
 mv -f .deps/lxdm_numlock-numlock.Tpo .deps/lxdm_numlock-numlock.Po
-x86_64-pc-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..    -pthread -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/libdrm -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz  -DCONFIG_FILE=\"/etc/lxdm/lxdm.conf\" -DXSESSIONS_DIR=\"/usr/share/xsessions\" -DLXDM_DATA_DIR=\"/usr/share/lxdm\" -DPACKAGE_LOCALE_DIR=\"/usr/share/locale\" -DGNOMELOCALEDIR=\"/usr/share/locale\" -DLIBLOCALEDIR=\"/usr/lib/locale\" -Werror-implicit-function-declaration -Wall  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DLXDM_XCONN_XCB -MT lxdm_greeter_gtk-lang.o -MD -MP -MF .deps/lxdm_greeter_gtk-lang.Tpo -c -o lxdm_greeter_gtk-lang.o `test -f 'lang.c' || echo './'`lang.c
+x86_64-pc-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..    -pthread -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/harfbuzz -I/usr/include/libdrm -I/usr/include/libpng16 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include  -DCONFIG_FILE=\"/etc/lxdm/lxdm.conf\" -DXSESSIONS_DIR=\"/usr/share/xsessions\" -DLXDM_DATA_DIR=\"/usr/share/lxdm\" -DPACKAGE_LOCALE_DIR=\"/usr/share/locale\" -DGNOMELOCALEDIR=\"/usr/share/locale\" -DLIBLOCALEDIR=\"/usr/lib/locale\" -Werror-implicit-function-declaration -Wall  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DENABLE_GTK3 -DLXDM_XCONN_XCB -MT lxdm_greeter_gtk-lang.o -MD -MP -MF .deps/lxdm_greeter_gtk-lang.Tpo -c -o lxdm_greeter_gtk-lang.o `test -f 'lang.c' || echo './'`lang.c
 mv -f .deps/lxdm_greeter_gtk-lang.Tpo .deps/lxdm_greeter_gtk-lang.Po
-x86_64-pc-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..    -pthread -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/libdrm -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz  -DCONFIG_FILE=\"/etc/lxdm/lxdm.conf\" -DXSESSIONS_DIR=\"/usr/share/xsessions\" -DLXDM_DATA_DIR=\"/usr/share/lxdm\" -DPACKAGE_LOCALE_DIR=\"/usr/share/locale\" -DGNOMELOCALEDIR=\"/usr/share/locale\" -DLIBLOCALEDIR=\"/usr/lib/locale\" -Werror-implicit-function-declaration -Wall  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DLXDM_XCONN_XCB -MT lxdm_greeter_gtk-lxcom.o -MD -MP -MF .deps/lxdm_greeter_gtk-lxcom.Tpo -c -o lxdm_greeter_gtk-lxcom.o `test -f 'lxcom.c' || echo './'`lxcom.c
-mv -f .deps/lxdm_greeter_gdk-greeter-gdk.Tpo .deps/lxdm_greeter_gdk-greeter-gdk.Po
-x86_64-pc-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..    -pthread -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/libdrm -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz  -DCONFIG_FILE=\"/etc/lxdm/lxdm.conf\" -DXSESSIONS_DIR=\"/usr/share/xsessions\" -DLXDM_DATA_DIR=\"/usr/share/lxdm\" -DPACKAGE_LOCALE_DIR=\"/usr/share/locale\" -DGNOMELOCALEDIR=\"/usr/share/locale\" -DLIBLOCALEDIR=\"/usr/lib/locale\" -Werror-implicit-function-declaration -Wall  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DLXDM_XCONN_XCB -MT lxdm_greeter_gtk-greeter-utils.o -MD -MP -MF .deps/lxdm_greeter_gtk-greeter-utils.Tpo -c -o lxdm_greeter_gtk-greeter-utils.o `test -f 'greeter-utils.c' || echo './'`greeter-utils.c
-mv -f .deps/lxdm_greeter_gtk-lxcom.Tpo .deps/lxdm_greeter_gtk-lxcom.Po
-x86_64-pc-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..    -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include   -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DLXDM_XCONN_XCB -MT lxdm_session-pam.o -MD -MP -MF .deps/lxdm_session-pam.Tpo -c -o lxdm_session-pam.o `test -f 'pam.c' || echo './'`pam.c
-mv -f .deps/lxdm_greeter_gdk-greeter-utils.Tpo .deps/lxdm_greeter_gdk-greeter-utils.Po
-x86_64-pc-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..    -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include  -DCONFIG_FILE=\"/etc/lxdm/lxdm.conf\" -DXSESSIONS_DIR=\"/usr/share/xsessions\" -DLXDM_DATA_DIR=/usr/share/lxdm -DLXDM_NUMLOCK_PATH=\"/usr/libexec/lxdm-numlock\" -DLXDM_SESSION_PATH=\"/usr/libexec/lxdm-session\" -I/usr/include/ConsoleKit/ck-connector -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include  -Werror-implicit-function-declaration -Wall  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DLXDM_XCONN_XCB -MT lxdm_binary-lxdm.o -MD -MP -MF .deps/lxdm_binary-lxdm.Tpo -c -o lxdm_binary-lxdm.o `test -f 'lxdm.c' || echo './'`lxdm.c
+x86_64-pc-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..    -pthread -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/harfbuzz -I/usr/include/libdrm -I/usr/include/libpng16 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include  -DCONFIG_FILE=\"/etc/lxdm/lxdm.conf\" -DXSESSIONS_DIR=\"/usr/share/xsessions\" -DLXDM_DATA_DIR=\"/usr/share/lxdm\" -DPACKAGE_LOCALE_DIR=\"/usr/share/locale\" -DGNOMELOCALEDIR=\"/usr/share/locale\" -DLIBLOCALEDIR=\"/usr/lib/locale\" -Werror-implicit-function-declaration -Wall  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DENABLE_GTK3 -DLXDM_XCONN_XCB -MT lxdm_greeter_gtk-lxcom.o -MD -MP -MF .deps/lxdm_greeter_gtk-lxcom.Tpo -c -o lxdm_greeter_gtk-lxcom.o `test -f 'lxcom.c' || echo './'`lxcom.c
 mv -f .deps/lxdm_config-config.Tpo .deps/lxdm_config-config.Po
-x86_64-pc-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..    -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include  -DCONFIG_FILE=\"/etc/lxdm/lxdm.conf\" -DXSESSIONS_DIR=\"/usr/share/xsessions\" -DLXDM_DATA_DIR=/usr/share/lxdm -DLXDM_NUMLOCK_PATH=\"/usr/libexec/lxdm-numlock\" -DLXDM_SESSION_PATH=\"/usr/libexec/lxdm-session\" -I/usr/include/ConsoleKit/ck-connector -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include  -Werror-implicit-function-declaration -Wall  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DLXDM_XCONN_XCB -MT lxdm_binary-ui.o -MD -MP -MF .deps/lxdm_binary-ui.Tpo -c -o lxdm_binary-ui.o `test -f 'ui.c' || echo './'`ui.c
-mv -f .deps/lxdm_session-pam.Tpo .deps/lxdm_session-pam.Po
-x86_64-pc-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..    -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include  -DCONFIG_FILE=\"/etc/lxdm/lxdm.conf\" -DXSESSIONS_DIR=\"/usr/share/xsessions\" -DLXDM_DATA_DIR=/usr/share/lxdm -DLXDM_NUMLOCK_PATH=\"/usr/libexec/lxdm-numlock\" -DLXDM_SESSION_PATH=\"/usr/libexec/lxdm-session\" -I/usr/include/ConsoleKit/ck-connector -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include  -Werror-implicit-function-declaration -Wall  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DLXDM_XCONN_XCB -MT lxdm_binary-lxcom.o -MD -MP -MF .deps/lxdm_binary-lxcom.Tpo -c -o lxdm_binary-lxcom.o `test -f 'lxcom.c' || echo './'`lxcom.c
+x86_64-pc-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..    -pthread -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/harfbuzz -I/usr/include/libdrm -I/usr/include/libpng16 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include  -DCONFIG_FILE=\"/etc/lxdm/lxdm.conf\" -DXSESSIONS_DIR=\"/usr/share/xsessions\" -DLXDM_DATA_DIR=\"/usr/share/lxdm\" -DPACKAGE_LOCALE_DIR=\"/usr/share/locale\" -DGNOMELOCALEDIR=\"/usr/share/locale\" -DLIBLOCALEDIR=\"/usr/lib/locale\" -Werror-implicit-function-declaration -Wall  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DENABLE_GTK3 -DLXDM_XCONN_XCB -MT lxdm_greeter_gtk-greeter-utils.o -MD -MP -MF .deps/lxdm_greeter_gtk-greeter-utils.Tpo -c -o lxdm_greeter_gtk-greeter-utils.o `test -f 'greeter-utils.c' || echo './'`greeter-utils.c
+mv -f .deps/lxdm_greeter_gtk-lxcom.Tpo .deps/lxdm_greeter_gtk-lxcom.Po
+x86_64-pc-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..    -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include   -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DENABLE_GTK3 -DLXDM_XCONN_XCB -MT lxdm_session-pam.o -MD -MP -MF .deps/lxdm_session-pam.Tpo -c -o lxdm_session-pam.o `test -f 'pam.c' || echo './'`pam.c
+mv -f .deps/lxdm_greeter_gdk-greeter-gdk.Tpo .deps/lxdm_greeter_gdk-greeter-gdk.Po
+x86_64-pc-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..    -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include  -DCONFIG_FILE=\"/etc/lxdm/lxdm.conf\" -DXSESSIONS_DIR=\"/usr/share/xsessions\" -DLXDM_DATA_DIR=/usr/share/lxdm -DLXDM_NUMLOCK_PATH=\"/usr/libexec/lxdm-numlock\" -DLXDM_SESSION_PATH=\"/usr/libexec/lxdm-session\" -I/usr/include/ConsoleKit/ck-connector -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include  -Werror-implicit-function-declaration -Wall -rdynamic  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DENABLE_GTK3 -DLXDM_XCONN_XCB -MT lxdm_binary-lxdm.o -MD -MP -MF .deps/lxdm_binary-lxdm.Tpo -c -o lxdm_binary-lxdm.o `test -f 'lxdm.c' || echo './'`lxdm.c
 mv -f .deps/lxdm_greeter_gtk-greeter.Tpo .deps/lxdm_greeter_gtk-greeter.Po
-x86_64-pc-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..    -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include  -DCONFIG_FILE=\"/etc/lxdm/lxdm.conf\" -DXSESSIONS_DIR=\"/usr/share/xsessions\" -DLXDM_DATA_DIR=/usr/share/lxdm -DLXDM_NUMLOCK_PATH=\"/usr/libexec/lxdm-numlock\" -DLXDM_SESSION_PATH=\"/usr/libexec/lxdm-session\" -I/usr/include/ConsoleKit/ck-connector -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include  -Werror-implicit-function-declaration -Wall  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DLXDM_XCONN_XCB -MT lxdm_binary-xconn.o -MD -MP -MF .deps/lxdm_binary-xconn.Tpo -c -o lxdm_binary-xconn.o `test -f 'xconn.c' || echo './'`xconn.c
+x86_64-pc-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..    -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include  -DCONFIG_FILE=\"/etc/lxdm/lxdm.conf\" -DXSESSIONS_DIR=\"/usr/share/xsessions\" -DLXDM_DATA_DIR=/usr/share/lxdm -DLXDM_NUMLOCK_PATH=\"/usr/libexec/lxdm-numlock\" -DLXDM_SESSION_PATH=\"/usr/libexec/lxdm-session\" -I/usr/include/ConsoleKit/ck-connector -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include  -Werror-implicit-function-declaration -Wall -rdynamic  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DENABLE_GTK3 -DLXDM_XCONN_XCB -MT lxdm_binary-ui.o -MD -MP -MF .deps/lxdm_binary-ui.Tpo -c -o lxdm_binary-ui.o `test -f 'ui.c' || echo './'`ui.c
+mv -f .deps/lxdm_greeter_gdk-greeter-utils.Tpo .deps/lxdm_greeter_gdk-greeter-utils.Po
+x86_64-pc-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..    -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include  -DCONFIG_FILE=\"/etc/lxdm/lxdm.conf\" -DXSESSIONS_DIR=\"/usr/share/xsessions\" -DLXDM_DATA_DIR=/usr/share/lxdm -DLXDM_NUMLOCK_PATH=\"/usr/libexec/lxdm-numlock\" -DLXDM_SESSION_PATH=\"/usr/libexec/lxdm-session\" -I/usr/include/ConsoleKit/ck-connector -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include  -Werror-implicit-function-declaration -Wall -rdynamic  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DENABLE_GTK3 -DLXDM_XCONN_XCB -MT lxdm_binary-lxcom.o -MD -MP -MF .deps/lxdm_binary-lxcom.Tpo -c -o lxdm_binary-lxcom.o `test -f 'lxcom.c' || echo './'`lxcom.c
+mv -f .deps/lxdm_session-pam.Tpo .deps/lxdm_session-pam.Po
+x86_64-pc-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..    -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include  -DCONFIG_FILE=\"/etc/lxdm/lxdm.conf\" -DXSESSIONS_DIR=\"/usr/share/xsessions\" -DLXDM_DATA_DIR=/usr/share/lxdm -DLXDM_NUMLOCK_PATH=\"/usr/libexec/lxdm-numlock\" -DLXDM_SESSION_PATH=\"/usr/libexec/lxdm-session\" -I/usr/include/ConsoleKit/ck-connector -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include  -Werror-implicit-function-declaration -Wall -rdynamic  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DENABLE_GTK3 -DLXDM_XCONN_XCB -MT lxdm_binary-xconn.o -MD -MP -MF .deps/lxdm_binary-xconn.Tpo -c -o lxdm_binary-xconn.o `test -f 'xconn.c' || echo './'`xconn.c
 mv -f .deps/lxdm_binary-ui.Tpo .deps/lxdm_binary-ui.Po
-mv -f .deps/lxdm_greeter_gtk-greeter-utils.Tpo .deps/lxdm_greeter_gtk-greeter-utils.Po
-x86_64-pc-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..    -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include  -DCONFIG_FILE=\"/etc/lxdm/lxdm.conf\" -DXSESSIONS_DIR=\"/usr/share/xsessions\" -DLXDM_DATA_DIR=/usr/share/lxdm -DLXDM_NUMLOCK_PATH=\"/usr/libexec/lxdm-numlock\" -DLXDM_SESSION_PATH=\"/usr/libexec/lxdm-session\" -I/usr/include/ConsoleKit/ck-connector -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include  -Werror-implicit-function-declaration -Wall  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DLXDM_XCONN_XCB -MT lxdm_binary-auth.o -MD -MP -MF .deps/lxdm_binary-auth.Tpo -c -o lxdm_binary-auth.o `test -f 'auth.c' || echo './'`auth.c
-x86_64-pc-linux-gnu-gcc -pthread -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/libdrm -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz  -DCONFIG_FILE=\"/etc/lxdm/lxdm.conf\" -DLXDM_DATA_DIR=\"/usr/share/lxdm\"  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DLXDM_XCONN_XCB  -Wl,-O1 -Wl,-z,relro -Wl,--hash-style=gnu -Wl,--as-needed -Wl,--sort-common -o lxdm-config lxdm_config-config.o  -lgtk-x11-2.0 -lgdk-x11-2.0 -lpangocairo-1.0 -latk-1.0 -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lpangoft2-1.0 -lpango-1.0 -lgobject-2.0 -lglib-2.0 -lfontconfig -lfreetype   -lck-connector -lpam -lcrypt 
-mv -f .deps/lxdm_binary-lxcom.Tpo .deps/lxdm_binary-lxcom.Po
-x86_64-pc-linux-gnu-gcc -pthread -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/libdrm -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz  -DCONFIG_FILE=\"/etc/lxdm/lxdm.conf\" -DXSESSIONS_DIR=\"/usr/share/xsessions\" -DLXDM_DATA_DIR=\"/usr/share/lxdm\" -DPACKAGE_LOCALE_DIR=\"/usr/share/locale\" -DGNOMELOCALEDIR=\"/usr/share/locale\" -DLIBLOCALEDIR=\"/usr/lib/locale\" -Werror-implicit-function-declaration -Wall  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DLXDM_XCONN_XCB  -Wl,-O1 -Wl,-z,relro -Wl,--hash-style=gnu -Wl,--as-needed -Wl,--sort-common -o lxdm-greeter-gdk lxdm_greeter_gdk-greeter-gdk.o lxdm_greeter_gdk-greeter-utils.o -lX11  -lgdk-x11-2.0 -lpangocairo-1.0 -lpango-1.0 -lcairo -lgdk_pixbuf-2.0 -lgobject-2.0 -lglib-2.0   -lck-connector -lpam -lcrypt 
+x86_64-pc-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..    -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include  -DCONFIG_FILE=\"/etc/lxdm/lxdm.conf\" -DXSESSIONS_DIR=\"/usr/share/xsessions\" -DLXDM_DATA_DIR=/usr/share/lxdm -DLXDM_NUMLOCK_PATH=\"/usr/libexec/lxdm-numlock\" -DLXDM_SESSION_PATH=\"/usr/libexec/lxdm-session\" -I/usr/include/ConsoleKit/ck-connector -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include  -Werror-implicit-function-declaration -Wall -rdynamic  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DENABLE_GTK3 -DLXDM_XCONN_XCB -MT lxdm_binary-auth.o -MD -MP -MF .deps/lxdm_binary-auth.Tpo -c -o lxdm_binary-auth.o `test -f 'auth.c' || echo './'`auth.c
 mv -f .deps/lxdm_binary-xconn.Tpo .deps/lxdm_binary-xconn.Po
-x86_64-pc-linux-gnu-gcc  -DLXDM_NUMLOCK_PATH=\"/usr/libexec/lxdm-numlock\"  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DLXDM_XCONN_XCB  -Wl,-O1 -Wl,-z,relro -Wl,--hash-style=gnu -Wl,--as-needed -Wl,--sort-common -o lxdm-numlock lxdm_numlock-numlock.o  -lX11   -lck-connector -lpam -lcrypt 
-x86_64-pc-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..    -pthread -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/libdrm -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz  -DCONFIG_FILE=\"/etc/lxdm/lxdm.conf\" -DXSESSIONS_DIR=\"/usr/share/xsessions\" -DLXDM_DATA_DIR=\"/usr/share/lxdm\" -DPACKAGE_LOCALE_DIR=\"/usr/share/locale\" -DGNOMELOCALEDIR=\"/usr/share/locale\" -DLIBLOCALEDIR=\"/usr/lib/locale\" -Werror-implicit-function-declaration -Wall  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DLXDM_XCONN_XCB -MT gdm/lxdm_greeter_gtk-gdm-languages.o -MD -MP -MF gdm/.deps/lxdm_greeter_gtk-gdm-languages.Tpo -c -o gdm/lxdm_greeter_gtk-gdm-languages.o `test -f 'gdm/gdm-languages.c' || echo './'`gdm/gdm-languages.c
-mv -f .deps/lxdm_binary-auth.Tpo .deps/lxdm_binary-auth.Po
-x86_64-pc-linux-gnu-gcc -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include   -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DLXDM_XCONN_XCB  -Wl,-O1 -Wl,-z,relro -Wl,--hash-style=gnu -Wl,--as-needed -Wl,--sort-common -o lxdm-session lxdm_session-pam.o  -lglib-2.0   -lck-connector -lpam -lcrypt 
+x86_64-pc-linux-gnu-gcc -pthread -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/harfbuzz -I/usr/include/libdrm -I/usr/include/libpng16 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include  -DCONFIG_FILE=\"/etc/lxdm/lxdm.conf\" -DLXDM_DATA_DIR=\"/usr/share/lxdm\"  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DENABLE_GTK3 -DLXDM_XCONN_XCB  -Wl,-O1 -Wl,-z,relro -Wl,--hash-style=gnu -Wl,--as-needed -Wl,--sort-common -o lxdm-config lxdm_config-config.o  -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0   -lck-connector -lpam -lcrypt 
+mv -f .deps/lxdm_greeter_gtk-greeter-utils.Tpo .deps/lxdm_greeter_gtk-greeter-utils.Po
 mv -f .deps/lxdm_binary-lxdm.Tpo .deps/lxdm_binary-lxdm.Po
-x86_64-pc-linux-gnu-gcc -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include  -DCONFIG_FILE=\"/etc/lxdm/lxdm.conf\" -DXSESSIONS_DIR=\"/usr/share/xsessions\" -DLXDM_DATA_DIR=/usr/share/lxdm -DLXDM_NUMLOCK_PATH=\"/usr/libexec/lxdm-numlock\" -DLXDM_SESSION_PATH=\"/usr/libexec/lxdm-session\" -I/usr/include/ConsoleKit/ck-connector -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include  -Werror-implicit-function-declaration -Wall  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DLXDM_XCONN_XCB  -Wl,-O1 -Wl,-z,relro -Wl,--hash-style=gnu -Wl,--as-needed -Wl,--sort-common -o lxdm-binary lxdm_binary-lxdm.o lxdm_binary-ui.o lxdm_binary-lxcom.o lxdm_binary-xconn.o lxdm_binary-auth.o  -lglib-2.0  -lxcb  -lck-connector -ldbus-1   -lck-connector -lpam -lcrypt 
+mv -f .deps/lxdm_binary-lxcom.Tpo .deps/lxdm_binary-lxcom.Po
+x86_64-pc-linux-gnu-gcc -pthread -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/harfbuzz -I/usr/include/libdrm -I/usr/include/libpng16 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include  -DCONFIG_FILE=\"/etc/lxdm/lxdm.conf\" -DXSESSIONS_DIR=\"/usr/share/xsessions\" -DLXDM_DATA_DIR=\"/usr/share/lxdm\" -DPACKAGE_LOCALE_DIR=\"/usr/share/locale\" -DGNOMELOCALEDIR=\"/usr/share/locale\" -DLIBLOCALEDIR=\"/usr/lib/locale\" -Werror-implicit-function-declaration -Wall  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DENABLE_GTK3 -DLXDM_XCONN_XCB  -Wl,-O1 -Wl,-z,relro -Wl,--hash-style=gnu -Wl,--as-needed -Wl,--sort-common -o lxdm-greeter-gdk lxdm_greeter_gdk-greeter-gdk.o lxdm_greeter_gdk-greeter-utils.o -lX11  -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lgdk_pixbuf-2.0 -lcairo-gobject -lcairo -lgobject-2.0 -lglib-2.0   -lck-connector -lpam -lcrypt 
+x86_64-pc-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..    -pthread -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/harfbuzz -I/usr/include/libdrm -I/usr/include/libpng16 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include  -DCONFIG_FILE=\"/etc/lxdm/lxdm.conf\" -DXSESSIONS_DIR=\"/usr/share/xsessions\" -DLXDM_DATA_DIR=\"/usr/share/lxdm\" -DPACKAGE_LOCALE_DIR=\"/usr/share/locale\" -DGNOMELOCALEDIR=\"/usr/share/locale\" -DLIBLOCALEDIR=\"/usr/lib/locale\" -Werror-implicit-function-declaration -Wall  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DENABLE_GTK3 -DLXDM_XCONN_XCB -MT gdm/lxdm_greeter_gtk-gdm-languages.o -MD -MP -MF gdm/.deps/lxdm_greeter_gtk-gdm-languages.Tpo -c -o gdm/lxdm_greeter_gtk-gdm-languages.o `test -f 'gdm/gdm-languages.c' || echo './'`gdm/gdm-languages.c
+x86_64-pc-linux-gnu-gcc  -DLXDM_NUMLOCK_PATH=\"/usr/libexec/lxdm-numlock\"  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DENABLE_GTK3 -DLXDM_XCONN_XCB  -Wl,-O1 -Wl,-z,relro -Wl,--hash-style=gnu -Wl,--as-needed -Wl,--sort-common -o lxdm-numlock lxdm_numlock-numlock.o  -lX11   -lck-connector -lpam -lcrypt 
+mv -f .deps/lxdm_binary-auth.Tpo .deps/lxdm_binary-auth.Po
+x86_64-pc-linux-gnu-gcc -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include   -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DENABLE_GTK3 -DLXDM_XCONN_XCB  -Wl,-O1 -Wl,-z,relro -Wl,--hash-style=gnu -Wl,--as-needed -Wl,--sort-common -o lxdm-session lxdm_session-pam.o  -lglib-2.0   -lck-connector -lpam -lcrypt 
+x86_64-pc-linux-gnu-gcc -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include  -DCONFIG_FILE=\"/etc/lxdm/lxdm.conf\" -DXSESSIONS_DIR=\"/usr/share/xsessions\" -DLXDM_DATA_DIR=/usr/share/lxdm -DLXDM_NUMLOCK_PATH=\"/usr/libexec/lxdm-numlock\" -DLXDM_SESSION_PATH=\"/usr/libexec/lxdm-session\" -I/usr/include/ConsoleKit/ck-connector -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include  -Werror-implicit-function-declaration -Wall -rdynamic  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DENABLE_GTK3 -DLXDM_XCONN_XCB  -Wl,-O1 -Wl,-z,relro -Wl,--hash-style=gnu -Wl,--as-needed -Wl,--sort-common -o lxdm-binary lxdm_binary-lxdm.o lxdm_binary-ui.o lxdm_binary-lxcom.o lxdm_binary-xconn.o lxdm_binary-auth.o  -lglib-2.0  -lxcb  -lck-connector -ldbus-1   -lck-connector -lpam -lcrypt 
 mv -f gdm/.deps/lxdm_greeter_gtk-gdm-languages.Tpo gdm/.deps/lxdm_greeter_gtk-gdm-languages.Po
-x86_64-pc-linux-gnu-gcc -pthread -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/libdrm -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz  -DCONFIG_FILE=\"/etc/lxdm/lxdm.conf\" -DXSESSIONS_DIR=\"/usr/share/xsessions\" -DLXDM_DATA_DIR=\"/usr/share/lxdm\" -DPACKAGE_LOCALE_DIR=\"/usr/share/locale\" -DGNOMELOCALEDIR=\"/usr/share/locale\" -DLIBLOCALEDIR=\"/usr/lib/locale\" -Werror-implicit-function-declaration -Wall  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DLXDM_XCONN_XCB  -Wl,-O1 -Wl,-z,relro -Wl,--hash-style=gnu -Wl,--as-needed -Wl,--sort-common -o lxdm-greeter-gtk lxdm_greeter_gtk-greeter.o lxdm_greeter_gtk-lang.o gdm/lxdm_greeter_gtk-gdm-languages.o lxdm_greeter_gtk-lxcom.o lxdm_greeter_gtk-greeter-utils.o  -lX11  -lgtk-x11-2.0 -lgdk-x11-2.0 -lpangocairo-1.0 -latk-1.0 -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lpangoft2-1.0 -lpango-1.0 -lgobject-2.0 -lglib-2.0 -lfontconfig -lfreetype   -lck-connector -lpam -lcrypt 
-make[2]: Leaving directory '/var/pisi/lxdm-0.5.0-9/work/lxdm-0.5.0/src'
+x86_64-pc-linux-gnu-gcc -pthread -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/harfbuzz -I/usr/include/libdrm -I/usr/include/libpng16 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include  -DCONFIG_FILE=\"/etc/lxdm/lxdm.conf\" -DXSESSIONS_DIR=\"/usr/share/xsessions\" -DLXDM_DATA_DIR=\"/usr/share/lxdm\" -DPACKAGE_LOCALE_DIR=\"/usr/share/locale\" -DGNOMELOCALEDIR=\"/usr/share/locale\" -DLIBLOCALEDIR=\"/usr/lib/locale\" -Werror-implicit-function-declaration -Wall  -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -DENABLE_GTK3 -DLXDM_XCONN_XCB  -Wl,-O1 -Wl,-z,relro -Wl,--hash-style=gnu -Wl,--as-needed -Wl,--sort-common -o lxdm-greeter-gtk lxdm_greeter_gtk-greeter.o lxdm_greeter_gtk-lang.o gdm/lxdm_greeter_gtk-gdm-languages.o lxdm_greeter_gtk-lxcom.o lxdm_greeter_gtk-greeter-utils.o  -lX11  -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0   -lck-connector -lpam -lcrypt 
+make[2]: Leaving directory '/var/pisi/lxdm-0.5.1-10/work/lxdm-a404b4d/src'
 Making all in po
-make[2]: Entering directory '/var/pisi/lxdm-0.5.0-9/work/lxdm-0.5.0/po'
+make[2]: Entering directory '/var/pisi/lxdm-0.5.1-10/work/lxdm-a404b4d/po'
 file=`echo af | sed 's,.*/,,'`.gmo \
   && rm -f $file && /usr/bin/msgfmt -o $file af.po
 file=`echo ar | sed 's,.*/,,'`.gmo \
@@ -253,41 +274,41 @@ file=`echo zh_CN | sed 's,.*/,,'`.gmo \
   && rm -f $file && /usr/bin/msgfmt -o $file zh_CN.po
 file=`echo zh_TW | sed 's,.*/,,'`.gmo \
   && rm -f $file && /usr/bin/msgfmt -o $file zh_TW.po
-make[2]: Leaving directory '/var/pisi/lxdm-0.5.0-9/work/lxdm-0.5.0/po'
+make[2]: Leaving directory '/var/pisi/lxdm-0.5.1-10/work/lxdm-a404b4d/po'
 Making all in data
-make[2]: Entering directory '/var/pisi/lxdm-0.5.0-9/work/lxdm-0.5.0/data'
-cat lxdm.conf.in | sed 's,@FULL_LIBEXECDIR@,/usr/libexec,' > lxdm.conf
-make[2]: Leaving directory '/var/pisi/lxdm-0.5.0-9/work/lxdm-0.5.0/data'
-Making all in pam
-make[2]: Entering directory '/var/pisi/lxdm-0.5.0-9/work/lxdm-0.5.0/pam'
+make[2]: Entering directory '/var/pisi/lxdm-0.5.1-10/work/lxdm-a404b4d/data'
 make[2]: Nothing to be done for 'all'.
-make[2]: Leaving directory '/var/pisi/lxdm-0.5.0-9/work/lxdm-0.5.0/pam'
-make[2]: Entering directory '/var/pisi/lxdm-0.5.0-9/work/lxdm-0.5.0'
-make[2]: Leaving directory '/var/pisi/lxdm-0.5.0-9/work/lxdm-0.5.0'
-make[1]: Leaving directory '/var/pisi/lxdm-0.5.0-9/work/lxdm-0.5.0'
+make[2]: Leaving directory '/var/pisi/lxdm-0.5.1-10/work/lxdm-a404b4d/data'
+Making all in pam
+make[2]: Entering directory '/var/pisi/lxdm-0.5.1-10/work/lxdm-a404b4d/pam'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/pisi/lxdm-0.5.1-10/work/lxdm-a404b4d/pam'
+make[2]: Entering directory '/var/pisi/lxdm-0.5.1-10/work/lxdm-a404b4d'
+make[2]: Leaving directory '/var/pisi/lxdm-0.5.1-10/work/lxdm-a404b4d'
+make[1]: Leaving directory '/var/pisi/lxdm-0.5.1-10/work/lxdm-a404b4d'
 DEBUG: "make -j5" dönüş değeri 0
 [32mPaket test ediliyor...
 [0m[32mKuruluyor...
 [0mSandbox açık inşa...
-Çalışıyor make DESTDIR=/var/pisi/lxdm-0.5.0-9/install install
+Çalışıyor make DESTDIR=/var/pisi/lxdm-0.5.1-10/install install
 Making install in src
-make[1]: Entering directory '/var/pisi/lxdm-0.5.0-9/work/lxdm-0.5.0/src'
-make[2]: Entering directory '/var/pisi/lxdm-0.5.0-9/work/lxdm-0.5.0/src'
- /bin/mkdir -p '/var/pisi/lxdm-0.5.0-9/install/usr/bin'
-  /usr/bin/install -c lxdm-config '/var/pisi/lxdm-0.5.0-9/install/usr/bin'
- /bin/mkdir -p '/var/pisi/lxdm-0.5.0-9/install/usr/libexec'
-  /usr/bin/install -c lxdm-greeter-gdk lxdm-numlock lxdm-greeter-gtk lxdm-session '/var/pisi/lxdm-0.5.0-9/install/usr/libexec'
- /bin/mkdir -p '/var/pisi/lxdm-0.5.0-9/install/usr/sbin'
-  /usr/bin/install -c lxdm-binary '/var/pisi/lxdm-0.5.0-9/install/usr/sbin'
+make[1]: Entering directory '/var/pisi/lxdm-0.5.1-10/work/lxdm-a404b4d/src'
+make[2]: Entering directory '/var/pisi/lxdm-0.5.1-10/work/lxdm-a404b4d/src'
+ /bin/mkdir -p '/var/pisi/lxdm-0.5.1-10/install/usr/bin'
+  /usr/bin/install -c lxdm-config '/var/pisi/lxdm-0.5.1-10/install/usr/bin'
+ /bin/mkdir -p '/var/pisi/lxdm-0.5.1-10/install/usr/libexec'
+  /usr/bin/install -c lxdm-greeter-gdk lxdm-numlock lxdm-greeter-gtk lxdm-session '/var/pisi/lxdm-0.5.1-10/install/usr/libexec'
+ /bin/mkdir -p '/var/pisi/lxdm-0.5.1-10/install/usr/sbin'
+  /usr/bin/install -c lxdm-binary '/var/pisi/lxdm-0.5.1-10/install/usr/sbin'
 make[2]: Nothing to be done for 'install-data-am'.
-make[2]: Leaving directory '/var/pisi/lxdm-0.5.0-9/work/lxdm-0.5.0/src'
-make[1]: Leaving directory '/var/pisi/lxdm-0.5.0-9/work/lxdm-0.5.0/src'
+make[2]: Leaving directory '/var/pisi/lxdm-0.5.1-10/work/lxdm-a404b4d/src'
+make[1]: Leaving directory '/var/pisi/lxdm-0.5.1-10/work/lxdm-a404b4d/src'
 Making install in po
-make[1]: Entering directory '/var/pisi/lxdm-0.5.0-9/work/lxdm-0.5.0/po'
+make[1]: Entering directory '/var/pisi/lxdm-0.5.1-10/work/lxdm-a404b4d/po'
 linguas="af ar bg bn_IN ca cs da de el es es_VE et eu fa fi fr frp gl he hr hu id it ja ko lt ml ms nb nl nn pl ps pt pt_BR ru sk sl sr sv tr uk ur ur_PK vi zh_CN zh_TW "; \
 for lang in $linguas; do \
-  dir=/var/pisi/lxdm-0.5.0-9/install/usr/share/locale/$lang/LC_MESSAGES; \
-  /bin/sh /var/pisi/lxdm-0.5.0-9/work/lxdm-0.5.0/install-sh -d $dir; \
+  dir=/var/pisi/lxdm-0.5.1-10/install/usr/share/locale/$lang/LC_MESSAGES; \
+  /bin/sh /var/pisi/lxdm-0.5.1-10/work/lxdm-a404b4d/install-sh -d $dir; \
   if test -r $lang.gmo; then \
     /usr/bin/install -c -m 644 $lang.gmo $dir/lxdm.mo; \
     echo "installing $lang.gmo as $dir/lxdm.mo"; \
@@ -310,105 +331,105 @@ for lang in $linguas; do \
     fi; \
   fi; \
 done
-installing af.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/af/LC_MESSAGES/lxdm.mo
-installing ar.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/ar/LC_MESSAGES/lxdm.mo
-installing bg.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/bg/LC_MESSAGES/lxdm.mo
-installing bn_IN.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/bn_IN/LC_MESSAGES/lxdm.mo
-installing ca.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/ca/LC_MESSAGES/lxdm.mo
-installing cs.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/cs/LC_MESSAGES/lxdm.mo
-installing da.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/da/LC_MESSAGES/lxdm.mo
-installing de.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/de/LC_MESSAGES/lxdm.mo
-installing el.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/el/LC_MESSAGES/lxdm.mo
-installing es.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/es/LC_MESSAGES/lxdm.mo
-installing es_VE.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/es_VE/LC_MESSAGES/lxdm.mo
-installing et.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/et/LC_MESSAGES/lxdm.mo
-installing eu.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/eu/LC_MESSAGES/lxdm.mo
-installing fa.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/fa/LC_MESSAGES/lxdm.mo
-installing fi.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/fi/LC_MESSAGES/lxdm.mo
-installing fr.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/fr/LC_MESSAGES/lxdm.mo
-installing frp.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/frp/LC_MESSAGES/lxdm.mo
-installing gl.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/gl/LC_MESSAGES/lxdm.mo
-installing he.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/he/LC_MESSAGES/lxdm.mo
-installing hr.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/hr/LC_MESSAGES/lxdm.mo
-installing hu.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/hu/LC_MESSAGES/lxdm.mo
-installing id.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/id/LC_MESSAGES/lxdm.mo
-installing it.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/it/LC_MESSAGES/lxdm.mo
-installing ja.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/ja/LC_MESSAGES/lxdm.mo
-installing ko.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/ko/LC_MESSAGES/lxdm.mo
-installing lt.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/lt/LC_MESSAGES/lxdm.mo
-installing ml.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/ml/LC_MESSAGES/lxdm.mo
-installing ms.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/ms/LC_MESSAGES/lxdm.mo
-installing nb.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/nb/LC_MESSAGES/lxdm.mo
-installing nl.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/nl/LC_MESSAGES/lxdm.mo
-installing nn.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/nn/LC_MESSAGES/lxdm.mo
-installing pl.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/pl/LC_MESSAGES/lxdm.mo
-installing ps.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/ps/LC_MESSAGES/lxdm.mo
-installing pt.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/pt/LC_MESSAGES/lxdm.mo
-installing pt_BR.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/pt_BR/LC_MESSAGES/lxdm.mo
-installing ru.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/ru/LC_MESSAGES/lxdm.mo
-installing sk.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/sk/LC_MESSAGES/lxdm.mo
-installing sl.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/sl/LC_MESSAGES/lxdm.mo
-installing sr.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/sr/LC_MESSAGES/lxdm.mo
-installing sv.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/sv/LC_MESSAGES/lxdm.mo
-installing tr.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/tr/LC_MESSAGES/lxdm.mo
-installing uk.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/uk/LC_MESSAGES/lxdm.mo
-installing ur.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/ur/LC_MESSAGES/lxdm.mo
-installing ur_PK.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/ur_PK/LC_MESSAGES/lxdm.mo
-installing vi.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/vi/LC_MESSAGES/lxdm.mo
-installing zh_CN.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/zh_CN/LC_MESSAGES/lxdm.mo
-installing zh_TW.gmo as /var/pisi/lxdm-0.5.0-9/install/usr/share/locale/zh_TW/LC_MESSAGES/lxdm.mo
-make[1]: Leaving directory '/var/pisi/lxdm-0.5.0-9/work/lxdm-0.5.0/po'
+installing af.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/af/LC_MESSAGES/lxdm.mo
+installing ar.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/ar/LC_MESSAGES/lxdm.mo
+installing bg.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/bg/LC_MESSAGES/lxdm.mo
+installing bn_IN.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/bn_IN/LC_MESSAGES/lxdm.mo
+installing ca.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/ca/LC_MESSAGES/lxdm.mo
+installing cs.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/cs/LC_MESSAGES/lxdm.mo
+installing da.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/da/LC_MESSAGES/lxdm.mo
+installing de.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/de/LC_MESSAGES/lxdm.mo
+installing el.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/el/LC_MESSAGES/lxdm.mo
+installing es.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/es/LC_MESSAGES/lxdm.mo
+installing es_VE.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/es_VE/LC_MESSAGES/lxdm.mo
+installing et.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/et/LC_MESSAGES/lxdm.mo
+installing eu.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/eu/LC_MESSAGES/lxdm.mo
+installing fa.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/fa/LC_MESSAGES/lxdm.mo
+installing fi.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/fi/LC_MESSAGES/lxdm.mo
+installing fr.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/fr/LC_MESSAGES/lxdm.mo
+installing frp.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/frp/LC_MESSAGES/lxdm.mo
+installing gl.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/gl/LC_MESSAGES/lxdm.mo
+installing he.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/he/LC_MESSAGES/lxdm.mo
+installing hr.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/hr/LC_MESSAGES/lxdm.mo
+installing hu.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/hu/LC_MESSAGES/lxdm.mo
+installing id.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/id/LC_MESSAGES/lxdm.mo
+installing it.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/it/LC_MESSAGES/lxdm.mo
+installing ja.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/ja/LC_MESSAGES/lxdm.mo
+installing ko.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/ko/LC_MESSAGES/lxdm.mo
+installing lt.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/lt/LC_MESSAGES/lxdm.mo
+installing ml.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/ml/LC_MESSAGES/lxdm.mo
+installing ms.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/ms/LC_MESSAGES/lxdm.mo
+installing nb.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/nb/LC_MESSAGES/lxdm.mo
+installing nl.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/nl/LC_MESSAGES/lxdm.mo
+installing nn.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/nn/LC_MESSAGES/lxdm.mo
+installing pl.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/pl/LC_MESSAGES/lxdm.mo
+installing ps.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/ps/LC_MESSAGES/lxdm.mo
+installing pt.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/pt/LC_MESSAGES/lxdm.mo
+installing pt_BR.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/pt_BR/LC_MESSAGES/lxdm.mo
+installing ru.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/ru/LC_MESSAGES/lxdm.mo
+installing sk.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/sk/LC_MESSAGES/lxdm.mo
+installing sl.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/sl/LC_MESSAGES/lxdm.mo
+installing sr.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/sr/LC_MESSAGES/lxdm.mo
+installing sv.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/sv/LC_MESSAGES/lxdm.mo
+installing tr.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/tr/LC_MESSAGES/lxdm.mo
+installing uk.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/uk/LC_MESSAGES/lxdm.mo
+installing ur.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/ur/LC_MESSAGES/lxdm.mo
+installing ur_PK.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/ur_PK/LC_MESSAGES/lxdm.mo
+installing vi.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/vi/LC_MESSAGES/lxdm.mo
+installing zh_CN.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/zh_CN/LC_MESSAGES/lxdm.mo
+installing zh_TW.gmo as /var/pisi/lxdm-0.5.1-10/install/usr/share/locale/zh_TW/LC_MESSAGES/lxdm.mo
+make[1]: Leaving directory '/var/pisi/lxdm-0.5.1-10/work/lxdm-a404b4d/po'
 Making install in data
-make[1]: Entering directory '/var/pisi/lxdm-0.5.0-9/work/lxdm-0.5.0/data'
-make[2]: Entering directory '/var/pisi/lxdm-0.5.0-9/work/lxdm-0.5.0/data'
- /bin/mkdir -p '/var/pisi/lxdm-0.5.0-9/install/usr/sbin'
- /usr/bin/install -c lxdm '/var/pisi/lxdm-0.5.0-9/install/usr/sbin'
- /bin/mkdir -p '/var/pisi/lxdm-0.5.0-9/install/usr/share/lxdm'
- /usr/bin/install -c -m 644 lxdm.glade config.ui '/var/pisi/lxdm-0.5.0-9/install/usr/share/lxdm'
- /bin/mkdir -p '/var/pisi/lxdm-0.5.0-9/install/etc/lxdm'
- /usr/bin/install -c -m 644 PostLogin PostLogout PreLogin PreReboot PreShutdown LoginReady lxdm.conf Xsession '/var/pisi/lxdm-0.5.0-9/install/etc/lxdm'
- /bin/mkdir -p '/var/pisi/lxdm-0.5.0-9/install/usr/share/lxdm/themes/Industrial'
- /usr/bin/install -c -m 644 themes/Industrial/index.theme themes/Industrial/gtkrc themes/Industrial/wave.svg themes/Industrial/login.png themes/Industrial/shade.png themes/Industrial/lang.png themes/Industrial/session.png themes/Industrial/greeter.ui themes/Industrial/greeter-gtk3.ui themes/Industrial/gtk.css themes/Industrial/nobody.png '/var/pisi/lxdm-0.5.0-9/install/usr/share/lxdm/themes/Industrial'
+make[1]: Entering directory '/var/pisi/lxdm-0.5.1-10/work/lxdm-a404b4d/data'
+make[2]: Entering directory '/var/pisi/lxdm-0.5.1-10/work/lxdm-a404b4d/data'
+ /bin/mkdir -p '/var/pisi/lxdm-0.5.1-10/install/usr/sbin'
+ /usr/bin/install -c lxdm '/var/pisi/lxdm-0.5.1-10/install/usr/sbin'
+ /bin/mkdir -p '/var/pisi/lxdm-0.5.1-10/install/usr/share/lxdm'
+ /usr/bin/install -c -m 644 lxdm.glade config.ui '/var/pisi/lxdm-0.5.1-10/install/usr/share/lxdm'
+ /bin/mkdir -p '/var/pisi/lxdm-0.5.1-10/install/etc/lxdm'
+ /usr/bin/install -c -m 644 PostLogin PostLogout PreLogin PreReboot PreShutdown LoginReady lxdm.conf Xsession '/var/pisi/lxdm-0.5.1-10/install/etc/lxdm'
+ /bin/mkdir -p '/var/pisi/lxdm-0.5.1-10/install/usr/share/lxdm/themes/Industrial'
+ /usr/bin/install -c -m 644 themes/Industrial/index.theme themes/Industrial/gtkrc themes/Industrial/wave.svg themes/Industrial/login.png themes/Industrial/shade.png themes/Industrial/lang.png themes/Industrial/session.png themes/Industrial/greeter.ui themes/Industrial/greeter-gtk3.ui themes/Industrial/gtk.css themes/Industrial/nobody.png '/var/pisi/lxdm-0.5.1-10/install/usr/share/lxdm/themes/Industrial'
 make  install-data-hook
-make[3]: Entering directory '/var/pisi/lxdm-0.5.0-9/work/lxdm-0.5.0/data'
-chmod +x /var/pisi/lxdm-0.5.0-9/install/etc/lxdm/Xsession \
-	/var/pisi/lxdm-0.5.0-9/install/etc/lxdm/PostLogin \
-	/var/pisi/lxdm-0.5.0-9/install/etc/lxdm/PostLogout \
-	/var/pisi/lxdm-0.5.0-9/install/etc/lxdm/PreLogin \
-	/var/pisi/lxdm-0.5.0-9/install/etc/lxdm/PreReboot \
-	/var/pisi/lxdm-0.5.0-9/install/etc/lxdm/PreShutdown \
-	/var/pisi/lxdm-0.5.0-9/install/etc/lxdm/LoginReady
-chmod 640 /var/pisi/lxdm-0.5.0-9/install/etc/lxdm/lxdm.conf
-make[3]: Leaving directory '/var/pisi/lxdm-0.5.0-9/work/lxdm-0.5.0/data'
-make[2]: Leaving directory '/var/pisi/lxdm-0.5.0-9/work/lxdm-0.5.0/data'
-make[1]: Leaving directory '/var/pisi/lxdm-0.5.0-9/work/lxdm-0.5.0/data'
+make[3]: Entering directory '/var/pisi/lxdm-0.5.1-10/work/lxdm-a404b4d/data'
+chmod +x /var/pisi/lxdm-0.5.1-10/install/etc/lxdm/Xsession \
+	/var/pisi/lxdm-0.5.1-10/install/etc/lxdm/PostLogin \
+	/var/pisi/lxdm-0.5.1-10/install/etc/lxdm/PostLogout \
+	/var/pisi/lxdm-0.5.1-10/install/etc/lxdm/PreLogin \
+	/var/pisi/lxdm-0.5.1-10/install/etc/lxdm/PreReboot \
+	/var/pisi/lxdm-0.5.1-10/install/etc/lxdm/PreShutdown \
+	/var/pisi/lxdm-0.5.1-10/install/etc/lxdm/LoginReady
+chmod 640 /var/pisi/lxdm-0.5.1-10/install/etc/lxdm/lxdm.conf
+make[3]: Leaving directory '/var/pisi/lxdm-0.5.1-10/work/lxdm-a404b4d/data'
+make[2]: Leaving directory '/var/pisi/lxdm-0.5.1-10/work/lxdm-a404b4d/data'
+make[1]: Leaving directory '/var/pisi/lxdm-0.5.1-10/work/lxdm-a404b4d/data'
 Making install in pam
-make[1]: Entering directory '/var/pisi/lxdm-0.5.0-9/work/lxdm-0.5.0/pam'
-make[2]: Entering directory '/var/pisi/lxdm-0.5.0-9/work/lxdm-0.5.0/pam'
+make[1]: Entering directory '/var/pisi/lxdm-0.5.1-10/work/lxdm-a404b4d/pam'
+make[2]: Entering directory '/var/pisi/lxdm-0.5.1-10/work/lxdm-a404b4d/pam'
 make[2]: Nothing to be done for 'install-exec-am'.
- /bin/mkdir -p '/var/pisi/lxdm-0.5.0-9/install/etc/pam.d'
- /usr/bin/install -c -m 644 lxdm '/var/pisi/lxdm-0.5.0-9/install/etc/pam.d'
-make[2]: Leaving directory '/var/pisi/lxdm-0.5.0-9/work/lxdm-0.5.0/pam'
-make[1]: Leaving directory '/var/pisi/lxdm-0.5.0-9/work/lxdm-0.5.0/pam'
-make[1]: Entering directory '/var/pisi/lxdm-0.5.0-9/work/lxdm-0.5.0'
-make[2]: Entering directory '/var/pisi/lxdm-0.5.0-9/work/lxdm-0.5.0'
+ /bin/mkdir -p '/var/pisi/lxdm-0.5.1-10/install/etc/pam.d'
+ /usr/bin/install -c -m 644 lxdm '/var/pisi/lxdm-0.5.1-10/install/etc/pam.d'
+make[2]: Leaving directory '/var/pisi/lxdm-0.5.1-10/work/lxdm-a404b4d/pam'
+make[1]: Leaving directory '/var/pisi/lxdm-0.5.1-10/work/lxdm-a404b4d/pam'
+make[1]: Entering directory '/var/pisi/lxdm-0.5.1-10/work/lxdm-a404b4d'
+make[2]: Entering directory '/var/pisi/lxdm-0.5.1-10/work/lxdm-a404b4d'
 make[2]: Nothing to be done for 'install-exec-am'.
 make[2]: Nothing to be done for 'install-data-am'.
-make[2]: Leaving directory '/var/pisi/lxdm-0.5.0-9/work/lxdm-0.5.0'
-make[1]: Leaving directory '/var/pisi/lxdm-0.5.0-9/work/lxdm-0.5.0'
-DEBUG: "make DESTDIR=/var/pisi/lxdm-0.5.0-9/install install" dönüş değeri 0
-Çalışıyor install -m0644 "COPYING" /var/pisi/lxdm-0.5.0-9/install/usr/share/doc/lxdm
-DEBUG: "install -m0644 "COPYING" /var/pisi/lxdm-0.5.0-9/install/usr/share/doc/lxdm" dönüş değeri 0
-Çalışıyor install -m0644 "AUTHORS" /var/pisi/lxdm-0.5.0-9/install/usr/share/doc/lxdm
-DEBUG: "install -m0644 "AUTHORS" /var/pisi/lxdm-0.5.0-9/install/usr/share/doc/lxdm" dönüş değeri 0
-Çalışıyor install -m0644 "TODO" /var/pisi/lxdm-0.5.0-9/install/usr/share/doc/lxdm
-DEBUG: "install -m0644 "TODO" /var/pisi/lxdm-0.5.0-9/install/usr/share/doc/lxdm" dönüş değeri 0
-Çalışıyor install -m0644 "README" /var/pisi/lxdm-0.5.0-9/install/usr/share/doc/lxdm
-DEBUG: "install -m0644 "README" /var/pisi/lxdm-0.5.0-9/install/usr/share/doc/lxdm" dönüş değeri 0
-Çalışıyor install -m0644 "ChangeLog" /var/pisi/lxdm-0.5.0-9/install/usr/share/doc/lxdm
-DEBUG: "install -m0644 "ChangeLog" /var/pisi/lxdm-0.5.0-9/install/usr/share/doc/lxdm" dönüş değeri 0
-Çalışıyor install -m0644 "NEWS" /var/pisi/lxdm-0.5.0-9/install/usr/share/doc/lxdm
-DEBUG: "install -m0644 "NEWS" /var/pisi/lxdm-0.5.0-9/install/usr/share/doc/lxdm" dönüş değeri 0
+make[2]: Leaving directory '/var/pisi/lxdm-0.5.1-10/work/lxdm-a404b4d'
+make[1]: Leaving directory '/var/pisi/lxdm-0.5.1-10/work/lxdm-a404b4d'
+DEBUG: "make DESTDIR=/var/pisi/lxdm-0.5.1-10/install install" dönüş değeri 0
+Çalışıyor install -m0644 "COPYING" /var/pisi/lxdm-0.5.1-10/install/usr/share/doc/lxdm
+DEBUG: "install -m0644 "COPYING" /var/pisi/lxdm-0.5.1-10/install/usr/share/doc/lxdm" dönüş değeri 0
+Çalışıyor install -m0644 "AUTHORS" /var/pisi/lxdm-0.5.1-10/install/usr/share/doc/lxdm
+DEBUG: "install -m0644 "AUTHORS" /var/pisi/lxdm-0.5.1-10/install/usr/share/doc/lxdm" dönüş değeri 0
+Çalışıyor install -m0644 "TODO" /var/pisi/lxdm-0.5.1-10/install/usr/share/doc/lxdm
+DEBUG: "install -m0644 "TODO" /var/pisi/lxdm-0.5.1-10/install/usr/share/doc/lxdm" dönüş değeri 0
+Çalışıyor install -m0644 "README" /var/pisi/lxdm-0.5.1-10/install/usr/share/doc/lxdm
+DEBUG: "install -m0644 "README" /var/pisi/lxdm-0.5.1-10/install/usr/share/doc/lxdm" dönüş değeri 0
+Çalışıyor install -m0644 "ChangeLog" /var/pisi/lxdm-0.5.1-10/install/usr/share/doc/lxdm
+DEBUG: "install -m0644 "ChangeLog" /var/pisi/lxdm-0.5.1-10/install/usr/share/doc/lxdm" dönüş değeri 0
+Çalışıyor install -m0644 "NEWS" /var/pisi/lxdm-0.5.1-10/install/usr/share/doc/lxdm
+DEBUG: "install -m0644 "NEWS" /var/pisi/lxdm-0.5.1-10/install/usr/share/doc/lxdm" dönüş değeri 0
 DEBUG: /usr/bin/lxdm-config [stripped]
 DEBUG: /usr/libexec/lxdm-numlock [stripped]
 DEBUG: /usr/libexec/lxdm-session [stripped]
@@ -416,5 +437,5 @@ DEBUG: /usr/libexec/lxdm-greeter-gdk [stripped]
 DEBUG: /usr/libexec/lxdm-greeter-gtk [stripped]
 DEBUG: /usr/sbin/lxdm-binary [stripped]
 [32mPaket inşa ediliyor: lxdm
-[0mlxdm-0.5.0-9-p01-x86_64.pisi oluşturuluyor... 
+[0mlxdm-0.5.1-10-p01-x86_64.pisi oluşturuluyor... 
 İnşa dizini bırakılıyor

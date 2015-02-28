@@ -1,6 +1,6 @@
 diff -Nuar lxdm-0.5.0.orig/data/lxdm.conf.in lxdm-0.5.0/data/lxdm.conf.in
 --- lxdm-0.5.0.orig/data/lxdm.conf.in	2012-02-27 13:28:25.000000000 +0200
-+++ lxdm-0.5.0/data/lxdm.conf.in	2014-08-18 14:01:59.955134485 +0300
++++ data/lxdm.conf.in	2014-08-18 14:01:59.955134485 +0300
 @@ -34,7 +34,7 @@
  gtk_theme=Clearlooks
  
