@@ -21,10 +21,10 @@ from historymanager.window import MainManager
 class HistoryManager(KMainWindow):
     def __init__ (self, *args):
         KMainWindow.__init__(self)
-        self.setWindowIcon(KIcon("flag-yellow"))
+        self.setWindowIcon(KIcon("history-manager"))
 
         # This is very important for translations when running as kcm_module
-        KGlobal.locale().insertCatalog("service-manager")
+        KGlobal.locale().insertCatalog("history-manager")
 
         self.resize (640, 480)
         self.setCentralWidget(MainManager(self))
