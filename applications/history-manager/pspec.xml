@@ -12,20 +12,11 @@
         <IsA>app:gui</IsA>
         <Summary>KDE4 port of History Manager Tool</Summary>
         <Description>History manager is a graphical interface to pisi snapshot facilities.</Description>
-        <Archive sha1sum="54a88d0606a842a99dbd26c67163d40fc3159d9a" type="targz">https://github.com/ayhanyalcinsoy/history_manager/archive/history-manager-0.2.7.5.tar.gz</Archive>
-        <!--<Archive sha1sum="807b40d35cf6837777bc975fd46be64d5dea43fc" type="targz">/home/PisiLinux/Pisicik/history_manager-0.2.7.tar.gz</Archive>-->
-        <BuildDependencies>
-            <!--<Dependency>python-kde-devel</Dependency>-->
-            <Dependency>pypolkit</Dependency>
-        </BuildDependencies>
+        <Archive sha1sum="d104d717749e4cd169920fb6657dd0de1a26335b" type="targz">http://source.pisilinux.org/1.0/history_manager-0.2.7.6.tar.gz</Archive>
     </Source>
 
     <Package>
         <Name>history-manager</Name>
-        <RuntimeDependencies>
-            <!--<Dependency>python-kde</Dependency>-->
-            <Dependency>pypolkit</Dependency>
-        </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
@@ -40,8 +31,8 @@
 
     <History>
         <Update release="2">
-            <Date>2015-01-01</Date>
-            <Version>0.2.7.5</Version>
+            <Date>2015-02-28</Date>
+            <Version>0.2.7.6</Version>
             <Comment>Version bump for PisiLinux</Comment>
             <Name>Ayhan Yalçınsoy</Name>
             <Email>ayhanyalcinsoy@pisilinux.org</Email>
