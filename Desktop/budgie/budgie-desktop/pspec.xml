@@ -12,26 +12,17 @@
         <IsA>app:gui</IsA>
         <Summary>Simple GTK3 desktop experience</Summary>
         <Description>Simple GTK3 desktop experience</Description>
-        <Archive sha1sum="c0edc13d7abcc745f74cbf14050d510fc846d542" type="tarxz">https://github.com/evolve-os/budgie-desktop/releases/download/v8.1/budgie-desktop-8.1.tar.xz</Archive>
+        <Archive sha1sum="272c509e1aec259bfc45e6379f4cd4c82e1c5c37" type="tarxz">https://evolve-os.com/sources/budgie-desktop-8.1.tar.xz</Archive>
         <!--<Archive sha1sum="7c371adc4a6e554ac8355a6cd495b0f1454d40fa" type="tarxz">https://evolve-os.com/sources/budgie-desktop-8.tar.xz</Archive>-->
         <BuildDependencies>
+             <Dependency>gtk3-devel</Dependency>
              <Dependency>pulseaudio-libs-devel</Dependency>
              <Dependency>mutter-devel</Dependency>
              <Dependency>libwnck3-devel</Dependency>
              <Dependency>upower-devel</Dependency>
              <Dependency>gnome-menus-devel</Dependency>
-             <Dependency>libpeas-devel</Dependency>
              <Dependency>libgee08-devel</Dependency>
-             <Dependency>gtk3-devel</Dependency>
-             <Dependency>vala-devel</Dependency>
-             <Dependency>glib2-devel</Dependency>
-             <Dependency>desktop-file-utils</Dependency>
-             <Dependency>atk-devel</Dependency>
-             <Dependency>cairo-devel</Dependency>
-             <Dependency>pango-devel</Dependency>
-             <Dependency>clutter-devel</Dependency>
-             <Dependency>gdk-pixbuf-devel</Dependency>
-             <Dependency>gobject-introspection-devel</Dependency>
+             <Dependency>libpeas-devel</Dependency>
         </BuildDependencies>
     </Source>
         <Package>
@@ -41,17 +32,10 @@
             <Dependency>pulseaudio-libs</Dependency>
             <Dependency>libwnck3</Dependency>
             <Dependency>gnome-menus</Dependency>
-            <Dependency>cairo</Dependency>
             <Dependency>libpeas</Dependency>
             <Dependency>mutter</Dependency>
-            <Dependency>desktop-file-utils</Dependency>
-            <Dependency>atk</Dependency>
-            <Dependency>vala</Dependency>
+            <Dependency>upower</Dependency>
             <Dependency>libgee08</Dependency>
-            <Dependency>pango</Dependency>
-            <Dependency>clutter</Dependency>
-            <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>gobject-introspection</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

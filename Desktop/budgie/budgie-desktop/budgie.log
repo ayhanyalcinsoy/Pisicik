@@ -1,7 +1,7 @@
 [01;32mKaynak paket inşa ediliyor: budgie-desktop
-[0mDEBUG: ComponentDB initialized in 0.00361299514771.
-DEBUG: RepoDB initialized in 0.000174999237061.
-DEBUG: InstallDB initialized in 0.00595283508301.
+[0mDEBUG: ComponentDB initialized in 0.0036289691925.
+DEBUG: RepoDB initialized in 0.000184059143066.
+DEBUG: InstallDB initialized in 0.00597596168518.
 budgie-desktop-8.1.tar.xz [önbellekte]
 [32mArşiv(ler) açılıyor...
 [0m açıldı (/var/pisi/budgie-desktop-8.1-1/work)
