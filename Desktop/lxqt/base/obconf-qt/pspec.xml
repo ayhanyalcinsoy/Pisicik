@@ -10,7 +10,7 @@
         <IsA>app</IsA>
         <Summary>This is a Qt port of ObConf, configurator of OpenBox window manager.</Summary>
         <Description>This is a Qt port of ObConf, configurator of OpenBox window manager.</Description>
-        <Archive sha1sum="d6ec585d8a176bfae713d8a2546fa31490cc40f5" type="zip">/home/PisiLinux/Dropbox/Public/obconf-qt-master.zip</Archive>
+        <Archive sha1sum="c731b99c53965de38b03baa0792773189d1875c8" type="zip">http://source.pisilinux.org/1.0/obconf-qt-master-28022015.zip</Archive>
         <BuildDependencies>
             <Dependency version="3.5.2">openbox-devel</Dependency>
             <Dependency>pkgconfig</Dependency>
@@ -31,8 +31,8 @@
     </Package>
     <History>
         <Update release="3">
-            <Date>2015-02-10</Date>
-            <Version>2.0.3</Version>
+            <Date>2015-02-28</Date>
+            <Version>28022015</Version>
             <Comment>version bump for qt5</Comment>
             <Name>Ayhan Yalçınsoy</Name>
             <Email>ayhanyalcinsoy@pisilinux.org</Email>

@@ -10,7 +10,7 @@
         <IsA>app:gui</IsA>
         <Summary>GUI configuration tool for compton X composite manager.</Summary>
         <Description>GUI configuration tool for compton X composite manager.</Description>
-        <Archive sha1sum="9d9f40df035fe509acf4c6576fc182ea4352da10" type="zip">/home/PisiLinux/Dropbox/Public/compton-conf-master.zip</Archive>
+        <Archive sha1sum="8401534e94298895cc7cb668c0ed81916a229ef1" type="zip">http://source.pisilinux.org/1.0/compton-conf-master-28012015.zip</Archive>
         <BuildDependencies>
             <Dependency>qt5-base-devel</Dependency>
            <Dependency>libconfig-devel</Dependency>
@@ -33,8 +33,8 @@
     </Package>
     <History>
         <Update release="3">
-            <Date>2015-02-09</Date>
-            <Version>0.1.0</Version>
+            <Date>2015-02-28</Date>
+            <Version>28012015</Version>
             <Comment>compiled with qt5</Comment>
             <Name>Ayhan Yalçınsoy</Name>
             <Email>ayhanyalcinsoy@pisilinux.org</Email>

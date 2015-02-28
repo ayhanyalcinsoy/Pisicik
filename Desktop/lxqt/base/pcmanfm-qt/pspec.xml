@@ -23,19 +23,10 @@
     <Package>
         <Name>pcmanfm-qt</Name>
         <RuntimeDependencies>
-            <Dependency>gksu</Dependency>
-            <Dependency>xarchiver</Dependency>
-            <Dependency>qterminal</Dependency>
-            <Dependency>libqtxdg</Dependency>
-            <Dependency>lxqtmenu-data</Dependency>
             <Dependency>qt5-base</Dependency>
             <Dependency>qt5-base-devel</Dependency>
-            <Dependency>lxqt-menu-cache</Dependency>
-            <Dependency>gvfs</Dependency>
             <Dependency>libfm-qt5</Dependency>
             <Dependency>qt5-x11extras</Dependency>
-            <Dependency>adwaita-icon-theme</Dependency>
-            <Dependency>lxqt-policykit</Dependency>
             <Dependency>lxqt-libmenu-cache</Dependency>
             <Dependency>libfm-qt5-devel</Dependency>
         </RuntimeDependencies>
