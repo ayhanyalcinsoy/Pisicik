@@ -24,8 +24,8 @@
         <Name>kwindowsystem</Name>
         <RuntimeDependencies>
             <Dependency>qt5-base</Dependency>
-            <Dependency>qt5-x11extras</Dependency>
             <Dependency>libXfixes</Dependency>
+            <Dependency>qt5-x11extras</Dependency>
             <Dependency>xcb-util-keysyms</Dependency>
         </RuntimeDependencies>
         <Files>

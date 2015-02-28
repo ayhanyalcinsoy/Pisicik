@@ -20,8 +20,8 @@
     <Package>
         <Name>adwaita-icon-theme</Name>
         <RuntimeDependencies>
-            <Dependency>ghostscript</Dependency>
-            <Dependency>poppler</Dependency>
+            <!--<Dependency>ghostscript</Dependency>
+            <Dependency>poppler</Dependency>-->
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share/</Path>

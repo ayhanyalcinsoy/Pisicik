@@ -33,8 +33,7 @@
     <Package>
         <Name>polkit-qt5-devel</Name>
         <RuntimeDependencies>
-            <Dependency>polkit-qt5</Dependency>
-            <Dependency>qt5-base</Dependency>
+            <Dependency>qt5-base-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/pkgconfig</Path>
