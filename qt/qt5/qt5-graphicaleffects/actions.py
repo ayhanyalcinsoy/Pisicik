@@ -11,7 +11,7 @@ from pisi.actionsapi import qt5
 from pisi.actionsapi import get
 
 def setup():
-    shelltools.system ("/usr/lib/qt5/bin/qmake qtgraphicaleffects.pro")
+    shelltools.system ("qmake-qt5 qtgraphicaleffects.pro")
 
 def build():
      qt5.make()

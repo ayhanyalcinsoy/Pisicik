@@ -11,8 +11,9 @@ from pisi.actionsapi import qt5
 from pisi.actionsapi import get
 
 def setup():
-    shelltools.system ("qmake-qt5 qtdoc.pro")
-
+    shelltools.system("qmake-qt5 qtdoc.pro")
+    shelltools.cd("doc/src")
+    shelltools.system("qhelpgenerator *.qdoc")
 def build():
     qt5.make()
 
