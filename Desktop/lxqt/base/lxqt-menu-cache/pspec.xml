@@ -25,26 +25,19 @@
         <Files>
             <Path fileType="executable">/usr/libexec</Path>
             <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib</Path>
         </Files>
     </Package>
+
     <Package>
         <Name>lxqt-menu-cache-devel</Name>
-        <Summary>Development headers for lxqt-menu-cache</Summary>
+        <Summary>Development files for lxqt-menu-cache</Summary>
         <Files>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
             <Path fileType="header">/usr/include</Path>
         </Files>
     </Package>
-    <Package>
-        <Name>lxqt-libmenu-cache</Name>
-        <Summary>Library for lxqt-menu-cache</Summary>
-        <RuntimeDependencies>
-            <Dependency>glib2-devel</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="library">/usr/lib/</Path>
-            <Path fileType="library">/usr/lib/pkgconfig</Path>
-        </Files>
-    </Package>
+
     <History>
         <Update release="3">
             <Date>2015-02-10</Date>
