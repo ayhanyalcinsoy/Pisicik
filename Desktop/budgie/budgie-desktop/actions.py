@@ -10,8 +10,8 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.autoreconf("-vfi")
-    autotools.configure()
+    autotools.autoreconf("--force --install ")
+    autotools.configure("--prefix=/usr")
 
 def build():
     autotools.make()

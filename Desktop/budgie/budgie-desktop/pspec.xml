@@ -24,6 +24,9 @@
              <Dependency>libgee08-devel</Dependency>
              <Dependency>libpeas-devel</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch>budgie_configure.patch</Patch>
+        </Patches>
     </Source>
         <Package>
         <Name>budgie-desktop</Name>
