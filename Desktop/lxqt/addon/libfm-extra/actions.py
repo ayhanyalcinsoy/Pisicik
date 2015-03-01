@@ -10,11 +10,12 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import autotools
 
 def setup():
+    shelltools.system("./autogen.sh")
     autotools.configure("--sysconfdir=/etc \
                          --with-extra-only \
                          --with-gtk=no     \
                          --disable-static")
-    
+
     #pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")
 
 def build():
