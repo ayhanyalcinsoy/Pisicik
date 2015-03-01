@@ -1,0 +1,11 @@
+--- configure.ac	2015-03-01 01:47:40.844512226 +0200
++++ configurey.ac	2015-03-01 01:48:09.628512883 +0200
+@@ -78,7 +78,7 @@
+    gsettings-desktop-schemas >= 3.7.3
+    $CLUTTER_PACKAGE >= 1.19.5
+    cogl-1.0 >= 1.17.1
+-   upower-glib >= 0.99.0
++   upower-glib >= 0.93.23
+    gnome-desktop-3.0
+    xcomposite >= 0.2
+    xcursor

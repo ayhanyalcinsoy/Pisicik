@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>A window manager which is replacing Metacity</Summary>
         <Description>Mutter is the window manager for which GNOME Shell is a plugin in GNOME 3, replacing Metacity.</Description>
-        <Archive sha1sum="9d89d8dad022774b7cf4f3a553eb65cd2e738148" type="tarxz">http://ftp.gnome.org/pub/gnome/sources/mutter/3.14/mutter-3.14.3.tar.xz</Archive>
+        <Archive sha1sum="acf1968eee1b969725c1b430f2b909a26f8b3c5a" type="tarxz">http://ftp.acc.umu.se/pub/gnome/sources/mutter/3.14/mutter-3.14.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>clutter-devel</Dependency>
             <Dependency>gnome3-desktop-devel</Dependency>
@@ -28,7 +28,7 @@
             <Dependency>zenity</Dependency>
         </BuildDependencies>
         <Patches>
-            <!--<Patch>0001-schema-Do-not-use-Super_L-as-its-bound-to-Budgie.patch</Patch>-->
+            <!--<Patch>upower_93_configure.patch</Patch>-->
             <!-- Sent upstream //-->
             <!--<Patch>0001-ui-Support-non-standard-depth-icon-pixmaps.patch</Patch>-->
         </Patches>
@@ -41,9 +41,8 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="executable">/usr/libexec/mutter-restart-helper</Path>
-            <Path fileType="library">/usr/lib/lib*.so.*</Path>
-            <Path fileType="library">/usr/lib/mutter</Path>
+            <Path fileType="executable">/usr/libexec</Path>
+            <Path fileType="library">/usr/lib</Path>
             <Path fileType="data">/usr/share/glib-2.0/schemas</Path>
             <Path fileType="data">/usr/share/gnome-control-center</Path>
             <Path fileType="data">/usr/share/GConf</Path>
@@ -51,6 +50,7 @@
             <Path fileType="man">/usr/share/man</Path>
             <Path fileType="data">/usr/share/gnome/wm-properties</Path>
             <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="doc">/usr/share/gtk-doc</Path>
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>
     </Package>
@@ -62,15 +62,14 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
-            <Path fileType="library">/usr/lib/lib*.so</Path>
             <Path fileType="data">/usr/lib/pkgconfig</Path>
         </Files>
     </Package>
 
     <History>
         <Update release="7">
-            <Date>2015-02-28</Date>
-            <Version>3.14.3</Version>
+            <Date>2015-03-01</Date>
+            <Version>3.14.0</Version>
             <Comment>Version bump.</Comment>
             <Name>Ayhan Yalçınsoy</Name>
             <Email>ayhanyalcinsoy@pisilinux.org</Email>
