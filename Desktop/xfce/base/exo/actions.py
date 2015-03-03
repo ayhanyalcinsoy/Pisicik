@@ -11,10 +11,11 @@ from pisi.actionsapi import get
 
 def setup():
     autotools.configure("--prefix=/usr \
-                         --libexecdir=/usr/lib/xfce4 \
                          --disable-static \
                          --disable-gtk-doc \
                          --disable-debug")
+    
+    pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")
 
 def build():
     autotools.make()

@@ -23,16 +23,10 @@
     <Package>
         <Name>xfce4-systemload-plugin</Name>
         <RuntimeDependencies>
-            <Dependency>atk</Dependency>
-            <Dependency>pango</Dependency>
-            <Dependency>upower</Dependency>
-            <Dependency>fontconfig</Dependency>
-            <Dependency>libxfce4ui</Dependency>          
             <Dependency>gtk2</Dependency>
-            <Dependency>cairo</Dependency>
-            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>upower</Dependency>
+            <Dependency>libxfce4ui</Dependency>
             <Dependency>xfce4-panel</Dependency>
-            <Dependency>libxfcegui4</Dependency>
             <Dependency>libxfce4util</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -45,6 +39,27 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2014-03-02</Date>
+            <Version>1.1.0</Version>
+            <Comment>Rebuild for Upover</Comment>
+            <Name>Varol Maksutoğlu</Name>
+            <Email>waroi@pisilinux.org</Email>
+        </Update>
+        <Update release="4">
+            <Date>2014-02-04</Date>
+            <Version>1.1.0</Version>
+            <Comment>Rebuild Unused</Comment>
+            <Name>Varol Maksutoğlu</Name>
+            <Email>waroi@pisilinux.org</Email>
+        </Update>
+        <Update release="3">
+            <Date>2013-12-19</Date>
+            <Version>1.1.0</Version>
+            <Comment>Rebuild for upower.</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>kaptan@pisilinux.org</Email>
+        </Update>
         <Update release="2">
             <Date>2013-08-17</Date>
             <Version>1.1.0</Version>

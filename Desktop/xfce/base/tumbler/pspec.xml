@@ -5,14 +5,14 @@
         <Name>tumbler</Name>
         <Homepage>http://www.xfce.org/projects/thunar/</Homepage>
         <Packager>
-            <Name>Pisi Linux Community</Name>
-            <Email>admins@pisilinux.org</Email>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:gui</IsA>
         <Summary>A thumbnail service</Summary>
         <Description>Tumbler is a thumbnail service for the filemanager of Xfce desktop environment.</Description>
-        <Archive sha1sum="9037050413a32726b2061e71c804be3c1b5a69a0" type="tarbz2">http://archive.xfce.org/src/xfce/tumbler/0.1/tumbler-0.1.29.tar.bz2</Archive>
+        <Archive sha1sum="cba7b81f8269f30dd6412d133767b6044c470f2c" type="tarbz2">http://archive.xfce.org/src/xfce/tumbler/0.1/tumbler-0.1.31.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>dbus-glib-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
@@ -28,21 +28,21 @@
     <Package>
         <Name>tumbler</Name>
         <RuntimeDependencies>
-            <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>ffmpegthumbnailer</Dependency>
-            <Dependency>libjpeg-turbo</Dependency>
-            <Dependency>gtk2</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>libgsf</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
             <Dependency>poppler-glib</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>ffmpegthumbnailer</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="configure">/etc/xdg/tumbler/tumbler.rc</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="library">/usr/libexec</Path>
+            <Path fileType="data">/usr/share/</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
-            <Path fileType="doc">/usr/share/doc</Path>
-            <Path fileType="library">/usr/lib</Path>
-            <Path fileType="data">/usr/share/</Path>
+            <Path fileType="configure">/etc/xdg/tumbler/tumbler.rc</Path>
         </Files>
     </Package>
 
@@ -59,6 +59,27 @@
     </Package>
 
     <History>
+        <Update release="8">
+            <Date>2015-03-02</Date>
+            <Version>0.1.31</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
+        <Update release="7">
+            <Date>2014-06-10</Date>
+            <Version>0.1.30</Version>
+            <Comment>Release bump.</Comment>
+            <Name>Alihan Öztürk</Name>
+            <Email>alihan@pisilinux.org</Email>
+        </Update>
+        <Update release="6">
+            <Date>2014-05-27</Date>
+            <Version>0.1.30</Version>
+            <Comment>Version bump</Comment>
+            <Name>Kamil Atlı</Name>
+            <Email>suvarice@gmail.com</Email>
+        </Update>
         <Update release="5">
             <Date>2013-10-10</Date>
             <Version>0.1.29</Version>

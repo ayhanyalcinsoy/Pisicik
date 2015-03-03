@@ -13,7 +13,7 @@
         <Summary>Image viewer for Xfce</Summary>
         <PartOf>desktop.xfce.addon</PartOf>
         <Description>Ristretto is a fast and lightweight picture-viewer for the Xfce desktop environment.</Description>
-        <Archive sha1sum="6f2cf0d0ab0223eed3e243eba56f6c6c5dc95be0" type="tarbz2">http://source.pisilinux.org/1.0/ristretto-0.6.3.tar.bz2</Archive>
+        <Archive sha1sum="0f780cd0b3270e258315a737e4bbf332806f14dc" type="tarbz2">http://archive.xfce.org/src/apps/ristretto/0.8/ristretto-0.8.0.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>thunar-vfs-devel</Dependency>
@@ -30,31 +30,19 @@
             <Dependency>poppler-glib-devel</Dependency>
             <Dependency>libjpeg-turbo-devel</Dependency>
         </BuildDependencies>
-        <Patches>
-	    <Patch level="1">update-2013-09-19.patch</Patch>
-        </Patches>
     </Source>
 
     <Package>
         <Name>ristretto</Name>
         <RuntimeDependencies>
             <Dependency>gtk2</Dependency>
-            <Dependency>thunar-vfs</Dependency>
-            <Dependency>libxfce4util</Dependency>
-            <Dependency>libxfcegui4</Dependency>
-            <Dependency>libexif</Dependency>
-            <Dependency>libdbusmenu-glib</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>xfconf</Dependency>
+            <Dependency>libexif</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libxfce4ui</Dependency>
-            <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>ffmpegthumbnailer</Dependency>
-            <Dependency>tumbler</Dependency>
-            <Dependency>libgsf</Dependency>
-            <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>poppler-glib</Dependency>
-            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>libxfce4util</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -65,6 +53,20 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2015-03-02</Date>
+            <Version>0.8.0</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
+        <Update release="5">
+            <Date>2014-05-31</Date>
+            <Version>0.6.3</Version>
+            <Comment>Rebuild</Comment>
+            <Name>Burak Fazıl Ertürk</Name>
+            <Email>burakerturk@pisilinux.org</Email>
+        </Update>
         <Update release="4">
             <Date>2013-10-11</Date>
             <Version>0.6.3</Version>

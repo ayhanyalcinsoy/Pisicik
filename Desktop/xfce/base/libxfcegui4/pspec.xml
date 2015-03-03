@@ -5,8 +5,8 @@
         <Name>libxfcegui4</Name>
         <Homepage>http://www.xfce.org</Homepage>
         <Packager>
-            <Name>Alper Tekinalp</Name>
-            <Email>admins@pisilinux.org</Email>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalçınsoy@pisilinux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <License>LGPLv2.1</License>
@@ -20,7 +20,7 @@
             <Dependency>gtk2-devel</Dependency>
             <Dependency>pango-devel</Dependency>
             <Dependency>libxfce4util-devel</Dependency>
-            <Dependency>glade3-devel</Dependency>
+            <Dependency>glade-devel</Dependency>
             <Dependency>xfce4-dev-tools</Dependency>
             <Dependency>libICE-devel</Dependency>
             <Dependency>libSM-devel</Dependency>
@@ -40,17 +40,14 @@
             <Dependency>pango</Dependency>
             <Dependency>libxfce4util</Dependency>
             <Dependency>libICE</Dependency>
-            <Dependency>cairo</Dependency>
-            <Dependency>fontconfig</Dependency>
             <Dependency>libSM</Dependency>
             <Dependency>startup-notification</Dependency>
-            <Dependency>xfconf</Dependency>
             <Dependency>libglade</Dependency>
-            <Dependency>icon-theme-hicolor</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
             <Path fileType="library">/usr/lib</Path>
+            <Path fileType="library">/usr/libexec</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="data">/usr/share/icons</Path>
             <Path fileType="doc">/usr/share/doc</Path>
@@ -76,6 +73,20 @@
     </Package>
 
     <History>
+        <Update release="7">
+            <Date>2014-06-10</Date>
+            <Version>4.10.0</Version>
+            <Comment>Release bump.</Comment>
+            <Name>Alihan Öztürk</Name>
+            <Email>alihan@pisilinux.org</Email>
+        </Update>
+        <Update release="6">
+            <Date>2014-05-24</Date>
+            <Version>4.10.0</Version>
+            <Comment>Rebuild</Comment>
+            <Name>Ertuğrul Erata</Name>
+            <Email>ertugrulerata@gmail.com</Email>
+        </Update>
         <Update release="5">
             <Date>2013-10-21</Date>
             <Version>4.10.0</Version>
