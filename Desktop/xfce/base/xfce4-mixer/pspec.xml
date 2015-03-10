@@ -5,8 +5,8 @@
         <Name>xfce4-mixer</Name>
         <Homepage>http://git.xfce.org/apps/xfce4-mixer</Homepage>
         <Packager>
-            <Name>Alper Tekinalp</Name>
-            <Email>admins@pisilinux.org</Email>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <Icon>xfce-sound</Icon>
@@ -57,6 +57,13 @@
     </Package>
 
     <History>
+        <Update release="7">
+            <Date>2015-03-03</Date>
+            <Version>4.10.0</Version>
+            <Comment>Rebuild</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
         <Update release="6">
             <Date>2014-06-10</Date>
             <Version>4.10.0</Version>

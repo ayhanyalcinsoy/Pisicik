@@ -31,6 +31,9 @@
             <Dependency>libxfce4ui-devel</Dependency>
             <Dependency>gtk-doc</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch>time.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>
@@ -76,7 +79,7 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
-            <Path fileType="data">/usr/lib/pkgconfig</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="doc">/usr/share/gtk-doc</Path>
         </Files>

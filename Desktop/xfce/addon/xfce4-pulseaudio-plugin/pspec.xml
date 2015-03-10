@@ -13,7 +13,7 @@
         <PartOf>desktop.xfce.addon</PartOf>
         <Summary>Xfce pulseaudio plugin</Summary>
         <Description>Xfce4-pulseaudio-plugin is a panel plugin for controlling an audio output volume of the PulseAudio mixer</Description>
-        <Archive sha1sum="1320fc268accab23c0965a92d4abe3bb15db311c" type="tarbz2">http://archive.xfce.org/src/panel-plugins/xfce4-pulseaudio-plugin/0.1/xfce4-pulseaudio-plugin-0.1.0.tar.bz2</Archive>
+        <Archive sha1sum="d1ea295343645c461e284a5740d69385ca359d9b" type="tarbz2">http://archive.xfce.org/src/panel-plugins/xfce4-pulseaudio-plugin/0.2/xfce4-pulseaudio-plugin-0.2.1.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>xfce4-panel-devel</Dependency>
         </BuildDependencies>
@@ -32,11 +32,19 @@
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="data">/usr/share/xfce4</Path>
+            <Path fileType="data">/usr/share/icons</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2015-03-10</Date>
+            <Version>0.2.1</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2015-03-02</Date>
             <Version>0.1.0</Version>

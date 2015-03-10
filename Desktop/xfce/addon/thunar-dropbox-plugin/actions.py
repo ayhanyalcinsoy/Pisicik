@@ -11,11 +11,11 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import pythonmodules
 
 def build():
-    pythonmodules.configure("--prefix=/usr")
-    pythonmodules.compile("waf")
+    pythonmodules.configure("python2 waf configure --prefix=/usr")
+    pythonmodules.build("python2 waf build")
 
 def install():
-    pythonmodules.install()
+    pythonmodules.install("walf")
 
     pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING", "NEWS", "README")
 

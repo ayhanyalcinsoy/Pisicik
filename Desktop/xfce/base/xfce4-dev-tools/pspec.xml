@@ -5,8 +5,8 @@
         <Name>xfce4-dev-tools</Name>
         <Homepage>http://www.xfce.org</Homepage>
         <Packager>
-            <Name>Alper Tekinalp</Name>
-            <Email>admins@pisilinux.org</Email>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:console</IsA>
