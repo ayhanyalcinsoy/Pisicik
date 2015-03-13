@@ -1,0 +1,432 @@
+[01;32mKaynak paket inşa ediliyor: liferea
+[0mDEBUG: ComponentDB initialized in 0.00348615646362.
+DEBUG: RepoDB initialized in 0.00019097328186.
+DEBUG: InstallDB initialized in 0.00651407241821.
+liferea-1.10.14.tar.bz2 [önbellekte]
+[32mArşiv(ler) açılıyor...
+[0m açıldı (/var/pisi/liferea-1.10.13-5/work)
+[32mKaynak yapılandırılıyor...
+[0mSandbox açık inşa...
+GNU Yapılandırma Güncellemesi Bitti.
+GNU Yapılandırma Güncellemesi Bitti.
+Çalışıyor ./configure --prefix=/usr --build=x86_64-pc-linux-gnu --mandir=/usr/share/man --infodir=/usr/share/info --datadir=/usr/share --sysconfdir=/etc --localstatedir=/var --libexecdir=/usr/libexec --prefix=/usr --sysconfdir=/etc --localstatedir=/var --disable-schemas-compile
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking for style of include used by make... GNU
+checking for gcc... x86_64-pc-linux-gnu-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether x86_64-pc-linux-gnu-gcc accepts -g... yes
+checking for x86_64-pc-linux-gnu-gcc option to accept ISO C89... none needed
+checking whether x86_64-pc-linux-gnu-gcc understands -c and -o together... yes
+checking dependency style of x86_64-pc-linux-gnu-gcc... gcc3
+checking for ar... ar
+checking the archiver (ar) interface... ar
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by x86_64-pc-linux-gnu-gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from x86_64-pc-linux-gnu-gcc object... ok
+checking for sysroot... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking how to run the C preprocessor... x86_64-pc-linux-gnu-gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if x86_64-pc-linux-gnu-gcc supports -fno-rtti -fno-exceptions... no
+checking for x86_64-pc-linux-gnu-gcc option to produce PIC... -fPIC -DPIC
+checking if x86_64-pc-linux-gnu-gcc PIC flag -fPIC -DPIC works... yes
+checking if x86_64-pc-linux-gnu-gcc static flag -static works... yes
+checking if x86_64-pc-linux-gnu-gcc supports -c -o file.o... yes
+checking if x86_64-pc-linux-gnu-gcc supports -c -o file.o... (cached) yes
+checking whether the x86_64-pc-linux-gnu-gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking whether NLS is requested... yes
+checking for intltool >= 0.40.4... 0.50.2 found
+checking for intltool-update... /usr/bin/intltool-update
+checking for intltool-merge... /usr/bin/intltool-merge
+checking for intltool-extract... /usr/bin/intltool-extract
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for perl... /usr/bin/perl
+checking for perl >= 5.8.1... 5.20.0
+checking for XML::Parser... ok
+checking for gcc... (cached) x86_64-pc-linux-gnu-gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether x86_64-pc-linux-gnu-gcc accepts -g... (cached) yes
+checking for x86_64-pc-linux-gnu-gcc option to accept ISO C89... (cached) none needed
+checking whether x86_64-pc-linux-gnu-gcc understands -c and -o together... (cached) yes
+checking dependency style of x86_64-pc-linux-gnu-gcc... (cached) gcc3
+checking whether make sets $(MAKE)... (cached) yes
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.16... yes
+checking for strsep... yes
+checking for pkg-config... (cached) /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for LIBNOTIFY... yes
+checking for LIBINDICATE... no
+checking for LIBINDICATE... no
+checking for PACKAGE... yes
+user agent OS = Linux
+checking for gobject-introspection... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking for LC_MESSAGES... yes
+checking libintl.h usability... yes
+checking libintl.h presence... yes
+checking for libintl.h... yes
+checking for ngettext in libc... yes
+checking for dgettext in libc... yes
+checking for bind_textdomain_codeset... yes
+checking for msgfmt... (cached) /usr/bin/msgfmt
+checking for dcgettext... yes
+checking if msgfmt accepts -c... yes
+checking for gmsgfmt... (cached) /usr/bin/msgfmt
+checking for xgettext... (cached) /usr/bin/xgettext
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating net.sf.liferea.gschema.xml
+config.status: creating src/Makefile
+config.status: creating src/webkit/Makefile
+config.status: creating src/parsers/Makefile
+config.status: creating src/fl_sources/Makefile
+config.status: creating src/notification/Makefile
+config.status: creating src/ui/Makefile
+config.status: creating doc/Makefile
+config.status: creating doc/html/Makefile
+config.status: creating xslt/Makefile
+config.status: creating man/Makefile
+config.status: creating man/pl/Makefile
+config.status: creating pixmaps/Makefile
+config.status: creating pixmaps/16x16/Makefile
+config.status: creating pixmaps/22x22/Makefile
+config.status: creating pixmaps/24x24/Makefile
+config.status: creating pixmaps/32x32/Makefile
+config.status: creating pixmaps/48x48/Makefile
+config.status: creating pixmaps/scalable/Makefile
+config.status: creating opml/Makefile
+config.status: creating glade/Makefile
+config.status: creating po/Makefile.in
+config.status: creating src/liferea-add-feed
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing default-1 commands
+config.status: executing po/stamp-it commands
+
+liferea 1.10.14
+
+Use libnotify................... : yes
+Use libindicate................. : no
+
+Liferea will be installed in /usr/bin.
+
+configure complete, now type 'make'
+
+DEBUG: "./configure --prefix=/usr --build=x86_64-pc-linux-gnu --mandir=/usr/share/man --infodir=/usr/share/info --datadir=/usr/share --sysconfdir=/etc --localstatedir=/var --libexecdir=/usr/libexec --prefix=/usr --sysconfdir=/etc --localstatedir=/var --disable-schemas-compile" dönüş değeri 0
+libtool has been changed by dosed method.
+[32mKaynak inşa ediliyor...
+[0mSandbox açık inşa...
+Çalışıyor make -j5
+make  all-recursive
+make[1]: Entering directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14'
+Making all in doc
+make[2]: Entering directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/doc'
+Making all in html
+make[3]: Entering directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/doc/html'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/doc/html'
+make[3]: Entering directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/doc'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/doc'
+make[2]: Leaving directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/doc'
+Making all in man
+make[2]: Entering directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/man'
+Making all in pl
+make[3]: Entering directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/man/pl'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/man/pl'
+make[3]: Entering directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/man'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/man'
+make[2]: Leaving directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/man'
+Making all in opml
+make[2]: Entering directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/opml'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/opml'
+Making all in pixmaps
+make[2]: Entering directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/pixmaps'
+Making all in 16x16
+make[3]: Entering directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/pixmaps/16x16'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/pixmaps/16x16'
+Making all in 22x22
+make[3]: Entering directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/pixmaps/22x22'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/pixmaps/22x22'
+Making all in 24x24
+make[3]: Entering directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/pixmaps/24x24'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/pixmaps/24x24'
+Making all in 32x32
+make[3]: Entering directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/pixmaps/32x32'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/pixmaps/32x32'
+Making all in 48x48
+make[3]: Entering directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/pixmaps/48x48'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/pixmaps/48x48'
+Making all in scalable
+make[3]: Entering directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/pixmaps/scalable'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/pixmaps/scalable'
+make[3]: Entering directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/pixmaps'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/pixmaps'
+make[2]: Leaving directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/pixmaps'
+Making all in po
+make[2]: Entering directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/po'
+  MSGFMT bg.gmo
+  MSGFMT be@latin.gmo
+  MSGFMT ast.gmo
+  MSGFMT ca.gmo
+  MSGFMT ar.gmo
+  MSGFMT cs.gmo
+  MSGFMT da.gmo
+  MSGFMT de.gmo
+  MSGFMT el.gmo
+  MSGFMT es.gmo
+  MSGFMT fi.gmo
+  MSGFMT eu.gmo
+  MSGFMT fr.gmo
+  MSGFMT gl.gmo
+  MSGFMT he.gmo
+  MSGFMT hu.gmo
+  MSGFMT it.gmo
+  MSGFMT ja.gmo
+  MSGFMT ko.gmo
+  MSGFMT lt.gmo
+  MSGFMT lv.gmo
+  MSGFMT mk.gmo
+  MSGFMT pl.gmo
+  MSGFMT nl.gmo
+  MSGFMT pt.gmo
+  MSGFMT pt_BR.gmo
+  MSGFMT ro.gmo
+  MSGFMT ru.gmo
+  MSGFMT sk.gmo
+  MSGFMT sv.gmo
+  MSGFMT sq.gmo
+  MSGFMT tr.gmo
+  MSGFMT uk.gmo
+  MSGFMT vi.gmo
+  MSGFMT zh_CN.gmo
+  MSGFMT zh_TW.gmo
+make[2]: Leaving directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/po'
+Making all in src
+make[2]: Entering directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/src'
+Making all in parsers
+make[3]: Entering directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/src/parsers'
+  CC       libliparsers_a-ns_admin.o
+  CC       libliparsers_a-cdf_item.o
+  CC       libliparsers_a-cdf_channel.o
+  CC       libliparsers_a-ns_ag.o
+  CC       libliparsers_a-atom10.o
+  CC       libliparsers_a-ns_blogChannel.o
+  CC       libliparsers_a-ns_cC.o
+  CC       libliparsers_a-ns_content.o
+  CC       libliparsers_a-ns_dc.o
+  CC       libliparsers_a-ns_georss.o
+  CC       libliparsers_a-ns_itunes.o
+  CC       libliparsers_a-ns_media.o
+  CC       libliparsers_a-ns_photo.o
+  CC       libliparsers_a-ns_syn.o
+  CC       libliparsers_a-ns_slash.o
+  CC       libliparsers_a-ns_trackback.o
+  CC       libliparsers_a-ns_wfw.o
+  CC       libliparsers_a-pie_entry.o
+  CC       libliparsers_a-pie_feed.o
+  CC       libliparsers_a-rss_channel.o
+  CC       libliparsers_a-rss_item.o
+  AR       libliparsers.a
+make[3]: Leaving directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/src/parsers'
+Making all in notification
+make[3]: Entering directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/src/notification'
+  CC       libnotify_a-libnotify.o
+  CC       libnotify_a-notification.o
+  AR       libnotify.a
+make[3]: Leaving directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/src/notification'
+Making all in ui
+make[3]: Entering directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/src/ui'
+  CC       libliui_a-browser_tabs.o
+  CC       libliui_a-enclosure_list_view.o
+  CC       libliui_a-feed_list_view.o
+  CC       libliui_a-feed_list_node.o
+  CC       libliui_a-auth_dialog.o
+  CC       libliui_a-gedit-close-button.o
+  CC       libliui_a-icons.o
+  CC       libliui_a-item_list_view.o
+  CC       libliui_a-itemview.o
+  CC       libliui_a-liferea_dialog.o
+  CC       libliui_a-liferea_htmlview.o
+  CC       libliui_a-liferea_shell.o
+  CC       libliui_a-liferea_shell_activatable.o
+  CC       libliui_a-media_player.o
+  CC       libliui_a-media_player_activatable.o
+  CC       libliui_a-popup_menu.o
+  CC       libliui_a-preferences_dialog.o
+  CC       libliui_a-rule_editor.o
+  CC       libliui_a-search_dialog.o
+  CC       libliui_a-search_folder_dialog.o
+  CC       libliui_a-subscription_dialog.o
+  CC       libliui_a-ui_common.o
+  CC       libliui_a-ui_dnd.o
+  CC       libliui_a-ui_folder.o
+  CC       libliui_a-ui_indicator.o
+  CC       libliui_a-ui_tray.o
+  CC       libliui_a-ui_update.o
+  AR       libliui.a
+make[3]: Leaving directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/src/ui'
+Making all in fl_sources
+make[3]: Entering directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/src/fl_sources'
+  CC       libliflsources_a-aol_source_edit.o
+  CC       libliflsources_a-aol_source_feed.o
+  CC       libliflsources_a-aol_source.o
+  CC       libliflsources_a-node_source.o
+  CC       libliflsources_a-aol_source_opml.o
+  CC       libliflsources_a-default_source.o
+  CC       libliflsources_a-dummy_source.o
+  CC       libliflsources_a-google_source.o
+  CC       libliflsources_a-inoreader_source.o
+  CC       libliflsources_a-inoreader_source_edit.o
+  CC       libliflsources_a-inoreader_source_feed.o
+  CC       libliflsources_a-inoreader_source_feed_list.o
+  CC       libliflsources_a-json_api_mapper.o
+  CC       libliflsources_a-opml_source.o
+  CC       libliflsources_a-reedah_source.o
+  CC       libliflsources_a-reedah_source_edit.o
+  CC       libliflsources_a-reedah_source_feed.o
+  CC       libliflsources_a-reedah_source_feed_list.o
+  CC       libliflsources_a-theoldreader_source.o
+  CC       libliflsources_a-theoldreader_source_edit.o
+  CC       libliflsources_a-theoldreader_source_feed.o
+  CC       libliflsources_a-theoldreader_source_feed_list.o
+  CC       libliflsources_a-ttrss_source.o
+  CC       libliflsources_a-ttrss_source_feed.o
+  CC       libliflsources_a-ttrss_source_feed_list.o
+  AR       libliflsources.a
+make[3]: Leaving directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/src/fl_sources'
+Making all in webkit
+make[3]: Entering directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/src/webkit'
+  CC       libwebkit_a-webkit.o
+  AR       libwebkit.a
+make[3]: Leaving directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/src/webkit'
+Making all in .
+make[3]: Entering directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/src'
+  CC       browser.o
+  CC       browser_history.o
+  CC       comments.o
+  CC       auth_activatable.o
+  CC       auth.o
+  CC       common.o
+  CC       conf.o
+  CC       date.o
+  CC       db.o
+  CC       dbus.o
+  CC       debug.o
+  CC       e-date.o
+  CC       enclosure.o
+  CC       export.o
+  CC       favicon.o
+  CC       feed.o
+  CC       feed_parser.o
+  CC       feedlist.o
+  CC       folder.o
+  CC       html.o
+  CC       htmlview.o
+  CC       item.o
+  CC       item_history.o
+  CC       item_loader.o
+  CC       item_state.o
+  CC       itemset.o
+  CC       itemlist.o
+  CC       json.o
+  CC       metadata.o
+  CC       migrate.o
+  CC       net.o
+  CC       net_monitor.o
+  CC       newsbin.o
+  CC       node.o
+  CC       node_type.o
+  CC       plugins_engine.o
+  CC       render.o
+  CC       rule.o
+  CC       social.o
+  CC       subscription.o
+  CC       update.o
+  CC       main.o
+  CC       vfolder.o
+  CC       vfolder_loader.o
+  CC       xml.o
+  CCLD     liferea
+Makefile:618: recipe for target 'liferea' failed
+make[3]: Leaving directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/src'
+Makefile:799: recipe for target 'all-recursive' failed
+make[2]: Leaving directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14/src'
+Makefile:638: recipe for target 'all-recursive' failed
+make[1]: Leaving directory '/var/pisi/liferea-1.10.13-5/work/liferea-1.10.14'
+Makefile:441: recipe for target 'all' failed
+DEBUG: "make -j5" dönüş değeri 2
+Genel yardım için lütfen 'pisi help' komutunu kullanınız.

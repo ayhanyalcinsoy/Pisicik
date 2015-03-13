@@ -19,6 +19,7 @@
             <Dependency>gconf-devel</Dependency>
             <Dependency>libglade-devel</Dependency>
             <Dependency>webkit-gtk2-devel</Dependency>
+            <Dependency>webkit-gtk3-devel</Dependency>
             <Dependency>libsoup-devel</Dependency>
             <Dependency>gtk3-devel</Dependency>
             <Dependency>atk-devel</Dependency>
@@ -35,9 +36,10 @@
             <Dependency>gobject-introspection-devel</Dependency>
             <Dependency>libpeas-devel</Dependency>
         </BuildDependencies>
-        <Patches>
-            <Patch>webkit_error.patch</Patch>
-        </Patches>
+        <!--<Patches>
+            <Patch>browser.patch</Patch>
+            <Patch>node.patch</Patch>
+        </Patches>-->
     </Source>
 
     <Package>
@@ -85,7 +87,7 @@
     <History>
         <Update release="5">
             <Date>2015-03-04</Date>
-            <Version>1.10.14</Version>
+            <Version>1.10.13</Version>
             <Comment>Version bump.</Comment>
             <Name>Ayhan Yalçınsoy</Name>
             <Email>ayhanyalcinsoy@pisilinux.org</Email>

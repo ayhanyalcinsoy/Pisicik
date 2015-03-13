@@ -1,0 +1,10 @@
+--- browser.c	2015-02-26 18:22:42.000000000 +0200
++++ src/browser.c	2015-03-13 11:02:21.333976732 +0200
+@@ -244,7 +244,6 @@
+ 	struct browser	*browser;
+ 	gchar		*cmd = NULL;
+ 	gboolean	done = FALSE;	
+-	gchar		*libname = NULL;
+ 	
+ 	g_assert (uri != NULL);
+ 	

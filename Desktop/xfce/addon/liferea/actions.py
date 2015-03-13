@@ -15,9 +15,8 @@ def setup():
                          --sysconfdir=/etc \
                          --localstatedir=/var \
                          --disable-schemas-compile")
-                         #--enable-introspection=yes \
-                         #--enable-libnotify")
 
+    pisitools.dosed("libtool"," -shared ", " -Wl,--as-needed -shared ")
 def build():
     autotools.make()
 

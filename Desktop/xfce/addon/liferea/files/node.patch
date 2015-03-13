@@ -1,0 +1,11 @@
+--- node.c	2015-02-26 18:22:42.000000000 +0200
++++ src/node.c	2015-03-13 11:00:12.440981026 +0200
+@@ -25,6 +25,8 @@
+ #include "conf.h"
+ #include "db.h"
+ #include "debug.h"
++#include "favicon.h"
++#include "feedlist.h"
+ #include "itemlist.h"
+ #include "itemset.h"
+ #include "item_state.h"
