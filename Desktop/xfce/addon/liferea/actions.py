@@ -14,7 +14,8 @@ def setup():
     autotools.configure("--prefix=/usr \
                          --sysconfdir=/etc \
                          --localstatedir=/var \
-                         --disable-schemas-compile")
+                         --disable-schemas-compile\
+                         --disable-silent-rules")
 
     pisitools.dosed("libtool"," -shared ", " -Wl,--as-needed -shared ")
 def build():
