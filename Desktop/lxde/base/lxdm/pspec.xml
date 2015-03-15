@@ -23,7 +23,7 @@
             <Dependency>gdk-pixbuf-devel</Dependency>
         </BuildDependencies>
         <Patches>
-           <!-- <Patch>default_config.patch</Patch>-->
+            <Patch>default_config.patch</Patch>
             <Patch>lxdm.login_pane.patch</Patch>
             <Patch>xconn.patch</Patch>
             <Patch>lxdm.patch</Patch>
