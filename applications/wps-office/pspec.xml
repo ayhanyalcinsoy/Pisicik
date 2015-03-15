@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kingsoft-office</Name>
+        <Homepage>http://wps-community.org/</Homepage>
+        <Packager>
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Packager>
+        <License>Zhuhai Kingsoft Office Software Co. Ltd</License>
+        <License>GPLv2</License>
+        <License>LPGPLv2.1</License>
+        <Icon>kingsoft-office</Icon>
+        <IsA>app</IsA>
+        <Summary>Kingsoft Office Suite</Summary>
+        <Description>Kingsoft Office (WPS Office), is an office productivity suite.</Description>
+        http://wps-community.org/download/dicts/tr_TR.zip
+        <Archive sha1sum="4e4f11b59a7ad655d54abf44134d123342a263c6" type="tarxz">http://kdl.cc.ksosoft.com/wps-community/download/a16/wps-office_9.1.0.4945~a16p3_x86.tar.xz</Archive>
+        <Archive sha1sum="467908aefffc4dea537d2a97aac6e105502c1abe" target="wps-office_9.1.0.4945~a16p3_x86/office6/dicts" type="zip">http://wps-community.org/download/dicts/tr_TR.zip</Archive>
+    </Source>
+
+    <Package>
+        <Name>kingsoft-office</Name>
+        <RuntimeDependencies>
+            <Dependency>libgcc</Dependency>
+            <Dependency>fontconfig-32bit</Dependency>
+            <Dependency>glibc-32bit</Dependency>
+            <Dependency>glib2-32bit</Dependency>
+            <Dependency>mesa-glu-32bit</Dependency>
+            <Dependency>libSM-32bit</Dependency>
+            <Dependency>libXdmcp-32bit</Dependency>
+            <Dependency>libXext-32bit</Dependency>
+            <Dependency>fontconfig-32bit</Dependency>
+            <Dependency>libXrender-32bit</Dependency>
+            <Dependency>libglade</Dependency>
+            <Dependency>mesa-32bit</Dependency>
+            <Dependency>zlib-32bit</Dependency>
+            <Dependency>libX11-32bit</Dependency>
+            <Dependency>libICE-32bit</Dependency>
+            <Dependency>libpng12-32bit</Dependency>
+            <!--<Dependency>libpng16-32bit</Dependency>-->
+            <Dependency>libxml2-32bit</Dependency>
+            <Dependency>freetype-32bit</Dependency>
+            <Dependency>gst-plugins-base-32bit</Dependency>
+            <Dependency>gstreamer-32bit</Dependency>
+            <Dependency>shared-mime-info</Dependency>
+            <Dependency>libmng-32bit</Dependency>
+            <Dependency>xdg-utils</Dependency>
+            <Dependency>desktop-file-utils</Dependency>
+        </RuntimeDependencies>
+
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/fonts</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/licenses</Path>
+            <Path fileType="data">/usr/share/mime</Path>
+            <Path fileType="data">/opt/kingsoft/wps-office/office6</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2015-03-12</Date>
+            <Version>9.1.0.4945</Version>
+            <Comment>First release</Comment>
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
