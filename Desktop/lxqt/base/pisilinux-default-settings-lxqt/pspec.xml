@@ -40,8 +40,8 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2015-02-10</Date>
+        <Update release="2">
+            <Date>2015-02-28</Date>
             <Version>0.2</Version>
             <Comment>version bump for lxqt 0.9</Comment>
             <Name>Ayhan Yalçınsoy</Name>

@@ -57,7 +57,7 @@
             <Dependency>qt5-x11extras</Dependency>
             <Dependency>liblxqt</Dependency>
             <Dependency>libqtxdg</Dependency>
-            <Dependency>lxqt-libmenu-cache</Dependency>
+            <Dependency>lxqt-menu-cache</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

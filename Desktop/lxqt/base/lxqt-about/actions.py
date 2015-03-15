@@ -8,10 +8,9 @@ from pisi.actionsapi import get
 from pisi.actionsapi import pisitools
 
 def setup():
-    cmaketools.configure("-DCMAKE_BUILD_TYPE=release \
-                          -DCMAKE_INSTALL_PREFIX=/usr \
-                          -DCMAKE_INSTALL_LIBDIR=/usr/lib\
-                          -DUSE_QT5=ON")
+    cmaketools.configure("/usr/share/cmake/lxqt")
+    #("-DCMAKE_INSTALL_PREFIX=/usr \
+     #                     -DCMAKE_BUILD_TYPE=Release")
 
 def build():
     cmaketools.make()
