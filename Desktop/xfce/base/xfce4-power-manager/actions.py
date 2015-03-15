@@ -9,13 +9,14 @@ from pisi.actionsapi import get
 
 def setup():
     autotools.configure("--disable-network-manager \
-                         --disable-debug")
+                         --disable-debug \
+                         --disable-lxdepanel\
+                         --enable-network-manager")
 
 def build():
     autotools.make()
 
 def install():
-    #autotools.install()
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING", "NEWS", "README", "TODO")

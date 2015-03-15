@@ -10,12 +10,11 @@ from pisi.actionsapi import get
 
 def setup():
     autotools.configure("--prefix=/usr \
-                         --sysconfdir=/etc \
-                         --libexecdir=/usr/lib \
-                         --localstatedir=/var \
                          --disable-static \
-                         --disable-debug")
-
+                         --disable-debug \
+                         --disable-gladeui \
+                         --enable-startup-notification")
+    
     # for fix unused dependency
     pisitools.dosed("libtool"," -shared ", " -Wl,--as-needed -shared ")
 

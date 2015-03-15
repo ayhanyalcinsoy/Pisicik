@@ -11,9 +11,6 @@ from pisi.actionsapi import get
 
 def setup():
     autotools.configure("--prefix=/usr \
-                         --sysconfdir=/etc \
-                         --libexecdir=/usr/lib/xfce4 \
-                         --localstatedir=/var \
                          --disable-static \
                          --disable-debug")
 
@@ -22,5 +19,4 @@ def build():
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-
     pisitools.dodoc("AUTHORS", "COPYING", "ChangeLog", "NEWS", "README")
