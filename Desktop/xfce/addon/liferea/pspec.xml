@@ -32,7 +32,8 @@
             <Dependency>libunique-devel</Dependency>
             <Dependency>gsettings-desktop-schemas-devel</Dependency>
             <Dependency>libindicate-devel</Dependency>
-            <Dependency>libindicate-devel</Dependency>
+            <Dependency>libindicate-gtk3-devel</Dependency>
+            <Dependency>libindicate-gtk-devel</Dependency>
             <Dependency>gobject-introspection-devel</Dependency>
             <Dependency>libpeas-devel</Dependency>
         </BuildDependencies>

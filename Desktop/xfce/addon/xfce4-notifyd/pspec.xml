@@ -32,6 +32,7 @@
             <Dependency>libxfce4ui</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>pango</Dependency>
+            <Dependency>libnotify</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>xfconf</Dependency>
         </RuntimeDependencies>
