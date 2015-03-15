@@ -12,7 +12,7 @@ from pisi.actionsapi import get
 
 import os
 
-WorkDir = "qtbase-opensource-src-5.4.0"
+WorkDir = "qtbase-opensource-src-5.4.1"
 
 qtbase = qt5.prefix
 #absoluteWorkDir = "%s/%s" % (get.workDIR(), WorkDir)
@@ -68,18 +68,18 @@ def setup():
                    -dbus-linked \
                    -no-openvg \
                    -no-sse2 \
-                   -reduce-relocations")
-                   #-no-warnings-are-errors \
-                   #-no-use-gold-linker")
+                   -reduce-relocations \
+                   -no-warnings-are-errors \
+                   -no-use-gold-linker")
 def build():
     #shelltools.export("LD_LIBRARY_PATH", "%s/lib:%s" % (get.curDIR(), get.ENV("LD_LIBRARY_PATH")))
     shelltools.export("LD_LIBRARY_PATH", "/lib:{LD_LIBRARY_PATH}")
     autotools.make()
     # Fix docs build when qt is not installed
     shelltools.system('sed -i "s|/usr/lib/qt/bin/qdoc|${QTDIR}/qtbase/bin/qdoc|g" qmake/Makefile.qmake-docs')
-    shelltools.system("find -name Makefile -exec sed -i "s|/usr/lib/qt/bin/qdoc|${QTDIR}/qtbase/bin/qdoc|g" {} +")
+    #shelltools.system("find -name Makefile -exec sed -i "s|/usr/lib/qt/bin/qdoc|${QTDIR}/qtbase/bin/qdoc|g" {} +")
     shelltools.system('sed -i "s|/usr/lib/qt/bin/qhelpgenerator|${QTDIR}/qttools/bin/qhelpgenerator|g" qmake/Makefile.qmake-docs')
-    shelltools.system("find -name Makefile -exec sed -i "s|/usr/lib/qt/bin/qhelpgenerator|${QTDIR}/qttools/bin/qhelpgenerator|g" {} +")
+    #shelltools.system("find -name Makefile -exec sed -i "s|/usr/lib/qt/bin/qhelpgenerator|${QTDIR}/qttools/bin/qhelpgenerator|g" {} +")
 
 def install():
     if get.buildTYPE() == "emul32":
@@ -87,7 +87,7 @@ def install():
         shelltools.move("%s32/usr/lib32" % get.installDIR(), "%s/usr" % get.installDIR())
 
     # Drop QMAKE_PRL_BUILD_DIR because reference the build dir
-    pisitools.remove("/usr/lib/*.prl")
+    #pisitools.remove("/usr/lib/*.prl")
 
     # Fix wrong qmake path in pri file
     #shelltools.system('sed -i "s|${srcdir}/${_pkgfqn}/qtbase|/usr|" /usr/lib/qt5/mkspecs/modules/qt_lib_bootstrap_private.pri')

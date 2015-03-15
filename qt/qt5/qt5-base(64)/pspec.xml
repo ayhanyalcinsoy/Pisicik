@@ -11,7 +11,7 @@
         <Summary>Cross platform application and UI framework</Summary>
         <Description>Cross platform application and UI development framework</Description>
         <License>LGPLv2.1-linking-exception</License>
-        <Archive sha1sum="2e3d32f32e36a92782ca66c260940824746900bd" type="tarxz">http://download.qt.io/official_releases/qt/5.4/5.4.0/submodules/qtbase-opensource-src-5.4.0.tar.xz</Archive>
+        <Archive sha1sum="134ec03371722cc31e2041a82c255cec708ca848" type="tarxz">http://download.qt.io/official_releases/qt/5.4/5.4.1/submodules/qtbase-opensource-src-5.4.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>alsa-lib-devel</Dependency>
             <Dependency>at-spi2-core-devel</Dependency>
@@ -97,11 +97,14 @@
         </BuildDependencies>
         <Patches>
             <!-- Fedora Patches -->
-            <Patch level="0">qtbase-opensource-src-5.2.0-enable_ft_lcdfilter.patch</Patch>
+            <!--<Patch>qtbase-opensource-src-5.2.0-enable_ft_lcdfilter.patch</Patch>
+            <Patch>0136-Make-sure-there-s-a-scene-before-using-it.patch</Patch>
+            <Patch>0094-Fix-Meta-.-shortcuts-on-XCB.patch</Patch>
+            <Patch>0149-Fix-a-division-by-zero-when-processing-malformed-BMP.patch</Patch>
             <Patch>qtbase-multilib_optflags.patch</Patch>
             <Patch>qtbase-opensource-src-5.3.2-QTBUG-35459.patch</Patch>
-            <Patch>qtbase-opensource-src-5.4.0-QTBUG-43057.patch</Patch>
-             <!--For LibreOffice -->
+            <Patch>qtbase-opensource-src-5.4.0-QTBUG-43057.patch</Patch>-->
+            <!--For LibreOffice -->
             <Patch level="1">qt-everywhere-opensource-src-4.8.6-QTBUG-37380.patch</Patch>
             <!-- Pisilinux Patches -->
             <Patch level="1">mkspecs1.patch</Patch>

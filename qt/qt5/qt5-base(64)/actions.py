@@ -12,7 +12,7 @@ from pisi.actionsapi import get
 
 import os
 
-WorkDir = "qtbase-opensource-src-5.4.1"
+#WorkDir = "qtbase-opensource-src-5.4.1"
 
 qtbase = qt5.prefix
 
@@ -82,6 +82,7 @@ def setup():
                    -datadir %s \
                    -importdir %s \
                    -headerdir %s \
+                   --disable-static \
                    -reduce-relocations" % (qt5.prefix, bindirQt5, qt5.archdatadir, qt5.libdir, qt5.docdir, qt5.examplesdir, qt5.plugindir, qt5.translationdir, qt5.sysconfdir, qt5.datadir, qt5.importdir, qt5.headerdir))
 
 def build():
