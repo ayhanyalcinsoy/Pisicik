@@ -15,6 +15,10 @@
             <Dependency>liblxqt-devel</Dependency>
             <Dependency>libqtxdg-devel</Dependency>
         </BuildDependencies>
+        <Patches>
+            <!--<Patch>CMakeLists.patch</Patch>
+            <Patch>lxqt_session_config_cmakelist.patch</Patch>-->
+        </Patches>
     </Source>
     <Package>
         <Name>lxqt-session</Name>

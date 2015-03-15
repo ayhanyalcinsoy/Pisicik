@@ -23,7 +23,8 @@
             <Dependency>kwindowsystem-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <!--<Patch>liblxqt-0.8.0-cmake_libdir.patch</Patch>-->
+            <!--<Patch>cmakelist.patch</Patch>-->
+            <Patch>lxqtsingleapplication.patch</Patch>
         </Patches>
     </Source>
     <Package>

@@ -6,17 +6,22 @@
 from pisi.actionsapi import cmaketools
 from pisi.actionsapi import get
 from pisi.actionsapi import pisitools
+from pisi.actionsapi import shelltools
 
 def setup():
-    cmaketools.configure("-DCMAKE_BUILD_TYPE=release \
-                          -DCMAKE_INSTALL_PREFIX=/usr \
-                          -DCMAKE_INSTALL_LIBDIR=/usr/lib \
-                          -DLXQT_ETC_XDG_DIR=/etc\
-                          -DUSE_QT5=ON")
-
+    shelltools.makedirs("build")
+    shelltools.cd("build")
+    cmaketools.configure("-DCMAKE_INSTALL_PREFIX=/usr \
+                          -DLXQT_LIBRARY_DIRS=lib", sourceDir="..")
 def build():
+    shelltools.cd("build")
     cmaketools.make()
+    pisitools.dosed("CMakeFiles/Export/_usr/share/cmake/lxqt/lxqt-targets-release.cmake", "/usr/lib64/liblxqt.so.0.9.0", "/usr/lib/liblxqt.so.0.9.0")
 
 def install():
+    shelltools.cd("build")
     cmaketools.rawInstall("DESTDIR=%s" % get.installDIR())
+    pisitools.domove("/usr/lib64/*", "usr/lib/")
+    pisitools.removeDir("/usr/lib64")
+    shelltools.cd("..")
     pisitools.dodoc("AUTHORS", "COPYING")
