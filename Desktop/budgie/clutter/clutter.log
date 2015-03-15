@@ -1,0 +1,344 @@
+[01;32mKaynak paket inşa ediliyor: clutter
+[0mDEBUG: ComponentDB initialized in 0.00376796722412.
+DEBUG: RepoDB initialized in 0.000256776809692.
+DEBUG: InstallDB initialized in 0.00589990615845.
+clutter-1.20.0.tar.xz [önbellekte]
+[32mArşiv(ler) açılıyor...
+[0m[32mYama uygulanıyor: closure-annotation.patch
+[0mÇalışıyor patch --remove-empty-files --no-backup-if-mismatch  -p1 -i "/home/PisiLinux/Pisicik/Desktop/budgie/clutter/files/closure-annotation.patch"
+DEBUG: "patch --remove-empty-files --no-backup-if-mismatch  -p1 -i "/home/PisiLinux/Pisicik/Desktop/budgie/clutter/files/closure-annotation.patch"" dönüş değeri 0
+[32mYama uygulanıyor: create-pangocontext-per-actor.patch
+[0mÇalışıyor patch --remove-empty-files --no-backup-if-mismatch  -p1 -i "/home/PisiLinux/Pisicik/Desktop/budgie/clutter/files/create-pangocontext-per-actor.patch"
+DEBUG: "patch --remove-empty-files --no-backup-if-mismatch  -p1 -i "/home/PisiLinux/Pisicik/Desktop/budgie/clutter/files/create-pangocontext-per-actor.patch"" dönüş değeri 0
+[32mYama uygulanıyor: dont-update-pangocontext.patch
+[0mÇalışıyor patch --remove-empty-files --no-backup-if-mismatch  -p1 -i "/home/PisiLinux/Pisicik/Desktop/budgie/clutter/files/dont-update-pangocontext.patch"
+DEBUG: "patch --remove-empty-files --no-backup-if-mismatch  -p1 -i "/home/PisiLinux/Pisicik/Desktop/budgie/clutter/files/dont-update-pangocontext.patch"" dönüş değeri 0
+[32mYama uygulanıyor: evdev-flush-event-queue.patch
+[0mÇalışıyor patch --remove-empty-files --no-backup-if-mismatch  -p1 -i "/home/PisiLinux/Pisicik/Desktop/budgie/clutter/files/evdev-flush-event-queue.patch"
+DEBUG: "patch --remove-empty-files --no-backup-if-mismatch  -p1 -i "/home/PisiLinux/Pisicik/Desktop/budgie/clutter/files/evdev-flush-event-queue.patch"" dönüş değeri 0
+[32mYama uygulanıyor: libinput08.patch
+[0mÇalışıyor patch --remove-empty-files --no-backup-if-mismatch  -p1 -i "/home/PisiLinux/Pisicik/Desktop/budgie/clutter/files/libinput08.patch"
+DEBUG: "patch --remove-empty-files --no-backup-if-mismatch  -p1 -i "/home/PisiLinux/Pisicik/Desktop/budgie/clutter/files/libinput08.patch"" dönüş değeri 0
+ açıldı (/var/pisi/clutter-1.20.0-11/work)
+[32mKaynak yapılandırılıyor...
+[0mSandbox açık inşa...
+Çalışıyor autoreconf -fi
+Copying file build/autotools/codeset.m4
+Copying file build/autotools/glibc2.m4
+Copying file build/autotools/glibc21.m4
+Copying file build/autotools/intdiv0.m4
+Copying file build/autotools/intl.m4
+Copying file build/autotools/intldir.m4
+Copying file build/autotools/intmax.m4
+Copying file build/autotools/inttypes-pri.m4
+Copying file build/autotools/inttypes_h.m4
+Copying file build/autotools/lcmessage.m4
+Copying file build/autotools/lock.m4
+Copying file build/autotools/longlong.m4
+Copying file build/autotools/printf-posix.m4
+Copying file build/autotools/size_max.m4
+Copying file build/autotools/stdint_h.m4
+Copying file build/autotools/uintmax_t.m4
+Copying file build/autotools/visibility.m4
+Copying file build/autotools/wchar_t.m4
+Copying file build/autotools/wint_t.m4
+Copying file build/autotools/xsize.m4
+Copying file po/Makevars.template
+libtoolize: putting auxiliary files in AC_CONFIG_AUX_DIR, `build'.
+libtoolize: copying file `build/ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIR, `build/autotools'.
+libtoolize: copying file `build/autotools/libtool.m4'
+libtoolize: copying file `build/autotools/ltoptions.m4'
+libtoolize: copying file `build/autotools/ltsugar.m4'
+libtoolize: copying file `build/autotools/ltversion.m4'
+libtoolize: copying file `build/autotools/lt~obsolete.m4'
+DEBUG: "autoreconf -fi" dönüş değeri 0
+GNU Yapılandırma Güncellemesi Bitti.
+GNU Yapılandırma Güncellemesi Bitti.
+Çalışıyor ./configure --prefix=/usr --build=x86_64-pc-linux-gnu --mandir=/usr/share/man --infodir=/usr/share/info --datadir=/usr/share --sysconfdir=/etc --localstatedir=/var --libexecdir=/usr/libexec --disable-static --enable-x11-backend --enable-gdk-backend --enable-gdk-pixbuf --enable-egl-backend --enable-wayland-backend --enable-xinput --enable-evdev-input --enable-introspection --enable-shared
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether UID '0' is supported by ustar format... yes
+checking whether GID '0' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking whether make supports nested variables... (cached) yes
+checking for a sed that does not truncate output... /usr/bin/sed
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking if building for some Win32 platform... no
+checking for style of include used by make... GNU
+checking for gcc... x86_64-pc-linux-gnu-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether x86_64-pc-linux-gnu-gcc accepts -g... yes
+checking for x86_64-pc-linux-gnu-gcc option to accept ISO C89... none needed
+checking whether x86_64-pc-linux-gnu-gcc understands -c and -o together... yes
+checking dependency style of x86_64-pc-linux-gnu-gcc... gcc3
+checking how to run the C preprocessor... x86_64-pc-linux-gnu-gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking OpenGL/gl.h usability... no
+checking OpenGL/gl.h presence... no
+checking for OpenGL/gl.h... no
+checking GL/glx.h usability... yes
+checking GL/glx.h presence... yes
+checking for GL/glx.h... yes
+checking for glXCreateContext in -lGL... yes
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) /usr/bin/sed
+checking for fgrep... /bin/grep -F
+checking for ld used by x86_64-pc-linux-gnu-gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from x86_64-pc-linux-gnu-gcc object... ok
+checking for sysroot... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if x86_64-pc-linux-gnu-gcc supports -fno-rtti -fno-exceptions... no
+checking for x86_64-pc-linux-gnu-gcc option to produce PIC... -fPIC -DPIC
+checking if x86_64-pc-linux-gnu-gcc PIC flag -fPIC -DPIC works... yes
+checking if x86_64-pc-linux-gnu-gcc static flag -static works... yes
+checking if x86_64-pc-linux-gnu-gcc supports -c -o file.o... yes
+checking if x86_64-pc-linux-gnu-gcc supports -c -o file.o... (cached) yes
+checking whether the x86_64-pc-linux-gnu-gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for ANSI C header files... (cached) yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.16... yes
+checking for GLIB - version >= 2.37.3... yes (version 2.42.0)
+checking for -Bsymbolic-functions linker flag... yes
+checking for -fvisibility=hidden compiler flag... yes
+checking for EVDEV... yes
+checking for X11... found
+checking for XEXT extension... found
+checking for XDAMAGE extension... found
+checking for XCOMPOSITE extension >= 0.4... found
+checking for XGetEventData... yes
+checking X11/extensions/XInput2.h usability... yes
+checking X11/extensions/XInput2.h presence... yes
+checking for X11/extensions/XInput2.h... yes
+checking for XIAllowTouchEvents... yes
+checking for XIScrollClassInfo.number... yes
+checking for XkbQueryExtension... yes
+checking for cairo_surface_set_device_scale... yes
+checking for CLUTTER_DEPS... yes
+checking for CLUTTER_DEPS_PRIVATE... yes
+checking for gobject-introspection... yes
+checking for gtk-doc... yes
+checking for gtkdoc-check... gtkdoc-check.test
+checking for gtkdoc-check... /usr/bin/gtkdoc-check
+checking for gtkdoc-rebase... /usr/bin/gtkdoc-rebase
+checking for gtkdoc-mkpdf... /usr/bin/gtkdoc-mkpdf
+checking whether to build gtk-doc documentation... no
+checking for GTKDOC_DEPS... yes
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for ld used by GCC... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking for linguas... an ar as ast az_IR be bg ca ca@valencia cs da de el en_GB eo es eu fa fi fr gl he hi hu id it ja km kn ko lt lv mk ml nb nl or pa pl ps pt pt_BR ro ru sk sl sr sr@latin sv ta te tr ug uk ur yi zh_CN zh_HK zh_TW 
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating README
+config.status: creating build/Makefile
+config.status: creating build/autotools/Makefile
+config.status: creating build/mingw/Makefile
+config.status: creating build/win32/Makefile
+config.status: creating build/win32/vs9/Makefile
+config.status: creating build/win32/vs10/Makefile
+config.status: creating clutter/Makefile
+config.status: creating clutter/config.h.win32
+config.status: creating clutter/clutter-config.h
+config.status: creating clutter/clutter-version.h
+config.status: creating clutter/clutter-1.0.pc
+config.status: creating clutter/cally/cally-1.0.pc
+config.status: creating clutter/cex100/clutter-cex100.h
+config.status: creating tests/Makefile
+config.status: creating tests/accessibility/Makefile
+config.status: creating tests/conform/Makefile
+config.status: creating tests/interactive/Makefile
+config.status: creating tests/interactive/wrapper.sh
+config.status: creating tests/micro-bench/Makefile
+config.status: creating tests/performance/Makefile
+config.status: creating examples/Makefile
+config.status: creating doc/Makefile
+config.status: creating doc/reference/Makefile
+config.status: creating doc/reference/clutter/Makefile
+config.status: creating doc/reference/clutter/clutter-docs.xml
+config.status: creating doc/reference/cally/Makefile
+config.status: creating doc/reference/cally/cally-docs.xml
+config.status: creating doc/common/Makefile
+config.status: creating doc/cookbook/Makefile
+config.status: creating doc/cookbook/clutter-cookbook.xml
+config.status: creating doc/cookbook/examples/Makefile
+config.status: creating po/Makefile.in
+config.status: creating clutter/config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+
+Clutter - 1.20.0 (release)
+
+ • Global:
+        Prefix: /usr
+        Libdir: ${exec_prefix}/lib
+        Sysconfdir: /etc
+
+ • Compiler options:
+        Clutter debug level: minimum
+        Compiler flags: -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC 
+        Profiling enabled: no
+        Enable coverage tests: no
+        Enable deprecated symbols: yes
+
+ • Documentation:
+        Build API Reference: no
+        Build Additional Documentation: no (Generate PDF: no)
+
+ • Extra:
+        Build introspection data: yes
+        Build X11-specific tests: yes
+        Install test suites: 
+        Build examples: yes
+
+ • Clutter Backends:
+        Windowing systems: x11 gdk wayland egl (WARNING: Experimental backends enabled)
+        Input backends: x11 gdk wayland evdev
+
+     - X11 backend options:
+        Enabled extensions: xext xdamage xcomposite xge xi2.2 xkb
+
+
+☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠
+*WARNING* *WARNING* *WARNING* *WARNING* *WARNING* *WARNING* *WARNING*
+
+  The stability of your build might be affected by one or more
+  experimental backends or experimental and unsupported features
+
+*WARNING* *WARNING* *WARNING* *WARNING* *WARNING* *WARNING* *WARNING*
+☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠
+
+DEBUG: "./configure --prefix=/usr --build=x86_64-pc-linux-gnu --mandir=/usr/share/man --infodir=/usr/share/info --datadir=/usr/share --sysconfdir=/etc --localstatedir=/var --libexecdir=/usr/libexec --disable-static --enable-x11-backend --enable-gdk-backend --enable-gdk-pixbuf --enable-egl-backend --enable-wayland-backend --enable-xinput --enable-evdev-input --enable-introspection --enable-shared" dönüş değeri 0
+libtool has been changed by dosed method.
+[32mKaynak inşa ediliyor...
+[0mSandbox açık inşa...
+Çalışıyor make -j5
+Making all in build
+make[1]: Entering directory '/var/pisi/clutter-1.20.0-11/work/clutter-1.20.0/build'
+Making all in autotools
+make[2]: Entering directory '/var/pisi/clutter-1.20.0-11/work/clutter-1.20.0/build/autotools'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/pisi/clutter-1.20.0-11/work/clutter-1.20.0/build/autotools'
+Making all in mingw
+make[2]: Entering directory '/var/pisi/clutter-1.20.0-11/work/clutter-1.20.0/build/mingw'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/pisi/clutter-1.20.0-11/work/clutter-1.20.0/build/mingw'
+Making all in win32
+make[2]: Entering directory '/var/pisi/clutter-1.20.0-11/work/clutter-1.20.0/build/win32'
+Making all in vs9
+make[3]: Entering directory '/var/pisi/clutter-1.20.0-11/work/clutter-1.20.0/build/win32/vs9'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/pisi/clutter-1.20.0-11/work/clutter-1.20.0/build/win32/vs9'
+Making all in vs10
+make[3]: Entering directory '/var/pisi/clutter-1.20.0-11/work/clutter-1.20.0/build/win32/vs10'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/pisi/clutter-1.20.0-11/work/clutter-1.20.0/build/win32/vs10'
+make[3]: Entering directory '/var/pisi/clutter-1.20.0-11/work/clutter-1.20.0/build/win32'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/var/pisi/clutter-1.20.0-11/work/clutter-1.20.0/build/win32'
+make[2]: Leaving directory '/var/pisi/clutter-1.20.0-11/work/clutter-1.20.0/build/win32'
+make[2]: Entering directory '/var/pisi/clutter-1.20.0-11/work/clutter-1.20.0/build'
+make[2]: Nothing to be done for 'all-am'.
+make[2]: Leaving directory '/var/pisi/clutter-1.20.0-11/work/clutter-1.20.0/build'
+make[1]: Leaving directory '/var/pisi/clutter-1.20.0-11/work/clutter-1.20.0/build'
+Making all in clutter
+make[1]: Entering directory '/var/pisi/clutter-1.20.0-11/work/clutter-1.20.0/clutter'
+  GEN      stamp-marshal
+  GEN      stamp-enum-types
+  GEN      clutter-marshal.c
+  GEN      clutter-enum-types.c
+make  all-am
+make[2]: Entering directory '/var/pisi/clutter-1.20.0-11/work/clutter-1.20.0/clutter'
+  CC       clutter-device-manager-core-x11.lo
+  CC       clutter-event-x11.lo
+  CC       clutter-keymap-x11.lo
+  CC       clutter-backend-x11.lo
+  CC       clutter-input-device-core-x11.lo
+  CC       clutter-stage-x11.lo
+  CC       clutter-x11-texture-pixmap.lo
+  CC       clutter-device-manager-xi2.lo
+  CC       clutter-input-device-xi2.lo
+  CC       clutter-stage-cogl.lo
+  CC       clutter-glx-texture-pixmap.lo
+  CC       clutter-backend-gdk.lo
+  CC       clutter-device-manager-gdk.lo
+  CC       clutter-input-device-gdk.lo
+  CC       clutter-event-gdk.lo
+  CC       clutter-stage-gdk.lo
+  CC       clutter-xkb-utils.lo
+  CC       clutter-backend-wayland.lo
+  CC       clutter-stage-wayland.lo
+  CC       clutter-event-wayland.lo
+  CC       clutter-input-device-wayland.lo
+  CC       clutter-device-manager-wayland.lo
+Makefile:2298: recipe for target 'clutter-stage-wayland.lo' failed
+Makefile:2291: recipe for target 'clutter-backend-wayland.lo' failed
+make[2]: Leaving directory '/var/pisi/clutter-1.20.0-11/work/clutter-1.20.0/clutter'
+Makefile:1850: recipe for target 'all' failed
+make[1]: Leaving directory '/var/pisi/clutter-1.20.0-11/work/clutter-1.20.0/clutter'
+Makefile:599: recipe for target 'all-recursive' failed
+DEBUG: "make -j5" dönüş değeri 2
+Genel yardım için lütfen 'pisi help' komutunu kullanınız.
