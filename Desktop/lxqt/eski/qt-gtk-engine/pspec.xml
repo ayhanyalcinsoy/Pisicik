@@ -19,7 +19,7 @@
         <Name>qt-gtk-engine</Name>
         <RuntimeDependencies>
             <Dependency>gtk3</Dependency>
-            <Dependency>qt</Dependency>
+            <Dependency>qt5-base</Dependency>
             <Dependency>cairo</Dependency>
         </RuntimeDependencies>
          <Files>
