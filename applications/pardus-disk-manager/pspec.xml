@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>pisilinux-disk-manager</Name>
+        <Homepage>https://github.com/rdno/pardus-disk-manager-gtk</Homepage>
+        <Packager>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:gui</IsA>
+        <Summary>Disk manager</Summary>
+        <Description>Disk manager.</Description>
+        <Archive sha1sum="9193bb6e9897f356555811c1787f3f83570ced2b" type="targz">https://github.com/rdno/pardus-disk-manager-gtk/archive/v0.2.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>pisilinux-disk-manager</Name>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="library">/usr/lib/python2.7/</Path>
+            <Path fileType="data">/usr/share/pixmap</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2015-02-26</Date>
+            <Version>0.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
