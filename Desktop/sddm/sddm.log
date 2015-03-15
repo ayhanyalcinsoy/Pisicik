@@ -1,0 +1,848 @@
+[01;32mKaynak paket inşa ediliyor: sddm
+[0mDEBUG: ComponentDB initialized in 0.00414085388184.
+DEBUG: RepoDB initialized in 0.000245094299316.
+DEBUG: InstallDB initialized in 0.00810718536377.
+v0.11.0.tar.gz [önbellekte]
+[32mArşiv(ler) açılıyor...
+[0m açıldı (/var/pisi/sddm-0.11.0-2/work)
+[32mKaynak yapılandırılıyor...
+[0mSandbox açık inşa...
+Çalışıyor cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_C_FLAGS="-mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC" -DCMAKE_CXX_FLAGS="-mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC" -DCMAKE_LD_FLAGS="-Wl,-O1 -Wl,-z,relro -Wl,--hash-style=gnu -Wl,--as-needed -Wl,--sort-common" -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_LIBEXECDIR=/usr/lib/sddm -DBUILD_MAN_PAGES=ON ..
+-- The C compiler identification is GNU 4.9.2
+-- The CXX compiler identification is GNU 4.9.2
+-- Check for working C compiler: /usr/bin/x86_64-pc-linux-gnu-gcc
+-- Check for working C compiler: /usr/bin/x86_64-pc-linux-gnu-gcc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/x86_64-pc-linux-gnu-g++
+-- Check for working CXX compiler: /usr/bin/x86_64-pc-linux-gnu-g++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Release build
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.28") 
+-- Performing Test PAM_MESSAGE_CONST
+-- Performing Test PAM_MESSAGE_CONST - Success
+-- Found PAM: /usr/lib/libpam.so;/usr/lib/libdl.so
+-- checking for module 'xcb'
+--   found xcb, version 1.11
+-- Found XCB: /usr/lib/libxcb.so  
+-- checking for module 'xcb-xkb'
+--   found xcb-xkb, version 1.11
+-- Found XKB: /usr/lib/libxcb-xkb.so  
+-- checking for module 'systemd'
+--   package 'systemd' not found
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build
+DEBUG: "cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_C_FLAGS="-mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC" -DCMAKE_CXX_FLAGS="-mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC" -DCMAKE_LD_FLAGS="-Wl,-O1 -Wl,-z,relro -Wl,--hash-style=gnu -Wl,--as-needed -Wl,--sort-common" -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_LIBEXECDIR=/usr/lib/sddm -DBUILD_MAN_PAGES=ON .." dönüş değeri 0
+[32mKaynak inşa ediliyor...
+[0mSandbox açık inşa...
+Çalışıyor make VERBOSE=1 -j5
+/usr/bin/cmake -H/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0 -B/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles/progress.marks
+make -f CMakeFiles/Makefile2 all
+make[1]: Entering directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+make -f data/man/CMakeFiles/man_sddm-greeter.rst.dir/build.make data/man/CMakeFiles/man_sddm-greeter.rst.dir/depend
+make -f data/man/CMakeFiles/man_sddm-state.conf.rst.dir/build.make data/man/CMakeFiles/man_sddm-state.conf.rst.dir/depend
+make -f data/man/CMakeFiles/man_sddm.conf.rst.dir/build.make data/man/CMakeFiles/man_sddm.conf.rst.dir/depend
+make -f data/man/CMakeFiles/man_sddm.rst.dir/build.make data/man/CMakeFiles/man_sddm.rst.dir/depend
+make -f src/daemon/CMakeFiles/sddm_automoc.dir/build.make src/daemon/CMakeFiles/sddm_automoc.dir/depend
+make[2]: Entering directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0 /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/data/man /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/man /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/man/CMakeFiles/man_sddm-greeter.rst.dir/DependInfo.cmake --color=
+make[2]: Entering directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0 /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/data/man /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/man /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/man/CMakeFiles/man_sddm.conf.rst.dir/DependInfo.cmake --color=
+make[2]: Entering directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0 /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/data/man /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/man /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/man/CMakeFiles/man_sddm-state.conf.rst.dir/DependInfo.cmake --color=
+make[2]: Entering directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0 /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/data/man /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/man /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/man/CMakeFiles/man_sddm.rst.dir/DependInfo.cmake --color=
+make[2]: Entering directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0 /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon/CMakeFiles/sddm_automoc.dir/DependInfo.cmake --color=
+Dependee "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/man/CMakeFiles/man_sddm.conf.rst.dir/DependInfo.cmake" is newer than depender "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/man/CMakeFiles/man_sddm.conf.rst.dir/depend.internal".
+Dependee "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/man/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/man/CMakeFiles/man_sddm.conf.rst.dir/depend.internal".
+Scanning dependencies of target man_sddm.conf.rst
+Dependee "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/man/CMakeFiles/man_sddm-state.conf.rst.dir/DependInfo.cmake" is newer than depender "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/man/CMakeFiles/man_sddm-state.conf.rst.dir/depend.internal".
+Dependee "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/man/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/man/CMakeFiles/man_sddm-state.conf.rst.dir/depend.internal".
+Dependee "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/man/CMakeFiles/man_sddm-greeter.rst.dir/DependInfo.cmake" is newer than depender "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/man/CMakeFiles/man_sddm-greeter.rst.dir/depend.internal".
+make[2]: Leaving directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+Dependee "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/man/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/man/CMakeFiles/man_sddm-greeter.rst.dir/depend.internal".
+Scanning dependencies of target man_sddm-state.conf.rst
+make -f data/man/CMakeFiles/man_sddm.conf.rst.dir/build.make data/man/CMakeFiles/man_sddm.conf.rst.dir/build
+Scanning dependencies of target man_sddm-greeter.rst
+Dependee "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon/CMakeFiles/sddm_automoc.dir/DependInfo.cmake" is newer than depender "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon/CMakeFiles/sddm_automoc.dir/depend.internal".
+Dependee "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon/CMakeFiles/sddm_automoc.dir/depend.internal".
+Scanning dependencies of target sddm_automoc
+Dependee "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/man/CMakeFiles/man_sddm.rst.dir/DependInfo.cmake" is newer than depender "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/man/CMakeFiles/man_sddm.rst.dir/depend.internal".
+Dependee "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/man/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/man/CMakeFiles/man_sddm.rst.dir/depend.internal".
+Scanning dependencies of target man_sddm.rst
+make[2]: Leaving directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+make[2]: Leaving directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+make[2]: Leaving directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+make[2]: Leaving directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+make -f data/man/CMakeFiles/man_sddm-greeter.rst.dir/build.make data/man/CMakeFiles/man_sddm-greeter.rst.dir/build
+make -f data/man/CMakeFiles/man_sddm-state.conf.rst.dir/build.make data/man/CMakeFiles/man_sddm-state.conf.rst.dir/build
+make -f data/man/CMakeFiles/man_sddm.rst.dir/build.make data/man/CMakeFiles/man_sddm.rst.dir/build
+make -f src/daemon/CMakeFiles/sddm_automoc.dir/build.make src/daemon/CMakeFiles/sddm_automoc.dir/build
+make[2]: Entering directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 23
+make[2]: Entering directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 21
+make[2]: Entering directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 22
+make[2]: Entering directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 20
+[  1%] [  2%] [  4%] make[2]: Entering directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 75
+[  5%] Generating sddm-state.conf.5
+Generating sddm-greeter.1
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/man && /usr/bin/rst2man /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/man/sddm-greeter.rst /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/man/sddm-greeter.1
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/man && /usr/bin/rst2man /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/man/sddm-state.conf.rst /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/man/sddm-state.conf.5
+[  6%] Generating sddm.1
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/man && /usr/bin/rst2man /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/man/sddm.rst /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/man/sddm.1
+Automatic moc for target sddm
+Generating sddm.conf.5
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon && /usr/bin/cmake -E cmake_autogen /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon/CMakeFiles/sddm_automoc.dir/ Release
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/man && /usr/bin/rst2man /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/man/sddm.conf.rst /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/man/sddm.conf.5
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common/Configuration.cpp
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common/SafeDataStream.cpp
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common/ConfigReader.cpp
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common/SocketWriter.cpp
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth/Auth.cpp
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth/AuthPrompt.cpp
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth/AuthRequest.cpp
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/DaemonApp.cpp
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/Display.cpp
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/DisplayManager.cpp
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/DisplayServer.cpp
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/XorgDisplayServer.cpp
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/Greeter.cpp
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/PowerManager.cpp
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/Seat.cpp
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/SeatManager.cpp
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/SignalHandler.cpp
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/SocketServer.cpp
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth/Auth.h
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth/AuthPrompt.h
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth/AuthRequest.h
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common/ConfigReader.h
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common/Configuration.h
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common/SafeDataStream.h
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common/SocketWriter.h
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/DaemonApp.h
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/Display.h
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/DisplayManager.h
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/DisplayServer.h
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/Greeter.h
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/PowerManager.h
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/Seat.h
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/SeatManager.h
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/SignalHandler.h
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/SocketServer.h
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/XorgDisplayServer.h
+Generating Auth.moc
+/usr/lib/qt5/bin/moc -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -I/usr/include/qt5 -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -I/usr/lib/qt5/mkspecs/linux-g++ -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtQml -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -o /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon/Auth.moc /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth/Auth.cpp 
+make[2]: Leaving directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles  22
+[  6%] Built target man_sddm.conf.rst
+make -f data/translations/CMakeFiles/components-translation.dir/build.make data/translations/CMakeFiles/components-translation.dir/depend
+make[2]: Entering directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0 /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/data/translations /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations/CMakeFiles/components-translation.dir/DependInfo.cmake --color=
+make[2]: Leaving directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles  21
+make[2]: Leaving directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+Dependee "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations/CMakeFiles/components-translation.dir/DependInfo.cmake" is newer than depender "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations/CMakeFiles/components-translation.dir/depend.internal".
+Dependee "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations/CMakeFiles/components-translation.dir/depend.internal".
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles  23
+Scanning dependencies of target components-translation
+[  6%] make[2]: Leaving directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+make -f data/translations/CMakeFiles/components-translation.dir/build.make data/translations/CMakeFiles/components-translation.dir/build
+[  6%] Built target man_sddm-state.conf.rst
+make -f src/greeter/CMakeFiles/sddm-greeter_automoc.dir/build.make src/greeter/CMakeFiles/sddm-greeter_automoc.dir/depend
+make[2]: Entering directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0 /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter/CMakeFiles/sddm-greeter_automoc.dir/DependInfo.cmake --color=
+Generating AuthRequest.moc
+/usr/lib/qt5/bin/moc -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -I/usr/include/qt5 -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -I/usr/lib/qt5/mkspecs/linux-g++ -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtQml -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -o /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon/AuthRequest.moc /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth/AuthRequest.cpp 
+make[2]: Entering directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 5
+Built target man_sddm.rst
+make -f data/themes/CMakeFiles/themes-translation.dir/build.make data/themes/CMakeFiles/themes-translation.dir/depend
+[  8%] make[2]: Entering directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0 /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/data/themes /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/themes /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/themes/CMakeFiles/themes-translation.dir/DependInfo.cmake --color=
+Dependee "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter/CMakeFiles/sddm-greeter_automoc.dir/DependInfo.cmake" is newer than depender "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter/CMakeFiles/sddm-greeter_automoc.dir/depend.internal".
+Dependee "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter/CMakeFiles/sddm-greeter_automoc.dir/depend.internal".
+Scanning dependencies of target sddm-greeter_automoc
+Generating cs.qm
+make[2]: Leaving directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+make -f src/greeter/CMakeFiles/sddm-greeter_automoc.dir/build.make src/greeter/CMakeFiles/sddm-greeter_automoc.dir/build
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations && /usr/lib/qt5/bin/lrelease /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/data/translations/cs.ts -qm /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations/cs.qm
+Dependee "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/themes/CMakeFiles/themes-translation.dir/DependInfo.cmake" is newer than depender "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/themes/CMakeFiles/themes-translation.dir/depend.internal".
+Dependee "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/themes/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/themes/CMakeFiles/themes-translation.dir/depend.internal".
+make[2]: Entering directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 64
+make[2]: Leaving directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles  20
+Scanning dependencies of target themes-translation
+make[2]: Leaving directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+make -f data/themes/CMakeFiles/themes-translation.dir/build.make data/themes/CMakeFiles/themes-translation.dir/build
+make[2]: Entering directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+make[2]: Nothing to be done for 'data/themes/CMakeFiles/themes-translation.dir/build'.
+make[2]: Leaving directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 
+Generating moc_Auth.cpp
+/usr/lib/qt5/bin/moc -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -I/usr/include/qt5 -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -I/usr/lib/qt5/mkspecs/linux-g++ -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtQml -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -o /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon/moc_Auth.cpp /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth/Auth.h 
+[  9%] [  9%] [  9%] Built target man_sddm-greeter.rst
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 6
+Updating '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations/cs.qm'...
+    Generated 13 translation(s) (13 finished and 0 unfinished)
+make -f src/helper/CMakeFiles/sddm-helper_automoc.dir/build.make src/helper/CMakeFiles/sddm-helper_automoc.dir/depend
+Automatic moc for target sddm-greeter
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter && /usr/bin/cmake -E cmake_autogen /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter/CMakeFiles/sddm-greeter_automoc.dir/ Release
+Built target themes-translation
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 7
+[ 10%] [ 12%] make[2]: Entering directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0 /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/helper /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper/CMakeFiles/sddm-helper_automoc.dir/DependInfo.cmake --color=
+Generating de.qm
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations && /usr/lib/qt5/bin/lrelease /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/data/translations/de.ts -qm /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations/de.qm
+Dependee "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper/CMakeFiles/sddm-helper_automoc.dir/DependInfo.cmake" is newer than depender "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper/CMakeFiles/sddm-helper_automoc.dir/depend.internal".
+Dependee "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper/CMakeFiles/sddm-helper_automoc.dir/depend.internal".
+Scanning dependencies of target sddm-helper_automoc
+Generating et.qm
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations && /usr/lib/qt5/bin/lrelease /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/data/translations/et.ts -qm /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations/et.qm
+make[2]: Leaving directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+make -f src/helper/CMakeFiles/sddm-helper_automoc.dir/build.make src/helper/CMakeFiles/sddm-helper_automoc.dir/build
+Updating '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations/de.qm'...
+Updating '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations/et.qm'...
+    Generated 13 translation(s) (13 finished and 0 unfinished)
+    Generated 13 translation(s) (13 finished and 0 unfinished)
+make -f test/CMakeFiles/ConfigurationTest_automoc.dir/build.make test/CMakeFiles/ConfigurationTest_automoc.dir/depend
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 8
+make[2]: Entering directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 74
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common/Configuration.cpp
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common/ConfigReader.cpp
+[ 13%] AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common/SocketWriter.cpp
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter/GreeterApp.cpp
+make[2]: Entering directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0 /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/test /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/test /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/test/CMakeFiles/ConfigurationTest_automoc.dir/DependInfo.cmake --color=
+[ 14%] AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter/GreeterProxy.cpp
+Generating moc_AuthPrompt.cpp
+/usr/lib/qt5/bin/moc -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -I/usr/include/qt5 -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -I/usr/lib/qt5/mkspecs/linux-g++ -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtQml -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -o /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon/moc_AuthPrompt.cpp /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth/AuthPrompt.h 
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter/KeyboardModel.cpp
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter/ScreenModel.cpp
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter/SessionModel.cpp
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter/ThemeConfig.cpp
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter/ThemeMetadata.cpp
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter/UserModel.cpp
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common/ConfigReader.h
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common/Configuration.h
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common/SocketWriter.h
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter/GreeterApp.h
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter/GreeterProxy.h
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter/KeyboardModel.h
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter/ScreenModel.h
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter/SessionModel.h
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter/ThemeConfig.h
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter/ThemeMetadata.h
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter/UserModel.h
+Generating KeyboardModel.moc
+/usr/lib/qt5/bin/moc -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -I/usr/include/qt5 -I/usr/include/qt5/QtQuick -I/usr/include/qt5/QtQml -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtCore -I/usr/lib/qt5/mkspecs/linux-g++ -I/usr/include/qt5/QtGui -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DQT_QUICK_LIB -DUSE_PAM -o /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter/KeyboardModel.moc /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter/KeyboardModel.cpp 
+Dependee "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/test/CMakeFiles/ConfigurationTest_automoc.dir/DependInfo.cmake" is newer than depender "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/test/CMakeFiles/ConfigurationTest_automoc.dir/depend.internal".
+Dependee "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/test/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/test/CMakeFiles/ConfigurationTest_automoc.dir/depend.internal".
+Scanning dependencies of target ConfigurationTest_automoc
+make[2]: Leaving directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+Generating fi.qm
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations && /usr/lib/qt5/bin/lrelease /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/data/translations/fi.ts -qm /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations/fi.qm
+make -f test/CMakeFiles/ConfigurationTest_automoc.dir/build.make test/CMakeFiles/ConfigurationTest_automoc.dir/build
+Automatic moc for target sddm-helper
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper && /usr/bin/cmake -E cmake_autogen /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper/CMakeFiles/sddm-helper_automoc.dir/ Release
+Updating '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations/fi.qm'...
+    Generated 13 translation(s) (13 finished and 0 unfinished)
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 9
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common/Configuration.cpp
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common/ConfigReader.cpp
+make[2]: Entering directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 4
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common/SafeDataStream.cpp
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/helper/Backend.cpp
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/helper/HelperApp.cpp
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/helper/UserSession.cpp
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/helper/backend/PamHandle.cpp
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/helper/backend/PamBackend.cpp
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common/ConfigReader.h
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common/Configuration.h
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common/SafeDataStream.h
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/helper/Backend.h
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/helper/HelperApp.h
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/helper/UserSession.h
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/helper/backend/PamBackend.h
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/helper/backend/PamHandle.h
+Generating moc_Backend.cpp
+/usr/lib/qt5/bin/moc -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/helper -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -I/usr/include/qt5 -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtCore -I/usr/lib/qt5/mkspecs/linux-g++ -DNDEBUG -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DUSE_PAM -o /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper/moc_Backend.cpp /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/helper/Backend.h 
+[ 16%] [ 17%] Generating fr.qm
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations && /usr/lib/qt5/bin/lrelease /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/data/translations/fr.ts -qm /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations/fr.qm
+Automatic moc for target ConfigurationTest
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/test && /usr/bin/cmake -E cmake_autogen /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/test/CMakeFiles/ConfigurationTest_automoc.dir/ Release
+Updating '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations/fr.qm'...
+    Generated 13 translation(s) (13 finished and 0 unfinished)
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 10
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/test/ConfigurationTest.cpp
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common/ConfigReader.cpp
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common/ConfigReader.h
+AUTOGEN: Checking /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/test/ConfigurationTest.h
+Generating ConfigurationTest.moc
+/usr/lib/qt5/bin/moc -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/test -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/test -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/test/../src/common -I/usr/include/qt5 -I/usr/include/qt5/QtTest -I/usr/include/qt5/QtCore -I/usr/lib/qt5/mkspecs/linux-g++ -DNDEBUG -DQT_CORE_LIB -DQT_NO_DEBUG -DQT_TESTLIB_LIB -DUSE_PAM -o /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/test/ConfigurationTest.moc /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/test/ConfigurationTest.cpp 
+[ 18%] Generating moc_AuthRequest.cpp
+/usr/lib/qt5/bin/moc -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -I/usr/include/qt5 -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -I/usr/lib/qt5/mkspecs/linux-g++ -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtQml -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -o /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon/moc_AuthRequest.cpp /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth/AuthRequest.h 
+Generating it.qm
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations && /usr/lib/qt5/bin/lrelease /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/data/translations/it.ts -qm /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations/it.qm
+Generating moc_GreeterApp.cpp
+/usr/lib/qt5/bin/moc -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -I/usr/include/qt5 -I/usr/include/qt5/QtQuick -I/usr/include/qt5/QtQml -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtCore -I/usr/lib/qt5/mkspecs/linux-g++ -I/usr/include/qt5/QtGui -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DQT_QUICK_LIB -DUSE_PAM -o /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter/moc_GreeterApp.cpp /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter/GreeterApp.h 
+Updating '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations/it.qm'...
+    Generated 13 translation(s) (13 finished and 0 unfinished)
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 11
+Generating moc_HelperApp.cpp
+/usr/lib/qt5/bin/moc -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/helper -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -I/usr/include/qt5 -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtCore -I/usr/lib/qt5/mkspecs/linux-g++ -DNDEBUG -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DUSE_PAM -o /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper/moc_HelperApp.cpp /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/helper/HelperApp.h 
+[ 20%] Generating ja.qm
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations && /usr/lib/qt5/bin/lrelease /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/data/translations/ja.ts -qm /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations/ja.qm
+Generating moc_DaemonApp.cpp
+/usr/lib/qt5/bin/moc -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -I/usr/include/qt5 -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -I/usr/lib/qt5/mkspecs/linux-g++ -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtQml -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -o /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon/moc_DaemonApp.cpp /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/DaemonApp.h 
+Generating moc_UserSession.cpp
+/usr/lib/qt5/bin/moc -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/helper -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -I/usr/include/qt5 -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtCore -I/usr/lib/qt5/mkspecs/linux-g++ -DNDEBUG -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DUSE_PAM -o /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper/moc_UserSession.cpp /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/helper/UserSession.h 
+Updating '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations/ja.qm'...
+    Generated 13 translation(s) (13 finished and 0 unfinished)
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 12
+[ 21%] Generating moc_Display.cpp
+/usr/lib/qt5/bin/moc -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -I/usr/include/qt5 -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -I/usr/lib/qt5/mkspecs/linux-g++ -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtQml -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -o /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon/moc_Display.cpp /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/Display.h 
+Generating pl.qm
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations && /usr/lib/qt5/bin/lrelease /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/data/translations/pl.ts -qm /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations/pl.qm
+Generating moc_GreeterProxy.cpp
+/usr/lib/qt5/bin/moc -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -I/usr/include/qt5 -I/usr/include/qt5/QtQuick -I/usr/include/qt5/QtQml -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtCore -I/usr/lib/qt5/mkspecs/linux-g++ -I/usr/include/qt5/QtGui -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DQT_QUICK_LIB -DUSE_PAM -o /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter/moc_GreeterProxy.cpp /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter/GreeterProxy.h 
+/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/test/ConfigurationTest.cpp:0: Note: No relevant classes found. No output generated.
+Generating moc_ConfigurationTest.cpp
+/usr/lib/qt5/bin/moc -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/test -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/test -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/test/../src/common -I/usr/include/qt5 -I/usr/include/qt5/QtTest -I/usr/include/qt5/QtCore -I/usr/lib/qt5/mkspecs/linux-g++ -DNDEBUG -DQT_CORE_LIB -DQT_NO_DEBUG -DQT_TESTLIB_LIB -DUSE_PAM -o /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/test/moc_ConfigurationTest.cpp /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/test/ConfigurationTest.h 
+Updating '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations/pl.qm'...
+    Generated 13 translation(s) (13 finished and 0 unfinished)
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 13
+[ 22%] Generating moc_PamBackend.cpp
+/usr/lib/qt5/bin/moc -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/helper -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -I/usr/include/qt5 -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtCore -I/usr/lib/qt5/mkspecs/linux-g++ -DNDEBUG -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DUSE_PAM -o /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper/moc_PamBackend.cpp /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/helper/backend/PamBackend.h 
+Generating pt_BR.qm
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations && /usr/lib/qt5/bin/lrelease /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/data/translations/pt_BR.ts -qm /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations/pt_BR.qm
+Updating '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations/pt_BR.qm'...
+    Generated 13 translation(s) (13 finished and 0 unfinished)
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 14
+Generating moc_KeyboardModel.cpp
+/usr/lib/qt5/bin/moc -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -I/usr/include/qt5 -I/usr/include/qt5/QtQuick -I/usr/include/qt5/QtQml -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtCore -I/usr/lib/qt5/mkspecs/linux-g++ -I/usr/include/qt5/QtGui -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DQT_QUICK_LIB -DUSE_PAM -o /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter/moc_KeyboardModel.cpp /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter/KeyboardModel.h 
+Generating moc_DisplayManager.cpp
+/usr/lib/qt5/bin/moc -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -I/usr/include/qt5 -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -I/usr/lib/qt5/mkspecs/linux-g++ -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtQml -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -o /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon/moc_DisplayManager.cpp /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/DisplayManager.h 
+[ 24%] Generating pt_PT.qm
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations && /usr/lib/qt5/bin/lrelease /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/data/translations/pt_PT.ts -qm /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations/pt_PT.qm
+make[2]: Leaving directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles  4
+Updating '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations/pt_PT.qm'...
+    Generated 13 translation(s) (13 finished and 0 unfinished)
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 15
+[ 24%] [ 25%] Built target ConfigurationTest_automoc
+Generating ro.qm
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations && /usr/lib/qt5/bin/lrelease /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/data/translations/ro.ts -qm /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations/ro.qm
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 16
+[ 26%] Generating moc_ScreenModel.cpp
+/usr/lib/qt5/bin/moc -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -I/usr/include/qt5 -I/usr/include/qt5/QtQuick -I/usr/include/qt5/QtQml -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtCore -I/usr/lib/qt5/mkspecs/linux-g++ -I/usr/include/qt5/QtGui -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DQT_QUICK_LIB -DUSE_PAM -o /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter/moc_ScreenModel.cpp /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter/ScreenModel.h 
+Updating '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations/ro.qm'...
+    Generated 13 translation(s) (13 finished and 0 unfinished)
+make[2]: Leaving directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles  74
+make -f test/CMakeFiles/ConfigurationTest.dir/build.make test/CMakeFiles/ConfigurationTest.dir/depend
+Generating ru.qm
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations && /usr/lib/qt5/bin/lrelease /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/data/translations/ru.ts -qm /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations/ru.qm
+[ 26%] make[2]: Entering directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0 /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/test /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/test /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/test/CMakeFiles/ConfigurationTest.dir/DependInfo.cmake --color=
+Built target sddm-helper_automoc
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 17
+Generating moc_DisplayServer.cpp
+/usr/lib/qt5/bin/moc -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -I/usr/include/qt5 -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -I/usr/lib/qt5/mkspecs/linux-g++ -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtQml -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -o /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon/moc_DisplayServer.cpp /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/DisplayServer.h 
+Updating '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations/ru.qm'...
+[ 28%]     Generated 13 translation(s) (13 finished and 0 unfinished)
+make -f src/helper/CMakeFiles/sddm-helper.dir/build.make src/helper/CMakeFiles/sddm-helper.dir/depend
+Dependee "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/test/CMakeFiles/ConfigurationTest.dir/DependInfo.cmake" is newer than depender "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/test/CMakeFiles/ConfigurationTest.dir/depend.internal".
+Dependee "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/test/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/test/CMakeFiles/ConfigurationTest.dir/depend.internal".
+Generating tr.qm
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations && /usr/lib/qt5/bin/lrelease /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/data/translations/tr.ts -qm /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations/tr.qm
+make[2]: Entering directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0 /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/helper /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper/CMakeFiles/sddm-helper.dir/DependInfo.cmake --color=
+Updating '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations/tr.qm'...
+    Generated 13 translation(s) (13 finished and 0 unfinished)
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 18
+Dependee "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper/CMakeFiles/sddm-helper.dir/DependInfo.cmake" is newer than depender "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper/CMakeFiles/sddm-helper.dir/depend.internal".
+Dependee "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper/CMakeFiles/sddm-helper.dir/depend.internal".
+[ 29%] Generating zh_CN.qm
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations && /usr/lib/qt5/bin/lrelease /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/data/translations/zh_CN.ts -qm /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations/zh_CN.qm
+Updating '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations/zh_CN.qm'...
+    Generated 13 translation(s) (13 finished and 0 unfinished)
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 19
+[ 30%] Generating lt.qm
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations && /usr/lib/qt5/bin/lrelease /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/data/translations/lt.ts -qm /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations/lt.qm
+Generating moc_Greeter.cpp
+/usr/lib/qt5/bin/moc -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -I/usr/include/qt5 -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -I/usr/lib/qt5/mkspecs/linux-g++ -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtQml -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -o /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon/moc_Greeter.cpp /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/Greeter.h 
+Updating '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/data/translations/lt.qm'...
+    Generated 13 translation(s) (13 finished and 0 unfinished)
+make[2]: Leaving directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles  5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+Generating moc_SessionModel.cpp
+/usr/lib/qt5/bin/moc -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -I/usr/include/qt5 -I/usr/include/qt5/QtQuick -I/usr/include/qt5/QtQml -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtCore -I/usr/lib/qt5/mkspecs/linux-g++ -I/usr/include/qt5/QtGui -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DQT_QUICK_LIB -DUSE_PAM -o /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter/moc_SessionModel.cpp /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter/SessionModel.h 
+[ 30%] Built target components-translation
+Scanning dependencies of target ConfigurationTest
+make[2]: Leaving directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+make -f test/CMakeFiles/ConfigurationTest.dir/build.make test/CMakeFiles/ConfigurationTest.dir/build
+make[2]: Entering directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 1
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 2
+Scanning dependencies of target sddm-helper
+make[2]: Leaving directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+Generating moc_PowerManager.cpp
+/usr/lib/qt5/bin/moc -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -I/usr/include/qt5 -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -I/usr/lib/qt5/mkspecs/linux-g++ -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtQml -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -o /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon/moc_PowerManager.cpp /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/PowerManager.h 
+make -f src/helper/CMakeFiles/sddm-helper.dir/build.make src/helper/CMakeFiles/sddm-helper.dir/build
+[ 32%] [ 33%] make[2]: Entering directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 65
+Building CXX object test/CMakeFiles/ConfigurationTest.dir/__/src/common/ConfigReader.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/test && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_NO_DEBUG -DQT_TESTLIB_LIB -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/test -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/test -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/test/../src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtTest -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++    -Wall -std=c++11 -o CMakeFiles/ConfigurationTest.dir/__/src/common/ConfigReader.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common/ConfigReader.cpp
+Building CXX object test/CMakeFiles/ConfigurationTest.dir/ConfigurationTest.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/test && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_NO_DEBUG -DQT_TESTLIB_LIB -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/test -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/test -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/test/../src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtTest -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++    -Wall -std=c++11 -o CMakeFiles/ConfigurationTest.dir/ConfigurationTest.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/test/ConfigurationTest.cpp
+[ 34%] Building CXX object src/helper/CMakeFiles/sddm-helper.dir/__/common/Configuration.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/helper -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++    -Wall -std=c++11 -o CMakeFiles/sddm-helper.dir/__/common/Configuration.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common/Configuration.cpp
+Generating moc_ThemeMetadata.cpp
+/usr/lib/qt5/bin/moc -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -I/usr/include/qt5 -I/usr/include/qt5/QtQuick -I/usr/include/qt5/QtQml -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtCore -I/usr/lib/qt5/mkspecs/linux-g++ -I/usr/include/qt5/QtGui -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DQT_QUICK_LIB -DUSE_PAM -o /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter/moc_ThemeMetadata.cpp /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter/ThemeMetadata.h 
+Generating moc_Seat.cpp
+/usr/lib/qt5/bin/moc -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -I/usr/include/qt5 -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -I/usr/lib/qt5/mkspecs/linux-g++ -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtQml -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -o /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon/moc_Seat.cpp /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/Seat.h 
+Generating moc_UserModel.cpp
+/usr/lib/qt5/bin/moc -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -I/usr/include/qt5 -I/usr/include/qt5/QtQuick -I/usr/include/qt5/QtQml -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtCore -I/usr/lib/qt5/mkspecs/linux-g++ -I/usr/include/qt5/QtGui -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DQT_QUICK_LIB -DUSE_PAM -o /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter/moc_UserModel.cpp /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter/UserModel.h 
+Generating moc_SeatManager.cpp
+/usr/lib/qt5/bin/moc -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -I/usr/include/qt5 -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -I/usr/lib/qt5/mkspecs/linux-g++ -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtQml -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -o /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon/moc_SeatManager.cpp /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/SeatManager.h 
+make[2]: Leaving directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles  64
+Generating moc_SignalHandler.cpp
+/usr/lib/qt5/bin/moc -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -I/usr/include/qt5 -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -I/usr/lib/qt5/mkspecs/linux-g++ -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtQml -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -o /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon/moc_SignalHandler.cpp /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/SignalHandler.h 
+[ 34%] Built target sddm-greeter_automoc
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 3
+[ 36%] Building CXX object test/CMakeFiles/ConfigurationTest.dir/ConfigurationTest_automoc.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/test && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_NO_DEBUG -DQT_TESTLIB_LIB -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/test -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/test -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/test/../src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtTest -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++    -Wall -std=c++11 -o CMakeFiles/ConfigurationTest.dir/ConfigurationTest_automoc.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/test/ConfigurationTest_automoc.cpp
+Generating moc_SocketServer.cpp
+/usr/lib/qt5/bin/moc -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -I/usr/include/qt5 -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -I/usr/lib/qt5/mkspecs/linux-g++ -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtQml -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -o /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon/moc_SocketServer.cpp /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/SocketServer.h 
+Generating moc_XorgDisplayServer.cpp
+/usr/lib/qt5/bin/moc -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -I/usr/include/qt5 -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -I/usr/lib/qt5/mkspecs/linux-g++ -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtQml -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -o /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon/moc_XorgDisplayServer.cpp /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/XorgDisplayServer.h 
+make[2]: Leaving directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles  75
+[ 36%] Built target sddm_automoc
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 66
+[ 37%] Building CXX object src/helper/CMakeFiles/sddm-helper.dir/__/common/ConfigReader.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/helper -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++    -Wall -std=c++11 -o CMakeFiles/sddm-helper.dir/__/common/ConfigReader.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common/ConfigReader.cpp
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 67
+[ 38%] Building CXX object src/helper/CMakeFiles/sddm-helper.dir/__/common/SafeDataStream.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/helper -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++    -Wall -std=c++11 -o CMakeFiles/sddm-helper.dir/__/common/SafeDataStream.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common/SafeDataStream.cpp
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 68
+[ 40%] Building CXX object src/helper/CMakeFiles/sddm-helper.dir/Backend.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/helper -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++    -Wall -std=c++11 -o CMakeFiles/sddm-helper.dir/Backend.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/helper/Backend.cpp
+make -f src/greeter/CMakeFiles/sddm-greeter.dir/build.make src/greeter/CMakeFiles/sddm-greeter.dir/depend
+make[2]: Entering directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0 /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter/CMakeFiles/sddm-greeter.dir/DependInfo.cmake --color=
+Dependee "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter/CMakeFiles/sddm-greeter.dir/DependInfo.cmake" is newer than depender "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter/CMakeFiles/sddm-greeter.dir/depend.internal".
+Dependee "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter/CMakeFiles/sddm-greeter.dir/depend.internal".
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 69
+[ 41%] Building CXX object src/helper/CMakeFiles/sddm-helper.dir/HelperApp.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/helper -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++    -Wall -std=c++11 -o CMakeFiles/sddm-helper.dir/HelperApp.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/helper/HelperApp.cpp
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 70
+[ 42%] Building CXX object src/helper/CMakeFiles/sddm-helper.dir/UserSession.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/helper -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++    -Wall -std=c++11 -o CMakeFiles/sddm-helper.dir/UserSession.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/helper/UserSession.cpp
+Scanning dependencies of target sddm-greeter
+make[2]: Leaving directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+make -f src/greeter/CMakeFiles/sddm-greeter.dir/build.make src/greeter/CMakeFiles/sddm-greeter.dir/build
+make[2]: Entering directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 52
+[ 44%] Building CXX object src/greeter/CMakeFiles/sddm-greeter.dir/__/common/Configuration.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DQT_QUICK_LIB -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtQuick -isystem /usr/include/qt5/QtQml -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtGui    -Wall -std=c++11 -o CMakeFiles/sddm-greeter.dir/__/common/Configuration.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common/Configuration.cpp
+Linking CXX executable ConfigurationTest
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/test && /usr/bin/cmake -E cmake_link_script CMakeFiles/ConfigurationTest.dir/link.txt --verbose=1
+/usr/bin/x86_64-pc-linux-gnu-g++   -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG   -Wl,-O1 -Wl,-z,relro -Wl,--hash-style=gnu -Wl,--as-needed -Wl,--sort-common CMakeFiles/ConfigurationTest.dir/ConfigurationTest.cpp.o CMakeFiles/ConfigurationTest.dir/__/src/common/ConfigReader.cpp.o CMakeFiles/ConfigurationTest.dir/ConfigurationTest_automoc.cpp.o  -o ConfigurationTest -rdynamic /usr/lib/libQt5Test.so.5.4.1 /usr/lib/libQt5Core.so.5.4.1 
+make[2]: Leaving directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles  1 2 3
+[ 44%] Built target ConfigurationTest
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 53
+[ 45%] Building CXX object src/greeter/CMakeFiles/sddm-greeter.dir/__/common/ConfigReader.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DQT_QUICK_LIB -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtQuick -isystem /usr/include/qt5/QtQml -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtGui    -Wall -std=c++11 -o CMakeFiles/sddm-greeter.dir/__/common/ConfigReader.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common/ConfigReader.cpp
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 54
+[ 46%] Building CXX object src/greeter/CMakeFiles/sddm-greeter.dir/__/common/SocketWriter.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DQT_QUICK_LIB -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtQuick -isystem /usr/include/qt5/QtQml -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtGui    -Wall -std=c++11 -o CMakeFiles/sddm-greeter.dir/__/common/SocketWriter.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common/SocketWriter.cpp
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 55
+[ 48%] Building CXX object src/greeter/CMakeFiles/sddm-greeter.dir/GreeterApp.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DQT_QUICK_LIB -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtQuick -isystem /usr/include/qt5/QtQml -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtGui    -Wall -std=c++11 -o CMakeFiles/sddm-greeter.dir/GreeterApp.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter/GreeterApp.cpp
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 71
+[ 49%] Building CXX object src/helper/CMakeFiles/sddm-helper.dir/backend/PamHandle.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/helper -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++    -Wall -std=c++11 -o CMakeFiles/sddm-helper.dir/backend/PamHandle.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/helper/backend/PamHandle.cpp
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 72
+[ 50%] Building CXX object src/helper/CMakeFiles/sddm-helper.dir/backend/PamBackend.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/helper -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++    -Wall -std=c++11 -o CMakeFiles/sddm-helper.dir/backend/PamBackend.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/helper/backend/PamBackend.cpp
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 73
+[ 52%] Building CXX object src/helper/CMakeFiles/sddm-helper.dir/sddm-helper_automoc.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/helper -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++    -Wall -std=c++11 -o CMakeFiles/sddm-helper.dir/sddm-helper_automoc.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper/sddm-helper_automoc.cpp
+make -f src/daemon/CMakeFiles/sddm.dir/build.make src/daemon/CMakeFiles/sddm.dir/depend
+make[2]: Entering directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 29
+[ 53%] Generating sessionadaptor.cpp, sessionadaptor.h
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon && /usr/lib/qt5/bin/qdbusxml2cpp -m -a sessionadaptor -i DisplayManager.h -l SDDM::DisplayManagerSession /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/data/interfaces/org.freedesktop.DisplayManager.Session.xml
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 25
+[ 54%] Generating displaymanageradaptor.cpp, displaymanageradaptor.h
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon && /usr/lib/qt5/bin/qdbusxml2cpp -m -a displaymanageradaptor -i DisplayManager.h -l SDDM::DisplayManager /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/data/interfaces/org.freedesktop.DisplayManager.xml
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 27
+[ 56%] Generating seatadaptor.cpp, seatadaptor.h
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon && /usr/lib/qt5/bin/qdbusxml2cpp -m -a seatadaptor -i DisplayManager.h -l SDDM::DisplayManagerSeat /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/data/interfaces/org.freedesktop.DisplayManager.Seat.xml
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 24
+[ 57%] Generating displaymanageradaptor.moc
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon && /usr/lib/qt5/bin/moc @/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon/displaymanageradaptor.moc_parameters
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 26
+[ 58%] Generating seatadaptor.moc
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon && /usr/lib/qt5/bin/moc @/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon/seatadaptor.moc_parameters
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 28
+[ 60%] Generating sessionadaptor.moc
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon && /usr/lib/qt5/bin/moc @/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon/sessionadaptor.moc_parameters
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0 /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon/CMakeFiles/sddm.dir/DependInfo.cmake --color=
+Dependee "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon/CMakeFiles/sddm.dir/DependInfo.cmake" is newer than depender "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon/CMakeFiles/sddm.dir/depend.internal".
+Dependee "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon/CMakeFiles/sddm.dir/depend.internal".
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 56
+[ 61%] Building CXX object src/greeter/CMakeFiles/sddm-greeter.dir/GreeterProxy.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DQT_QUICK_LIB -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtQuick -isystem /usr/include/qt5/QtQml -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtGui    -Wall -std=c++11 -o CMakeFiles/sddm-greeter.dir/GreeterProxy.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter/GreeterProxy.cpp
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 57
+[ 62%] /usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 58
+[ 64%] Building CXX object src/greeter/CMakeFiles/sddm-greeter.dir/KeyboardModel.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DQT_QUICK_LIB -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtQuick -isystem /usr/include/qt5/QtQml -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtGui    -Wall -std=c++11 -o CMakeFiles/sddm-greeter.dir/KeyboardModel.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter/KeyboardModel.cpp
+Building CXX object src/greeter/CMakeFiles/sddm-greeter.dir/ScreenModel.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DQT_QUICK_LIB -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtQuick -isystem /usr/include/qt5/QtQml -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtGui    -Wall -std=c++11 -o CMakeFiles/sddm-greeter.dir/ScreenModel.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter/ScreenModel.cpp
+Scanning dependencies of target sddm
+make[2]: Leaving directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+make -f src/daemon/CMakeFiles/sddm.dir/build.make src/daemon/CMakeFiles/sddm.dir/build
+make[2]: Entering directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 30
+[ 65%] Building CXX object src/daemon/CMakeFiles/sddm.dir/__/common/Configuration.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtDBus -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtQml    -Wall -std=c++11 -o CMakeFiles/sddm.dir/__/common/Configuration.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common/Configuration.cpp
+Linking CXX executable sddm-helper
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/helper && /usr/bin/cmake -E cmake_link_script CMakeFiles/sddm-helper.dir/link.txt --verbose=1
+/usr/bin/x86_64-pc-linux-gnu-g++   -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG   -Wl,-O1 -Wl,-z,relro -Wl,--hash-style=gnu -Wl,--as-needed -Wl,--sort-common CMakeFiles/sddm-helper.dir/__/common/Configuration.cpp.o CMakeFiles/sddm-helper.dir/__/common/ConfigReader.cpp.o CMakeFiles/sddm-helper.dir/__/common/SafeDataStream.cpp.o CMakeFiles/sddm-helper.dir/Backend.cpp.o CMakeFiles/sddm-helper.dir/HelperApp.cpp.o CMakeFiles/sddm-helper.dir/UserSession.cpp.o CMakeFiles/sddm-helper.dir/backend/PamHandle.cpp.o CMakeFiles/sddm-helper.dir/backend/PamBackend.cpp.o CMakeFiles/sddm-helper.dir/sddm-helper_automoc.cpp.o  -o sddm-helper -rdynamic /usr/lib/libQt5Network.so.5.4.1 -lpam -ldl /usr/lib/libQt5Core.so.5.4.1 
+make[2]: Leaving directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles  65 66 67 68 69 70 71 72 73
+[ 65%] Built target sddm-helper
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 31
+[ 66%] Building CXX object src/daemon/CMakeFiles/sddm.dir/__/common/SafeDataStream.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtDBus -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtQml    -Wall -std=c++11 -o CMakeFiles/sddm.dir/__/common/SafeDataStream.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common/SafeDataStream.cpp
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 32
+[ 68%] Building CXX object src/daemon/CMakeFiles/sddm.dir/__/common/ConfigReader.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtDBus -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtQml    -Wall -std=c++11 -o CMakeFiles/sddm.dir/__/common/ConfigReader.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common/ConfigReader.cpp
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 33
+[ 69%] Building CXX object src/daemon/CMakeFiles/sddm.dir/__/common/SocketWriter.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtDBus -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtQml    -Wall -std=c++11 -o CMakeFiles/sddm.dir/__/common/SocketWriter.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common/SocketWriter.cpp
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 59
+[ 70%] Building CXX object src/greeter/CMakeFiles/sddm-greeter.dir/SessionModel.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DQT_QUICK_LIB -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtQuick -isystem /usr/include/qt5/QtQml -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtGui    -Wall -std=c++11 -o CMakeFiles/sddm-greeter.dir/SessionModel.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter/SessionModel.cpp
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 60
+[ 72%] Building CXX object src/greeter/CMakeFiles/sddm-greeter.dir/ThemeConfig.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DQT_QUICK_LIB -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtQuick -isystem /usr/include/qt5/QtQml -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtGui    -Wall -std=c++11 -o CMakeFiles/sddm-greeter.dir/ThemeConfig.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter/ThemeConfig.cpp
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 61
+[ 73%] Building CXX object src/greeter/CMakeFiles/sddm-greeter.dir/ThemeMetadata.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DQT_QUICK_LIB -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtQuick -isystem /usr/include/qt5/QtQml -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtGui    -Wall -std=c++11 -o CMakeFiles/sddm-greeter.dir/ThemeMetadata.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter/ThemeMetadata.cpp
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 62
+[ 74%] Building CXX object src/greeter/CMakeFiles/sddm-greeter.dir/UserModel.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DQT_QUICK_LIB -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtQuick -isystem /usr/include/qt5/QtQml -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtGui    -Wall -std=c++11 -o CMakeFiles/sddm-greeter.dir/UserModel.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter/UserModel.cpp
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 34
+[ 76%] Building CXX object src/daemon/CMakeFiles/sddm.dir/__/auth/Auth.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtDBus -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtQml    -Wall -std=c++11 -o CMakeFiles/sddm.dir/__/auth/Auth.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth/Auth.cpp
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 35
+[ 77%] Building CXX object src/daemon/CMakeFiles/sddm.dir/__/auth/AuthPrompt.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtDBus -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtQml    -Wall -std=c++11 -o CMakeFiles/sddm.dir/__/auth/AuthPrompt.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth/AuthPrompt.cpp
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 63
+[ 78%] Building CXX object src/greeter/CMakeFiles/sddm-greeter.dir/sddm-greeter_automoc.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DQT_QUICK_LIB -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/greeter -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtQuick -isystem /usr/include/qt5/QtQml -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtGui    -Wall -std=c++11 -o CMakeFiles/sddm-greeter.dir/sddm-greeter_automoc.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter/sddm-greeter_automoc.cpp
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 36
+[ 80%] Building CXX object src/daemon/CMakeFiles/sddm.dir/__/auth/AuthRequest.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtDBus -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtQml    -Wall -std=c++11 -o CMakeFiles/sddm.dir/__/auth/AuthRequest.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth/AuthRequest.cpp
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 37
+[ 81%] Building CXX object src/daemon/CMakeFiles/sddm.dir/DaemonApp.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtDBus -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtQml    -Wall -std=c++11 -o CMakeFiles/sddm.dir/DaemonApp.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/DaemonApp.cpp
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 38
+[ 82%] Building CXX object src/daemon/CMakeFiles/sddm.dir/Display.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtDBus -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtQml    -Wall -std=c++11 -o CMakeFiles/sddm.dir/Display.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/Display.cpp
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 39
+[ 84%] Building CXX object src/daemon/CMakeFiles/sddm.dir/DisplayManager.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtDBus -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtQml    -Wall -std=c++11 -o CMakeFiles/sddm.dir/DisplayManager.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/DisplayManager.cpp
+Linking CXX executable sddm-greeter
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/greeter && /usr/bin/cmake -E cmake_link_script CMakeFiles/sddm-greeter.dir/link.txt --verbose=1
+/usr/bin/x86_64-pc-linux-gnu-g++   -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG   -Wl,-O1 -Wl,-z,relro -Wl,--hash-style=gnu -Wl,--as-needed -Wl,--sort-common CMakeFiles/sddm-greeter.dir/__/common/Configuration.cpp.o CMakeFiles/sddm-greeter.dir/__/common/ConfigReader.cpp.o CMakeFiles/sddm-greeter.dir/__/common/SocketWriter.cpp.o CMakeFiles/sddm-greeter.dir/GreeterApp.cpp.o CMakeFiles/sddm-greeter.dir/GreeterProxy.cpp.o CMakeFiles/sddm-greeter.dir/KeyboardModel.cpp.o CMakeFiles/sddm-greeter.dir/ScreenModel.cpp.o CMakeFiles/sddm-greeter.dir/SessionModel.cpp.o CMakeFiles/sddm-greeter.dir/ThemeConfig.cpp.o CMakeFiles/sddm-greeter.dir/ThemeMetadata.cpp.o CMakeFiles/sddm-greeter.dir/UserModel.cpp.o CMakeFiles/sddm-greeter.dir/sddm-greeter_automoc.cpp.o  -o sddm-greeter -rdynamic -lxcb -lxcb-xkb /usr/lib/libQt5Quick.so.5.4.1 /usr/lib/libQt5Qml.so.5.4.1 /usr/lib/libQt5Network.so.5.4.1 /usr/lib/libQt5Gui.so.5.4.1 /usr/lib/libQt5Core.so.5.4.1 
+make[2]: Leaving directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles  52 53 54 55 56 57 58 59 60 61 62 63
+[ 84%] Built target sddm-greeter
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 40
+[ 85%] Building CXX object src/daemon/CMakeFiles/sddm.dir/DisplayServer.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtDBus -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtQml    -Wall -std=c++11 -o CMakeFiles/sddm.dir/DisplayServer.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/DisplayServer.cpp
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 41
+[ 86%] Building CXX object src/daemon/CMakeFiles/sddm.dir/XorgDisplayServer.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtDBus -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtQml    -Wall -std=c++11 -o CMakeFiles/sddm.dir/XorgDisplayServer.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/XorgDisplayServer.cpp
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 42
+[ 88%] Building CXX object src/daemon/CMakeFiles/sddm.dir/Greeter.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtDBus -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtQml    -Wall -std=c++11 -o CMakeFiles/sddm.dir/Greeter.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/Greeter.cpp
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 43
+[ 89%] Building CXX object src/daemon/CMakeFiles/sddm.dir/PowerManager.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtDBus -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtQml    -Wall -std=c++11 -o CMakeFiles/sddm.dir/PowerManager.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/PowerManager.cpp
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 44
+[ 90%] Building CXX object src/daemon/CMakeFiles/sddm.dir/Seat.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtDBus -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtQml    -Wall -std=c++11 -o CMakeFiles/sddm.dir/Seat.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/Seat.cpp
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 45
+[ 92%] Building CXX object src/daemon/CMakeFiles/sddm.dir/SeatManager.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtDBus -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtQml    -Wall -std=c++11 -o CMakeFiles/sddm.dir/SeatManager.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/SeatManager.cpp
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 46
+[ 93%] Building CXX object src/daemon/CMakeFiles/sddm.dir/SignalHandler.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtDBus -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtQml    -Wall -std=c++11 -o CMakeFiles/sddm.dir/SignalHandler.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/SignalHandler.cpp
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 47
+[ 94%] Building CXX object src/daemon/CMakeFiles/sddm.dir/SocketServer.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtDBus -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtQml    -Wall -std=c++11 -o CMakeFiles/sddm.dir/SocketServer.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon/SocketServer.cpp
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 48
+[ 96%] Building CXX object src/daemon/CMakeFiles/sddm.dir/displaymanageradaptor.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtDBus -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtQml    -Wall -std=c++11 -o CMakeFiles/sddm.dir/displaymanageradaptor.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon/displaymanageradaptor.cpp
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 49
+[ 97%] Building CXX object src/daemon/CMakeFiles/sddm.dir/seatadaptor.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtDBus -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtQml    -Wall -std=c++11 -o CMakeFiles/sddm.dir/seatadaptor.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon/seatadaptor.cpp
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 50
+[ 98%] Building CXX object src/daemon/CMakeFiles/sddm.dir/sessionadaptor.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtDBus -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtQml    -Wall -std=c++11 -o CMakeFiles/sddm.dir/sessionadaptor.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon/sessionadaptor.cpp
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 51
+[100%] Building CXX object src/daemon/CMakeFiles/sddm.dir/sddm_automoc.cpp.o
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon && /usr/bin/x86_64-pc-linux-gnu-g++   -DNDEBUG -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_QML_LIB -DUSE_PAM -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG -fPIE -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/daemon -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/common -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/src/auth -I/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/common -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtDBus -isystem /usr/include/qt5/QtCore -isystem /usr/lib/qt5/mkspecs/linux-g++ -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtQml    -Wall -std=c++11 -o CMakeFiles/sddm.dir/sddm_automoc.cpp.o -c /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon/sddm_automoc.cpp
+Linking CXX executable sddm
+cd /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/src/daemon && /usr/bin/cmake -E cmake_link_script CMakeFiles/sddm.dir/link.txt --verbose=1
+/usr/bin/x86_64-pc-linux-gnu-g++   -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -O2 -O3 -DNDEBUG   -Wl,-O1 -Wl,-z,relro -Wl,--hash-style=gnu -Wl,--as-needed -Wl,--sort-common CMakeFiles/sddm.dir/__/common/Configuration.cpp.o CMakeFiles/sddm.dir/__/common/SafeDataStream.cpp.o CMakeFiles/sddm.dir/__/common/ConfigReader.cpp.o CMakeFiles/sddm.dir/__/common/SocketWriter.cpp.o CMakeFiles/sddm.dir/__/auth/Auth.cpp.o CMakeFiles/sddm.dir/__/auth/AuthPrompt.cpp.o CMakeFiles/sddm.dir/__/auth/AuthRequest.cpp.o CMakeFiles/sddm.dir/DaemonApp.cpp.o CMakeFiles/sddm.dir/Display.cpp.o CMakeFiles/sddm.dir/DisplayManager.cpp.o CMakeFiles/sddm.dir/DisplayServer.cpp.o CMakeFiles/sddm.dir/XorgDisplayServer.cpp.o CMakeFiles/sddm.dir/Greeter.cpp.o CMakeFiles/sddm.dir/PowerManager.cpp.o CMakeFiles/sddm.dir/Seat.cpp.o CMakeFiles/sddm.dir/SeatManager.cpp.o CMakeFiles/sddm.dir/SignalHandler.cpp.o CMakeFiles/sddm.dir/SocketServer.cpp.o CMakeFiles/sddm.dir/displaymanageradaptor.cpp.o CMakeFiles/sddm.dir/seatadaptor.cpp.o CMakeFiles/sddm.dir/sessionadaptor.cpp.o CMakeFiles/sddm.dir/sddm_automoc.cpp.o  -o sddm -rdynamic -lxcb -lpam -ldl /usr/lib/libQt5DBus.so.5.4.1 /usr/lib/libQt5Qml.so.5.4.1 /usr/lib/libQt5Network.so.5.4.1 /usr/lib/libQt5Core.so.5.4.1 
+make[2]: Leaving directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+/usr/bin/cmake -E cmake_progress_report /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles  24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51
+[100%] Built target sddm
+make[1]: Leaving directory '/var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build'
+/usr/bin/cmake -E cmake_progress_start /var/pisi/sddm-0.11.0-2/work/sddm-0.11.0/build/CMakeFiles 0
+DEBUG: "make VERBOSE=1 -j5" dönüş değeri 0
+[32mPaket test ediliyor...
+[0m[32mKuruluyor...
+[0mSandbox açık inşa...
+Çalışıyor make DESTDIR=/var/pisi/sddm-0.11.0-2/install install
+[  1%] Built target man_sddm-greeter.rst
+[  2%] Built target man_sddm-state.conf.rst
+[  4%] Built target man_sddm.conf.rst
+[  5%] Built target man_sddm.rst
+[  6%] Automatic moc for target sddm
+[  6%] Built target sddm_automoc
+[ 44%] Built target sddm
+[ 64%] Built target components-translation
+[ 65%] Automatic moc for target sddm-greeter
+[ 65%] Built target sddm-greeter_automoc
+[ 65%] Built target themes-translation
+[ 81%] Built target sddm-greeter
+[ 82%] Automatic moc for target sddm-helper
+[ 82%] Built target sddm-helper_automoc
+[ 94%] Built target sddm-helper
+[ 96%] Automatic moc for target ConfigurationTest
+[ 96%] Built target ConfigurationTest_automoc
+[100%] Built target ConfigurationTest
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/lib/qt5/qml/SddmComponents
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/lib/qt5/qml/SddmComponents/ComboBox.qml
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/lib/qt5/qml/SddmComponents/ImageButton.qml
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/lib/qt5/qml/SddmComponents/Menu.qml
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/lib/qt5/qml/SddmComponents/LayoutBox.qml
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/lib/qt5/qml/SddmComponents/Background.qml
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/lib/qt5/qml/SddmComponents/PictureBox.qml
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/lib/qt5/qml/SddmComponents/PasswordBox.qml
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/lib/qt5/qml/SddmComponents/TextBox.qml
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/lib/qt5/qml/SddmComponents/Button.qml
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/lib/qt5/qml/SddmComponents/Clock.qml
+-- Up-to-date: /var/pisi/sddm-0.11.0-2/install/usr/lib/qt5/qml/SddmComponents
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/lib/qt5/qml/SddmComponents/LayoutBox.qml
+-- Up-to-date: /var/pisi/sddm-0.11.0-2/install/usr/lib/qt5/qml/SddmComponents
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/lib/qt5/qml/SddmComponents/TextConstants.qml
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/lib/qt5/qml/SddmComponents/qmldir
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/lib/qt5/qml/SddmComponents/warning.png
+-- Up-to-date: /var/pisi/sddm-0.11.0-2/install/usr/lib/qt5/qml/SddmComponents
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/lib/qt5/qml/SddmComponents/qmldir
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/faces
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/faces/root.face.icon
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/faces/README
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/faces/default.face.icon
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/fi.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/tn.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/un.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/no.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/jo.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/ee.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/fr.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/ps.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/ma.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/nl.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/qc.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/qa.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/cz.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/eg.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/pt.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/mn.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/sa.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/km.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/mx.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/sr.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/iq.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/ge.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/so.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/vn.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/us.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/il.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/is.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/mk.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/uk.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/ar.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/dk.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/gb.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/de.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/bh.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/ru.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/ch.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/th.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/sk.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/ca.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/am.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/az.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/ua.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/be.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/yu.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/it.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/sy.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/ye.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/tr.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/ly.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/cu.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/sd.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/lb.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/lt.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/bg.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/dz.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/by.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/eu.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/zz.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/gr.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/pl.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/hu.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/dj.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/ro.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/si.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/la.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/kw.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/at.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/jp.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/ae.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/kr.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/uy.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/hr.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/es.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/br.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/om.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/flags/se.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/etc/dbus-1/system.d/org.freedesktop.DisplayManager.conf
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/scripts/Xsession
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/scripts/Xsetup
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/man/man1/sddm.1
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/man/man1/sddm-greeter.1
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/man/man5/sddm.conf.5
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/man/man5/sddm-state.conf.5
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/circles
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/circles/README
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/circles/theme.conf
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/circles/circles.jpg
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/circles/Main.qml
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/circles/angle-down.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/circles/metadata.desktop
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/circles/background.png
+-- Up-to-date: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/circles
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/circles/Main.qml
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/circles/metadata.desktop
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/elarun
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/elarun/README
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/elarun/theme.conf
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/elarun/ACKNOWLEDGEMENT
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/elarun/Main.qml
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/elarun/elarun.jpg
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/elarun/images
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/elarun/images/rectangle.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/elarun/images/login_normal.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/elarun/images/system_hibernate.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/elarun/images/system_suspend.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/elarun/images/rectangle_overlay.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/elarun/images/lock.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/elarun/images/user_icon.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/elarun/images/login_active.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/elarun/images/system_reboot.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/elarun/images/system_shutdown.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/elarun/images/system_switch_user.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/elarun/images/session_normal.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/elarun/images/background.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/elarun/angle-down.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/elarun/metadata.desktop
+-- Up-to-date: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/elarun
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/elarun/Main.qml
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/elarun/metadata.desktop
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/maldives
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/maldives/rectangle.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/maldives/README
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/maldives/theme.conf
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/maldives/maldives.jpg
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/maldives/Main.qml
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/maldives/background.jpg
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/maldives/angle-down.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/maldives/metadata.desktop
+-- Up-to-date: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/maldives
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/maldives/Main.qml
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/maldives/metadata.desktop
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/maui
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/maui/README
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/maui/angle-right.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/maui/theme.conf
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/maui/shutdown.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/maui/Main.qml
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/maui/reboot.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/maui/angle-down.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/maui/angle-left.png
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/maui/maui.jpg
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/maui/metadata.desktop
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/maui/background.png
+-- Up-to-date: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/maui
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/maui/Main.qml
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/themes/maui/metadata.desktop
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/translations/cs.qm
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/translations/de.qm
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/translations/et.qm
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/translations/fi.qm
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/translations/fr.qm
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/translations/it.qm
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/translations/ja.qm
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/translations/pl.qm
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/translations/pt_BR.qm
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/translations/pt_PT.qm
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/translations/ro.qm
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/translations/ru.qm
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/translations/tr.qm
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/translations/zh_CN.qm
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/share/sddm/translations/lt.qm
+-- Installing: /var/pisi/sddm-0.11.0-2/install/etc/pam.d/sddm
+-- Installing: /var/pisi/sddm-0.11.0-2/install/etc/pam.d/sddm-autologin
+-- Installing: /var/pisi/sddm-0.11.0-2/install/etc/pam.d/sddm-greeter
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/bin/sddm
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/bin/sddm-greeter
+-- Installing: /var/pisi/sddm-0.11.0-2/install/usr/lib/sddm/sddm-helper
+DEBUG: "make DESTDIR=/var/pisi/sddm-0.11.0-2/install install" dönüş değeri 0
+DEBUG: /usr/bin/sddm [stripped]
+DEBUG: /usr/bin/sddm-greeter [stripped]
+DEBUG: /usr/lib/sddm/sddm-helper [stripped]
+[32mPaket inşa ediliyor: sddm
+[0msddm-0.11.0-2-p01-x86_64.pisi oluşturuluyor... 
+İnşa dizini bırakılıyor
