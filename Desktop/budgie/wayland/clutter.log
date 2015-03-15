@@ -1,217 +1,0 @@
-[01;32mKaynak paket inşa ediliyor: wayland
-[0mDEBUG: ComponentDB initialized in 0.00386095046997.
-DEBUG: RepoDB initialized in 0.000204086303711.
-DEBUG: InstallDB initialized in 0.00607109069824.
-Kaynak http://wayland.freedesktop.org/releases/wayland-1.6.0.tar.xz adresinden indiriliyor
-wayland-1.6.0.tar.xz           (405.0 KB)  0%     13.02 MB/s [00:00:00]wayland-1.6.0.tar.xz           (405.0 KB)  0%     13.02 MB/s [00:00:00]wayland-1.6.0.tar.xz           (405.0 KB)  1%     13.02 MB/s [00:00:00]wayland-1.6.0.tar.xz           (405.0 KB)  1%     13.02 MB/s [00:00:00]wayland-1.6.0.tar.xz           (405.0 KB)  1%     13.02 MB/s [00:00:00]wayland-1.6.0.tar.xz           (405.0 KB)  3%     13.02 MB/s [00:00:00]wayland-1.6.0.tar.xz           (405.0 KB)  3%     34.73 KB/s [00:00:11]wayland-1.6.0.tar.xz           (405.0 KB)  4%     34.73 KB/s [00:00:11]wayland-1.6.0.tar.xz           (405.0 KB)  4%     34.73 KB/s [00:00:11]wayland-1.6.0.tar.xz           (405.0 KB)  4%     34.73 KB/s [00:00:11]wayland-1.6.0.tar.xz           (405.0 KB)  5%     34.73 KB/s [00:00:11]wayland-1.6.0.tar.xz           (405.0 KB)  5%     34.73 KB/s [00:00:11]wayland-1.6.0.tar.xz           (405.0 KB)  5%     34.73 KB/s [00:00:11]wayland-1.6.0.tar.xz           (405.0 KB)  6%     34.73 KB/s [00:00:11]wayland-1.6.0.tar.xz           (405.0 KB)  6%     34.73 KB/s [00:00:11]wayland-1.6.0.tar.xz           (405.0 KB)  6%     34.73 KB/s [00:00:11]wayland-1.6.0.tar.xz           (405.0 KB)  7%     34.73 KB/s [00:00:11]wayland-1.6.0.tar.xz           (405.0 KB)  7%     34.73 KB/s [00:00:11]wayland-1.6.0.tar.xz           (405.0 KB)  7%     34.73 KB/s [00:00:11]wayland-1.6.0.tar.xz           (405.0 KB)  8%     34.73 KB/s [00:00:11]wayland-1.6.0.tar.xz           (405.0 KB)  8%     34.73 KB/s [00:00:11]wayland-1.6.0.tar.xz           (405.0 KB)  8%     34.73 KB/s [00:00:11]wayland-1.6.0.tar.xz           (405.0 KB)  9%     34.73 KB/s [00:00:11]wayland-1.6.0.tar.xz           (405.0 KB)  9%     34.73 KB/s [00:00:11]wayland-1.6.0.tar.xz           (405.0 KB)  9%     34.73 KB/s [00:00:11]wayland-1.6.0.tar.xz           (405.0 KB) 10%     34.73 KB/s [00:00:11]wayland-1.6.0.tar.xz           (405.0 KB) 10%     34.73 KB/s [00:00:11]wayland-1.6.0.tar.xz           (405.0 KB) 10%     34.73 KB/s [00:00:11]wayland-1.6.0.tar.xz           (405.0 KB) 11%     34.73 KB/s [00:00:11]wayland-1.6.0.tar.xz           (405.0 KB) 11%     34.73 KB/s [00:00:11]wayland-1.6.0.tar.xz           (405.0 KB) 11%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 12%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 12%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 12%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 13%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 13%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 13%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 14%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 14%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 14%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 15%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 15%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 15%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 16%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 16%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 16%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 17%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 17%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 17%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 18%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 18%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 18%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 19%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 19%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 19%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 20%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 20%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 20%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 21%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 21%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 21%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 22%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 22%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 23%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 23%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 23%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 24%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 24%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 24%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 25%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 25%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 25%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 26%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 26%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 26%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 27%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 27%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 27%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 28%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 28%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 28%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 29%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 29%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 29%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 30%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 30%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 30%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 31%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 31%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 31%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 32%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 32%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 32%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 33%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 33%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 33%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 34%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 34%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 34%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 35%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 35%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 35%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 36%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 36%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 36%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 37%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 37%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 37%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 38%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 38%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 38%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 39%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 39%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 39%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 40%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 40%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 40%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 41%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 41%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 41%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 42%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 42%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 43%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 43%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 43%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 44%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 44%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 44%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 45%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 45%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 45%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 46%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 46%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 46%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 47%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 47%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 47%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 48%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 48%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 48%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 49%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 49%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 49%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 50%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 50%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 50%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 51%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 51%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 51%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 52%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 52%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 52%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 53%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 53%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 53%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 54%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 54%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 54%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 55%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 55%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 55%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 56%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 56%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 56%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 57%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 57%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 57%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 58%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 58%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 58%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 59%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 59%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 59%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 60%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 60%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 60%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 61%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 61%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 62%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 62%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 63%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 63%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 63%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 64%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 64%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 64%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 65%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 65%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 65%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 66%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 66%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 66%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 67%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 67%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 67%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 68%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 68%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 68%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 69%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 69%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 69%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 70%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 70%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 70%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 71%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 71%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 71%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 72%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 72%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 72%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 73%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 73%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 73%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 74%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 74%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 74%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 75%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 75%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 75%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 76%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 76%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 76%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 77%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 77%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 77%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 78%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 78%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 78%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 79%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 79%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 79%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 80%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 80%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 80%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 81%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 81%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 82%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 82%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 82%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 83%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 83%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 83%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 84%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 84%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 84%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 85%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 85%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 85%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 86%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 86%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 86%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 87%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 87%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 87%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 88%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 88%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 88%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 89%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 89%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 89%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 90%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 90%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 90%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 91%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 91%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 91%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 92%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 92%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 92%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 93%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 93%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 93%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 94%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 94%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 94%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 95%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 95%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 95%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 96%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 96%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 96%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 97%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 97%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 97%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 98%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 98%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 98%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 99%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB) 99%     43.96 KB/s [00:00:08]wayland-1.6.0.tar.xz           (405.0 KB)100%     43.96 KB/s [00:00:08] [tamamlandı]
-Kaynak arşivi depolandı:  /var/cache/pisi/archives/wayland-1.6.0.tar.xz
-[32mArşiv(ler) açılıyor...
-[0m açıldı (/var/pisi/wayland-1.6.0-7/work)
-[32mKaynak yapılandırılıyor...
-[0mSandbox açık inşa...
-GNU Yapılandırma Güncellemesi Bitti.
-GNU Yapılandırma Güncellemesi Bitti.
-Çalışıyor ./configure --prefix=/usr --build=x86_64-pc-linux-gnu --mandir=/usr/share/man --infodir=/usr/share/info --datadir=/usr/share --sysconfdir=/etc --localstatedir=/var --libexecdir=/usr/libexec --disable-static --disable-documentation
-checking for a BSD-compatible install... /usr/bin/install -c
-checking whether build environment is sane... yes
-checking for a thread-safe mkdir -p... /bin/mkdir -p
-checking for gawk... gawk
-checking whether make sets $(MAKE)... yes
-checking whether make supports nested variables... yes
-checking whether make supports nested variables... (cached) yes
-checking for gcc... x86_64-pc-linux-gnu-gcc
-checking whether the C compiler works... yes
-checking for C compiler default output file name... a.out
-checking for suffix of executables... 
-checking whether we are cross compiling... no
-checking for suffix of object files... o
-checking whether we are using the GNU C compiler... yes
-checking whether x86_64-pc-linux-gnu-gcc accepts -g... yes
-checking for x86_64-pc-linux-gnu-gcc option to accept ISO C89... none needed
-checking for style of include used by make... GNU
-checking dependency style of x86_64-pc-linux-gnu-gcc... gcc3
-checking build system type... x86_64-pc-linux-gnu
-checking host system type... x86_64-pc-linux-gnu
-checking how to print strings... printf
-checking for a sed that does not truncate output... /usr/bin/sed
-checking for grep that handles long lines and -e... /bin/grep
-checking for egrep... /bin/grep -E
-checking for fgrep... /bin/grep -F
-checking for ld used by x86_64-pc-linux-gnu-gcc... /usr/bin/ld
-checking if the linker (/usr/bin/ld) is GNU ld... yes
-checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
-checking the name lister (/usr/bin/nm -B) interface... BSD nm
-checking whether ln -s works... yes
-checking the maximum length of command line arguments... 1572864
-checking whether the shell understands some XSI constructs... yes
-checking whether the shell understands "+="... yes
-checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
-checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
-checking for /usr/bin/ld option to reload object files... -r
-checking for objdump... objdump
-checking how to recognize dependent libraries... pass_all
-checking for dlltool... no
-checking how to associate runtime and link libraries... printf %s\n
-checking for ar... ar
-checking for archiver @FILE support... @
-checking for strip... strip
-checking for ranlib... ranlib
-checking command to parse /usr/bin/nm -B output from x86_64-pc-linux-gnu-gcc object... ok
-checking for sysroot... no
-checking for mt... no
-checking if : is a manifest tool... no
-checking how to run the C preprocessor... x86_64-pc-linux-gnu-gcc -E
-checking for ANSI C header files... yes
-checking for sys/types.h... yes
-checking for sys/stat.h... yes
-checking for stdlib.h... yes
-checking for string.h... yes
-checking for memory.h... yes
-checking for strings.h... yes
-checking for inttypes.h... yes
-checking for stdint.h... yes
-checking for unistd.h... yes
-checking for dlfcn.h... yes
-checking for objdir... .libs
-checking if x86_64-pc-linux-gnu-gcc supports -fno-rtti -fno-exceptions... no
-checking for x86_64-pc-linux-gnu-gcc option to produce PIC... -fPIC -DPIC
-checking if x86_64-pc-linux-gnu-gcc PIC flag -fPIC -DPIC works... yes
-checking if x86_64-pc-linux-gnu-gcc static flag -static works... yes
-checking if x86_64-pc-linux-gnu-gcc supports -c -o file.o... yes
-checking if x86_64-pc-linux-gnu-gcc supports -c -o file.o... (cached) yes
-checking whether the x86_64-pc-linux-gnu-gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
-checking whether -lc should be explicitly linked in... no
-checking dynamic linker characteristics... GNU/Linux ld.so
-checking how to hardcode library paths into programs... immediate
-checking whether stripping libraries is possible... yes
-checking if libtool supports shared libraries... yes
-checking whether to build shared libraries... yes
-checking whether to build static libraries... no
-checking for pkg-config... /usr/bin/pkg-config
-checking pkg-config is at least version 0.9.0... yes
-checking for FFI... yes
-checking for accept4... yes
-checking for mkostemp... yes
-checking for posix_fallocate... yes
-checking whether SFD_CLOEXEC is declared... yes
-checking whether TFD_CLOEXEC is declared... yes
-checking whether CLOCK_MONOTONIC is declared... yes
-checking execinfo.h usability... yes
-checking execinfo.h presence... yes
-checking for execinfo.h... yes
-checking expat.h usability... yes
-checking expat.h presence... yes
-checking for expat.h... yes
-checking for XML_ParserCreate in -lexpat... yes
-checking for xsltproc... /usr/bin/xsltproc
-checking for docbook manpages stylesheet... yes
-checking that generated files are newer than configure... done
-configure: creating ./config.status
-config.status: creating Makefile
-config.status: creating cursor/wayland-cursor.pc
-config.status: creating cursor/wayland-cursor-uninstalled.pc
-config.status: creating doc/Makefile
-config.status: creating doc/publican/Makefile
-config.status: creating doc/doxygen/Makefile
-config.status: creating doc/man/Makefile
-config.status: creating src/wayland-server-uninstalled.pc
-config.status: creating src/wayland-client-uninstalled.pc
-config.status: creating src/wayland-scanner-uninstalled.pc
-config.status: creating src/wayland-server.pc
-config.status: creating src/wayland-client.pc
-config.status: creating src/wayland-scanner.pc
-config.status: creating src/wayland-version.h
-config.status: creating config.h
-config.status: executing depfiles commands
-config.status: executing libtool commands
-DEBUG: "./configure --prefix=/usr --build=x86_64-pc-linux-gnu --mandir=/usr/share/man --infodir=/usr/share/info --datadir=/usr/share --sysconfdir=/etc --localstatedir=/var --libexecdir=/usr/libexec --disable-static --disable-documentation" dönüş değeri 0
-[32mKaynak inşa ediliyor...
-[0mSandbox açık inşa...
-Çalışıyor make -j5
-  CC       src/wayland-os.lo
-  CC       src/wayland-util.lo
-  CC       src/connection.lo
-  CC       src/scanner.o
-  CCLD     libwayland-util.la
-  CCLD     wayland-scanner
-  GEN      protocol/wayland-client-protocol.h
-  GEN      protocol/wayland-server-protocol.h
-  GEN      protocol/wayland-protocol.c
-make  all-recursive
-make[1]: Entering directory '/var/pisi/wayland-1.6.0-7/work/wayland-1.6.0'
-make[2]: Entering directory '/var/pisi/wayland-1.6.0-7/work/wayland-1.6.0'
-  CC       src/libwayland_server_la-wayland-shm.lo
-  CC       src/libwayland_server_la-event-loop.lo
-  CC       src/libwayland_server_la-wayland-server.lo
-  CC       protocol/libwayland_client_la-wayland-protocol.lo
-  CC       src/libwayland_client_la-wayland-client.lo
-  CC       protocol/libwayland_server_la-wayland-protocol.lo
-  CC       cursor/libwayland_cursor_la-wayland-cursor.lo
-  CC       cursor/libwayland_cursor_la-os-compatibility.lo
-  CC       cursor/libwayland_cursor_la-xcursor.lo
-  CC       tests/fixed-benchmark.o
-  CC       tests/test-runner.lo
-  CC       tests/test-helpers.lo
-  CC       tests/test-compositor.lo
-  CCLD     libwayland-server.la
-  CCLD     libwayland-client.la
-  CCLD     libwayland-cursor.la
-  CCLD     libtest-runner.la
-  CCLD     fixed-benchmark
-make[2]: Leaving directory '/var/pisi/wayland-1.6.0-7/work/wayland-1.6.0'
-make[1]: Leaving directory '/var/pisi/wayland-1.6.0-7/work/wayland-1.6.0'
-DEBUG: "make -j5" dönüş değeri 0
-[32mPaket test ediliyor...
-[0m[32mKuruluyor...
-[0mSandbox açık inşa...
-Çalışıyor make prefix=/var/pisi/wayland-1.6.0-7/install/usr datadir=/var/pisi/wayland-1.6.0-7/install/usr/share infodir=/var/pisi/wayland-1.6.0-7/install/usr/share/info localstatedir=/var/pisi/wayland-1.6.0-7/install/var mandir=/var/pisi/wayland-1.6.0-7/install/usr/share/man sysconfdir=/var/pisi/wayland-1.6.0-7/install/etc install
-make  install-recursive
-make[1]: Entering directory '/var/pisi/wayland-1.6.0-7/work/wayland-1.6.0'
-make[2]: Entering directory '/var/pisi/wayland-1.6.0-7/work/wayland-1.6.0'
-make[3]: Entering directory '/var/pisi/wayland-1.6.0-7/work/wayland-1.6.0'
- /bin/mkdir -p '/var/pisi/wayland-1.6.0-7/install/usr/lib'
- /bin/sh ./libtool   --mode=install /usr/bin/install -c   libwayland-server.la libwayland-client.la libwayland-cursor.la '/var/pisi/wayland-1.6.0-7/install/usr/lib'
-libtool: install: /usr/bin/install -c .libs/libwayland-server.so.0.1.0 /var/pisi/wayland-1.6.0-7/install/usr/lib/libwayland-server.so.0.1.0
-libtool: install: (cd /var/pisi/wayland-1.6.0-7/install/usr/lib && { ln -s -f libwayland-server.so.0.1.0 libwayland-server.so.0 || { rm -f libwayland-server.so.0 && ln -s libwayland-server.so.0.1.0 libwayland-server.so.0; }; })
-libtool: install: (cd /var/pisi/wayland-1.6.0-7/install/usr/lib && { ln -s -f libwayland-server.so.0.1.0 libwayland-server.so || { rm -f libwayland-server.so && ln -s libwayland-server.so.0.1.0 libwayland-server.so; }; })
-libtool: install: /usr/bin/install -c .libs/libwayland-server.lai /var/pisi/wayland-1.6.0-7/install/usr/lib/libwayland-server.la
-libtool: install: /usr/bin/install -c .libs/libwayland-client.so.0.3.0 /var/pisi/wayland-1.6.0-7/install/usr/lib/libwayland-client.so.0.3.0
-libtool: install: (cd /var/pisi/wayland-1.6.0-7/install/usr/lib && { ln -s -f libwayland-client.so.0.3.0 libwayland-client.so.0 || { rm -f libwayland-client.so.0 && ln -s libwayland-client.so.0.3.0 libwayland-client.so.0; }; })
-libtool: install: (cd /var/pisi/wayland-1.6.0-7/install/usr/lib && { ln -s -f libwayland-client.so.0.3.0 libwayland-client.so || { rm -f libwayland-client.so && ln -s libwayland-client.so.0.3.0 libwayland-client.so; }; })
-libtool: install: /usr/bin/install -c .libs/libwayland-client.lai /var/pisi/wayland-1.6.0-7/install/usr/lib/libwayland-client.la
-libtool: install: (cd /var/pisi/wayland-1.6.0-7/work/wayland-1.6.0; /bin/sh /var/pisi/wayland-1.6.0-7/work/wayland-1.6.0/libtool  --silent --tag CC --mode=relink x86_64-pc-linux-gnu-gcc -Wall -Wextra -Wno-unused-parameter -g -Wstrict-prototypes -Wmissing-prototypes -fvisibility=hidden -I./src -I./src -DICONDIR=\"/usr/share/icons\" -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC -Wl,-O1 -Wl,-z,relro -Wl,--hash-style=gnu -Wl,--as-needed -Wl,--sort-common -o libwayland-cursor.la -rpath /usr/lib cursor/libwayland_cursor_la-wayland-cursor.lo cursor/libwayland_cursor_la-os-compatibility.lo cursor/libwayland_cursor_la-xcursor.lo libwayland-client.la -inst-prefix-dir /var/pisi/wayland-1.6.0-7/install)
-libtool: install: /usr/bin/install -c .libs/libwayland-cursor.so.0.0.0T /var/pisi/wayland-1.6.0-7/install/usr/lib/libwayland-cursor.so.0.0.0
-libtool: install: (cd /var/pisi/wayland-1.6.0-7/install/usr/lib && { ln -s -f libwayland-cursor.so.0.0.0 libwayland-cursor.so.0 || { rm -f libwayland-cursor.so.0 && ln -s libwayland-cursor.so.0.0.0 libwayland-cursor.so.0; }; })
-libtool: install: (cd /var/pisi/wayland-1.6.0-7/install/usr/lib && { ln -s -f libwayland-cursor.so.0.0.0 libwayland-cursor.so || { rm -f libwayland-cursor.so && ln -s libwayland-cursor.so.0.0.0 libwayland-cursor.so; }; })
-libtool: install: /usr/bin/install -c .libs/libwayland-cursor.lai /var/pisi/wayland-1.6.0-7/install/usr/lib/libwayland-cursor.la
- /bin/mkdir -p '/var/pisi/wayland-1.6.0-7/install/usr/bin'
-  /bin/sh ./libtool   --mode=install /usr/bin/install -c wayland-scanner '/var/pisi/wayland-1.6.0-7/install/usr/bin'
-libtool: install: /usr/bin/install -c wayland-scanner /var/pisi/wayland-1.6.0-7/install/usr/bin/wayland-scanner
- /bin/mkdir -p '/var/pisi/wayland-1.6.0-7/install/usr/share/aclocal'
- /usr/bin/install -c -m 644 wayland-scanner.m4 '/var/pisi/wayland-1.6.0-7/install/usr/share/aclocal'
- /bin/mkdir -p '/var/pisi/wayland-1.6.0-7/install/usr/share/wayland'
- /usr/bin/install -c -m 644 wayland-scanner.mk protocol/wayland.xml protocol/wayland.dtd '/var/pisi/wayland-1.6.0-7/install/usr/share/wayland'
- /bin/mkdir -p '/var/pisi/wayland-1.6.0-7/install/usr/include'
- /usr/bin/install -c -m 644 src/wayland-util.h src/wayland-server.h src/wayland-client.h src/wayland-egl.h src/wayland-version.h cursor/wayland-cursor.h '/var/pisi/wayland-1.6.0-7/install/usr/include'
- /bin/mkdir -p '/var/pisi/wayland-1.6.0-7/install/usr/include'
- /usr/bin/install -c -m 644 protocol/wayland-server-protocol.h protocol/wayland-client-protocol.h '/var/pisi/wayland-1.6.0-7/install/usr/include'
- /bin/mkdir -p '/var/pisi/wayland-1.6.0-7/install/usr/lib/pkgconfig'
- /usr/bin/install -c -m 644 src/wayland-client.pc src/wayland-server.pc src/wayland-scanner.pc cursor/wayland-cursor.pc '/var/pisi/wayland-1.6.0-7/install/usr/lib/pkgconfig'
-make[3]: Leaving directory '/var/pisi/wayland-1.6.0-7/work/wayland-1.6.0'
-make[2]: Leaving directory '/var/pisi/wayland-1.6.0-7/work/wayland-1.6.0'
-make[1]: Leaving directory '/var/pisi/wayland-1.6.0-7/work/wayland-1.6.0'
-DEBUG: "make prefix=/var/pisi/wayland-1.6.0-7/install/usr datadir=/var/pisi/wayland-1.6.0-7/install/usr/share infodir=/var/pisi/wayland-1.6.0-7/install/usr/share/info localstatedir=/var/pisi/wayland-1.6.0-7/install/var mandir=/var/pisi/wayland-1.6.0-7/install/usr/share/man sysconfdir=/var/pisi/wayland-1.6.0-7/install/etc install" dönüş değeri 0
-Çalışıyor install -m0644 "COPYING" /var/pisi/wayland-1.6.0-7/install/usr/share/doc/wayland
-DEBUG: "install -m0644 "COPYING" /var/pisi/wayland-1.6.0-7/install/usr/share/doc/wayland" dönüş değeri 0
-DEBUG: /usr/bin/wayland-scanner [stripped]
-DEBUG: /usr/lib/libwayland-cursor.so.0.0.0 [stripped]
-DEBUG: Removing special libtool file: /var/pisi/wayland-1.6.0-7/install/usr/lib/libwayland-server.la
-DEBUG: Removing special libtool file: /var/pisi/wayland-1.6.0-7/install/usr/lib/libwayland-client.la
-DEBUG: /usr/lib/libwayland-server.so.0.1.0 [stripped]
-DEBUG: Removing special libtool file: /var/pisi/wayland-1.6.0-7/install/usr/lib/libwayland-cursor.la
-DEBUG: /usr/lib/libwayland-client.so.0.3.0 [stripped]
-[32mPaket inşa ediliyor: wayland
-[0mwayland-1.6.0-7-p01-x86_64.pisi oluşturuluyor... 
-[32mPaket inşa ediliyor: wayland-devel
-[0mwayland-devel-1.6.0-7-p01-x86_64.pisi oluşturuluyor... 
-İnşa dizini bırakılıyor
