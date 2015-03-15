@@ -10,15 +10,15 @@
         <IsA>app:gui</IsA>
         <Summary>Access to the windowing system</Summary>
         <Description>Access to the windowing system</Description>
-        <Archive sha1sum="1228d3bb2ac948f99a14ed302e78c407b620b1fd" type="tarxz">http://download.kde.org/stable/frameworks/5.6/kwindowsystem-5.6.0.tar.xz</Archive>
+        <Archive sha1sum="d49b39ed177f83bb2f40587a6897f899193e55c4" type="tarxz">http://download.kde.org/stable/frameworks/5.8/kwindowsystem-5.8.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5-tools</Dependency>
         </BuildDependencies>
-        <Patches>
-            <Patch>kdebug-340348.patch</Patch>
+        <!--<Patches>
             <Patch>kdebug-337626.patch</Patch>
-        </Patches>
+            <Patch>kdebug-340348.patch</Patch>
+        </Patches>-->
     </Source>
     <Package>
         <Name>kwindowsystem</Name>
@@ -36,9 +36,6 @@
 
     <Package>
         <Name>kwindowsystem-devel</Name>
-        <RuntimeDependencies>
-            <!--<Dependency>libXfixes</Dependency>-->
-        </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/pkgconfig</Path>
             <Path fileType="headers">/usr/include/KF5</Path>
@@ -46,9 +43,9 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2015-02-11</Date>
-            <Version>5.6.0</Version>
+        <Update release="1">
+            <Date>2015-03-13</Date>
+            <Version>5.8.0</Version>
             <Comment>First Release</Comment>
             <Name>Ayhan Yalçınsoy</Name>
             <Email>ayhanyalcinsoy@pisilinux.org</Email>

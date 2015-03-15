@@ -9,14 +9,16 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 
 def setup():
+    shelltools.makedirs("build")
+    shelltools.cd("build")
     cmaketools.configure("-DCMAKE_INSTALL_PREFIX=/usr \
                           -DCMAKE_BUILD_TYPE=Release \
-                          -DBUILD_HTML_DOCS=OFF \
-                          -DBUILD_MAN_DOCS=OFF", sourceDir=".")
+                          -DBUILD_HTML_DOCS=OFF", sourceDir="..")
 
 def build():
+    shelltools.cd("build")
     cmaketools.make()
 
 def install():
+    shelltools.cd("build")
     cmaketools.rawInstall("DESTDIR=%s" % get.installDIR())
-    #pisitools.dodoc("AUTHORS", "COPYING")

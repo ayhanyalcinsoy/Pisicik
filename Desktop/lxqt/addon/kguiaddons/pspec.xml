@@ -10,7 +10,7 @@
         <IsA>app:gui</IsA>
         <Summary>Addons to QtGui</Summary>
         <Description>Addons to QtGui</Description>
-        <Archive sha1sum="5df5639fb5a476e404b43d92ec0cc9eb90545ac0" type="tarxz">http://download.kde.org/stable/frameworks/5.6/kguiaddons-5.6.0.tar.xz</Archive>
+        <Archive sha1sum="6d7699ed6d70dc0360c7a400e5a92b444a39162f" type="tarxz">http://download.kde.org/stable/frameworks/5.8/kguiaddons-5.8.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
         </BuildDependencies>
@@ -26,14 +26,9 @@
             <Path fileType="data">/usr/share</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>kguiaddons-devel</Name>
-        <RuntimeDependencies>
-<!--
-            <Dependency>qt5-x11extras</Dependency>
--->
-        </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/pkgconfig</Path>
             <Path fileType="headers">/usr/include/KF5</Path>
@@ -42,8 +37,8 @@
 
     <History>
         <Update release="2">
-            <Date>2015-02-11</Date>
-            <Version>5.6.0</Version>
+            <Date>2015-03-13</Date>
+            <Version>5.8.0</Version>
             <Comment>First Release</Comment>
             <Name>Ayhan Yalçınsoy</Name>
             <Email>ayhanyalcinsoy@pisilinux.org</Email>

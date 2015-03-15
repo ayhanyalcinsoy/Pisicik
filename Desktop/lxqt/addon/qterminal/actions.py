@@ -5,15 +5,22 @@
 # See the file http://www.gnu.org/licenses/gpl.txt
 
 from pisi.actionsapi import autotools
+from pisi.actionsapi import shelltools
 from pisi.actionsapi import pisitools
+from pisi.actionsapi import cmaketools
+from pisi.actionsapi import get
+from pisi.actionsapi import qt5
 
 def setup():
-    autotools.configure()
-
+    shelltools.system("qmake-qt5 qterminal.pro")
+    cmaketools.configure("-DCMAKE_INSTALL_PREFIX=/usr \
+		-DCMAKE_BUILD_TYPE=Release \
+		-DUSE_SYSTEM_QXT=OFF \
+		-DUSE_QT5=true")
 def build():
-    autotools.make()
+    qt5.make()
 
 def install():
-    autotools.install()
+    qt5.install()
 
-    pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING", "NEWS", "README")
+    pisitools.dodoc("AUTHORS", "COPYING", "NEWS", "README")
