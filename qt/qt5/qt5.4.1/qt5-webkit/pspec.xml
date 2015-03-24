@@ -1,0 +1,104 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>qt5-webkit</Name>
+        <Homepage>http://qt.digia.com/</Homepage>
+        <Packager>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Packager>
+        <Summary>Classes for a WebKit2 based implementation and a new QML API</Summary>
+        <Description>Classes for a WebKit2 based implementation and a new QML API</Description>
+        <License>LGPLv2.1-linking-exception</License>
+        <Archive sha1sum="6cfebb74d334e77e26ecbe7d6609578eb46ab276" type="tarxz">http://download.qt.io/official_releases/qt/5.4/5.4.1/submodules/qtwebkit-opensource-src-5.4.1.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>at-spi2-core-devel</Dependency>
+            <Dependency>alsa-lib-devel</Dependency>
+            <Dependency>bluez-libs-devel</Dependency>
+            <Dependency>cups-devel</Dependency>
+            <Dependency>fontconfig-devel</Dependency>
+            <Dependency>desktop-file-utils</Dependency>
+            <Dependency>geoclue-devel</Dependency>
+            <Dependency>gperftools-devel</Dependency>
+            <Dependency>fontconfig-devel</Dependency>
+            <Dependency>gst-plugins-base-devel</Dependency>
+            <Dependency>libjpeg-turbo-devel</Dependency>
+            <Dependency>qt5-base-devel</Dependency>
+            <Dependency>qt5-sensors-devel</Dependency>
+            <Dependency>qt5-location-devel</Dependency>
+            <Dependency>qt5-webchannel-devel</Dependency>
+            <Dependency>webp-devel</Dependency>
+            <Dependency>libXcomposite-devel</Dependency>
+            <Dependency>libxslt-devel</Dependency>
+            <Dependency>gtk2-devel</Dependency>
+            <Dependency>harfbuzz-devel</Dependency>
+            <Dependency>leveldb-devel</Dependency>
+            <Dependency>mariadb-client</Dependency>
+            <Dependency>libmng-devel</Dependency>
+            <Dependency>pulseaudio-libs-devel</Dependency>
+            <Dependency>libxcb-devel</Dependency>
+            <Dependency>libxkbcommon-devel</Dependency>
+            <Dependency>mesa-devel</Dependency>
+            <Dependency>libmtdev-devel</Dependency>
+            <Dependency>nss-devel</Dependency>
+            <Dependency>openal-devel</Dependency>
+            <Dependency>pciutils-devel</Dependency>
+            <Dependency>postgresql-lib</Dependency>
+            <Dependency>python-devel</Dependency>
+            <Dependency>ruby-devel</Dependency>
+            <Dependency>sqlite-devel</Dependency>
+            <Dependency>unixODBC-devel</Dependency>
+            <Dependency>xcb-proto</Dependency>
+            <Dependency>xcb-util-devel</Dependency>
+            <Dependency>xcb-util-image</Dependency>
+            <Dependency>xcb-util-keysyms-devel</Dependency>
+            <Dependency>xcb-util-wm</Dependency>
+            <Dependency>gst-plugins-good</Dependency>
+            <Dependency>gst-plugins-bad</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <!--<Patch>1.patch</Patch>
+            <Patch>qtwebkit-opensource-src-5.4.0-mutexlocker.patch</Patch>
+            <Patch>qtwebkit-opensource-src-5.2.0-pluginpath.patch</Patch>
+            <Patch>qtwebkit-opensource-src-5.2.0-save_memory.patch</Patch>
+            <Patch>qtwebkit-opensource-src-5.2.1-no_rpath.patch</Patch>-->
+            <!--<Patch>webkit-commit-142567.patch</Patch>-->
+            <!--<Patch>qtwebkit-opensource-src-5.0.1-debuginfo.patch</Patch>-->
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>qt5-webkit</Name>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="library">/usr/lib/qt5/</Path>
+            <Path fileType="executable">/usr/lib/qt5/bin/</Path>
+            <Path fileType="executable">/usr/bin</Path>
+        </Files>
+        <RuntimeDependencies>
+            <Dependency>qt5-base</Dependency>
+        </RuntimeDependencies>
+    </Package>
+
+    <Package>
+        <Name>qt5-webkit-devel</Name>
+        <Files>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+            <Path fileType="headers">/usr/include/qt5/</Path>
+        </Files>
+        <RuntimeDependencies>
+            <Dependency>qt5-base</Dependency>
+        </RuntimeDependencies>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2015-02-25</Date>
+            <Version>5.4.1</Version>
+            <Comment>First release</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
