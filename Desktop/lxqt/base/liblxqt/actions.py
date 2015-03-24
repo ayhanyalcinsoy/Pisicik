@@ -12,6 +12,9 @@ def setup():
     shelltools.makedirs("build")
     shelltools.cd("build")
     cmaketools.configure("-DCMAKE_INSTALL_PREFIX=/usr \
+                          -DCMAKE_BUILD_TYPE=Release \
+                          -DLXQT_ETC_XDG_DIR==/usr/share/cmake/qt5xdg \
+                          -DKF5WindowSystem_DIR=/usr/lib/cmake/KF5WindowSystem \
                           -DLXQT_LIBRARY_DIRS=lib", sourceDir="..")
 def build():
     shelltools.cd("build")

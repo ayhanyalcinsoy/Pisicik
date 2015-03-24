@@ -22,6 +22,9 @@
             <Path fileType="data">/usr/share/desktop-directories</Path>
             <Path fileType="doc">/usr/share/doc/</Path>
         </Files>
+        <Conflicts>
+            <Package>lxmenu-data</Package>
+        </Conflicts>
     </Package>
     <History>
         <Update release="3">

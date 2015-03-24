@@ -14,9 +14,9 @@ from pisi.actionsapi import qt5
 def setup():
     shelltools.system("qmake-qt5 qterminal.pro")
     cmaketools.configure("-DCMAKE_INSTALL_PREFIX=/usr \
-		-DCMAKE_BUILD_TYPE=Release \
-		-DUSE_SYSTEM_QXT=OFF \
-		-DUSE_QT5=true")
+		          -DCMAKE_BUILD_TYPE=Release \
+		          -DUSE_SYSTEM_QXT=OFF \
+		          -DUSE_QT5=true")
 def build():
     qt5.make()
 

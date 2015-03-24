@@ -571,7 +571,7 @@
             <BuildDependencies>
                 <Dependency>cmake</Dependency>
                 <Dependency>libstdc++</Dependency>
-                <Dependency>libdbusmenu-qt-devel</Dependency>
+                <Dependency>libdbusmenu-qt5-devel</Dependency>
                 <Dependency>glibc-devel</Dependency>
                 <Dependency>qt5-base-devel</Dependency>
                 <Dependency>libqtxdg-devel</Dependency>
@@ -2059,54 +2059,6 @@
     </SpecFile>
     <SpecFile>
         <Source>
-            <Name>sddm</Name>
-            <Homepage>https://github.com/sddm</Homepage>
-            <Packager>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Packager>
-            <License>GPLV2</License>
-            <IsA>app:gui</IsA>
-            <PartOf>unknown</PartOf>
-            <Summary xml:lang="en">QML based X11 display manager</Summary>
-            <Description xml:lang="en">SDDM is a modern display manager for X11 aiming to be fast, simple and beatiful. It uses modern technologies like QtQuick, which in turn gives the designer the ability to create smooth, animated user interfaces.</Description>
-            <Archive type="targz" sha1sum="7a4a1c831e2ba7db953391f64af46b297febea0d">https://github.com/sddm/sddm/archive/v0.9.0.tar.gz</Archive>
-            <BuildDependencies>
-                <Dependency>python-docs</Dependency>
-                <Dependency>qt-devel</Dependency>
-            </BuildDependencies>
-            <SourceURI>addon/eski/sddm/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>sddm</Name>
-            <Files>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="library">/usr/include</Path>
-                <Path fileType="config">/etc</Path>
-                <Path fileType="data">/usr/lib/systemd/system/sddm.service</Path>
-                <Path fileType="data">/usr/share/display-managers/mdm.desktop&quot;&gt;</Path>
-            </Files>
-            <Provides>
-                <COMAR script="package.py">System.Package</COMAR>
-            </Provides>
-            <AdditionalFiles>
-                <AdditionalFile target="/etc/conf.d/xdm" permission="0644" owner="root">xdm</AdditionalFile>
-            </AdditionalFiles>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2014-11-15</Date>
-                <Version>0.10.0</Version>
-                <Comment>First Release</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
             <Name>openbox-obsession</Name>
             <Homepage>https://bitbucket.org/fabriceT/obsession</Homepage>
             <Packager>
@@ -2164,7 +2116,7 @@
             <PartOf>desktop.lxqt.addon</PartOf>
             <Summary xml:lang="en">Extra modules and scripts for CMake</Summary>
             <Description xml:lang="en">Extra modules and scripts for CMake</Description>
-            <Archive type="tarxz" sha1sum="1a7e6085719e80202fe8077539457152d1f85d0e">http://download.kde.org/stable/frameworks/5.7/extra-cmake-modules-1.7.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="34a57abe092dce75b7f25808e686fb9175ceafc3">http://download.kde.org/stable/frameworks/5.8/extra-cmake-modules-1.8.0.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>python-sphinx</Dependency>
             </BuildDependencies>
@@ -2178,16 +2130,9 @@
             </Files>
         </Package>
         <History>
-            <Update release="2">
-                <Date>2015-02-11</Date>
-                <Version>1.7.0</Version>
-                <Comment>Version bump</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
             <Update release="1">
-                <Date>2015-02-11</Date>
-                <Version>1.6.1</Version>
+                <Date>2015-03-13</Date>
+                <Version>1.8.1</Version>
                 <Comment>First Release</Comment>
                 <Name>Ayhan Yalçınsoy</Name>
                 <Email>ayhanyalcinsoy@pisilinux.org</Email>
@@ -2441,7 +2386,7 @@
             <Summary xml:lang="tr">Pencere sistemine erişim</Summary>
             <Description xml:lang="en">Access to the windowing system</Description>
             <Description xml:lang="tr">Pencere sistemine erişim</Description>
-            <Archive type="tarxz" sha1sum="079665ed2aaa4e0661ec8a744c6f866c486ea421">http://download.kde.org/stable/frameworks/5.7/kwindowsystem-5.7.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="d49b39ed177f83bb2f40587a6897f899193e55c4">http://download.kde.org/stable/frameworks/5.8/kwindowsystem-5.8.0.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>extra-cmake-modules</Dependency>
                 <Dependency>qt5-tools</Dependency>
@@ -2470,11 +2415,93 @@
         </Package>
         <History>
             <Update release="1">
-                <Date>2015-03-06</Date>
-                <Version>5.7.0</Version>
+                <Date>2015-03-13</Date>
+                <Version>5.8.0</Version>
                 <Comment>First Release</Comment>
                 <Name>Ayhan Yalçınsoy</Name>
                 <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>libdbusmenu-qt5</Name>
+            <Homepage>https://launchpad.net/libdbusmenu-qt</Homepage>
+            <Packager>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Packager>
+            <License>LGPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.lxqt.addon</PartOf>
+            <Summary xml:lang="en">Qt implementation of the DBusMenu spec</Summary>
+            <Description xml:lang="en">libdbusmenu-qt5 library provides a Qt5 implementation of the DBusMenu spec.</Description>
+            <Archive type="tarbz2" sha1sum="308cc53a4a1f2db40f8ffbcfc71e987a4839ec45">https://launchpad.net/libdbusmenu-qt/trunk/0.9.2/+download/libdbusmenu-qt-0.9.2.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>libqjson-devel</Dependency>
+                <Dependency>qt5-base-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">add-qt-library-dir.diff</Patch>
+            </Patches>
+            <SourceURI>addon/libdbusmenu-qt5/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libdbusmenu-qt5</Name>
+            <RuntimeDependencies>
+                <Dependency>qt5-base</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>libdbusmenu-qt5-devel</Name>
+            <Summary xml:lang="en">Development files for libdbusmenu-qt5</Summary>
+            <RuntimeDependencies>
+                <Dependency release="4">libdbusmenu-qt5</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="4">
+                <Date>2015-03-15</Date>
+                <Version>0.9.2</Version>
+                <Comment>rebuild for qt5</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="4">
+                <Date>2014-05-25</Date>
+                <Version>0.9.2</Version>
+                <Comment>rebuild</Comment>
+                <Name>Yusuf Aydemir</Name>
+                <Email>yusuf.aydemir@pisilinux.org</Email>
+            </Update>
+            <Update release="3">
+                <Date>2014-05-08</Date>
+                <Version>0.9.2</Version>
+                <Comment>Rebuild.</Comment>
+                <Name>Serdar Soytetir</Name>
+                <Email>kaptan@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-01-29</Date>
+                <Version>0.9.2</Version>
+                <Comment>Rebuild</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2012-10-29</Date>
+                <Version>0.9.2</Version>
+                <Comment>First release</Comment>
+                <Name>Yusuf Aydemir</Name>
+                <Email>yusuf.aydemir@pisilinux.org</Email>
             </Update>
         </History>
     </SpecFile>
@@ -2611,7 +2638,7 @@
             <PartOf>desktop.lxqt.addon</PartOf>
             <Summary xml:lang="en">Addons to QtGui</Summary>
             <Description xml:lang="en">Addons to QtGui</Description>
-            <Archive type="tarxz" sha1sum="a8c85b3201597bd5cb963261c5acbf9b146f76e1">http://download.kde.org/stable/frameworks/5.7/kguiaddons-5.7.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="6d7699ed6d70dc0360c7a400e5a92b444a39162f">http://download.kde.org/stable/frameworks/5.8/kguiaddons-5.8.0.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>extra-cmake-modules</Dependency>
             </BuildDependencies>
@@ -2637,8 +2664,8 @@
         </Package>
         <History>
             <Update release="2">
-                <Date>2015-03-06</Date>
-                <Version>5.7.0</Version>
+                <Date>2015-03-13</Date>
+                <Version>5.8.0</Version>
                 <Comment>First Release</Comment>
                 <Name>Ayhan Yalçınsoy</Name>
                 <Email>ayhanyalcinsoy@pisilinux.org</Email>
@@ -2690,1252 +2717,4 @@
             </Update>
         </History>
     </SpecFile>
-    <Package>
-        <Name>copyq</Name>
-        <Summary xml:lang="en">Clipboard manager with searchable and editable history.</Summary>
-        <Summary xml:lang="tr">Geçmişte arama düzenleme ve arama yapma yeteneği olan bir pano yöneticisi</Summary>
-        <Description xml:lang="en">Clipboard manager with searchable and editable history.</Description>
-        <Description xml:lang="tr">Geçmişte arama düzenleme ve arama yapma yeteneği olan bir pano yöneticisi</Description>
-        <IsA>app.gui</IsA>
-        <PartOf>desktop.lxqt.addon</PartOf>
-        <License>LGPLv2</License>
-        <RuntimeDependencies>
-            <Dependency>qt5-base</Dependency>
-            <Dependency>libXtst</Dependency>
-            <Dependency>qt5-script</Dependency>
-        </RuntimeDependencies>
-        <History>
-            <Update release="2">
-                <Date>2015-02-12</Date>
-                <Version>2.4.1</Version>
-                <Comment>rebuild for qt5</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@gmail.com</Email>
-            </Update>
-            <Update release="1">
-                <Date>2015-01-07</Date>
-                <Version>2.4.1</Version>
-                <Comment>First release.</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@gmail.com</Email>
-            </Update>
-        </History>
-        <BuildHost>localhost</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>1.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>4139385</InstalledSize>
-        <PackageSize>1062320</PackageSize>
-        <PackageHash>7088acef6cf806d6f0e1919b9e51fc5ce4571814</PackageHash>
-        <InstallTarHash>39ea11cf85608c0119c152e4a03e12c80c28e448</InstallTarHash>
-        <PackageURI>addon/copyq/copyq-2.4.1-2-p01-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>copyq</Name>
-            <Homepage>https://github.com/hluk/CopyQ</Homepage>
-            <Packager>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@gmail.com</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
-        <Name>extra-cmake-modules</Name>
-        <Summary xml:lang="en">Extra modules and scripts for CMake</Summary>
-        <Description xml:lang="en">Extra modules and scripts for CMake</Description>
-        <IsA>app:console</IsA>
-        <PartOf>desktop.lxqt.addon</PartOf>
-        <License>LGPL</License>
-        <History>
-            <Update release="2">
-                <Date>2015-02-11</Date>
-                <Version>1.7.0</Version>
-                <Comment>Version bump</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-            <Update release="1">
-                <Date>2015-02-11</Date>
-                <Version>1.6.1</Version>
-                <Comment>First Release</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-        </History>
-        <BuildHost>localhost</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>1.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>235533</InstalledSize>
-        <PackageSize>48679</PackageSize>
-        <PackageHash>f41fc4cc75f680caa909625593b7a3fc55a04e65</PackageHash>
-        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
-        <PackageURI>addon/extra-cmake-modules/extra-cmake-modules-1.7.0-2-p01-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>extra-cmake-modules</Name>
-            <Homepage>https://projects.kde.org/projects/frameworks/kwindowsystem</Homepage>
-            <Packager>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
-        <Name>kguiaddons</Name>
-        <Summary xml:lang="en">Addons to QtGui</Summary>
-        <Description xml:lang="en">Addons to QtGui</Description>
-        <IsA>app:gui</IsA>
-        <PartOf>desktop.lxqt.addon</PartOf>
-        <License>LGPL</License>
-        <RuntimeDependencies>
-            <Dependency>qt5-base</Dependency>
-            <Dependency>qt5-x11extras</Dependency>
-        </RuntimeDependencies>
-        <History>
-            <Update release="2">
-                <Date>2015-03-06</Date>
-                <Version>5.7.0</Version>
-                <Comment>First Release</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-        </History>
-        <BuildHost>localhost</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>1.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>123660</InstalledSize>
-        <PackageSize>39727</PackageSize>
-        <PackageHash>84e2927988999c479848316dcca6997934f5251a</PackageHash>
-        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
-        <PackageURI>addon/kguiaddons/kguiaddons-5.7.0-2-p01-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>kguiaddons</Name>
-            <Homepage>https://projects.kde.org/projects/frameworks/kguiaddons</Homepage>
-            <Packager>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
-        <Name>kguiaddons-devel</Name>
-        <Summary xml:lang="en">Addons to QtGui</Summary>
-        <Description xml:lang="en">Addons to QtGui</Description>
-        <IsA>app:gui</IsA>
-        <PartOf>programming.devel</PartOf>
-        <License>LGPL</License>
-        <History>
-            <Update release="2">
-                <Date>2015-03-06</Date>
-                <Version>5.7.0</Version>
-                <Comment>First Release</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-        </History>
-        <BuildHost>localhost</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>1.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>45883</InstalledSize>
-        <PackageSize>12826</PackageSize>
-        <PackageHash>4f21694febbe01d2ce4fb86898bce5a19a1df361</PackageHash>
-        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
-        <PackageURI>addon/kguiaddons/kguiaddons-devel-5.7.0-2-p01-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>kguiaddons</Name>
-            <Homepage>https://projects.kde.org/projects/frameworks/kguiaddons</Homepage>
-            <Packager>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
-        <Name>kwindowsystem</Name>
-        <Summary xml:lang="en">Access to the windowing system</Summary>
-        <Summary xml:lang="tr">Pencere sistemine erişim</Summary>
-        <Description xml:lang="en">Access to the windowing system</Description>
-        <Description xml:lang="tr">Pencere sistemine erişim</Description>
-        <IsA>app:gui</IsA>
-        <PartOf>desktop.lxqt.addon</PartOf>
-        <License>LGPL</License>
-        <RuntimeDependencies>
-            <Dependency>qt5-base</Dependency>
-            <Dependency>libXfixes</Dependency>
-            <Dependency>qt5-x11extras</Dependency>
-            <Dependency>xcb-util-keysyms</Dependency>
-        </RuntimeDependencies>
-        <History>
-            <Update release="1">
-                <Date>2015-03-06</Date>
-                <Version>5.7.0</Version>
-                <Comment>First Release</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-        </History>
-        <BuildHost>localhost</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>1.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>422093</InstalledSize>
-        <PackageSize>123628</PackageSize>
-        <PackageHash>b79116b32988dd943ddcb4d6f08f624f15820ecb</PackageHash>
-        <InstallTarHash>11ddc16375b809754b6e78c18a88103a18bb9e40</InstallTarHash>
-        <PackageURI>addon/kwindowsystem/kwindowsystem-5.7.0-1-p01-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>kwindowsystem</Name>
-            <Homepage>https://projects.kde.org/projects/frameworks/kwindowsystem</Homepage>
-            <Packager>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
-        <Name>kwindowsystem-devel</Name>
-        <Summary xml:lang="en">Access to the windowing system</Summary>
-        <Summary xml:lang="tr">Pencere sistemine erişim</Summary>
-        <Description xml:lang="en">Access to the windowing system</Description>
-        <Description xml:lang="tr">Pencere sistemine erişim</Description>
-        <IsA>app:gui</IsA>
-        <PartOf>programming.devel</PartOf>
-        <License>LGPL</License>
-        <History>
-            <Update release="1">
-                <Date>2015-03-06</Date>
-                <Version>5.7.0</Version>
-                <Comment>First Release</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-        </History>
-        <BuildHost>localhost</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>1.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>188324</InstalledSize>
-        <PackageSize>35489</PackageSize>
-        <PackageHash>bea6aad06ad1f6a75651812493a4e5d4b31ae5dc</PackageHash>
-        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
-        <PackageURI>addon/kwindowsystem/kwindowsystem-devel-5.7.0-1-p01-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>kwindowsystem</Name>
-            <Homepage>https://projects.kde.org/projects/frameworks/kwindowsystem</Homepage>
-            <Packager>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
-        <Name>libfm-extra</Name>
-        <Summary xml:lang="en">Core library of PCManFM file manager</Summary>
-        <Description xml:lang="en">libfm is a Core library of PCManFM file manager</Description>
-        <IsA>library</IsA>
-        <PartOf>desktop.lxqt.addon</PartOf>
-        <License>GPL2</License>
-        <RuntimeDependencies>
-            <Dependency>glib2-devel</Dependency>
-        </RuntimeDependencies>
-        <History>
-            <Update release="2">
-                <Date>2015-02-12</Date>
-                <Version>1.2.3</Version>
-                <Comment>rebuild for qt5</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-            <Update release="1">
-                <Date>2014-04-25</Date>
-                <Version>1.2.3</Version>
-                <Comment>First Release</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-        </History>
-        <BuildHost>localhost</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>1.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>54095</InstalledSize>
-        <PackageSize>19864</PackageSize>
-        <PackageHash>8218b82c43378b846d36945c7e85a4ef84f806bc</PackageHash>
-        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
-        <PackageURI>addon/libfm-extra/libfm-extra-1.2.3-2-p01-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>libfm-extra</Name>
-            <Homepage>http://www.lxde.org</Homepage>
-            <Packager>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
-        <Name>libstatgrab</Name>
-        <Summary xml:lang="en">libstatgrab is a library that provides cross platform access to statistics about the system on which it&apos;s run.</Summary>
-        <Summary xml:lang="tr">Çalışan sistem hakkında istatistiklere erişimi sağlayan bir kütüphanedir.</Summary>
-        <Description xml:lang="en">libstatgrab is a library for accessing information from the system for statistical purposes.</Description>
-        <Description xml:lang="tr">libstatgrab, çalışan sistem hakkında istatistiklere erişimi sağlayan kitaplıkları içerir.</Description>
-        <IsA>library</IsA>
-        <PartOf>desktop.lxqt.addon</PartOf>
-        <License>LGPL</License>
-        <History>
-            <Update release="2">
-                <Date>2014-11-07</Date>
-                <Version>0.91</Version>
-                <Comment>version bump</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-            <Update release="1">
-                <Date>2014-05-02</Date>
-                <Version>0.90</Version>
-                <Comment>First Release</Comment>
-                <Name>Vedat Demir</Name>
-                <Email>vedat@pisilinux.org</Email>
-            </Update>
-        </History>
-        <BuildHost>localhost</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>1.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>1094065</InstalledSize>
-        <PackageSize>96578</PackageSize>
-        <PackageHash>920cdd72bd0b8d483fd8c0d958555b6d848a7592</PackageHash>
-        <InstallTarHash>9c52861698f05ed746c3051eaa29235f8e488bb4</InstallTarHash>
-        <PackageURI>addon/libstatgrab/libstatgrab-0.91-2-p01-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>libstatgrab</Name>
-            <Homepage>http://www.i-scream.org/libstatgrab</Homepage>
-            <Packager>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
-        <Name>polkit-qt5</Name>
-        <Summary xml:lang="en">A library that allows developers to access PolicyKit API with a nice Qt-style API</Summary>
-        <Description xml:lang="en">A library that allows developers to access PolicyKit API with a nice Qt-style API</Description>
-        <IsA>app:gui</IsA>
-        <PartOf>desktop.lxqt.addon</PartOf>
-        <License>GPL2</License>
-        <RuntimeDependencies>
-            <Dependency>qt5-base</Dependency>
-        </RuntimeDependencies>
-        <History>
-            <Update release="1">
-                <Date>2015-02-10</Date>
-                <Version>0.112</Version>
-                <Comment>First Release</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-        </History>
-        <BuildHost>localhost</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>1.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>252426</InstalledSize>
-        <PackageSize>66277</PackageSize>
-        <PackageHash>1b4a20c5be6a5a27a1beeddef9e49f02175d7b1c</PackageHash>
-        <InstallTarHash>4a0706af37315a2e3b305ade582372e33f1dd74a</InstallTarHash>
-        <PackageURI>addon/polkit-qt5/polkit-qt5-0.112-1-p01-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>polkit-qt5</Name>
-            <Homepage>http://www.lxde.org</Homepage>
-            <Packager>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
-        <Name>polkit-qt5-devel</Name>
-        <Summary xml:lang="en">A library that allows developers to access PolicyKit API with a nice Qt-style API</Summary>
-        <Description xml:lang="en">A library that allows developers to access PolicyKit API with a nice Qt-style API</Description>
-        <IsA>app:gui</IsA>
-        <PartOf>programming.devel</PartOf>
-        <License>GPL2</License>
-        <RuntimeDependencies>
-            <Dependency>qt5-base-devel</Dependency>
-        </RuntimeDependencies>
-        <History>
-            <Update release="1">
-                <Date>2015-02-10</Date>
-                <Version>0.112</Version>
-                <Comment>First Release</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-        </History>
-        <BuildHost>localhost</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>1.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>78354</InstalledSize>
-        <PackageSize>15217</PackageSize>
-        <PackageHash>51c0befafb3cbe73d64b325251d91fd571c50973</PackageHash>
-        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
-        <PackageURI>addon/polkit-qt5/polkit-qt5-devel-0.112-1-p01-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>polkit-qt5</Name>
-            <Homepage>http://www.lxde.org</Homepage>
-            <Packager>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
-        <Name>qterminal</Name>
-        <Summary xml:lang="en">QT-based multitab terminal emulator.</Summary>
-        <Summary xml:lang="tr">QT-based multitab terminal emulator.</Summary>
-        <Description xml:lang="en">QT-based multitab terminal emulator.</Description>
-        <Description xml:lang="tr">QT-based multitab terminal emulator.</Description>
-        <IsA>app:gui</IsA>
-        <PartOf>desktop.lxqt.addon</PartOf>
-        <License>GPLv2</License>
-        <RuntimeDependencies>
-            <Dependency>qt5-base</Dependency>
-            <Dependency>qtermwidget</Dependency>
-        </RuntimeDependencies>
-        <History>
-            <Update release="1">
-                <Date>2015-03-06</Date>
-                <Version>0.6.0</Version>
-                <Comment>First Release</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-        </History>
-        <BuildHost>localhost</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>1.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>459086</InstalledSize>
-        <PackageSize>143027</PackageSize>
-        <PackageHash>b34c3401d1a37623ef302a12c3570e40e8f28088</PackageHash>
-        <InstallTarHash>56eb6b538c05df0f6264a9c64f89439efc1a071b</InstallTarHash>
-        <PackageURI>addon/qterminal/qterminal-0.6.0-1-p01-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>qterminal</Name>
-            <Homepage>https://github.com/qterminal‎</Homepage>
-            <Packager>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
-        <Name>qtermwidget</Name>
-        <Summary xml:lang="en">Terminal widget for Qt</Summary>
-        <Summary xml:lang="tr">Qt tabanlı uygulamalar için basit bir terminal modulü</Summary>
-        <Description xml:lang="en">A simple terminal widget for using with Qt based applications</Description>
-        <IsA>library</IsA>
-        <IsA>app:gui</IsA>
-        <PartOf>desktop.lxqt.addon</PartOf>
-        <License>GPLv2</License>
-        <RuntimeDependencies>
-            <Dependency>qt5-base</Dependency>
-        </RuntimeDependencies>
-        <History>
-            <Update release="6">
-                <Date>2015-03-06</Date>
-                <Version>0.6.0</Version>
-                <Comment>Version bump.</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-            <Update release="5">
-                <Date>2014-06-19</Date>
-                <Version>20140619</Version>
-                <Comment>Version bump.</Comment>
-                <Name>Marcin Bojara</Name>
-                <Email>marcin@pisilinux.org</Email>
-            </Update>
-            <Update release="4">
-                <Date>2014-06-01</Date>
-                <Version>20121230</Version>
-                <Comment>Release bump.</Comment>
-                <Name>Kamil Atlı</Name>
-                <Email>suvari@pisilinux.org</Email>
-            </Update>
-            <Update release="3">
-                <Date>2013-09-19</Date>
-                <Version>20121230</Version>
-                <Comment>Release bump.</Comment>
-                <Name>Serdar Soytetir</Name>
-                <Email>kaptan@pisilinux.org</Email>
-            </Update>
-            <Update release="2">
-                <Date>2013-08-26</Date>
-                <Version>20121230</Version>
-                <Comment>Release bump.</Comment>
-                <Name>Serdar Soytetir</Name>
-                <Email>kaptan@pisilinux.org</Email>
-            </Update>
-            <Update release="1">
-                <Date>2012-12-30</Date>
-                <Version>20121230</Version>
-                <Comment>First release</Comment>
-                <Name>Serdar Soytetir</Name>
-                <Email>kaptan@pisilinux.org</Email>
-            </Update>
-        </History>
-        <BuildHost>localhost</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>1.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>729883</InstalledSize>
-        <PackageSize>210558</PackageSize>
-        <PackageHash>15448b9e28d591f771ea70164155a7bd84752340</PackageHash>
-        <InstallTarHash>0a9b0d8d4f0da76de9d680e3674407ac7cb6ce56</InstallTarHash>
-        <PackageURI>addon/qtermwidget/qtermwidget-0.6.0-6-p01-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>qtermwidget</Name>
-            <Homepage>https://github.com/qterminal/qtermwidget</Homepage>
-            <Packager>
-                <Name>PisiLinux Community</Name>
-                <Email>admins@pisilinux.org</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
-        <Name>qtermwidget-devel</Name>
-        <Summary xml:lang="en">Development files for qtermwidget</Summary>
-        <Summary xml:lang="tr">qtermwidget için geliştirme dosyaları</Summary>
-        <Description xml:lang="en">A simple terminal widget for using with Qt based applications</Description>
-        <IsA>library</IsA>
-        <IsA>app:gui</IsA>
-        <PartOf>programming.devel</PartOf>
-        <License>GPLv2</License>
-        <RuntimeDependencies>
-            <Dependency release="6">qtermwidget</Dependency>
-            <Dependency>qt5-base-devel</Dependency>
-        </RuntimeDependencies>
-        <History>
-            <Update release="6">
-                <Date>2015-03-06</Date>
-                <Version>0.6.0</Version>
-                <Comment>Version bump.</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-            <Update release="5">
-                <Date>2014-06-19</Date>
-                <Version>20140619</Version>
-                <Comment>Version bump.</Comment>
-                <Name>Marcin Bojara</Name>
-                <Email>marcin@pisilinux.org</Email>
-            </Update>
-            <Update release="4">
-                <Date>2014-06-01</Date>
-                <Version>20121230</Version>
-                <Comment>Release bump.</Comment>
-                <Name>Kamil Atlı</Name>
-                <Email>suvari@pisilinux.org</Email>
-            </Update>
-            <Update release="3">
-                <Date>2013-09-19</Date>
-                <Version>20121230</Version>
-                <Comment>Release bump.</Comment>
-                <Name>Serdar Soytetir</Name>
-                <Email>kaptan@pisilinux.org</Email>
-            </Update>
-            <Update release="2">
-                <Date>2013-08-26</Date>
-                <Version>20121230</Version>
-                <Comment>Release bump.</Comment>
-                <Name>Serdar Soytetir</Name>
-                <Email>kaptan@pisilinux.org</Email>
-            </Update>
-            <Update release="1">
-                <Date>2012-12-30</Date>
-                <Version>20121230</Version>
-                <Comment>First release</Comment>
-                <Name>Serdar Soytetir</Name>
-                <Email>kaptan@pisilinux.org</Email>
-            </Update>
-        </History>
-        <BuildHost>localhost</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>1.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>20524</InstalledSize>
-        <PackageSize>7547</PackageSize>
-        <PackageHash>dba315bdc535ddfb600df18bb570d08cd6eec089</PackageHash>
-        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
-        <PackageURI>addon/qtermwidget/qtermwidget-devel-0.6.0-6-p01-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>qtermwidget</Name>
-            <Homepage>https://github.com/qterminal/qtermwidget</Homepage>
-            <Packager>
-                <Name>PisiLinux Community</Name>
-                <Email>admins@pisilinux.org</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
-        <Name>compton-conf</Name>
-        <Summary xml:lang="en">GUI configuration tool for compton X composite manager.</Summary>
-        <Summary xml:lang="tr">Compton X kompozit yöneticisi için GUI yapılandırma aracı.</Summary>
-        <Description xml:lang="en">GUI configuration tool for compton X composite manager.</Description>
-        <Description xml:lang="tr">X Kompozit yöneticisi yapılandırma (compton&apos;dan için).</Description>
-        <IsA>app:gui</IsA>
-        <PartOf>desktop.lxqt.base</PartOf>
-        <License>GPLv2</License>
-        <RuntimeDependencies>
-            <Dependency>qt5-base</Dependency>
-            <Dependency>libconfig</Dependency>
-        </RuntimeDependencies>
-        <History>
-            <Update release="3">
-                <Date>2015-02-28</Date>
-                <Version>28012015</Version>
-                <Comment>compiled with qt5</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-            <Update release="2">
-                <Date>2014-11-07</Date>
-                <Version>0.1.0</Version>
-                <Comment>rebuild</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-            <Update release="1">
-                <Date>2014-05-06</Date>
-                <Version>0.1.0</Version>
-                <Comment>First Release</Comment>
-                <Name>Vedat Demir</Name>
-                <Email>v.demir@mail.com</Email>
-            </Update>
-        </History>
-        <BuildHost>localhost</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>1.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>113844</InstalledSize>
-        <PackageSize>31604</PackageSize>
-        <PackageHash>9a73de7dc1c616d82c3ade8df7ee1de5e31b7230</PackageHash>
-        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
-        <PackageURI>base/compton-conf/compton-conf-28012015-3-p01-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>compton-conf</Name>
-            <Homepage>http://www.lxde.org</Homepage>
-            <Packager>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
-        <Name>libfm-qt5</Name>
-        <Summary xml:lang="en">Core library of PCManFM file manager</Summary>
-        <Description xml:lang="en">libfm is a Core library of PCManFM file manager</Description>
-        <IsA>library</IsA>
-        <PartOf>desktop.lxqt.base</PartOf>
-        <License>GPL2</License>
-        <RuntimeDependencies>
-            <Dependency>atk</Dependency>
-            <Dependency>gtk2</Dependency>
-            <Dependency>cairo</Dependency>
-            <Dependency>libfm-extra</Dependency>
-            <Dependency>pango</Dependency>
-            <Dependency>libexif</Dependency>
-            <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>lxqt-menu-cache</Dependency>
-        </RuntimeDependencies>
-        <Conflicts>
-            <Package>libfm-qt</Package>
-        </Conflicts>
-        <History>
-            <Update release="4">
-                <Date>2015-02-09</Date>
-                <Version>1.2.3</Version>
-                <Comment>compiled with qt5</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-            <Update release="3">
-                <Date>2014-04-25</Date>
-                <Version>1.2.3</Version>
-                <Comment>version bump</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-            <Update release="1">
-                <Date>2014-04-25</Date>
-                <Version>1.2.0</Version>
-                <Comment>First Release</Comment>
-                <Name>Vedat Demir</Name>
-                <Email>vedat@pisilinux.org</Email>
-            </Update>
-        </History>
-        <BuildHost>localhost</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>1.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>2359189</InstalledSize>
-        <PackageSize>511019</PackageSize>
-        <PackageHash>f8fcf9ae4c1a9a420f4742f088e92a882458a56f</PackageHash>
-        <InstallTarHash>255274b60dee3f09e31e6993de0a9f446a9ae107</InstallTarHash>
-        <PackageURI>base/libfm-qt5/libfm-qt5-1.2.3-4-p01-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>libfm-qt5</Name>
-            <Homepage>http://www.lxde.org</Homepage>
-            <Packager>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
-        <Name>libfm-qt5-devel</Name>
-        <Summary xml:lang="en">Development headers for libfm-qt</Summary>
-        <Description xml:lang="en">libfm is a Core library of PCManFM file manager</Description>
-        <IsA>library</IsA>
-        <PartOf>programming.devel</PartOf>
-        <License>GPL2</License>
-        <RuntimeDependencies>
-            <Dependency>gtk2-devel</Dependency>
-        </RuntimeDependencies>
-        <History>
-            <Update release="4">
-                <Date>2015-02-09</Date>
-                <Version>1.2.3</Version>
-                <Comment>compiled with qt5</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-            <Update release="3">
-                <Date>2014-04-25</Date>
-                <Version>1.2.3</Version>
-                <Comment>version bump</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-            <Update release="1">
-                <Date>2014-04-25</Date>
-                <Version>1.2.0</Version>
-                <Comment>First Release</Comment>
-                <Name>Vedat Demir</Name>
-                <Email>vedat@pisilinux.org</Email>
-            </Update>
-        </History>
-        <BuildHost>localhost</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>1.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>229596</InstalledSize>
-        <PackageSize>38274</PackageSize>
-        <PackageHash>4b4aa47009352e2777dbe146e6f3f49b4801e30c</PackageHash>
-        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
-        <PackageURI>base/libfm-qt5/libfm-qt5-devel-1.2.3-4-p01-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>libfm-qt5</Name>
-            <Homepage>http://www.lxde.org</Homepage>
-            <Packager>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
-        <Name>liblxqt</Name>
-        <Summary xml:lang="en">Common base library for LXQt components.</Summary>
-        <Summary xml:lang="tr">Çoğu lxde-qt bileşenleri için ortak temel kitaplıklar.</Summary>
-        <Description xml:lang="en">Core utility library for all LXDE-Qt components</Description>
-        <Description xml:lang="tr">liblxqt çoğu lxde-qt bileşenleri için ortak temel kitaplıklar içerir.</Description>
-        <IsA>library</IsA>
-        <PartOf>desktop.lxqt.base</PartOf>
-        <License>GPL2</License>
-        <RuntimeDependencies>
-            <Dependency>qt5-base</Dependency>
-            <Dependency>libqtxdg</Dependency>
-            <Dependency>kwindowsystem</Dependency>
-        </RuntimeDependencies>
-        <History>
-            <Update release="3">
-                <Date>2015-02-09</Date>
-                <Version>0.9.0</Version>
-                <Comment>version bump. and compiled with qt5</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-            <Update release="2">
-                <Date>2014-10-21</Date>
-                <Version>0.8.0</Version>
-                <Comment>version bump. and add tr support</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-            <Update release="1">
-                <Date>2014-04-25</Date>
-                <Version>0.7.0</Version>
-                <Comment>First Release</Comment>
-                <Name>Vedat Demir</Name>
-                <Email>vedat@pisilinux.org</Email>
-            </Update>
-        </History>
-        <BuildHost>localhost</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>1.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>708791</InstalledSize>
-        <PackageSize>153458</PackageSize>
-        <PackageHash>751fab21b9a0c6d1cebfa948331f6aa6dba84e0b</PackageHash>
-        <InstallTarHash>dbc0bac34b187bd754029c325b34d3530f832d84</InstallTarHash>
-        <PackageURI>base/liblxqt/liblxqt-0.9.0-3-p01-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>liblxqt</Name>
-            <Homepage>http://www.lxqt.org</Homepage>
-            <Packager>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
-        <Name>liblxqt-devel</Name>
-        <Summary xml:lang="en">Development headers for liblxqt</Summary>
-        <Description xml:lang="en">Core utility library for all LXDE-Qt components</Description>
-        <Description xml:lang="tr">liblxqt çoğu lxde-qt bileşenleri için ortak temel kitaplıklar içerir.</Description>
-        <IsA>library</IsA>
-        <PartOf>programming.devel</PartOf>
-        <License>GPL2</License>
-        <RuntimeDependencies>
-            <Dependency>qt5-base-devel</Dependency>
-            <Dependency>qt5-x11extras-devel</Dependency>
-        </RuntimeDependencies>
-        <History>
-            <Update release="3">
-                <Date>2015-02-09</Date>
-                <Version>0.9.0</Version>
-                <Comment>version bump. and compiled with qt5</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-            <Update release="2">
-                <Date>2014-10-21</Date>
-                <Version>0.8.0</Version>
-                <Comment>version bump. and add tr support</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-            <Update release="1">
-                <Date>2014-04-25</Date>
-                <Version>0.7.0</Version>
-                <Comment>First Release</Comment>
-                <Name>Vedat Demir</Name>
-                <Email>vedat@pisilinux.org</Email>
-            </Update>
-        </History>
-        <BuildHost>localhost</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>1.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>60327</InstalledSize>
-        <PackageSize>14850</PackageSize>
-        <PackageHash>23228cec37462db63d514383e483ac6772eab645</PackageHash>
-        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
-        <PackageURI>base/liblxqt/liblxqt-devel-0.9.0-3-p01-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>liblxqt</Name>
-            <Homepage>http://www.lxqt.org</Homepage>
-            <Packager>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
-        <Name>liblxqt-mount-devel</Name>
-        <Summary xml:lang="en">Development headers for liblxqt-mount</Summary>
-        <Description xml:lang="en">Core utility library for all LXDE-Qt components</Description>
-        <Description xml:lang="tr">liblxqt-mount, LXQt bileşenleri için ortak temel kitaplıklar içerir.</Description>
-        <IsA>library</IsA>
-        <PartOf>programming.devel</PartOf>
-        <License>GPL2</License>
-        <History>
-            <Update release="3">
-                <Date>2015-02-09</Date>
-                <Version>0.9.0</Version>
-                <Comment>Version Bump and compiled with qt5</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-            <Update release="2">
-                <Date>2014-10-21</Date>
-                <Version>0.8.0</Version>
-                <Comment>Version Bump</Comment>
-                <Name>Vedat Demir</Name>
-                <Email>vedat@pisilinux.org</Email>
-            </Update>
-            <Update release="1">
-                <Date>2014-04-25</Date>
-                <Version>0.7.0</Version>
-                <Comment>First Release</Comment>
-                <Name>Vedat Demir</Name>
-                <Email>vedat@pisilinux.org</Email>
-            </Update>
-        </History>
-        <BuildHost>localhost</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>1.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>9042</InstalledSize>
-        <PackageSize>3908</PackageSize>
-        <PackageHash>04c66e4fce186898d2188107bb90ef6fbb48e86b</PackageHash>
-        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
-        <PackageURI>base/liblxqt-mount/liblxqt-mount-devel-0.9.0-3-p01-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>liblxqt-mount</Name>
-            <Homepage>http://www.lxde.org</Homepage>
-            <Packager>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
-        <Name>liblxqt-mount</Name>
-        <Summary xml:lang="en">Common base library for LXQt components.</Summary>
-        <Summary xml:lang="tr">LXQt bileşenler için ortak bir temel kütüphane.</Summary>
-        <Description xml:lang="en">Core utility library for all LXDE-Qt components</Description>
-        <Description xml:lang="tr">liblxqt-mount, LXQt bileşenleri için ortak temel kitaplıklar içerir.</Description>
-        <IsA>library</IsA>
-        <PartOf>desktop.lxqt.base</PartOf>
-        <License>GPL2</License>
-        <RuntimeDependencies>
-            <Dependency>qt5-base</Dependency>
-        </RuntimeDependencies>
-        <History>
-            <Update release="3">
-                <Date>2015-02-09</Date>
-                <Version>0.9.0</Version>
-                <Comment>Version Bump and compiled with qt5</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-            <Update release="2">
-                <Date>2014-10-21</Date>
-                <Version>0.8.0</Version>
-                <Comment>Version Bump</Comment>
-                <Name>Vedat Demir</Name>
-                <Email>vedat@pisilinux.org</Email>
-            </Update>
-            <Update release="1">
-                <Date>2014-04-25</Date>
-                <Version>0.7.0</Version>
-                <Comment>First Release</Comment>
-                <Name>Vedat Demir</Name>
-                <Email>vedat@pisilinux.org</Email>
-            </Update>
-        </History>
-        <BuildHost>localhost</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>1.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>127798</InstalledSize>
-        <PackageSize>40522</PackageSize>
-        <PackageHash>165af3d57851cfa9b61a3cde62719cffb748ec18</PackageHash>
-        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
-        <PackageURI>base/liblxqt-mount/liblxqt-mount-0.9.0-3-p01-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>liblxqt-mount</Name>
-            <Homepage>http://www.lxde.org</Homepage>
-            <Packager>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
-        <Name>libqtxdg</Name>
-        <Summary xml:lang="en">Library providing freedesktop.org specs implementations for Qt.</Summary>
-        <Description xml:lang="en">Library providing freedesktop.org specs implementations for Qt.</Description>
-        <IsA>library</IsA>
-        <PartOf>desktop.lxqt.base</PartOf>
-        <License>GPL2</License>
-        <RuntimeDependencies>
-            <Dependency>qt5-base</Dependency>
-        </RuntimeDependencies>
-        <History>
-            <Update release="3">
-                <Date>2015-02-09</Date>
-                <Version>1.1.0</Version>
-                <Comment>version bump and compiled with qt5</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-            <Update release="2">
-                <Date>2014-11-10</Date>
-                <Version>1.0.0</Version>
-                <Comment>version bump.</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-            <Update release="1">
-                <Date>2014-04-25</Date>
-                <Version>0.5.3</Version>
-                <Comment>First Release</Comment>
-                <Name>Vedat Demir</Name>
-                <Email>vedat@pisilinux.org</Email>
-            </Update>
-        </History>
-        <BuildHost>localhost</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>1.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>327231</InstalledSize>
-        <PackageSize>96891</PackageSize>
-        <PackageHash>92fae5b9cd9b58d1312350c549d8d58e17186e6c</PackageHash>
-        <InstallTarHash>09f64a5620b66a37d781e38ce146d591c34c7639</InstallTarHash>
-        <PackageURI>base/libqtxdg/libqtxdg-1.1.0-3-p01-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>libqtxdg</Name>
-            <Homepage>http://www.lxqt.org</Homepage>
-            <Packager>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
-        <Name>libqtxdg-devel</Name>
-        <Summary xml:lang="en">Development headers for libqtxdg</Summary>
-        <Description xml:lang="en">Library providing freedesktop.org specs implementations for Qt.</Description>
-        <IsA>library</IsA>
-        <PartOf>programming.devel</PartOf>
-        <License>GPL2</License>
-        <RuntimeDependencies>
-            <Dependency>qt5-base-devel</Dependency>
-        </RuntimeDependencies>
-        <History>
-            <Update release="3">
-                <Date>2015-02-09</Date>
-                <Version>1.1.0</Version>
-                <Comment>version bump and compiled with qt5</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-            <Update release="2">
-                <Date>2014-11-10</Date>
-                <Version>1.0.0</Version>
-                <Comment>version bump.</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-            <Update release="1">
-                <Date>2014-04-25</Date>
-                <Version>0.5.3</Version>
-                <Comment>First Release</Comment>
-                <Name>Vedat Demir</Name>
-                <Email>vedat@pisilinux.org</Email>
-            </Update>
-        </History>
-        <BuildHost>localhost</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>1.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>39753</InstalledSize>
-        <PackageSize>10333</PackageSize>
-        <PackageHash>bcfde2a1c008a8cd81c7e6eb35ef0bb7014fdfba</PackageHash>
-        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
-        <PackageURI>base/libqtxdg/libqtxdg-devel-1.1.0-3-p01-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>libqtxdg</Name>
-            <Homepage>http://www.lxqt.org</Homepage>
-            <Packager>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
-        <Name>lxqt-about</Name>
-        <Summary xml:lang="en">LXQt about dialog.</Summary>
-        <Summary xml:lang="tr">LXQt hakkında bilgi.</Summary>
-        <Description xml:lang="en">About dialog of LXDE-Qt</Description>
-        <Description xml:lang="tr">LXDE-Qt hakkında bilgi içerir.</Description>
-        <IsA>app:gui</IsA>
-        <PartOf>desktop.lxqt.base</PartOf>
-        <License>GPL2</License>
-        <RuntimeDependencies>
-            <Dependency>liblxqt</Dependency>
-            <Dependency>qt5-base</Dependency>
-        </RuntimeDependencies>
-        <History>
-            <Update release="3">
-                <Date>2015-02-10</Date>
-                <Version>0.9.0</Version>
-                <Comment>version bump and compiled qt5</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-            <Update release="2">
-                <Date>2014-11-07</Date>
-                <Version>0.8.0</Version>
-                <Comment>version bump</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-            <Update release="1">
-                <Date>2014-05-02</Date>
-                <Version>0.7.0</Version>
-                <Comment>First Release</Comment>
-                <Name>Vedat Demir</Name>
-                <Email>vedat@pisilinux.org</Email>
-            </Update>
-        </History>
-        <BuildHost>localhost</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>1.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>36800</InstalledSize>
-        <PackageSize>12760</PackageSize>
-        <PackageHash>3364df3088a2d199a541cd17e1b2568cc174bb55</PackageHash>
-        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
-        <PackageURI>base/lxqt-about/lxqt-about-0.9.0-3-p01-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>lxqt-about</Name>
-            <Homepage>http://www.lxde.org</Homepage>
-            <Packager>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
-        <Name>lxqt-menu-cache-devel</Name>
-        <Summary xml:lang="en">Development files for lxqt-menu-cache</Summary>
-        <Description xml:lang="en">Library used to read freedesktop.org menus</Description>
-        <IsA>app</IsA>
-        <PartOf>programming.devel</PartOf>
-        <License>GPL2</License>
-        <History>
-            <Update release="3">
-                <Date>2015-02-10</Date>
-                <Version>1.0.0</Version>
-                <Comment>rebuild for qt5</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-            <Update release="2">
-                <Date>2014-11-07</Date>
-                <Version>1.0.0</Version>
-                <Comment>version bump</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-            <Update release="1">
-                <Date>2014-05-02</Date>
-                <Version>0.5.1</Version>
-                <Comment>First Release</Comment>
-                <Name>Vedat Demir</Name>
-                <Email>vedat@pisilinux.org</Email>
-            </Update>
-        </History>
-        <BuildHost>localhost</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>1.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>6358</InstalledSize>
-        <PackageSize>3403</PackageSize>
-        <PackageHash>19ebc68ade9f3782581ccc43dc724e7b8000e5eb</PackageHash>
-        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
-        <PackageURI>base/lxqt-menu-cache/lxqt-menu-cache-devel-1.0.0-3-p01-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>lxqt-menu-cache</Name>
-            <Homepage>http://lxde.org</Homepage>
-            <Packager>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
-        <Name>lxqt-menu-cache</Name>
-        <Summary xml:lang="en">freedesktop.org desktop menus for LXDE</Summary>
-        <Description xml:lang="en">Library used to read freedesktop.org menus</Description>
-        <IsA>app</IsA>
-        <PartOf>desktop.lxqt.base</PartOf>
-        <License>GPL2</License>
-        <RuntimeDependencies>
-            <Dependency>libfm-extra</Dependency>
-        </RuntimeDependencies>
-        <Conflicts>
-            <Package>libmenu-cache</Package>
-        </Conflicts>
-        <History>
-            <Update release="3">
-                <Date>2015-02-10</Date>
-                <Version>1.0.0</Version>
-                <Comment>rebuild for qt5</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-            <Update release="2">
-                <Date>2014-11-07</Date>
-                <Version>1.0.0</Version>
-                <Comment>version bump</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-            <Update release="1">
-                <Date>2014-05-02</Date>
-                <Version>0.5.1</Version>
-                <Comment>First Release</Comment>
-                <Name>Vedat Demir</Name>
-                <Email>vedat@pisilinux.org</Email>
-            </Update>
-        </History>
-        <BuildHost>localhost</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>1.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>140913</InstalledSize>
-        <PackageSize>44981</PackageSize>
-        <PackageHash>4064e83b5e90c921432423e28f7385279298ded0</PackageHash>
-        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
-        <PackageURI>base/lxqt-menu-cache/lxqt-menu-cache-1.0.0-3-p01-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>lxqt-menu-cache</Name>
-            <Homepage>http://lxde.org</Homepage>
-            <Packager>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Packager>
-        </Source>
-    </Package>
 </PISI>

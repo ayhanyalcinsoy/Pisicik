@@ -19,7 +19,6 @@
         <Name>libqtxdg</Name>
         <RuntimeDependencies>
             <Dependency>qt5-base</Dependency>
-           <!-- <Dependency>qtmimetypes</Dependency>-->
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -30,7 +29,6 @@
         <Name>libqtxdg-devel</Name>
         <Summary>Development headers for libqtxdg</Summary>
         <RuntimeDependencies>
-           <!--<Dependency>qtmimetypes</Dependency>-->
             <Dependency>qt5-base-devel</Dependency>
         </RuntimeDependencies>
         <Files>

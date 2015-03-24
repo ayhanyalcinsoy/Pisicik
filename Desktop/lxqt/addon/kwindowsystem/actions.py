@@ -20,7 +20,7 @@ def setup():
 def build():
     shelltools.cd("build")
     cmaketools.make()
-    #pisitools.dosed("CMakeFiles/Export/_usr/lib/cmake/KF5WindowSystem/KF5WindowSystemTargets.cmake", "/include/KF5/KWindowSystem", "usr/include/KF5/KWindowSystem")
+    #pisitools.dosed("CMakeFiles/Export/lib/cmake/KF5WindowSystem/KF5WindowSystemTargets.cmake", "/include/KF5/KWindowSystem", "usr/include/KF5/KWindowSystem")
 
 def install():
     shelltools.cd("build")
