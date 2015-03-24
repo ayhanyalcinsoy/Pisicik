@@ -13,8 +13,10 @@ def setup():
     autotools.configure("--disable-static \
                          --with-harfbuzz=no")
 
+    pisitools.dosed("libtool", " -shared ", "-Wl,-O1,--as-needed\0/g")
+
 def build():
-    autotools.make()
+    autotools.make("-j1 V=1")
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())

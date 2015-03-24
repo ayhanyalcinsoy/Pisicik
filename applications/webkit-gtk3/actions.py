@@ -12,30 +12,26 @@ from pisi.actionsapi import shelltools
 shelltools.export("XDG_DATA_HOME", get.workDIR())
 pisitools.flags.replace("-ggdb3", "-g")
 
-paths = ["JavaScriptCore", "WebCore", "WebKit"]
+#paths = ["JavaScriptCore", "WebCore", "WebKit"]
 docs = ["AUTHORS", "ChangeLog", "COPYING.LIB", "THANKS", \
         "LICENSE-LGPL-2", "LICENSE-LGPL-2.1", "LICENSE"]
 
 def setup():
-    autotools.configure("\
-                         --disable-gtk-doc \
-                         --disable-silent-rules \
-                         --enable-dependency-tracking \
-                         --enable-gamepad \
+    autotools.autoreconf ("-vfi")
+    autotools.configure("--disable-gtk-doc \
+                         --disable-webkit2 \
                          --enable-introspection \
-                         --enable-video \
-                         --enable-webgl \
-                         --with-gnu-ld \
                          --with-gtk=3.0 \
-                        ")
+                         --prefix=/usr \
+                         --libexecdir=/usr/lib/webkit-2.4.8")
 
-    pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")
+    pisitools.dosed("libtool", " -shared ", "-Wl,-O1,--as-needed\0/g")
 
 def build():
-    autotools.make()
+    autotools.make("V=1")
 
 def install():
-    autotools.rawInstall("-j1 DESTDIR=%s" % get.installDIR())
+    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     pisitools.domove("/usr/share/gtk-doc/html", "/usr/share/doc/webkit-gtk3")
 

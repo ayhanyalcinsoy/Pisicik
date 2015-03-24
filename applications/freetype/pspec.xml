@@ -19,6 +19,12 @@
             <Dependency>bzip2</Dependency>
             <Dependency>libpng-devel</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch>env_FT2_SUBPIXEL_HINTING.diff</Patch>
+            <Patch>freetype-2.2.1-enable-valid.patch</Patch>
+            <Patch>freetype-2.5.1-enable-sph.patch</Patch>
+            <Patch>freetype-2.5.1-enable-spr.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>

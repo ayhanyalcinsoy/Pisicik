@@ -11,18 +11,16 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import cmaketools
 
 def setup():
-    cmaketools.configure("-DPORT=GTK \
-                          -DENABLE_WEBKIT2=OFF \
-                          -DCMAKE_BUILD_TYPE=Release \
-                          -DCMAKE_SKIP_RPATH=ON \
-                          -DCMAKE_INSTALL_PREFIX=/usr \
-                          -DLIB_INSTALL_DIR=/usr/lib \
-                          -DLIBEXEC_INSTALL_DIR=/usr/libexec/webkit2gtk-4.0 \
-                          -DENABLE_GTKDOC=OFF \
-                          -DHARFBUZZ_ICU_LIBRARIES=/usr/lib/libharfbuzz-icu.so \
-                          -DFREETYPE2_HEADER_DIR=/usr/include/freetype2")
+    cmaketools.configure("--disable-gtk-doc \
+                         --disable-webkit2 \
+                         --enable-introspection \
+                         --enable-jit \
+                         --enable-introspection \
+                         --with-gtk=3.0 \
+                         --prefix=/usr \
+                         --libexecdir=/usr/lib/webkit-2.4.8")
 
-    #pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")
+    pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")
 
 def build():
     cmaketools.make()
