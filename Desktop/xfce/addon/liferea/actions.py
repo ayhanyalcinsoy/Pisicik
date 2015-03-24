@@ -11,13 +11,15 @@ from pisi.actionsapi import get
 
 
 def setup():
+    #autotools.autoreconf("-vfi")
     autotools.configure("--prefix=/usr \
                          --sysconfdir=/etc \
+                         --enable-libnotify \
                          --localstatedir=/var \
                          --disable-schemas-compile\
                          --disable-silent-rules")
 
-    #pisitools.dosed("libtool"," -shared ", " -Wl,--as-needed -shared ")
+    #pisitools.dosed("libtool"," -shared ", "-Wl, -01 --as-needed -shared ")
 def build():
     autotools.make()
 
