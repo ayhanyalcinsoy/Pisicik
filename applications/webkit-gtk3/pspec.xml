@@ -56,17 +56,18 @@
             <Dependency>libXdmcp-devel</Dependency>
             <Dependency>libffi-devel</Dependency>
             <Dependency>libgudev1-devel</Dependency>
+            <Dependency>libgcrypt-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!--Arch Patches-->
             <Patch>bug140241.patch</Patch>
             <Patch>fix-pretty-quotes.patch</Patch>
             <!--Fedora Patches-->
-            <!--<Patch>webkitgtk-2.4.8-g_object_destroyed.patch</Patch>-->
-           <!-- <Patch>webkitgtk-2.4.8-gcc5.patch</Patch>-->
-            <!--<Patch>webkitgtk-2.4.8-gmutexlocker.patch</Patch>-->
+            <Patch>webkitgtk-2.4.8-g_object_destroyed.patch</Patch>
+            <Patch>webkitgtk-2.4.8-gcc5.patch</Patch>
+            <Patch>webkitgtk-2.4.8-gmutexlocker.patch</Patch>
             <!--<Patch>webkitgtk-2.4.8-plugin_none.patch</Patch>-->
-            <!--<Patch>webkitgtk-2.4.8-user-agent.patch</Patch>-->
+            <Patch>webkitgtk-2.4.8-user-agent.patch</Patch>
         </Patches>
     </Source>
 

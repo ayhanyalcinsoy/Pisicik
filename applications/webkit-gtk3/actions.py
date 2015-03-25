@@ -17,6 +17,8 @@ docs = ["AUTHORS", "ChangeLog", "COPYING.LIB", "THANKS", \
         "LICENSE-LGPL-2", "LICENSE-LGPL-2.1", "LICENSE"]
 
 def setup():
+    shelltools.export("CFLAGS", "-I/usr/include/glib-2.0")
+    shelltools.export("CFLAGS", "-I/usr/lib/glib-2.0/include/")
     autotools.autoreconf ("-vfi")
     autotools.configure("--disable-gtk-doc \
                          --disable-webkit2 \
@@ -28,7 +30,7 @@ def setup():
     pisitools.dosed("libtool", " -shared ", "-Wl,-O1,--as-needed\0/g")
 
 def build():
-    autotools.make("V=1")
+    autotools.make("-j8")
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
