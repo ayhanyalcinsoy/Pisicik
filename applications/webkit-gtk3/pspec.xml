@@ -57,6 +57,8 @@
             <Dependency>libffi-devel</Dependency>
             <Dependency>libgudev1-devel</Dependency>
             <Dependency>libgcrypt-devel</Dependency>
+            <Dependency>gperf</Dependency>
+            <Dependency>libtool</Dependency>
         </BuildDependencies>
         <Patches>
             <!--Arch Patches-->

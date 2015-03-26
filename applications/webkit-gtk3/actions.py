@@ -9,8 +9,9 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 
-shelltools.export("CFLAGS", "-I/usr/include/glib-2.0")
-shelltools.export("CFLAGS", "-I/usr/lib/glib-2.0/include/")
+shelltools.export("CFLAGS", "%s -I/usr/include/glib-2.0" % get.CFLAGS())
+shelltools.export("CFLAGS", "%s -I/usr/lib/glib-2.0/include/" % get.CFLAGS())
+
 shelltools.export("XDG_DATA_HOME", get.workDIR())
 pisitools.flags.replace("-ggdb3", "-g")
 
@@ -19,7 +20,7 @@ docs = ["AUTHORS", "ChangeLog", "COPYING.LIB", "THANKS", \
         "LICENSE-LGPL-2", "LICENSE-LGPL-2.1", "LICENSE"]
 
 def setup():
-    autotools.autoreconf ("-vfi")
+    autotools.autoreconf ("-v")
     autotools.configure("--disable-gtk-doc \
                          --disable-webkit2 \
                          --enable-introspection \
