@@ -8,23 +8,40 @@ from pisi.actionsapi import get
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
-from pisi.actionsapi import cmaketools
+
+shelltools.export("XDG_DATA_HOME", get.workDIR())
+pisitools.flags.replace("-ggdb3", "-g")
+
+paths = ["JavaScriptCore", "WebCore", "WebKit"]
+docs = ["AUTHORS", "ChangeLog", "COPYING.LIB", "THANKS", \
+        "LICENSE-LGPL-2", "LICENSE-LGPL-2.1", "LICENSE"]
 
 def setup():
-    cmaketools.configure("--disable-gtk-doc \
+    autotools.configure("\
+                         --disable-gtk-doc \
+                         --disable-silent-rules \
                          --disable-webkit2 \
+                         --enable-dependency-tracking \
                          --enable-introspection \
-                         --enable-jit \
-                         --enable-introspection \
-                         --with-gtk=3.0 \
-                         --prefix=/usr \
-                         --libexecdir=/usr/lib/webkit-2.4.8")
+                         --enable-video \
+                         --with-gnu-ld \
+                         --with-gtk=2.0 \
+                        ")
 
     pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")
 
 def build():
-    cmaketools.make()
+    autotools.make()
 
 def install():
-    cmaketools.rawInstall("-j1 DESTDIR=%s" % get.installDIR())
+    autotools.rawInstall("-j1 DESTDIR=%s" % get.installDIR())
 
+    pisitools.domove("/usr/share/gtk-doc/html", "/usr/share/doc/webkit-gtk2")
+
+    pisitools.dodoc("NEWS")
+    shelltools.cd("Source")
+    for path in paths:
+        for doc in docs:
+            if shelltools.isFile("%s/%s" % (path, doc)):
+                pisitools.insinto("%s/%s/%s" % (get.docDIR(), get.srcNAME(), path),
+                                  "%s/%s" % (path, doc))
