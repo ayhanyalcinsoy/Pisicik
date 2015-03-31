@@ -10,7 +10,7 @@
         <IsA>app</IsA>
         <Summary>freedesktop.org desktop menus for LXDE</Summary>
         <Description>Library used to read freedesktop.org menus</Description>
-        <Archive sha1sum="2c5b8ffbb0eb20ac8235f904a6e503ea08a036cf" type="tarxz">mirrors://sourceforge/lxde/menu-cache/1.0/menu-cache-1.0.0-rc1.tar.xz</Archive>
+        <Archive sha1sum="e7b3854109f9826472cf9795e924acebe5e27861" type="tarxz">mirrors://sourceforge/lxde/menu-cache/1.0/menu-cache-1.0.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5-base-devel</Dependency>
             <Dependency>gtk-doc</Dependency>
@@ -28,7 +28,7 @@
             <Path fileType="library">/usr/lib</Path>
         </Files>
         <Conflicts>
-            <Package>libmenu-cache</Package>
+            <Package>lxde-menu-cache</Package>
         </Conflicts>
     </Package>
 
@@ -42,6 +42,13 @@
     </Package>
 
     <History>
+		<Update release="4">
+            <Date>2015-03-27</Date>
+            <Version>1.0.0</Version>
+            <Comment>version bump to 1.0.0 from rc</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
         <Update release="3">
             <Date>2015-02-10</Date>
             <Version>1.0.0</Version>
