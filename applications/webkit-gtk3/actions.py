@@ -9,17 +9,16 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 
-shelltools.export("CFLAGS", "%s -I/usr/include/glib-2.0" % get.CFLAGS())
-shelltools.export("CFLAGS", "%s -I/usr/lib/glib-2.0/include/" % get.CFLAGS())
-
 shelltools.export("XDG_DATA_HOME", get.workDIR())
 pisitools.flags.replace("-ggdb3", "-g")
 
-#paths = ["JavaScriptCore", "WebCore", "WebKit"]
+paths = ["JavaScriptCore", "WebCore", "WebKit"]
 docs = ["AUTHORS", "ChangeLog", "COPYING.LIB", "THANKS", \
         "LICENSE-LGPL-2", "LICENSE-LGPL-2.1", "LICENSE"]
 
 def setup():
+    shelltools.export("CFLAGS", "%s -I/usr/include/glib-2.0" % get.CFLAGS())
+    shelltools.export("CFLAGS", "%s -I/usr/lib/glib-2.0/include/" % get.CFLAGS())
     autotools.autoreconf ("-v")
     autotools.configure("--disable-gtk-doc \
                          --disable-webkit2 \
@@ -28,13 +27,13 @@ def setup():
                          --prefix=/usr \
                          --libexecdir=/usr/lib/webkit-2.4.8")
 
-    pisitools.dosed("libtool", " -shared ", "-Wl,-O1,--as-needed\0/g")
+    pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")
 
 def build():
     autotools.make()
 
 def install():
-    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
+    autotools.rawInstall("-j1 DESTDIR=%s" % get.installDIR())
 
     pisitools.domove("/usr/share/gtk-doc/html", "/usr/share/doc/webkit-gtk3")
 
