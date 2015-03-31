@@ -1,0 +1,13 @@
+--- lximage-qt.desktop.in	2015-02-18 02:27:45.000000000 +0200
++++ data/lximage-qt.desktop.in	2015-03-28 00:26:21.616906586 +0200
+@@ -1,8 +1,10 @@
+ [Desktop Entry]
+ Type=Application
+ Name=LXImage
++Name[tr]=LXImage Resim Görüntüleyici
+ GenericName=Image Viewer
+ Comment=The LXQt image viewer
++Comment[tr]=LXQt resim görüntüleyici
+ Icon=lximage-qt
+ Exec=lximage-qt
+ StartupNotify=true
