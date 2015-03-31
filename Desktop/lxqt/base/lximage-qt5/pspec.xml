@@ -17,6 +17,9 @@
             <Dependency>libexif-devel</Dependency>
             <Dependency>libfm-qt5-devel</Dependency>
         </BuildDependencies>
+        <Patches>
+			 <Patch>desktop.patch</Patch>
+        </Patches>
     </Source>
     <Package>
         <Name>lximage-qt5</Name>
@@ -32,9 +35,6 @@
           <Dependency>qt5-x11extras</Dependency>
           <Dependency>pcmanfm-qt5</Dependency>
         </RuntimeDependencies>
-        <AdditionalFiles>
-            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/lximage-qt5.desktop">lximage-qt.desktop</AdditionalFile>
-        </AdditionalFiles>
         <Conflicts>
             <Package>lximage-qt</Package>
         </Conflicts>
