@@ -14,8 +14,9 @@
         <PartOf>desktop.lxde.base</PartOf>
         <Summary>LXDE Display Manager</Summary>
         <Description>LXDM is the future display manager of LXDE.</Description>
-        <Archive sha1sum="2b2bea492617cbc7e7c44c2f196dc6cbdc7d0a49" type="tarxz">/home/PisiLinux/Pisicik/lxdm-0.5.1.tar.xz</Archive>
-        <Archive sha1sum="1934b7f22adc50445a935db817febe4b6ec1a5f2" target="lxdm-a404b4d" type="tarxz">http://source.pisilinux.org/1.0/lxdm-pisilinux-theme.tar.xz</Archive>
+        <!--<Archive sha1sum="2b2bea492617cbc7e7c44c2f196dc6cbdc7d0a49" type="tarxz">/home/PisiLinux/Pisicik/lxdm-0.5.1.tar.xz</Archive>-->
+        <Archive sha1sum="0a91c906b3a0edd181fad74965b22ebaa9891798" type="tarxz">http://cznic.dl.sourceforge.net/project/lxdm/lxdm 0.5.0/lxdm-0.5.0.tar.xz</Archive>
+        <Archive sha1sum="1934b7f22adc50445a935db817febe4b6ec1a5f2" target="lxdm-0.5.0" type="tarxz">http://source.pisilinux.org/1.0/lxdm-pisilinux-theme.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk3-devel</Dependency>
             <Dependency>cairo-devel</Dependency>

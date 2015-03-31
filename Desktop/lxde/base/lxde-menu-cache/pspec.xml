@@ -14,6 +14,9 @@
         <Summary>A library creating and utilizing caches to speed up freedesktop.org application menus</Summary>
         <Description>lxde-menu-cache is a library creating and utilizing caches to speed up freedesktop.org application menus.</Description>
         <Archive sha1sum="2c5b8ffbb0eb20ac8235f904a6e503ea08a036cf" type="tarxz">mirrors://sourceforge/lxde/menu-cache/1.0/menu-cache-1.0.0-rc1.tar.xz</Archive>
+        <Patches>
+            <!--<Patch level="1">menu-cache-0.2.3-fix-str-fmt.patch</Patch>-->
+        </Patches>
     </Source>
 
     <Package>
@@ -26,9 +29,9 @@
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>
-        <Patches>
-            <Patch level="1">menu-cache-0.2.3-fix-str-fmt.patch</Patch>
-        </Patches>
+        <Conflicts>
+            <Package>lxqt-menu-cache</Package>
+        </Conflicts>        
     </Package>
 
     <Package>
