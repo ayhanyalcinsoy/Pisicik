@@ -27,6 +27,7 @@
             <Dependency>libXcomposite-devel</Dependency>
             <Dependency>lm_sensors-devel</Dependency>
             <Dependency>libxcb-devel</Dependency>
+            <Dependency>xcb-util-devel</Dependency>
             <Dependency>network-manager-applet-devel</Dependency>
             <Dependency>libXcomposite-devel</Dependency>
             <Dependency>libstatgrab</Dependency>
@@ -35,7 +36,7 @@
         </BuildDependencies>
         <Patches>
         <!--Fixed menü event and some translations -->
-            <Patch>menu_doesnt_exist.patch</Patch>
+             <Patch>menu_doesnt_exist.patch</Patch>
         </Patches>
     </Source>
     <Package>
