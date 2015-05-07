@@ -1,0 +1,95 @@
+
+    appstream-qt
+    attica-qt5
+    cppcheck
+    djview
+    fcitx-qt5
+    injeqt
+    karchive
+    kcodecs
+    kconfig
+    kcoreaddons
+    kdecoration
+    kdecoration (staging)
+    kdnssd
+    kimageformats
+    kitemmodels
+    kitemviews
+    kjs
+    kplotting
+    kwayland
+    kwayland (staging)
+    kwidgetsaddons
+    libaccounts-qt5
+    libbluedevil-frameworks
+    libdbusmenu-qt5
+    liblightdm-qt5
+    liblxqt-mount
+    libmm-qt5
+    libopenshot
+    libqtxdg
+    librecad
+    libsysstat
+   * lxqt-qtplugin
+    modemmanager-qt
+    networkmanager-qt
+    packagekit-qt5
+    phonon-qt5
+    pokerth
+    pokerth (testing)
+    polkit-qt5
+    poppler-qt5
+    ppsspp-qt
+    pyqt5-common
+    qcachegrind
+    qca-qt5
+    qscintilla-qt5
+    qscintilla-qt5 (testing)
+   * qt5-doc
+   * qt5-imageformats
+  *  qt5-script
+  *  qt5-serialport
+ *   qt5-svg
+ *   qt5-translations
+ *   qt5-wayland
+  *  qt5-x11extras
+   * qt5-xmlpatterns
+    qtfm
+    qtkeychain-qt5
+    quassel-client (testing)
+    quassel-monolithic (testing)
+    rbutil
+    signon
+    sonic-visualiser
+    sonnet
+    sqlitebrowser
+    teamspeak3
+    telepathy-qt5
+    threadweaver
+    tiled
+    transmission-qt
+    wiznote
+    cmake (optional)
+    gcin (optional)
+    openscenegraph (optional)
+    synergy (optional)
+    appstream (make)
+    cmake (make)
+    gcin (make)
+    kapidox (make)
+    libaccounts-qt (make)
+    lightdm (make)
+    libsignon-qt4 (make)
+    lightdm (make)
+    openscenegraph (make)
+    packagekit-qt (make)
+    phonon (make)
+    polkit-qt (make)
+    poppler (make)
+    quassel (testing) (make)
+    signon (make)
+    synergy (make)
+    telepathy-qt (make)
+    transmission (make)
+    ttf-oxygen (make)
+    ttf-oxygen (staging) (make)
