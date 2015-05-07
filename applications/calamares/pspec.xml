@@ -1,0 +1,62 @@
+<PISI>
+    <Source>
+        <Name>calamares</Name>
+        <Homepage>http://www.lxqt.org</Homepage>
+        <Packager>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Packager>
+        <License>GPL2</License>
+        <Icon>calamares</Icon>
+        <IsA>library</IsA>
+        <Summary>Distribution-independent installer framework.</Summary>
+        <Description>Distribution-independent installer framework</Description>
+        <Archive sha1sum="a32189474202d410c00b859474de275022cc8137" type="targz">https://github.com/calamares/calamares/archive/v1.0.1.tar.gz</Archive>
+        <Archive sha1sum="0abcc008344997f243f6831ad2965ac103363abb" target="calamares-1.0.1/src/modules/partition" type="targz">/home/PisiLinux/Masaüstü/Ev Dizini/İndirilenler/partitionmanager.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="2.8.12">cmake</Dependency>
+            <Dependency versionFrom="5.3.0">qt5-declarative-devel</Dependency>
+            <Dependency versionFrom="5.3.0">qt5-svg-devel</Dependency>
+            <Dependency>polkit-qt5-devel</Dependency>
+            <Dependency versionFrom="5.3.0">qt5-base-devel</Dependency>
+            <Dependency>desktop-file-utils</Dependency>
+            <Dependency versionFrom="5.3.0">qt5-tools-devel</Dependency>
+            <Dependency versionFrom="0.0.13">extra-cmake-modules</Dependency>
+            <Dependency>libyaml-devel</Dependency>
+            <Dependency>parted-devel</Dependency>
+            <Dependency>kde5-kcoreaddons-devel</Dependency>
+            <Dependency>kde5-solid-devel</Dependency>
+            <Dependency>kde5-kconfig-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <!--<Patch>lxqtsingleapplication.patch</Patch>-->
+        </Patches>
+    </Source>
+    <Package>
+        <Name>calamares</Name>
+        <RuntimeDependencies>
+            <Dependency>qt5-base</Dependency>
+            <Dependency>qt5-declarative</Dependency>
+            <Dependency>qt5-svg</Dependency>
+            <Dependency>polkit-qt5</Dependency>
+            <Dependency>qt5-tools</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+        </Files>
+        <AdditionalFiles>
+            <!--<AdditionalFile owner="root" permission="0644" target="usr/share/lxqt/translations/liblxqt/liblxqt_tr">liblxqt_tr.qm</AdditionalFile>-->
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2015-05-07</Date>
+            <Version>1.0.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
