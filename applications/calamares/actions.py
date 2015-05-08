@@ -15,7 +15,7 @@ def setup():
                                          -DCMAKE_INSTALL_PREFIX=/usr \
                                          -DWITH_PARTITIONMANAGER=1 \
                                          -DCALAMARES_BOOST_PYTHON3_COMPON= python3 \
-                                         -DWITH_PYTHON=on \
+                                         -DWITH_PYTHON=ON \
                                          -DCMAKE_INSTALL_LIBDIR=lib", sourceDir="..")
 
 def build():
@@ -26,4 +26,5 @@ def install():
     shelltools.cd("build")
     cmaketools.rawInstall("DESTDIR=%s" % get.installDIR())
     shelltools.cd("..")
+    pisitools.insinto("/usr/share/calamares","settings.conf")
     pisitools.dodoc("AUTHORS", "COPYING")

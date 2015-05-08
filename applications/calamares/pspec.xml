@@ -48,7 +48,7 @@
             <Path fileType="data">/usr/share</Path>
         </Files>
         <AdditionalFiles>
-            <!--<AdditionalFile owner="root" permission="0644" target="usr/share/lxqt/translations/liblxqt/liblxqt_tr">liblxqt_tr.qm</AdditionalFile>-->
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/calamares.desktop">calamares.desktop</AdditionalFile>
         </AdditionalFiles>
     </Package>
 
