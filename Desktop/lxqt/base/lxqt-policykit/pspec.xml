@@ -32,6 +32,9 @@
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="localedata">/usr/share/lxqt/translations</Path>
         </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/lxqt/translations/lxqt-policykit-agent/lxqt-policykit-agent_pt.qm">lxqt-policykit-agent_pt.qm</AdditionalFile>
+        </AdditionalFiles>
     </Package>
     <History>
         <Update release="3">

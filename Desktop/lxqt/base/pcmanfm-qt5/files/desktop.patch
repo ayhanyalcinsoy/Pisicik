@@ -14,10 +14,10 @@
 -MimeType=inode/directory;
 -Icon=system-file-manager
 +Comment[tr]=Dosya sistemine göz atın ve dosyaları yönetin
- Categories=FileManager;Utility;Core;Qt;
+-Categories=FileManager;Utility;Core;Qt;
++Categories=FileManager;System;Core;Qt;
 +Exec=/usr/bin/pcmanfm-qt
  StartupNotify=true
 +Terminal=false
 +MimeType=inode/directory;
 +NotShowIn=GNOME;XFCE;KDE;
-\ Dosya sonunda yenisatır yok.

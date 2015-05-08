@@ -36,6 +36,7 @@
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/lxqt-config-powermanagement.desktop">lxqt-config-powermanagement.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/lxqt/translations/lxqt-powermanagement/lxqt-powermanagement_tr.qm">lxqt-powermanagement_tr.qm</AdditionalFile>
         </AdditionalFiles>
     </Package>
     <History>

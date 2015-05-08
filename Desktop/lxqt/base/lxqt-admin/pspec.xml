@@ -29,6 +29,7 @@
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/lxqt-admin-time.desktop">lxqt-admin-time.desktop</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/lxqt-admin-user.desktop">lxqt-admin-user.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/lxqt/translations/lxqt-admin-time/lxqt-admin-time_tr.qm">lxqt-admin-time_tr.qm</AdditionalFile>
         </AdditionalFiles>
     </Package>
     <History>

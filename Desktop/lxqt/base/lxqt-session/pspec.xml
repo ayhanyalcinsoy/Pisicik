@@ -42,6 +42,7 @@
             <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/lxqt-lockscreen.desktop">lxqt-lockscreen.desktop</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/lxqt-shutdown.desktop">lxqt-shutdown.desktop</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/lxqt-suspend.desktop">lxqt-suspend.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/lxqt/translations/lxqt-session/lxqt-config-session_tr.qm">lxqt-config-session_tr.qm</AdditionalFile>
         </AdditionalFiles>
     </Package>
     <History>

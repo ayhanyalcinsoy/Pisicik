@@ -12,9 +12,9 @@ def setup():
     shelltools.makedirs("build")
     shelltools.cd("build")
     cmaketools.configure("-DCMAKE_BUILD_TYPE=release \
-                          -DCMAKE_INSTALL_PREFIX=/usr \
-			  -DUSE_QTMIMETYPES=OFF\
-                          -DUSE_QT5=ON", sourceDir="..")
+			-DCMAKE_INSTALL_PREFIX=/usr \
+			-DUSE_QTMIMETYPES=OFF \
+			-DUSE_QT5=ON", sourceDir="..")
 
 def build():
     shelltools.cd("build")

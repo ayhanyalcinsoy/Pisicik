@@ -69,6 +69,9 @@
             <Path fileType="data">/usr/share</Path>
             <Path fileType="config">/etc/lxqt</Path>
         </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/lxqt/translations/lxqt-panel/lxqt-panel_tr.qm">lxqt-panel_tr.qm</AdditionalFile>
+        </AdditionalFiles>
     </Package>
     <Package>
         <Name>lxqt-panel-devel</Name>

@@ -28,13 +28,16 @@
             <Path fileType="executable">/usr/bin</Path>
         </Files>
         <RuntimeDependencies>
-          <Dependency>qt5-base</Dependency>
-          <Dependency>libexif</Dependency>
-          <Dependency>libfm-qt5</Dependency>
-          <Dependency>libXfixes</Dependency>
-          <Dependency>qt5-x11extras</Dependency>
-          <Dependency>pcmanfm-qt5</Dependency>
+            <Dependency>qt5-base</Dependency>
+            <Dependency>libexif</Dependency>
+            <Dependency>libfm-qt5</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>qt5-x11extras</Dependency>
+            <Dependency>pcmanfm-qt5</Dependency>
         </RuntimeDependencies>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/lximage-qt/translations/lximage-qt_tr.qm">lximage-qt_tr.qm</AdditionalFile>
+        </AdditionalFiles>
         <Conflicts>
             <Package>lximage-qt</Package>
         </Conflicts>

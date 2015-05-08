@@ -9,12 +9,12 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import autotools
 
 def setup():
-    shelltools.system("./autogen.sh")
-    autotools.configure("--disable-static \
+    #shelltools.system("./autogen.sh")
+    autotools.configure("--prefix=/usr \
                          --sysconfdir=/etc \
-                         --enable-debug \
                          --enable-udisks \
-                         --enable-demo")
+                         --disable-static \
+                         --with-gnu-ld")
 
     pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")
 
@@ -23,11 +23,4 @@ def build():
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-    pisitools.remove("/usr/lib/libfm-extra.so")
-    pisitools.remove("/usr/lib/libfm-extra.so.4.0.3")
-    pisitools.remove("/usr/lib/libfm-extra.so.4")
-    pisitools.remove("/usr/include/libfm-1.0/fm-version.h")
-    pisitools.remove("/usr/include/libfm-1.0/fm-extra.h")
-    pisitools.remove("/usr/lib/pkgconfig/libfm-extra.pc")
-    pisitools.remove("/usr/include/libfm-1.0/fm-xml-file.h")
     pisitools.dodoc("AUTHORS", "COPYING")
