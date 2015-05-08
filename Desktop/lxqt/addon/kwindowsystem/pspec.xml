@@ -15,10 +15,6 @@
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5-tools</Dependency>
         </BuildDependencies>
-        <!--<Patches>
-            <Patch>kdebug-337626.patch</Patch>
-            <Patch>kdebug-340348.patch</Patch>
-        </Patches>-->
     </Source>
     <Package>
         <Name>kwindowsystem</Name>
