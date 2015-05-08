@@ -14,7 +14,8 @@ def setup():
     cmaketools.configure("-DCMAKE_BUILD_TYPE=Release \
                                          -DCMAKE_INSTALL_PREFIX=/usr \
                                          -DWITH_PARTITIONMANAGER=1 \
-                                         -DYAMLCPP_INCLUDE_DIR= /usr/include \
+                                         -DCALAMARES_BOOST_PYTHON3_COMPON= python3 \
+                                         -DWITH_PYTHON=on \
                                          -DCMAKE_INSTALL_LIBDIR=lib", sourceDir="..")
 
 def build():

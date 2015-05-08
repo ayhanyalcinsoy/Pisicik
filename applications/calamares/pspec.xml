@@ -27,6 +27,8 @@
             <Dependency>kde5-kcoreaddons-devel</Dependency>
             <Dependency>kde5-solid-devel</Dependency>
             <Dependency>kde5-kconfig-devel</Dependency>
+            <Dependency>libblkid-devel</Dependency>
+            <Dependency>libatasmart-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!--<Patch>lxqtsingleapplication.patch</Patch>-->
