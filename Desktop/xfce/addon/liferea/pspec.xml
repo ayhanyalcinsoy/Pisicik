@@ -17,6 +17,9 @@
         <Archive sha1sum="ffdd505d01473b1ec29a3da292632f474b9b83fb" type="tarbz2">https://github.com/lwindolf/liferea/releases/download/v1.10.14/liferea-1.10.14.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>gconf-devel</Dependency>
+            <Dependency>glib2-devel</Dependency>
+            <Dependency>sqlite-devel</Dependency>
+            <Dependency>libxml2-devel</Dependency>
             <Dependency>libglade-devel</Dependency>
             <Dependency>webkit-gtk2-devel</Dependency>
             <Dependency>webkit-gtk3-devel</Dependency>
@@ -37,17 +40,11 @@
             <Dependency>gobject-introspection-devel</Dependency>
             <Dependency>libpeas-devel</Dependency>
         </BuildDependencies>
-        <!--<Patches>
-            <Patch>browser.patch</Patch>
-            <Patch>node.patch</Patch>
-        </Patches>-->
     </Source>
 
     <Package>
         <Name>liferea</Name>
         <RuntimeDependencies>
-            <Dependency>gconf</Dependency>
-            <Dependency>libglade</Dependency>
             <Dependency>webkit-gtk3</Dependency>
             <Dependency>libsoup</Dependency>
             <Dependency>gtk3</Dependency>
@@ -55,18 +52,16 @@
             <Dependency>cairo</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>libnotify</Dependency>
-            <Dependency>lua</Dependency>
             <Dependency>json-glib</Dependency>
-            <Dependency>libSM</Dependency>
-            <Dependency>libICE</Dependency>
-            <Dependency>libunique</Dependency>
             <Dependency>libxslt</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>gsettings-desktop-schemas</Dependency>
             <Dependency>libindicate-gtk3</Dependency>
             <Dependency>libindicate</Dependency>
             <Dependency>gobject-introspection</Dependency>
             <Dependency>libpeas</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>sqlite</Dependency>
+            <Dependency>libxml2</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
