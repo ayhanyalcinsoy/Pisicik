@@ -11,27 +11,26 @@ from pisi.actionsapi import shelltools
 
 
 def setup():
-    options = "--disable-gtk-doc-html \
-               --disable-gtk-doc \
-               --enable-introspection \
+    options = "-DCMAKE_BUILD_TYPE=Release \
+               -DCMAKE_INSTALL_PREFIX=/usr \
+               -DJSONCPP_LIB_BUILD_SHARED=ON \
+               -DJSONCPP_WITH_TESTS=OFF
               "
                
     if get.buildTYPE() == "_emul32":
-        options += " --libdir=/usr/lib32 \
-                     --bindir=/_emul32/bin \
-                     --sbindir=/_emul32/sbin \
-                   "
+        options += "-DJSONCPP_LIB_DIR=/usr/lib32"
+        
         shelltools.export("CC", "%s -m32" % get.CC())
         shelltools.export("CXX", "%s -m32" % get.CXX())
         shelltools.export("PKG_CONFIG_PATH", "/usr/lib32/pkgconfig")
 
-    autotools.configure(options)
+    cmake.configure(options)
 
 def build():
-    autotools.make()
+    cmake.make()
 
 def install():
-    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
+    cmake.rawInstall("DESTDIR=%s" % get.installDIR())
     
     if get.buildTYPE() == "_emul32":
         pisitools.removeDir("/_emul32")
