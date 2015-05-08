@@ -10,7 +10,9 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import autotools
 
 def setup():
-    autotools.configure("--disable-static")
+    #autotools.autoreconf("-fi")
+    #autotools.aclocal("m4")
+    autotools.configure("--prefix=/usr")
 
 def build():
     autotools.make()

@@ -17,15 +17,17 @@ docs = ["AUTHORS", "ChangeLog", "COPYING.LIB", "THANKS", \
         "LICENSE-LGPL-2", "LICENSE-LGPL-2.1", "LICENSE"]
 
 def setup():
-    shelltools.export("CFLAGS", "%s -I/usr/include/glib-2.0" % get.CFLAGS())
-    shelltools.export("CFLAGS", "%s -I/usr/lib/glib-2.0/include/" % get.CFLAGS())
-    autotools.autoreconf ("-v")
-    autotools.configure("--disable-gtk-doc \
-                         --disable-webkit2 \
+    autotools.configure("\
+                         --disable-gtk-doc \
+                         --disable-silent-rules \
+                         --enable-dependency-tracking \
+                         --enable-gamepad \
                          --enable-introspection \
+                         --enable-video \
+                         --enable-webgl \
+                         --with-gnu-ld \
                          --with-gtk=3.0 \
-                         --prefix=/usr \
-                         --libexecdir=/usr/lib/webkit-2.4.8")
+                        ")
 
     pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")
 

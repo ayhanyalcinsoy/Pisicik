@@ -5,8 +5,8 @@
         <Name>kingsoft-office</Name>
         <Homepage>http://wps-community.org/</Homepage>
         <Packager>
-            <Name>PisiLinux Community</Name>
-            <Email>admins@pisilinux.org</Email>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
         </Packager>
         <License>Zhuhai Kingsoft Office Software Co. Ltd</License>
         <License>GPLv2</License>
@@ -66,8 +66,8 @@
             <Date>2015-03-12</Date>
             <Version>9.1.0.4945</Version>
             <Comment>First release</Comment>
-            <Name>PisiLinux Community</Name>
-            <Email>admins@pisilinux.org</Email>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
         </Update>
     </History>
 </PISI>

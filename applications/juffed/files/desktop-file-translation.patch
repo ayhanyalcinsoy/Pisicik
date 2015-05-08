@@ -1,6 +1,6 @@
 diff -uNBwp juffed.desktop.orig juffed.desktop
 --- juffed.desktop.orig	2010-12-18 20:06:07.001473593 +0100
-+++ juffed.desktop	2010-12-18 20:08:47.995323168 +0100
++++ juffed-0.10.09042015/juffed.desktop	2010-12-18 20:08:47.995323168 +0100
 @@ -5,6 +5,7 @@ Name[pl]=Edytor tekstu JuffEd
  Name[de]=Texteditor JuffEd
  Name[fr]=Éditeur de texte JuffEd

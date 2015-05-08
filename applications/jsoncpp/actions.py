@@ -11,9 +11,9 @@ from pisi.actionsapi import get
 
 def setup():
     cmaketools.configure("-DCMAKE_BUILD_TYPE=Release \
-                     -DCMAKE_INSTALL_PREFIX=/usr \
-                     -DJSONCPP_LIB_BUILD_SHARED=ON \
-                     -DJSONCPP_WITH_TESTS=OFF")
+                          -DCMAKE_INSTALL_PREFIX=/usr \
+                          -DJSONCPP_LIB_BUILD_SHARED=ON \
+                          -DJSONCPP_WITH_TESTS=OFF")
                          
 def build():
     cmaketools.make()

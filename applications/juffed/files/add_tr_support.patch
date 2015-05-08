@@ -1,6 +1,6 @@
 diff -Nuar juffed-0.10.orig/cmake/FileSets.cmake juffed-0.10/cmake/FileSets.cmake
 --- juffed-0.10.orig/cmake/FileSets.cmake	2013-03-30 23:39:28.000000000 +0200
-+++ juffed-0.10/cmake/FileSets.cmake	2014-11-17 11:21:59.310249263 +0200
++++ juffed-0.10.09042015/cmake/FileSets.cmake	2014-11-17 11:21:59.310249263 +0200
 @@ -177,6 +177,7 @@
  	l10n/juffed_sp.ts
  	l10n/juffed_zh.ts
@@ -11,7 +11,7 @@ diff -Nuar juffed-0.10.orig/cmake/FileSets.cmake juffed-0.10/cmake/FileSets.cmak
  SET ( juffed_DEV_HEADERS
 diff -Nuar juffed-0.10.orig/plugins/doclist/doclist_l10n.diff juffed-0.10/plugins/doclist/doclist_l10n.diff
 --- juffed-0.10.orig/plugins/doclist/doclist_l10n.diff	2013-03-30 23:39:28.000000000 +0200
-+++ juffed-0.10/plugins/doclist/doclist_l10n.diff	2014-11-17 11:21:21.635245562 +0200
++++ plugins/doclist/doclist_l10n.diff	2014-11-17 11:21:21.635245562 +0200
 @@ -2,7 +2,7 @@
  ===================================================================
  --- CMakeLists.txt	(revision 232)
