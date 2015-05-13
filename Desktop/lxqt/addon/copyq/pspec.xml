@@ -16,6 +16,8 @@
         <BuildDependencies>
             <Dependency>qt5-base-devel</Dependency>
             <Dependency>libXtst-devel</Dependency>
+            <Dependency>libX11-devel</Dependency>
+            <Dependency>libgcc</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -24,6 +26,8 @@
         <RuntimeDependencies>
             <Dependency>qt5-base</Dependency>
             <Dependency>libXtst</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libX11</Dependency>
             <Dependency>qt5-script</Dependency>
         </RuntimeDependencies>
         <Files>

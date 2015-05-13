@@ -14,6 +14,7 @@
         <BuildDependencies>
             <Dependency>qt5-base</Dependency>
             <Dependency>glib2-devel</Dependency>
+            <Dependency>polkit-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch>systembus-usage.patch</Patch>
@@ -23,6 +24,8 @@
         <Name>polkit-qt5</Name>
         <RuntimeDependencies>
             <Dependency>qt5-base</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>polkit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="doc">/usr/share/doc</Path>
