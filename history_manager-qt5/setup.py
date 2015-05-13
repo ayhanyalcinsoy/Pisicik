@@ -55,11 +55,11 @@ def update_messages():
     for filename in glob.glob1("ui", "*.ui"):
         if FOR_KDE_4:
             os.system("pykde4uic -o ui/ui_%s.py ui/%s -g %s" % (filename.split(".")[0], filename, PROJECT))
-     #UI files for pure-qt       
+     #UI files for pure-qt
     else:
         for filename in glob.glob1("ui", "*.ui"):
-            os.system("pyuic -o ui/ui_%s.py ui/%s -g %s" % (filename.split(".")[0], filename, PROJECT))   
-                     
+            os.system("pyuic5 -o ui/ui_%s.py ui/%s -g %s" % (filename.split(".")[0], filename, PROJECT))
+
 # Collect headers for desktop files
     for filename in glob.glob("resources/*.desktop.in"):
         os.system("intltool-extract --type=gettext/ini %s" % filename)
@@ -116,14 +116,14 @@ class Build(build):
         for filename in glob.glob1("ui", "*.ui"):
             if FOR_KDE_4:
                 os.system("pykde4uic -o build/historymanager/ui_%s.py ui/%s -g %s" % (filename.split(".")[0], filename, PROJECT))
-            # Collect UI for pure-qt        
+            # Collect UI for pure-qt
             else:
                 #for filename in glob.glob1("ui", "*.ui"):
-                    os.system("pyuic -o build/historymanager/ui_%s.py ui/%s -g %s" % (filename.split(".")[0], filename, PROJECT))
+                    os.system("pyuic5 -o build/historymanager/ui_%s.py ui/%s -g %s" % (filename.split(".")[0], filename, PROJECT))
 
         print "Generating RCs..."
         for filename in glob.glob1("resources", "*.qrc"):
-            os.system("pyrcc resources/%s -o build/%s_rc.py" % (filename, filename.split(".")[0]))
+            os.system("pyrcc5 resources/%s -o build/%s_rc.py" % (filename, filename.split(".")[0]))
 
 class Install(install):
     def run(self):
@@ -140,10 +140,10 @@ class Install(install):
         else:
             root_dir = "/usr/share"
             bin_dir = "/usr/bin"
-            
+
         pixmap_dir = os.path.join(root_dir, "pixmap")
         locale_dir = os.path.join(root_dir, "locale")
-                                          
+
         if FOR_KDE_4:
             apps_dir = os.path.join(root_dir, "applications/kde4")
             services_dir = os.path.join(root_dir, "kde4/services")
@@ -161,7 +161,7 @@ class Install(install):
         makeDirs(project_dir)
         if FOR_KDE_4:
             makeDirs(services_dir)
-            
+
          # Install desktop files
         print "Installing desktop files..."
 
@@ -172,7 +172,7 @@ class Install(install):
         if FOR_KDE_4:
             shutil.copy("resources/kcm_%s.desktop" % PROJECT, services_dir)
         shutil.rmtree('build/resources')
-        
+
         # Install codes
         print "Installing codes..."
         os.system("cp -R build/* %s/" % project_dir)
