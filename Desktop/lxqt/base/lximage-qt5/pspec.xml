@@ -15,6 +15,7 @@
             <Dependency>qt5-base-devel</Dependency>
             <Dependency>pcmanfm-qt5-devel</Dependency>
             <Dependency>libexif-devel</Dependency>
+            <Dependency>libX11-devel</Dependency>
             <Dependency>libfm-qt5-devel</Dependency>
         </BuildDependencies>
         <Patches>
@@ -32,15 +33,17 @@
             <Dependency>libexif</Dependency>
             <Dependency>libfm-qt5</Dependency>
             <Dependency>libXfixes</Dependency>
+            <Dependency>libX11</Dependency>
             <Dependency>qt5-x11extras</Dependency>
             <Dependency>pcmanfm-qt5</Dependency>
         </RuntimeDependencies>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/lximage-qt/translations/lximage-qt_tr.qm">lximage-qt_tr.qm</AdditionalFile>
         </AdditionalFiles>
-        <Conflicts>
+        <Replaces>
             <Package>lximage-qt</Package>
-        </Conflicts>
+            <Package>screengrab</Package>
+        </Replaces>
     </Package>
 
     <History>

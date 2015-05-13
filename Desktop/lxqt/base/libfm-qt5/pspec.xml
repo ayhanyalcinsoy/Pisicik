@@ -20,6 +20,8 @@
             <Dependency>gettext-devel</Dependency>
             <Dependency versionFrom="0.21">desktop-file-utils</Dependency>
             <Dependency>libxslt-devel</Dependency>
+            <Dependency>atk-devel</Dependency>
+            <Dependency>dbus-glib-devel</Dependency>
             <Dependency versionFrom="0.13.0">vala-devel</Dependency>
             <Dependency versionFrom="0.102">dbus-glib-devel</Dependency>
             <Dependency versionFrom="1.0.0">lxqt-menu-cache-devel</Dependency>
@@ -45,13 +47,17 @@
         </Files>
         <RuntimeDependencies>
             <Dependency>gtk2</Dependency>
+            <Dependency>atk</Dependency>
             <Dependency>cairo</Dependency>
+            <Dependency>dbus-glib</Dependency>
             <Dependency>libfm-extra</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>libexif</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>lxqt-menu-cache</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>libfm</Package>
+        </Replaces>
     </Package>
     <Package>
         <Name>libfm-qt5-devel</Name>
@@ -64,6 +70,9 @@
             <Path fileType="library">/usr/lib/pkgconfig/libfm-gtk.pc</Path>
             <Path fileType="library">/usr/lib/pkgconfig/libfm.pc</Path>
         </Files>
+        <Replaces>
+            <Package>libfm-devel</Package>
+        </Replaces>
     </Package>
     <Package>
         <Name>libfm-extra</Name>
@@ -71,8 +80,8 @@
             <Dependency>glib2-devel</Dependency>
         </RuntimeDependencies>
         <Files>
-			<Path fileType="library">/usr/lib/libfm-extra.so*</Path>
-			<Path fileType="library">/usr/lib/pkgconfig/libfm-extra.pc</Path>
+	    <Path fileType="library">/usr/lib/libfm-extra.so*</Path>
+	    <Path fileType="library">/usr/lib/pkgconfig/libfm-extra.pc</Path>
             <Path fileType="header">/usr/include/libfm</Path>
         </Files>
     </Package>
