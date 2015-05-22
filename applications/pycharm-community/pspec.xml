@@ -6,7 +6,7 @@
             <Name>Ayhan Yalçınsoy</Name>
             <Email>ayhanyalcinsoy@pisilinux.org</Email>
         </Packager>
-        <License>GPL2</License>
+        <License>Apache</License>
         <Icon>pycharm</Icon>
         <IsA>app</IsA>
         <Summary>Powerful Python and Django IDE. Community edition.</Summary>
