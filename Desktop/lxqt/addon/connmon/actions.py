@@ -3,20 +3,23 @@
 # Licensed under the GNU General Public License, version 3.
 # See the file http://www.gnu.org/copyleft/gpl.txt
 
+
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import autotools
 
 def setup():
-    #shelltools.system("./autogen.sh")
-    autotools.configure("--prefix=/usr \
-                         --sysconfdir=/etc \
-                         --enable-udisks \
-                         --disable-static \
-                         --with-gnu-ld")
-
-    pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")
+    autotools.configure("--prefix=/usr --sysconfdir=/etc --localstatedir=/var \
+	  --bindir=/usr/bin \
+	  --sbindir=/usr/bin \
+          --with-systemdunitdir=/usr/lib/systemd/system \
+          --enable-pptp \
+          --enable-openconnect \
+          --enable-vpnc \
+          --enable-openvpn \
+          --enable-polkit \
+          --enable-client")
 
 def build():
     autotools.make()

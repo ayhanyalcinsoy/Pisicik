@@ -1,0 +1,77 @@
+<PISI>
+    <Source>
+        <Name>connman</Name>
+        <Homepage>https://01.org/connman</Homepage>
+        <Packager>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Packager>
+        <License>GPL2</License>
+        <Icon>connman</Icon>
+        <IsA>app</IsA>
+        <Summary>Wireless LAN network manager</Summary>
+        <Description>Wireless LAN network manager</Description>
+        <Archive sha1sum="d49dd6a2746ca3ef6b6295733445c949af0a4675" type="tarxz">http://www.kernel.org/pub/linux/network/connman/connman-1.29.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>glib2-devel</Dependency>
+            <Dependency>bluez-libs-devel</Dependency>
+            <Dependency>wpa_supplicant</Dependency>
+            <Dependency>openconnect-devel</Dependency>
+            <Dependency>openvpn</Dependency>
+            <Dependency>vpnc</Dependency>
+            <Dependency>ppp-devel</Dependency>
+            <Dependency>pptpclient</Dependency>
+            <Dependency>dbus-devel</Dependency>
+            <Dependency>iptables-devel</Dependency>
+            <Dependency>gnutls-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>allow_group_network.diff</Patch>
+        </Patches>
+    </Source>
+    <Package>
+        <Name>connman</Name>
+        <RuntimeDependencies>
+            <Dependency>glib2</Dependency>
+            <Dependency>bluez-libs</Dependency>
+            <Dependency>wpa_supplicant</Dependency>
+            <Dependency>openconnect</Dependency>
+            <Dependency>openvpn</Dependency>
+            <Dependency>ppp</Dependency>
+            <Dependency>pptpclient</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>iptables</Dependency>
+            <Dependency>gnutls</Dependency>
+            <Dependency>readline</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="data">/etc/dbus-1</Path>
+            <Path fileType="library">/usr/lib</Path>
+        </Files>
+        <Conflicts>
+            <!--<Package>libmenu-cache</Package>-->
+        </Conflicts>
+    </Package>
+
+    <Package>
+        <Name>connman-devel</Name>
+        <Summary>Development files for connman</Summary>
+        <Files>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2015-05-27</Date>
+            <Version>1.29</Version>
+            <Comment>First Release</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
+
