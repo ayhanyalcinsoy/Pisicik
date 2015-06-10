@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Name=Network Management
+Name[tr]=Ağ Yönetimi
+GenericName=Configure network
+GenericName[tr]=Ağ Yapılandırma
+Exec=lxqt-connman-applet
+Icon=preferences-system-network
+Categories=Settings;DesktopSettings;Qt;LXQt;
+OnlyShowIn=LXQt;
+X-LXQt-Need-Tray=true
+X-LXQt-Module=true
+
+TRANSLATIONS_DIR=translations
