@@ -10,8 +10,11 @@
         <IsA>app:gui</IsA>
         <Summary>Access to the windowing system</Summary>
         <Description>Access to the windowing system</Description>
-        <Archive sha1sum="d49b39ed177f83bb2f40587a6897f899193e55c4" type="tarxz">http://download.kde.org/stable/frameworks/5.8/kwindowsystem-5.8.0.tar.xz</Archive>
+        <Archive sha1sum="4b2a8b28317989f6f24ddec9b3abe38351932ab5" type="tarxz">http://download.kde.org/stable/frameworks/5.10/kwindowsystem-5.10.0.tar.xz</Archive>
         <BuildDependencies>
+            <Dependency>libX11-devel</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libxcb-devel</Dependency>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5-tools</Dependency>
         </BuildDependencies>
@@ -19,6 +22,9 @@
     <Package>
         <Name>kwindowsystem</Name>
         <RuntimeDependencies>
+			<Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libxcb</Dependency>
             <Dependency>qt5-base</Dependency>
             <Dependency>libXfixes</Dependency>
             <Dependency>qt5-x11extras</Dependency>
@@ -39,6 +45,13 @@
     </Package>
 
     <History>
+		<Update release="2">
+            <Date>2015-05-23</Date>
+            <Version>5.10.0</Version>
+            <Comment>Version bump</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2015-05-13</Date>
             <Version>5.8.0</Version>
