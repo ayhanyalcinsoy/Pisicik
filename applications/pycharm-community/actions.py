@@ -8,13 +8,13 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import autotools
+
 Workdir="."
 #def setup():
     #autotools.configure("--disable-static")
 
 #def build():
     #autotools.make()
-
 def install():
     pisitools.dodir("/opt/pycharm-community")
     pisitools.dodir("/usr/share/applications")
