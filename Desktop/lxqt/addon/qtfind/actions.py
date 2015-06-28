@@ -15,5 +15,5 @@ WorkDir="."
 def install():
     pisitools.insinto("/usr/bin","qtfind-1.2/usr/bin/qtfind")
     pisitools.insinto("/usr/lib","qtfind-1.2/usr/lib/qtfind_i18n")
-    pisitools.insinto("/usr/share/pcmanfm-qt","qtfind-1.2/usr/share/file-manager/actions")
+    pisitools.insinto("/usr/share/file-manager","qtfind-1.2/usr/share/file-manager/actions")
     pisitools.insinto("/usr/share","qtfind-1.2/usr/share/pixmaps")
