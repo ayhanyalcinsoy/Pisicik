@@ -10,7 +10,7 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.autoreconf("--force --install ")
+    #autotools.autoreconf("--force --install ")
     autotools.configure("--prefix=/usr")
 
 def build():
