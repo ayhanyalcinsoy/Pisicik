@@ -12,8 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Simple GTK3 desktop experience</Summary>
         <Description>Simple GTK3 desktop experience</Description>
-        <Archive sha1sum="272c509e1aec259bfc45e6379f4cd4c82e1c5c37" type="tarxz">https://evolve-os.com/sources/budgie-desktop-8.1.tar.xz</Archive>
-        <!--<Archive sha1sum="7c371adc4a6e554ac8355a6cd495b0f1454d40fa" type="tarxz">https://evolve-os.com/sources/budgie-desktop-8.tar.xz</Archive>-->
+        <Archive sha1sum="b74d9cf7f53b9ca849802087112c6357cf1adfe5" type="tarxz">https://solus-project.com/sources/budgie-desktop-8.2.tar.xz</Archive>
         <BuildDependencies>
              <Dependency>gtk3-devel</Dependency>
              <Dependency>pulseaudio-libs-devel</Dependency>
@@ -25,7 +24,10 @@
              <Dependency>libpeas-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch>budgie_configure.patch</Patch>
+            <Patch level="1">0001-session-Force-gnome-as-XDG_CURRENT_DESKTOP-when-abse.patch</Patch>
+            <Patch level="1">0002-session-Make-Java-Google-Chrome-and-XDG-happy-by-lyi.patch</Patch>
+            <Patch level="1">0003-session-XDG_CURRENT_DESKTOP-is-case-sensitive.-Whoda.patch</Patch>
+            <Patch level="1">0001-Ensure-popovers-close-with-windows-key.patch</Patch>
         </Patches>
     </Source>
         <Package>
