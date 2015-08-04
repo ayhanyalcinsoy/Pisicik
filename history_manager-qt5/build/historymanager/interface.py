@@ -1,9 +1,9 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-#import comar
-#import pisi
-#import time
+import comar
+import pisi
+import time
 
 from PyQt5.QtCore import *
 

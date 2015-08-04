@@ -16,56 +16,56 @@ import sys
 import dbus
 
 # Pds Stuff
-#import historymanager.context as ctx
+import historymanager.context as ctx
 
 # Application Stuff
-#import historymanager.about as about
+import historymanager.about as about
 
 # Qt Stuff
-from PyQt5.QtCore import *
+from PyQt5.QtCore import SIGNAL
 
 # Enable plugin if session is Kde4
-#if ctx.Pds.session == ctx.pds.Kde4:
-    #def CreatePlugin(widget_parent, parent, component_data):
-       # from historymanager.kcmodule import ServiceManager
-        #return HistoryManager(component_data, parent)
-
+if ctx.Pds.session == ctx.pds.Kde4:
+    def CreatePlugin(widget_parent, parent, component_data):
+        from historymanager.kcmodule import ServiceManager
+        return HistoryManager(component_data, parent)
+    
 if __name__ == '__main__':
 
     # DBUS MainLoop
     if not dbus.get_default_main_loop():
         from dbus.mainloop.qt import DBusQtMainLoop
         DBusQtMainLoop(set_as_default = True)
-
+        
     # Pds vs KDE
-    #if ctx.Pds.session == ctx.pds.Kde4:
+    if ctx.Pds.session == ctx.pds.Kde4:
 
         # PyKDE4 Stuff
-     #   from PyKDE4.kdeui import *
-      #  from PyKDE4.kdecore import *
-
+        from PyKDE4.kdeui import *
+        from PyKDE4.kdecore import *
+        
         # Application Stuff
-       # from historymanager.standalone import HistoryManager
-        #from historymanager.about import aboutData
-
+        from historymanager.standalone import HistoryManager
+        from historymanager.about import aboutData
+        
         # Set Commandline arguments
-        #KCmdLineArgs.init(sys.argv, aboutData)
-
+        KCmdLineArgs.init(sys.argv, aboutData)
+        
         # Create a Kapplication instance
-        #app = KApplication()
-
+        app = KApplication()
+        
         # Create Main Widget
-        #mainWindow = HistoryManager(None, aboutData.appName)
-        #mainWindow.show()
+        mainWindow = HistoryManager(None, aboutData.appName)
+        mainWindow.show()
 
-    #else:
+    else:
 
         # Application Stuff
         from historymanager.window import MainManager
 
         # Pds Stuff
-     #   from pds.quniqueapp import QUniqueApplication
-      #  from historymanager.context import KIcon, i18n
+        from pds.quniqueapp import QUniqueApplication
+        from historymanager.context import KIcon, i18n
 
         # Create a QUniqueApllication instance
         app = QUniqueApplication(sys.argv, catalog=about.appName)
@@ -82,4 +82,4 @@ if __name__ == '__main__':
 
     # Run the applications
     app.exec_()
-
+    

@@ -5,17 +5,16 @@ import sys
 #import comar
 
 # Qt Stuff
-from PyQt5.QtCore import Qt
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5 import QtCore, QtGui, QtWidgets, pyqtSignal
 from PyQt5 import QtCore
 #from PyQt4.QtGui import QMessageBox
 #from PyQt4.QtCore import *
 # Add the ptdraft folder path to the sys.path list
 #sys.path.append('/path/to/history_manager/ui/')
 # Application Stuff
-#from uiitem.ui import Ui_HistoryItemWidget
-#from ui_configure import Ui_Configure
-#from ui_mainwindow import Ui_MainManager
+from ui_uiitem import Ui_HistoryItemWidget
+from ui_configure import Ui_Configure
+from ui_mainwindow import Ui_MainManager
 
 from interface import *
 
@@ -25,11 +24,11 @@ ANIMATION_TIME = 200
 DEFAULT_HEIGHT = 16777215
 
 # Pds vs KDE
-#import historymanager.context as ctx
-#if ctx.Pds.session == ctx.pds.Kde4:
- #   from PyKDE4.kdecore import i18n
-#else:
- #   from historymanager.context import i18n
+import historymanager.context as ctx
+if ctx.Pds.session == ctx.pds.Kde4:
+    from PyKDE4.kdecore import i18n
+else:
+    from historymanager.context import i18n
 
 
 class MainManager(QtGui.QWidget):
@@ -71,14 +70,14 @@ class MainManager(QtGui.QWidget):
         self.pface.start()
 
     def connectSignals(self):
-        self.connect(self.pface, loadFetched.connect(PyQt_PyObject), self.loadHistory)
+        self.connect(self.pface, SIGNAL("loadFetched(PyQt_PyObject)"), self.loadHistory)
 
-        self.connect(self.animator, frameChanged.connect(self.animate)
-        self.connect(self.animator, finished.connect(self.animateFinished)
-        self.connect(self.ui.newSnapshotPB, clicked.connect(self.takeSnapshot)
-        self.connect(self.ui.buttonCancelMini, clicked.connect(self.hideEditBox)
-        self.connect(self.ui.aliasLE, textEdited.connect((const QString &), self.setAlias)
-        self.connect(self.ui.configurePB, clicked.connect(self.showConfig)
+        self.connect(self.animator, SIGNAL("frameChanged(int)"), self.animate)
+        self.connect(self.animator, SIGNAL("finished()"), self.animateFinished)
+        self.connect(self.ui.newSnapshotPB, SIGNAL("clicked()"), self.takeSnapshot)
+        self.connect(self.ui.buttonCancelMini, SIGNAL("clicked()"), self.hideEditBox)
+        self.connect(self.ui.aliasLE, SIGNAL("textEdited(const QString &)"), self.setAlias)
+        self.connect(self.ui.configurePB, SIGNAL("clicked()"), self.showConfig)
 
     def showConfig(self):
         self.config.show()
