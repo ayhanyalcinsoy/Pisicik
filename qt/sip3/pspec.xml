@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>SIP is a tool for generating bindings for C++ classes so that they can be used by Python</Summary>
         <Description>SIP is a tool for generating bindings for C and C++ libraries so that they can be used by Python. It takes any C or C++ libraries and converts them into Python extension modules.</Description>
-        <Archive sha1sum="073fd4c48b1ef6a574a67a92782c99f550120e23" type="targz">mirrors://sourceforge/pyqt/sip-4.16.6.tar.gz</Archive>
+        <Archive sha1sum="ec467c1ca9f9ead16be869eccc2e7cae72750d56" type="targz">mirrors://sourceforge/pyqt/sip-4.16.7.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python3</Dependency>
         </BuildDependencies>
@@ -27,19 +27,10 @@
     <Package>
         <Name>sip3</Name>
         <Files>
+            <Path fileType="executable">/usr/bin</Path>
             <Path fileType="executable">/usr/local/bin</Path>
+            <Path fileType="executable">/usr/sbin</Path>
             <Path fileType="doc">/usr/share/doc</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>python-sip3</Name>
-        <Summary>Python 2.x SIP bindings for C and C++ libraries</Summary>
-        <RuntimeDependencies>
-            <Dependency release="current">sip3</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="library">/usr/lib/python2*</Path>
         </Files>
     </Package>
 
@@ -60,7 +51,6 @@
         <Summary>Development files for sip</Summary>
         <RuntimeDependencies>
             <Dependency release="current">sip3</Dependency>
-            <Dependency release="current">python-sip3</Dependency>
             <Dependency release="current">python3-sip3</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -69,8 +59,15 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2015-06-14</Date>
+            <Version>4.16.7</Version>
+            <Comment>Version Bump.</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
         <Update release="1">
-            <Date>2015-04-15</Date>
+            <Date>2015-04-23</Date>
             <Version>4.16.6</Version>
             <Comment>First release</Comment>
             <Name>Ayhan Yalçınsoy</Name>
