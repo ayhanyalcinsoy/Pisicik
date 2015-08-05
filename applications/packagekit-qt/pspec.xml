@@ -1,0 +1,71 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>packagekit-qt</Name>
+        <Homepage>http://www.packagekit.org/</Homepage>
+        <Packager>
+            <Name>Ayhan YALÇINSOY</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Packager>
+        <Summary>D-Bus abstraction layer that allows the session user to manage packages in a secure way using a cross-distro, cross-architecture API.</Summary>
+        <Description>PackageKit is a system designed to make installing and updating software on your computer easier. The primary design goal is to unify all the software graphical tools used in different distributions, and use some of the latest technology like PolicyKit to make the process suck less.</Description>
+        <License>GPLv2+</License>
+        <Archive sha1sum="f0ba5063e63ae1ec13bd57db6accfab28533ffe2" type="tarxz">http://www.freedesktop.org/software/PackageKit/releases/PackageKit-Qt-0.9.5.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="0.9.1">libgcc</Dependency>
+            <Dependency versionFrom="5.4.1">qt5-base-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>packagekit-qt</Name>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/lib/PackageKit</Path>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="data">/etc</Path>
+            <Path fileType="data">/usr/lib/girepository-1.0</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/lib/gnome-settings-daemon-3.0</Path>
+            <Path fileType="data">/usr/lib/python*</Path>
+            <Path fileType="data">/usr/lib/systemd</Path>
+            <Path fileType="data">/usr/share/PackageKit</Path>
+            <Path fileType="data">/usr/share/dbus-1</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/gir-1.0</Path>
+            <Path fileType="data">/usr/share/mime</Path>
+            <Path fileType="data">/usr/share/polkit-1</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="config">/var</Path>
+        </Files>
+        <RuntimeDependencies>
+            <Dependency>libgcc</Dependency>
+            <Dependency>qt5-base</Dependency>
+            <Dependency>qt5-base-devel</Dependency>
+        </RuntimeDependencies>
+    </Package>
+
+    <Package>
+        <Name>packagekit-qt-devel</Name>
+        <Files>
+            <Path fileType="library">/usr/lib/pkgcongig</Path>
+            <Path fileType="headers">/usr/include</Path>
+        </Files>
+        <RuntimeDependencies>
+            <Dependency>packagekit-qt</Dependency>
+        </RuntimeDependencies>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2015-06-11</Date>
+            <Version>0.9.5</Version>
+            <Comment>first release</Comment>
+            <Name>Ayhan YALÇINSOY</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
+    </History>
+
+</PISI>
+
