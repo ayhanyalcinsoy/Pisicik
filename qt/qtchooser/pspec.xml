@@ -13,10 +13,16 @@
         <Summary>Wrap the other Qt tools by searching for different instances of Qt on the system</Summary>
         <Description>Wrap the other Qt tools by searching for different instances of Qt on the system</Description>
         <Archive sha1sum="370c6466e9f5795e6dac8e526a82689a2bbf6fb8" type="targz">http://source.pisilinux.org/1.0/qt-qtchooser-48.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libgcc</Dependency>
+        </BuildDependencies>
     </Source>
 
     <Package>
         <Name>qtchooser</Name>
+        <RuntimeDependencies>
+            <Dependency>libgcc</Dependency>
+        </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="config">/etc</Path>
@@ -36,7 +42,7 @@
 
     <History>
         <Update release="2">
-            <Date>2015-02-15</Date>
+            <Date>2015-06-10</Date>
             <Version>48</Version>
             <Comment>Version bump</Comment>
             <Name>Ayhan Yalçınsoy</Name>
