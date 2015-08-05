@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gnome-packagekit</Name>
+        <Homepage>http://www.packagekit.org</Homepage>
+        <Packager>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app</IsA>
+        <Summary>A PackageKit gui written with GTK</Summary>
+        <Description>The primary design goal is to unify all the software graphical tools used in different distributions, and use some of the latest technology like PolicyKit to make the process suck less.</Description>
+        <Archive sha1sum="d06518abca27df87bcfecffa09394bfdaa3b671d" type="tarxz">http://ftp.gnome.org/pub/gnome/sources/gnome-packagekit/3.13/gnome-packagekit-3.13.92.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>gtk3-devel</Dependency>
+            <Dependency>glib2-devel</Dependency>
+            <Dependency>pango-devel</Dependency>
+            <Dependency>libX11-devel</Dependency>
+            <Dependency>dbus-glib-devel</Dependency>
+            <Dependency>libnotify-devel</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>packagekit-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <!--<Patch level="1">sandbox.patch</Patch>
+            <Patch level="1">tr_translation.patch</Patch>-->
+        </Patches>
+    </Source>
+    <Package>
+        <Name>gnome-packagekit</Name>
+        <RuntimeDependencies>
+            <Dependency>gtk3</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>dbus-glib</Dependency>
+            <Dependency>libnotify</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>packagekit</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="doc">/usr/share/doc/gnome-packagekit</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="data">/usr/share/gnome-packagekit</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/usr/share/omf</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2015-06-16</Date>
+            <Version>3.16.0</Version>
+            <Comment>First release</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
