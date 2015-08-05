@@ -39,7 +39,7 @@
    <item row="0" column="0">
     <widget class="QLabel" name="textLabel1">
      <property name="toolTip">
-      <string>Name of the repository, e.g &lt;b&gt;pardus-devel&lt;/b&gt;</string>
+      <string>Name of the repository, e.g &lt;b&gt;pisi-devel&lt;/b&gt;</string>
      </property>
      <property name="text">
       <string>Repository Name</string>
