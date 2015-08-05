@@ -1,0 +1,90 @@
+--- Docky/Docky/ConfigurationWindow.cs	2011-03-14 17:56:02 +0000
++++ Docky/Docky/ConfigurationWindow.cs	2013-05-12 20:15:37 +0000
+@@ -2,6 +2,7 @@
+ //  Copyright (C) 2009 Jason Smith, Robert Dyer
+ //  Copyright (C) 2010 Chris Szikszoy
+ //  Copyright (C) 2011 Robert Dyer
++//  Copyright (C) 2013 Rico Tzschichholz
+ //
+ //  This program is free software: you can redistribute it and/or modify
+ //  it under the terms of the GNU General Public License as published by
+@@ -27,8 +28,8 @@
+ using Cairo;
+ using Gdk;
+ using GLib;
+-using Gnome;
+ using Gtk;
++using KeyFile;
+ using Mono.Unix;
+
+ using Docky.Interface;
+@@ -508,34 +509,34 @@
+ 		}
+
+ 		const string AutoStartKey = "Hidden";
+-		DesktopItem autostart_item;
++		const string DesktopGroup = "Desktop Entry";
++		GKeyFile autostart_keyfile;
+ 		bool AutoStart
+ 		{
+ 			get {
+-				if (autostart_item == null) {
++				if (autostart_keyfile == null) {
+
+ 					GLib.File autostart_file = DockServices.Paths.AutoStartFile;
+
+ 					try {
+-						autostart_item = DesktopItem.NewFromFile (autostart_file.Path, DesktopItemLoadFlags.NoTranslations);
+-						if (autostart_item.AttrExists (AutoStartKey))
+-							return !String.Equals (autostart_item.GetString (AutoStartKey), "true", StringComparison.OrdinalIgnoreCase);
++						autostart_keyfile = new GKeyFile (autostart_file.Path, KeyFile.Flags.None);
++						if (autostart_keyfile.HasKey (DesktopGroup, AutoStartKey))
++							return !String.Equals (autostart_keyfile.GetString (DesktopGroup, AutoStartKey), "true", StringComparison.OrdinalIgnoreCase);
+
+ 					} catch (GLib.GException loadException) {
+-						Log<ConfigurationWindow>.Info ("Unable to load existing autostart file: {0}", loadException.Message);
++						Log<ConfigurationWindow>.Info ("Unable to load existing autostart file: {0}", loadException.Message);
+ 						Log<SystemService>.Error ("Could not open autostart file {0}", autostart_file.Path);
+
+ 						GLib.File desktop_file = DesktopFile;
+
+ 						if (desktop_file.Exists) {
+ 							Log<ConfigurationWindow>.Info ("Writing new autostart file to {0}", autostart_file.Path);
+-							autostart_item = DesktopItem.NewFromFile (desktop_file.Path, DesktopItemLoadFlags.NoTranslations);
++							autostart_keyfile = new GKeyFile (desktop_file.Path, KeyFile.Flags.None);
+ 							try {
+ 								if (!autostart_file.Parent.Exists)
+-									autostart_file.Parent.MakeDirectoryWithParents (null);
++									autostart_file.Parent.MakeDirectoryWithParents (null);
+
+-								autostart_item.Save (autostart_file.StringUri (), true);
+-								autostart_item.Location = autostart_file.StringUri ();
++								autostart_keyfile.Save (autostart_file.Path);
+ 								return true;
+
+ 							} catch (Exception e) {
+@@ -545,16 +546,20 @@
+ 						return false;
+ 					}
+ 				}
+-				if (autostart_item.AttrExists (AutoStartKey))
+-					return !String.Equals (autostart_item.GetString (AutoStartKey), "true", StringComparison.OrdinalIgnoreCase);
++				if (autostart_keyfile.HasKey (DesktopGroup, AutoStartKey))
++					return !String.Equals (autostart_keyfile.GetString (DesktopGroup, AutoStartKey), "true", StringComparison.OrdinalIgnoreCase);
+ 				else
+ 					return true;
+ 			}
+ 			set {
+-				if (autostart_item != null) {
+-					autostart_item.SetBoolean (AutoStartKey, !value);
++				if (autostart_keyfile != null) {
++					autostart_keyfile.SetBoolean (DesktopGroup, AutoStartKey, !value);
+ 					try {
+-						autostart_item.Save (null, true);
++						GLib.File autostart_file = DockServices.Paths.AutoStartFile;
++						if (!autostart_file.Parent.Exists)
++							autostart_file.Parent.MakeDirectoryWithParents (null);
++
++						autostart_keyfile.Save (autostart_file.Path);
+ 					} catch (Exception e) {
+ 						Log<SystemService>.Error ("Failed to update autostart file: {0}", e.Message);

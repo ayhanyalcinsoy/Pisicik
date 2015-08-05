@@ -1,0 +1,42 @@
+<PISI>
+    <Source>
+        <Name>avant-window-navigator</Name>
+        <Homepage>https://launchpad.net/awn</Homepage>
+        <Packager>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Packager>
+        <License>GPL</License>
+        <Icon>docky</Icon>
+        <IsA>app</IsA>
+        <Summary>AWN is a customisable dock-like bar at the edge of the screen.</Summary>
+        <Description>AWN is a customisable dock-like bar at the edge of the screen.</Description>
+        <Archive sha1sum="9570a4d2375d2c0390fd6152e41673c9247dd5f4" type="targz">http://launchpad.net/awn/0.4/0.4.2/+download/avant-window-navigator-0.4.2.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>intltool</Dependency>
+            <Dependency>autoconf</Dependency>
+        </BuildDependencies>
+    </Source>
+    <Package>
+        <Name>avant-window-navigator</Name>
+        <RuntimeDependencies>
+            <Dependency>intltool</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/libexec</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2015-06-28</Date>
+            <Version>0.4.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
+

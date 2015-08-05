@@ -1,0 +1,13 @@
+--- /home/PisiLinux/docky-2.2.1/Docky/Makefile.am
++++ Docky/Makefile.am
+@@ -69,9 +69,8 @@
+ 	$(GIO_SHARP_LIBS) \
+ 	$(GLIB_SHARP_20_LIBS) \
+ 	$(GTK_SHARP_20_LIBS) \
+-	$(GNOME_DESKTOP_SHARP_20_LIBS) \
++	$(GKEYFILE_SHARP_LIBS) \
+ 	$(WNCK_SHARP_10_LIBS) \
+-	$(LIBRSVG_SHARP_LIBS) \
+ 	$(NOTIFY_SHARP_LIBS) \
+ 	$(DBUS_SHARP_10_LIBS) \
+ 	$(DBUS_SHARP_GLIB_10_LIBS) \
