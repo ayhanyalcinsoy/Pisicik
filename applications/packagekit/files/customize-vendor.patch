@@ -1,0 +1,11 @@
+--- Vendor.conf	2015-06-16 15:13:04.142076826 +0300
++++ etc/Vendor.conf	2015-06-16 15:17:17.154068396 +0300
+@@ -12,7 +12,7 @@
+ # If the value is set to 'none' then no link is shown.
+ #
+ # default=http://www.packagekit.org/pk-package-not-found.html
+-DefaultUrl=http://www.packagekit.org/pk-package-not-found.html
++DefaultUrl=http://wiki.pisilinux.org
+
+ # The URL which is shown to the user when a codec could not be found.
+ # It should explain why certain codecs cannot be used, and perhaps show

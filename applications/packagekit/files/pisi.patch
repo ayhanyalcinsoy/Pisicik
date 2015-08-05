@@ -1,0 +1,11 @@
+--- PackageKit-1.0.6.orig/backends/pisi/pisiBackend.py	2015-03-04 23:18:11.000000000 +0200
++++ backends/pisi/pisiBackend.py	2015-05-13 15:18:34.239391310 +0300
+@@ -62,7 +62,7 @@
+         PackageKitBaseBackend.__init__(self, args)
+
+         self.componentdb = pisi.db.componentdb.ComponentDB()
+-        self.filesdb = pisi.db.filesdb.FilesDB()
++        self.filesldb = pisi.db.filesldb.FilesLDB()
+         self.installdb = pisi.db.installdb.InstallDB()
+         self.packagedb = pisi.db.packagedb.PackageDB()
+         self.repodb = pisi.db.repodb.RepoDB()

@@ -1,0 +1,123 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>PackageKit</Name>
+        <Homepage>http://www.packagekit.org/</Homepage>
+        <Packager>
+            <Name>Ayhan YALÇINSOY</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Packager>
+        <Summary>D-Bus abstraction layer that allows the session user to manage packages in a secure way using a cross-distro, cross-architecture API.</Summary>
+        <Description>PackageKit is a system designed to make installing and updating software on your computer easier. The primary design goal is to unify all the software graphical tools used in different distributions, and use some of the latest technology like PolicyKit to make the process suck less.</Description>
+        <License>GPLv2+</License>
+        <Archive sha1sum="e1ecf34366e0826b85c4c7a83fc55cc947573dd6" type="tarxz">http://www.freedesktop.org/software/PackageKit/releases/PackageKit-1.0.6.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>atk-devel</Dependency>
+            <Dependency>gtk2-devel</Dependency>
+            <Dependency>gtk3-devel</Dependency>
+            <Dependency>nspr-devel</Dependency>
+            <Dependency>cairo-devel</Dependency>
+            <Dependency>glib2-devel</Dependency>
+            <Dependency>pango-devel</Dependency>
+            <Dependency>polkit-devel</Dependency>
+            <Dependency>sqlite-devel</Dependency>
+            <Dependency>freetype-devel</Dependency>
+            <Dependency>fontconfig-devel</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>gstreamer-next-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>customize-vendor.patch</Patch>
+            <Patch>pisi.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>packagekit</Name>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/lib/PackageKit</Path>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="data">/etc</Path>
+            <Path fileType="data">/usr/lib/girepository-1.0</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="library">/usr/lib/gtk-2.0</Path>
+            <Path fileType="library">/usr/lib/gtk-3.0</Path>
+            <Path fileType="library">/usr/lib/lib*.so*</Path>
+            <Path fileType="library">/usr/lib/packagekit-backend</Path>
+            <Path fileType="library">/usr/lib/nsbrowser/plugins/packagekit-plugin.so</Path>
+            <Path fileType="library">/usr/lib/packagekit-plugins</Path>
+            <Path fileType="data">/usr/lib/gnome-settings-daemon-3.0</Path>
+            <Path fileType="data">/usr/lib/python*</Path>
+            <!--<Path fileType="data">/usr/lib/systemd</Path>-->
+            <Path fileType="data">/usr/share/PackageKit</Path>
+            <Path fileType="data">/usr/share/dbus-1</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/man/man1</Path>
+            <Path fileType="data">/usr/share/gir-1.0</Path>
+            <Path fileType="data">/usr/share/mime</Path>
+            <Path fileType="data">/usr/share/polkit-1</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/pkcon</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="config">/var</Path>
+        </Files>
+        <RuntimeDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>nspr</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>polkit</Dependency>
+            <Dependency>sqlite</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>gstreamer-next</Dependency>
+        </RuntimeDependencies>
+        <AdditionalFiles>
+            <AdditionalFile permission="0644" target="/etc/PackageKit/pisi.conf">pisi.conf</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <Package>
+        <Name>packagekit-devel</Name>
+        <Summary>Development files for packagekit</Summary>
+        <Description>Development files for packagekit</Description>
+        <Files>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+        <RuntimeDependencies>
+            <Dependency release="current">packagekit</Dependency>
+            <Dependency>glib2-devel</Dependency>
+            <Dependency>sqlite-devel</Dependency>
+        </RuntimeDependencies>
+    </Package>
+
+    <Package>
+        <Name>packagekit-docs</Name>
+        <Summary>API Documentation for packagekit</Summary>
+        <Description>API Documentation for packagekit</Description>
+        <Files>
+            <Path fileType="doc">/usr/share/gtk-doc</Path>
+        </Files>
+        <RuntimeDependencies>
+            <Dependency release="current">packagekit-devel</Dependency>
+        </RuntimeDependencies>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2015-06-11</Date>
+            <Version>1.0.6</Version>
+            <Comment>first release</Comment>
+            <Name>Ayhan YALÇINSOY</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
+    </History>
+
+</PISI>
+
