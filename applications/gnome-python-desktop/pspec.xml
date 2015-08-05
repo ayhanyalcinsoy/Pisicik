@@ -1,0 +1,93 @@
+<PISI>
+    <Source>
+        <Name>gnome-python-desktop</Name>
+        <Homepage>http://www.gnome.org</Homepage>
+        <Packager>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Packager>
+        <License>GPL,LGPL</License>
+        <Icon>docky</Icon>
+        <IsA>app</IsA>
+        <Summary>Python bindings for the GNOME desktop environment</Summary>
+        <Description>Python bindings for the GNOME desktop environment</Description>
+        <Archive sha1sum="dae15fe9fea61ecbde5af513c94de2ff1a66369c" type="tarbz2">http://ftp.gnome.org/pub/gnome/sources/gnome-python-desktop/2.32/gnome-python-desktop-2.32.0.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>intltool</Dependency>
+            <Dependency>autoconf</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>01_wnck_enums.patch</Patch>
+        </Patches>
+    </Source>
+    <Package>
+        <Name>gnome-python-desktop</Name>
+        <Summary>Python bindings for the GNOME desktop environment</Summary>
+        <RuntimeDependencies>
+            <Dependency>python-gnome-keyring</Dependency>
+            <Dependency>python-rsvg</Dependency>
+            <Dependency>python-wnck</Dependency>
+            <Dependency>gnome-python</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/pkgconfig/gnome-python-desktop-2.0.pc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/gtk-2.0/bugbuddy.py</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>python-gnome-keyring</Name>
+        <Summary>Python bindings for libgnome-keyring</Summary>
+        <RuntimeDependencies>
+            <Dependency>glib2</Dependency>
+            <Dependency>libgnome-keyring</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share/pygtk/2.0/defs/gnomekeyring.defs</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/gtk-2.0/gnomekeyring.so</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>python-rsvg</Name>
+        <Summary>Python bindings for librsvg</Summary>
+        <RuntimeDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>librsvg</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share/pygtk/2.0/defs/rsvg.defs</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/gtk-2.0/rsvg.so</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>python-wnck</Name>
+        <Summary>Python bindings for libwnck</Summary>
+        <RuntimeDependencies>
+            <Dependency>python-gtk</Dependency>
+            <Dependency>libwnck2</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share/pygtk/2.0/defs/wnck.defs</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/gtk-2.0/wnck.so</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2015-06-28</Date>
+            <Version>2.32.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
+
