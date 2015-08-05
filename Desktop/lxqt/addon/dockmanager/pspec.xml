@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>dockmanager</Name>
+        <Homepage>TaskBar with groupping and group manipulation</Homepage>
+        <Packager>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Packager>
+        <License>GPL</License>
+        <IsA>app:gui</IsA>
+        <Summary>Dock-independent helper scripts for compatible docks</Summary>
+        <Description>Dock-independent helper scripts for compatible docks</Description>
+       <Archive sha1sum="744ab0cff90aafa340065a071b9115b2afe068e4" type="targz">http://launchpad.net/dockmanager/trunk/0.1.0/+download/dockmanager-0.1.0.tar.gz</Archive>
+       <BuildDependencies>
+            <Dependency>keybinder-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>dockbarx</Name>
+        <RuntimeDependencies>
+            <Dependency>keybinder</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/bonobo/servers/GNOME_DockBarXApplet.server</Path>
+            <Path fileType="library">/usr/lib/python2.7</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share/dockbarx</Path>
+            <Path fileType="data">/usr/share/icons/hicolor</Path>
+            <Path fileType="data">/usr/share/namebar/themes</Path>
+            <Path fileType="data">/usr/share/avant-window-navigator/applets</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2015-06-28</Date>
+            <Version>0.1.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
