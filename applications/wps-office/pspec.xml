@@ -16,8 +16,8 @@
         <Summary>Kingsoft Office Suite</Summary>
         <Description>Kingsoft Office (WPS Office), is an office productivity suite.</Description>
         http://wps-community.org/download/dicts/tr_TR.zip
-        <Archive sha1sum="c447ebfbd5225f80119e93762a39dc3cad26a47b" type="tarxz">http://kdl.cc.ksosoft.com/wps-community/download/a18/wps-office_9.1.0.4953~a18_x86_64.tar.xz</Archive>
-        <Archive sha1sum="467908aefffc4dea537d2a97aac6e105502c1abe" target="wps-office_9.1.0.4953~a18_x86/office6/dicts" type="zip">http://wps-community.org/download/dicts/tr_TR.zip</Archive>
+        <Archive sha1sum="466906078f611e79b3c3fb66b14d6f0bb8ed5bdf" type="tarxz">http://kdl.cc.ksosoft.com/wps-community/download/a18/wps-office_9.1.0.4961~a18p1_x86_64.tar.xz</Archive>
+        <Archive sha1sum="467908aefffc4dea537d2a97aac6e105502c1abe" target="wps-office_9.1.0.4961~a18p1_x86_64/office6/dicts" type="zip">http://wps-community.org/download/dicts/tr_TR.zip</Archive>
     </Source>
 
     <Package>
@@ -59,9 +59,22 @@
             <Path fileType="data">/usr/share/mime</Path>
             <Path fileType="data">/opt/kingsoft/wps-office/office6</Path>
         </Files>
+
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/wps-office-et.desktop">wps-office-et.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/wps-office-wpp.desktop">wps-office-wpp.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/wps-office-wps.desktop">wps-office-wps.desktop</AdditionalFile>
+        </AdditionalFiles>
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2015-08-02</Date>
+            <Version>9.1.0.4961</Version>
+            <Comment>V.bump</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
         <Update release="2">
             <Date>2015-06-01</Date>
             <Version>9.1.0.4953</Version>
