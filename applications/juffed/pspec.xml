@@ -14,12 +14,12 @@
         <Summary>Simple tabbed text editor</Summary>
         <Description>Juffed is simple tabbed text editor with syntax highlighting for Bash, Batch, C++, C#, CSS, D, Diff, HTML, IDL, Java, JavaScript, Lua, Makefile, Perl, Python, Ruby, SQL, XML.</Description>
         <!--<Archive sha1sum="6a6da1d4096ff7b4af320339a5c55e4258068e8f" type="tarbz2">mirrors://sourceforge/juffed/0.10/juffed-0.10-1054.tar.bz2</Archive>-->
-        <Archive sha1sum="dd2b123f1d9d0ab84f21d3b2ff60de9995b6c0bf" type="targz">juffed-0.10.09042015.tar.gz</Archive>
+        <Archive sha1sum="dd2b123f1d9d0ab84f21d3b2ff60de9995b6c0bf" type="targz">/home/PisiLinux/İndirilenler/juffed-0.10.09042015.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>qt5-base-devel</Dependency>
             <Dependency>enca-devel</Dependency>
             <Dependency>qscintilla2-devel</Dependency>
-            <Dependency>qtermwidget-devel</Dependency>
+            <Dependency>qtermwidget5-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!--<Patch level="0">desktop-file-translation.patch</Patch>-->
@@ -38,7 +38,7 @@
             <Dependency>qt5-base</Dependency>
             <Dependency>enca</Dependency>
             <Dependency>qscintilla2</Dependency>
-            <Dependency>qtermwidget</Dependency>
+            <Dependency>qtermwidget5</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

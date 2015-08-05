@@ -12,9 +12,9 @@ from pisi.actionsapi import get
 def setup():
     shelltools.makedirs("build")
     shelltools.cd("build")
-    cmaketools.configure("-DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=release -DUSE_QT5=ON -DBUILD_TODOLIST=ON", sourceDir="..")
- 
-    pisitools.dosed("CMakeCache.txt", "LIB_INSTALL_DIR:PATH=/usr/lib64", "LIB_INSTALL_DIR:PATH=/usr/lib")
+    cmaketools.configure("-DCMAKE_INSTALL_PREFIX=/usr -DLIB_INSTALL_DIR=/usr/lib -DCMAKE_BUILD_TYPE=release -DUSE_QT5=ON -DUSE_ENCA=ON", sourceDir="..")
+
+    #pisitools.dosed("CMakeCache.txt", "LIB_INSTALL_DIR:PATH=/usr/lib64", "LIB_INSTALL_DIR:PATH=/usr/lib")
 
 def build():
     shelltools.cd("build")
