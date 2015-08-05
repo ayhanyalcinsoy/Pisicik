@@ -5,8 +5,8 @@ import sys
 import comar
 
 # Qt Stuff
-from PyQt4 import QtGui
-from PyQt4 import QtCore
+from PyQt5 import QtGui
+from PyQt5 import QtCore
 #from PyQt4.QtGui import QMessageBox
 #from PyQt4.QtCore import *
 # Add the ptdraft folder path to the sys.path list

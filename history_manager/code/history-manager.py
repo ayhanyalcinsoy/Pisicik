@@ -22,7 +22,7 @@ import historymanager.context as ctx
 import historymanager.about as about
 
 # Qt Stuff
-from PyQt4.QtCore import SIGNAL
+from PyQt5.QtCore import SIGNAL
 
 # Enable plugin if session is Kde4
 if ctx.Pds.session == ctx.pds.Kde4:

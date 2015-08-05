@@ -5,7 +5,7 @@ import comar
 import pisi
 import time
 
-from PyQt4.QtCore import *
+from PyQt5.QtCore import *
 
 from listitem import *
 
