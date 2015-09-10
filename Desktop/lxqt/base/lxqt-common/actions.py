@@ -21,9 +21,13 @@ def build():
 def install():
     shelltools.cd("build")
     cmaketools.rawInstall("DESTDIR=%s" % get.installDIR())
-    pisitools.domove("/usr/=/usr/share/cmake", "/usr/share")
+    pisitools.domove("/usr/=/usr/share/cmake//qt5xdg/lxqt/lxqt.conf", "/etc/lxqt/")
+    pisitools.domove("/usr/=/usr/share/cmake//qt5xdg/lxqt/session.conf", "/etc/lxqt/")
+    pisitools.domove("/usr/=/usr/share/cmake//qt5xdg/lxqt/windowmanagers.conf", "/etc/lxqt/")
+    pisitools.domove("/usr/=/usr/share/cmake//qt5xdg/menus/lxqt-applications.menu", "/etc/xdg/menus/")
+    pisitools.domove("/usr/=/usr/share/cmake//qt5xdg/pcmanfm-qt/lxqt/settings.conf", "/etc/pcmanfm-qt/lxqt/")
     pisitools.removeDir("/usr/=/")
-    pisitools.remove("/usr/share/desktop-directories/*.directory")        
+    pisitools.remove("/usr/share/desktop-directories/*.directory")
     #Removed default theme items for pisilinux-default-settings-lxqt
     pisitools.remove("/usr/share/lxqt/themes/Ambiance/mainmenu.svg")
     pisitools.remove("/usr/share/lxqt/themes/Dark/mainmenu.svg")
@@ -36,5 +40,5 @@ def install():
     pisitools.remove("/usr/share/lxqt/themes/Kde-plasma/wallpaper.cfg")
     shelltools.cd("..")
     #Add lxqt menu
-    pisitools.insinto("/etc/xdg/menus/", "menu/lxqt-applications.menu")
+    #pisitools.insinto("/etc/xdg/menus/", "menu/lxqt-applications.menu")
     pisitools.dodoc("README.md")

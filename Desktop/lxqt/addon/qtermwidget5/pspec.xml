@@ -16,6 +16,7 @@
         <Archive sha1sum="fc3afd69fcc449d7f3f225ae2f36e529cbce411d" type="tarxz">https://github.com/qterminal/qtermwidget/releases/download/0.6.0/qtermwidget-0.6.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libgcc</Dependency>
+            <Dependency>cmake</Dependency>
             <Dependency>qt5-base-devel</Dependency>
         </BuildDependencies>
     </Source>

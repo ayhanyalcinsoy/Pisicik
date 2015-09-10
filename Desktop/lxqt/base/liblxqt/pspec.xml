@@ -16,6 +16,8 @@
             <Dependency>cmake</Dependency>
             <Dependency>glibc-devel</Dependency>
             <Dependency>qt5-base-devel</Dependency>
+            <Dependency>qt5-tools-devel</Dependency>
+            <Dependency>qt5-x11extras-devel</Dependency>
             <Dependency>libqtxdg-devel</Dependency>
             <Dependency>libX11-devel</Dependency>
             <Dependency>pkgconfig</Dependency>
