@@ -12,10 +12,10 @@
         <IsA>app:console</IsA>
         <Summary>SIP is a tool for generating bindings for C++ classes so that they can be used by Python</Summary>
         <Description>SIP is a tool for generating bindings for C and C++ libraries so that they can be used by Python. It takes any C or C++ libraries and converts them into Python extension modules.</Description>
-        <Archive sha1sum="51b913205e1a31e65eea154437438b9c9b5c36d8" type="targz">mirrors://sourceforge/pyqt/sip-4.14.3.tar.gz</Archive>
-        <!--<Archive sha1sum="ec467c1ca9f9ead16be869eccc2e7cae72750d56" type="targz">mirrors://sourceforge/pyqt/sip-4.16.7.tar.gz</Archive>-->
+        <!--<Archive sha1sum="51b913205e1a31e65eea154437438b9c9b5c36d8" type="targz">mirrors://sourceforge/pyqt/sip-4.14.3.tar.gz</Archive>-->
+        <Archive sha1sum="ec467c1ca9f9ead16be869eccc2e7cae72750d56" type="targz">mirrors://sourceforge/pyqt/sip-4.16.7.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency>python3</Dependency>
+            <Dependency>python-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">no-strip.patch</Patch>
@@ -58,7 +58,7 @@
     <History>
         <Update release="6">
             <Date>2015-04-09</Date>
-            <Version>4.14.3</Version>
+            <Version>4.16.7</Version>
             <Comment>Version bump.</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@pisilinux.org</Email>

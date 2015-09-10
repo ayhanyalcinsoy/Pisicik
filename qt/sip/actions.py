@@ -25,5 +25,5 @@ def build():
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-    pisitools.remove("/usr/bin/sip")
+    #pisitools.remove("/usr/bin/sip")
     pisitools.dodoc("LICENSE*", "NEWS", "README")
