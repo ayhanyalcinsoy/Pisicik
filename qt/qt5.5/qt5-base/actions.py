@@ -62,10 +62,9 @@ def setup():
                             -sysconfdir %s \
                             -examplesdir %s \
                             -libdir %s \
-                            -qt-harfbuzz \
+                            -system-harfbuzz \
                             -system-sqlite \
                             -openssl-linked \
-                            -fontconfig \
                             -nomake tests \
                             -nomake examples \
                             -optimized-qmake \
