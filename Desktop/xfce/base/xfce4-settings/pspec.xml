@@ -33,9 +33,6 @@
             <Dependency>garcon-devel</Dependency>
             <Dependency>fontconfig-devel</Dependency>
         </BuildDependencies>
-        <Patches>
-            <Patch>xfce4-settings-xml.patch</Patch>
-        </Patches>
     </Source>
 
     <Package>

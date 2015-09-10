@@ -8,10 +8,10 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.configure("--disable-network-manager \
-                         --disable-debug \
+    autotools.configure("--disable-debug \
                          --disable-lxdepanel\
-                         --enable-network-manager")
+                         --enable-network-manager\
+                         --with-upower=0.9")
 
 def build():
     autotools.make()
