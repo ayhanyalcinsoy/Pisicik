@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>SOFA is a statistics, analysis, and reporting program.</Summary>
         <Description>SOFA - Statistics Open For All The user-friendly, open-source statistics, analysis, and reporting package.</Description>
-        <Archive sha1sum="d347741e88137687f0c8210a807b506dd4f906f7" type="targz">http://skylink.dl.sourceforge.net/project/sofastatistics/sofastatistics/1.4.3/sofastats-1.4.3.tar.gz</Archive>
+        <Archive sha1sum="0143b92c19e89e2f749581ad0b1a101372d07ede" type="targz">http://skylink.dl.sourceforge.net/project/sofastatistics/sofastatistics/1.4.5/sofastats-1.4.5.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python-devel</Dependency>
             <Dependency>wxPython-devel</Dependency>
@@ -25,9 +25,11 @@
         <Name>sofastats</Name>
         <RuntimeDependencies>
             <Dependency>python</Dependency>
+            <Dependency>pyPdf</Dependency>
             <Dependency>wxPython</Dependency>
             <Dependency>mysql-python</Dependency>
             <Dependency>python-numpy</Dependency>
+            <Dependency>python-six</Dependency>
             <Dependency>postgresql-python</Dependency>
             <Dependency>python-matplotlib</Dependency>
             <Dependency>python-webkit-gtk</Dependency>
@@ -46,19 +48,14 @@
         </AdditionalFiles>
     </Package>
 
-    <Package>
-        <Name>sofastats-devel</Name>
-        <Summary>Development files for sofastats</Summary>
-        <RuntimeDependencies>
-            <Dependency release="current">libburn</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="header">/usr/include</Path>
-            <Path fileType="data">/usr/lib/pkgconfig/libburn-1.pc</Path>
-        </Files>
-    </Package>
-
     <History>
+        <Update release="2">
+            <Date>2015-08-16</Date>
+            <Version>1.4.5</Version>
+            <Comment>version bump</Comment>
+            <Name>Ayhan YALÇINSOY</Name>
+            <Email>ayhanyalcinsoyn@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2013-03-18</Date>
             <Version>1.4.3</Version>

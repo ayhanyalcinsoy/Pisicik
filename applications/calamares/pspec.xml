@@ -17,7 +17,7 @@
             <Dependency versionFrom="2.8.12">cmake</Dependency>
             <Dependency versionFrom="5.3.0">qt5-declarative-devel</Dependency>
             <Dependency versionFrom="5.3.0">qt5-svg-devel</Dependency>
-            <Dependency>polkit-qt5-devel</Dependency>
+            <Dependency>polkit-qt-devel</Dependency>
             <Dependency versionFrom="5.3.0">qt5-base-devel</Dependency>
             <Dependency>desktop-file-utils</Dependency>
             <Dependency versionFrom="5.3.0">qt5-tools-devel</Dependency>
@@ -29,6 +29,8 @@
             <Dependency>kde5-kconfig-devel</Dependency>
             <Dependency>libblkid-devel</Dependency>
             <Dependency>libatasmart-devel</Dependency>
+            <Dependency>python-devel</Dependency>
+            <Dependency>gettext</Dependency>
         </BuildDependencies>
         <Patches>
             <!--<Patch>lxqtsingleapplication.patch</Patch>-->
@@ -40,7 +42,7 @@
             <Dependency>qt5-base</Dependency>
             <Dependency>qt5-declarative</Dependency>
             <Dependency>qt5-svg</Dependency>
-            <Dependency>polkit-qt5</Dependency>
+            <Dependency>polkit-qt</Dependency>
             <Dependency>qt5-tools</Dependency>
         </RuntimeDependencies>
         <Files>

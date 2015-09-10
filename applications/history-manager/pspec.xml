@@ -12,7 +12,8 @@
         <IsA>app:gui</IsA>
         <Summary>KDE4 port of History Manager Tool</Summary>
         <Description>History manager is a graphical interface to pisi snapshot facilities.</Description>
-        <Archive sha1sum="d104d717749e4cd169920fb6657dd0de1a26335b" type="targz">http://source.pisilinux.org/1.0/history_manager-0.2.7.6.tar.gz</Archive>
+        <!--<Archive sha1sum="d104d717749e4cd169920fb6657dd0de1a26335b" type="targz">http://source.pisilinux.org/1.0/history_manager-0.2.7.6.tar.gz</Archive>-->
+        <Archive sha1sum="c3a84838cdf4ceb031cd4350a0593cbb7294074a" type="targz">/home/PisiLinux/Masaüstü/project/managers/history_manager.tar.gz</Archive>
     </Source>
 
     <Package>

@@ -16,8 +16,8 @@
         <Summary>Kingsoft Office Suite</Summary>
         <Description>Kingsoft Office (WPS Office), is an office productivity suite.</Description>
         http://wps-community.org/download/dicts/tr_TR.zip
-        <Archive sha1sum="466906078f611e79b3c3fb66b14d6f0bb8ed5bdf" type="tarxz">http://kdl.cc.ksosoft.com/wps-community/download/a18/wps-office_9.1.0.4961~a18p1_x86_64.tar.xz</Archive>
-        <Archive sha1sum="467908aefffc4dea537d2a97aac6e105502c1abe" target="wps-office_9.1.0.4961~a18p1_x86_64/office6/dicts" type="zip">http://wps-community.org/download/dicts/tr_TR.zip</Archive>
+        <Archive sha1sum="512b94132d18a896684e4470acc61c6f2f6d3a60" type="tarxz">http://kdl.cc.ksosoft.com/wps-community/download/a19/wps-office_9.1.0.4975~a19p1_x86_64.tar.xz</Archive>
+        <Archive sha1sum="467908aefffc4dea537d2a97aac6e105502c1abe" target="wps-office_9.1.0.4975~a19p1_x86_64/office6/dicts" type="zip">http://wps-community.org/download/dicts/tr_TR.zip</Archive>
     </Source>
 
     <Package>
@@ -68,6 +68,13 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2015-09-10</Date>
+            <Version>9.1.0.4975</Version>
+            <Comment>V.bump</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
         <Update release="3">
             <Date>2015-08-02</Date>
             <Version>9.1.0.4961</Version>

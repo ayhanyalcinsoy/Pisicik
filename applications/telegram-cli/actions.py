@@ -14,7 +14,8 @@ def setup():
                          --enable-liblua \
                          --with-progname=telegram-cli \
                          --with-openssl=/usr \
-                         --with-zlib=/usr/lib")
+                         --with-zlib=/usr/lib \
+                         --disable-json")
 
 def build():
     autotools.make()
@@ -23,3 +24,5 @@ def install():
      autotools.rawInstall("DESTDIR=%s" % get.installDIR())
      pisitools.insinto("/etc/telegram-cli/" , "/etc/telegram-cli/server.pub")
      pisitools.insinto("/usr/bin/" , "/bin/telegram-cli")
+
+# By PiSiDo 2.3.1

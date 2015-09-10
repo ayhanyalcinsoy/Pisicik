@@ -11,7 +11,7 @@
         <IsA>app</IsA>
         <Summary>Zotero Standalone. Is a free, easy-to-use tool to help you collect, organize, cite, and share your research sources.</Summary>
         <Description>Zotero Standalone. Is a free, easy-to-use tool to help you collect, organize, cite, and share your research sources.</Description>
-        <Archive sha1sum="663ea9fd471d0eb1ac0ecc3af3871b54a522f6ef" type="tarbz2">https://download.zotero.org/standalone/4.0.27.6/Zotero-4.0.27.6_linux-x86_64.tar.bz2</Archive>
+        <Archive sha1sum="e37a0c738192d62d5690b76cfd968fa4540ac0c1" type="tarbz2">https://download.zotero.org/standalone/4.0.28/Zotero-4.0.28_linux-x86_64.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>nss-devel</Dependency>
@@ -36,10 +36,17 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2015-08-21</Date>
+            <Version>4.0.28</Version>
+            <Comment>v.bump</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
         <Update release="2">
             <Date>2015-07-15</Date>
             <Version>4.0.27.6</Version>
-            <Comment>First Release</Comment>
+            <Comment>v.bump</Comment>
             <Name>Ayhan Yalçınsoy</Name>
             <Email>ayhanyalcinsoy@pisilinux.org</Email>
         </Update>
