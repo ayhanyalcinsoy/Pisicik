@@ -11,11 +11,10 @@
         <Summary>Provides access to hardware and virtual serial ports</Summary>
         <Description>Provides access to hardware and virtual serial ports</Description>
         <License>LGPLv2.1-linking-exception</License>
-        <Archive sha1sum="aa843f96fe1a49d91eb7582d3be5035de5b5508e" type="tarxz">http://download.qt.io/official_releases/qt/5.4/5.4.2/submodules/qtserialport-opensource-src-5.4.2.tar.xz</Archive>
+        <Archive sha1sum="aa843f96fe1a49d91eb7582d3be5035de5b5508e" type="tarxz">http://download.qt.io/official_releases/qt/5.5/5.5.1/submodules/qtserialport-opensource-src-5.5.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5-base-devel</Dependency>
             <Dependency>eudev-devel</Dependency>
-            <Dependency>qt5-tools-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -41,11 +40,18 @@
         </RuntimeDependencies>
        <Files>
             <Path fileType="library">/usr/lib/pkgconfig</Path>
-            <Path fileType="headers">/usr/include/qt5</Path>
+            <Path fileType="header">/usr/include/qt5</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2015-10-03</Date>
+            <Version>5.5.1</Version>
+            <Comment>Version bump</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
         <Update release="2">
             <Date>2015-06-03</Date>
             <Version>5.4.2</Version>
