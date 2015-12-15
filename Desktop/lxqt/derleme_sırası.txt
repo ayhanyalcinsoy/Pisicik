@@ -1,0 +1,25 @@
+1. libqtxdg
+2. liblxqt
+3. lxqt-globalkeys
+4. lxqt-notificationd
+5. libsysstat
+6. menu-cache
+7. libfm-extra
+8. libfm
+9. lxqt-panel (libstatgrab)
+10. pcmanfm-qt
+11. lxqt-session
+12. lxqt-runner
+13. lxqt-qtplugin
+14. lxqt-policykit
+15. lxqt-powermanagement
+16. lximage-qt error
+17. lxqt-config
+18. obconf-qt
+19. compton-conf
+20. lxqt-about
+21. lxqt-common
+22. lxmenu-data
+23. lxqt-openssh-askpass
+24 lxqt-sudo
+
