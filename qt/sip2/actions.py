@@ -10,7 +10,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import pythonmodules
 from pisi.actionsapi import get
 
-WorkDir = "%s-%s" % (get.srcNAME(),  get.srcVERSION())
+WorkDir = "sip-%s" % get.srcVERSION()
 py2dir = get.curPYTHON()
 
 def setup():
@@ -25,5 +25,6 @@ def build():
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-    #pisitools.remove("/usr/bin/sip")
+    pisitools.rename("/usr/bin/sip", "py2sip")
     pisitools.dodoc("LICENSE*", "NEWS", "README")
+    

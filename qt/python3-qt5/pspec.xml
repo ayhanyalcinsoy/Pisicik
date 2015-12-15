@@ -14,9 +14,10 @@
         <Archive sha1sum="6de6e23692069dbb934f4decdf86133e54a0cd54" type="targz">mirrors://sourceforge/pyqt/PyQt5/PyQt-5.4.2/PyQt-gpl-5.5.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>dbus-devel</Dependency>
+            <Dependency>dbus-python3</Dependency>
             <Dependency>dbus-python-common</Dependency>
-            <Dependency>python-devel</Dependency>
-            <Dependency versionFrom="4.16.6">python-sip</Dependency>
+            <Dependency>python3-devel</Dependency>
+            <Dependency versionFrom="4.16.6">python3-sip</Dependency>
             <Dependency versionFrom="5.5.1">qt5-base-devel</Dependency>
             <Dependency>qt5-connectivity-devel</Dependency>
             <Dependency>qt5-declarative-devel</Dependency>
@@ -35,12 +36,12 @@
     </Source>
     
     <Package>
-        <Name>python-qt5</Name>
-        <Summary>A set of Python 2.x bindings for the Qt 5.x Toolkit</Summary>
+        <Name>python3-qt5</Name>
+        <Summary>A set of Python 3.x bindings for the Qt 5.x Toolkit</Summary>
         <RuntimeDependencies>
             <Dependency>libgcc</Dependency>
             <Dependency>dbus</Dependency>
-            <Dependency>python</Dependency>
+            <Dependency>python3</Dependency>
             <Dependency versionFrom="5.5.1">qt5-base</Dependency>
             <Dependency>qt5-sensors</Dependency>
             <Dependency>qt5-location</Dependency>
@@ -57,22 +58,23 @@
             <Dependency>qt5-connectivity</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="library">/usr/lib/python2.7/site-packages</Path>
+            <Path fileType="library">/usr/lib/python3.4/site-packages</Path>
             <Path fileType="library">/usr/lib/qt5/plugins</Path>
-            <Path fileType="data">/usr/share/qt5/qsci/api/python/Py2Qt5.api</Path>
+            <Path fileType="data">/usr/share/qt5/qsci/api</Path>            
+            <Path fileType="doc">/usr/share/doc</Path>
         </Files>
     </Package>
     <Package>
-        <Name>python-qt5-devel</Name>
+        <Name>python3-qt5-devel</Name>
         <Summary>Development files for python3-qt5</Summary>
         <RuntimeDependencies>
             <Dependency>libgcc</Dependency>
             <Dependency versionFrom="5.5.1">qt5-base</Dependency>
-            <Dependency release="current">python-qt5</Dependency>
+            <Dependency release="current">python3-qt5</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="data">/usr/share/sip/Py2Qt5</Path>
+            <Path fileType="data">/usr/share/sip/PyQt5</Path>
         </Files>
     </Package>
 

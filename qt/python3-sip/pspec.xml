@@ -1,0 +1,51 @@
+<PISI>
+    <Source>
+        <Name>python3-sip</Name>
+        <Homepage>http://www.riverbankcomputing.co.uk/sip</Homepage>
+        <Packager>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <Summary>SIP is a tool for generating bindings for C++ classes so that they can be used by Python</Summary>
+        <Description>SIP is a tool for generating bindings for C and C++ libraries so that they can be used by Python. It takes any C or C++ libraries and converts them into Python extension modules.</Description>
+        <Archive sha1sum="c0a09aa63523293c5ca39444746b1cef1253a0c5" type="targz">mirrors://sourceforge/pyqt/sip-4.16.9.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="5.5.1">qt5-base-devel</Dependency>
+            <Dependency>python3-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>python3-sip</Name>
+        <Summary>Python 3.x SIP bindings for C and C++ libraries</Summary>
+        <RuntimeDependencies>
+            <Dependency>libgcc</Dependency>
+            <Dependency>python3</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/python3*</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="header">/usr/include/python3.4m</Path>
+            <Path fileType="data">/usr/share/licenses/python3-sip/LICENSE</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="2">
+            <Date>2015-09-09</Date>
+            <Version>4.16.9</Version>
+            <Comment>Version Bump.</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
+        <Update release="1">
+            <Date>2015-04-23</Date>
+            <Version>4.16.6</Version>
+            <Comment>First release</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

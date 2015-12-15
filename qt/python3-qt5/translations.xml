@@ -5,7 +5,10 @@
         <Description xml:lang="tr">Qt5, C++ kütüphaneleri dizisi ve geliştirme araçları olup grafik kullanıcı arabirimleri için, ağ bağlantısı, iş parçacığı, Unicode, düzenli ifadeler, SQL veritabanları, SVG, OpenGL, XML ve kullanıcıve uygulama ayarları gibi platform bağımsız uygulamalara ayrılır. PyQt, Python modülü seti olarak bu sınıftan 440 kadar uygulamayı çalıştırır.</Description>
     </Source>
     <Package>
-        <Name>python-qt5</Name>
+        <Name>python3-qt5</Name>
+    </Package>
+    <Package>
+        <Name>python3-qt5-docs</Name>
     </Package>
 </PISI>
 
