@@ -15,7 +15,7 @@
         <Archive sha1sum="2320df1b4456fc56549c7d5b1d0889d063cd6168" type="targz">http://source.pisilinux.org/1.0/package-manager-4.1.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>docutils</Dependency>
-            <Dependency>python-qt-devel</Dependency>
+            <Dependency versionFrom="4.9.6">python-qt-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -23,9 +23,9 @@
         <Name>package-manager</Name>
         <RuntimeDependencies>
             <Dependency>pisi</Dependency>
-            <Dependency>python-qt</Dependency>
-            <Dependency>python-appinfo</Dependency>
-            <Dependency>python-sip</Dependency>
+            <Dependency versionFrom="4.9.6">python-qt</Dependency>
+<!--             <Dependency>python-appinfo</Dependency> -->
+            <Dependency>python-sip2</Dependency>
             <Dependency>python-qt-webkit</Dependency>
             <Dependency>pisilinux-desktop-services</Dependency>
         </RuntimeDependencies>

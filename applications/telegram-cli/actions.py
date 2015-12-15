@@ -9,13 +9,15 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 
 def setup():
-    #autotools.autoreconf("-vfi")
+    autotools.autoreconf("-vfi")
     autotools.configure("--enable-libconfig \
                          --enable-liblua \
                          --with-progname=telegram-cli \
                          --with-openssl=/usr \
                          --with-zlib=/usr/lib \
-                         --disable-json")
+                         --disable-json \
+                         --enable-extf \
+                         --disable-valgrind ")
 
 def build():
     autotools.make()

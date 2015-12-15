@@ -13,7 +13,7 @@
         <BuildDependencies>
             <Dependency>jdk7-openjdk</Dependency>
         </BuildDependencies>
-        <Archive sha1sum="0e3c67286e88d099ebb31f2f164e2a9a139a0a4e" type="targz">https://dl.dropboxusercontent.com/u/71120717/onyx-1.0.911.tar.gz</Archive>
+        <Archive sha1sum="5afef78fd3d61b0ce93f35efd7a47f8fef4fc5a8" type="targz">https://dl.dropboxusercontent.com/u/71120717/onyx-1.0.911.tar.gz</Archive>
     </Source>
     <Package>
         <Name>onyx</Name>
@@ -32,6 +32,13 @@
         </RuntimeDependencies>
     </Package>
     <History>
+        <Update release="4">
+            <Date>2015-11-08</Date>
+            <Version>1.0.932</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
         <Update release="3">
             <Date>2015-07-23</Date>
             <Version>1.0.911</Version>

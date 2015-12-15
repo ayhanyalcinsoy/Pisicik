@@ -12,11 +12,16 @@
         <Summary>Pdf böl, parçala, birlleştir.</Summary>
         <Description>Pdf böl, parçala, birlleştir.</Description>
         <Archive sha1sum="c3d0fa696115a0827a36c6abd0e2c44a839efa78" type="targz">http://indir.istihza.com/programlar/harman/harman-0.8/anakaynak/harman-0.8.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>pyPdf</Dependency>
+            <Dependency>python-gtk-devel</Dependency>
+        </BuildDependencies>
     </Source>
     <Package>
         <Name>harman</Name>
         <RuntimeDependencies>
             <Dependency>pyPdf</Dependency>
+            <Dependency>python-gtk</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc/harman</Path>
