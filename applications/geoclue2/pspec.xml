@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>geoclue2</Name>
+        <Homepage>http://www.freedesktop.org/wiki/Software/GeoClue</Homepage>
+        <Packager>
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <PartOf>network.misc</PartOf>
+        <IsA>library</IsA>
+        <Summary>Modular geoinformation service built on the D-Bus messaging system</Summary>
+        <Description>Modular geoinformation service built on the D-Bus messaging system</Description>
+        <Archive sha1sum="7494e3d84e9268339ac20dbba0325cea699f8330" type="tarxz">http://freedesktop.org/software/geoclue/releases/2.4/geoclue-2.4.1.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>avahi-glib-devel</Dependency>
+            <Dependency>gobject-introspection-devel</Dependency>
+            <Dependency>intltool</Dependency>
+            <Dependency>json-glib-devel</Dependency>
+            <Dependency>libsoup-devel</Dependency>
+            <Dependency>libmm-glib-devel</Dependency>
+            <Dependency>dbus-devel</Dependency>
+            <Dependency>glib2-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>geoclue2</Name>
+        <RuntimeDependencies>
+            <Dependency>glib2</Dependency>
+            <Dependency>libsoup</Dependency>
+            <Dependency>json-glib</Dependency>
+            <Dependency>avahi-glib</Dependency>
+            <Dependency>avahi-libs</Dependency>
+            <Dependency>libmm-glib</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>dbus-glib</Dependency>
+            <Dependency>NetworkManager</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/</Path>
+            <Path fileType="data">/usr/share/</Path>
+            <Path fileType="executable">/usr/libexec/</Path>
+            <Path fileType="config">/etc/dbus-1</Path>
+            <Path fileType="config">/etc/geoclue</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>geoclue2-devel</Name>
+        <Summary>geoclue için geliştirme dosyaları</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">geoclue2</Dependency>
+            <Dependency>glib2-devel</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/libgeoclue-2.0</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-01-27</Date>
+            <Version>2.4.1</Version>
+            <Comment>First release</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
