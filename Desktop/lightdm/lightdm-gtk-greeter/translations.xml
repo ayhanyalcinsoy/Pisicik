@@ -1,9 +1,0 @@
-<?xml version="1.0" ?>
-<PISI>
-    <Source>
-        <Name>lightdm</Name>
-        <Summary xml:lang="tr">LightDM için giriş ekranı</Summary>
-        <Description xml:lang="tr">LightDM için giriş ekranı</Description>
-    </Source>
-</PISI>
-
