@@ -1,8 +1,0 @@
-<?xml version="1.0" ?>
-<PISI>
-    <Source>
-        <Name>mobile-broadband-provider-info</Name>
-        <Summary xml:lang="tr">Ağ yöneticisi için mobil band sağlası bilgisi sunar</Summary>
-        <Description xml:lang="tr">Ağ yöneticisi için mobil band sağlası bilgisi sunar</Description>
-    </Source>
-</PISI>

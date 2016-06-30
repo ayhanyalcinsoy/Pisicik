@@ -1,7 +1,0 @@
-<PISI>
-    <Source>
-        <Name>telegram-cli</Name>
-        <Summary xml:lang="tr">Telegram hızlı ve güvenli anlık iletişim uygulamasıdır.</Summary>
-        <Description xml:lang="tr">Telegram hızlı ve güvenli anlık iletişim uygulamasıdır.</Description>
-    </Source>
-</PISI>

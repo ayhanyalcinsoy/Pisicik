@@ -1,0 +1,107 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>redland</Name>
+        <Homepage>http://librdf.org</Homepage>
+        <Packager>
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <License>Apache-2.0</License>
+        <IsA>library</IsA>
+        <Summary>High-level interface for the Resource Description Framework</Summary>
+        <Description>Redland is a set of free software C libraries that provide support for the Resource Description Framework (RDF).</Description>
+        <Archive sha1sum="a47a7e98f934d17d60a241db90be407a0abe3c5d" type="targz">http://download.librdf.org/source/redland-1.0.17.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>rasqal-devel</Dependency>
+            <Dependency>raptor2-devel</Dependency>
+<!--             <Dependency>libiodbc-devel</Dependency> -->
+            <Dependency>mariadb-lib</Dependency>
+            <Dependency>postgresql-lib</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">fix-uri-test-crash.diff</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>redland</Name>
+        <RuntimeDependencies>
+            <Dependency>rasqal</Dependency>
+            <Dependency>raptor2</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="doc">/usr/share/gtk-doc/html/redland/</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/usr/share/redland</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>redland-mysql</Name>
+        <RuntimeDependencies>
+            <Dependency>redland</Dependency>
+            <Dependency>raptor2</Dependency>
+            <Dependency>mariadb-lib</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/redland/*mysql*</Path>
+            <Path fileType="data">/usr/share/redland/mysql*</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>redland-virtuoso</Name>
+        <RuntimeDependencies>
+            <Dependency>redland</Dependency>
+            <Dependency>rasqal</Dependency>
+<!--             <Dependency>libiodbc</Dependency> -->
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/redland/*virtuoso*</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>redland-postgresql</Name>
+        <RuntimeDependencies>
+            <Dependency>redland</Dependency>
+            <Dependency>postgresql-lib</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/redland/*postgresql*</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>redland-devel</Name>
+        <Summary>Development files for redland</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">redland</Dependency>
+            <!-- librdf.h includes headers from packages below -->
+            <Dependency>raptor2-devel</Dependency>
+            <Dependency>rasqal-devel</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="executable">/usr/bin/redland-config</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+            <Path fileType="man">/usr/share/man/man1/redland-config*</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2014-05-20</Date>
+            <Version>1.0.17</Version>
+            <Comment>Rebuild.</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>kaptan@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
