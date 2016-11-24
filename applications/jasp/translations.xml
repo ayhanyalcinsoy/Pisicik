@@ -1,0 +1,7 @@
+<PISI>
+    <Source>
+        <Name>japs-stats</Name>
+        <Summary xml:lang="tr">JASP, SPSS'e hafif bir alternatif, tarlı R alternatifi</Summary>
+        <Description xml:lang="tr">JASP, SPSS'e hafif bir alternatif, tarlı R alternatifi. </Description>
+    </Source>
+</PISI>

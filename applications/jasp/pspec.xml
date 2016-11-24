@@ -1,0 +1,61 @@
+<PISI>
+    <Source>
+        <Name>jasp</Name>
+        <Homepage>https://jasp-stats.org/</Homepage>
+        <Packager>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <Summary>JASP, a low fat alternative to SPSS, a delicious alternative to R.</Summary>
+        <Description>JASP, a low fat alternative to SPSS, a delicious alternative to R.</Description>
+        <Archive sha1sum="feed08685141dd26137fb3694053c9c93724652d" type="targz">https://github.com/jasp-stats/jasp-desktop/archive/v0.8.0.0.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="5.6.0">qt5-base-devel</Dependency>
+            <Dependency versionFrom="5.6.0">qt5-webkit-devel</Dependency>
+            <Dependency versionFrom="5.6.0">qt5-svg-devel</Dependency>
+            <Dependency versionFrom="5.6.0">qt5-linguist</Dependency>
+            <Dependency>zlib-devel</Dependency>
+            <Dependency>R-devel</Dependency>
+            <Dependency>boost-devel</Dependency>
+            <Dependency>libarchive-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>include.patch</Patch>
+            <Patch>rlibrary.patch</Patch>
+            <Patch>sem.patch</Patch>
+        </Patches>
+    </Source>
+    <Package>
+        <Name>jasp</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="5.6.0">qt5-base</Dependency>
+            <Dependency>zlib</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="data">/usr/share/licenses/</Path>
+        </Files>
+    </Package>
+
+    <!--<Package>
+        <Name>qt5-svg-docs</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="5.6.0">qt5-base</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="doc">/usr/share/doc/qt5</Path>
+        </Files>
+    </Package>-->
+
+    <History>
+        <Update release="1">
+            <Date>2016-11-22</Date>
+            <Version>0.8.0.0</Version>
+            <Comment>First Release.</Comment>
+            <Name>Ayhan yYalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
